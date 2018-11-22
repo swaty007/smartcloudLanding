@@ -1,0 +1,162 @@
+@color-1: #ffffff;
+@color-2: #000000;
+@color-3: #023358;
+@color-4: #055492;
+@color-5: #37a148;
+
+@font-1: 'Cabin','Open Sans', sans-serif;
+@font-2: 'Cabin','Open Sans', sans-serif;
+
+//@media only screen and (min-width: 1080px) {
+//  .fusion-header-wrapper {
+//    position: absolute;
+//    left: 0;
+//    right: 0;
+//    z-index: 10000;
+//  }
+//}
+//.fusion-header-wrapper .fusion-header {
+//  background:transparent;
+//}
+//.container {
+//  overflow: visible;
+//}
+body {
+  overflow-x: hidden;
+}
+
+
+@media(max-width:992px) {
+  .success-stories-mainhideblock {
+    padding-left:0;
+    padding-right:0;
+  }
+}
+
+.accureg-button,.brick-button {
+  background-color: transparent;
+  color: #055492;
+  border: 2px solid #055492;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 50px;
+  padding: 0 50px;
+  text-transform: uppercase;
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  transition: .3s all;
+  text-align: center!important;
+  border-radius: 8px 8px 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  &:hover {
+    background-color: #055492;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+#wrapper #main {
+  .sub-title {
+    color: #023358;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 29px;
+    margin-top: 0;
+    &.small {
+      font-size: 27px;
+      line-height: 27px;
+    }
+    &.big {
+      line-height: 45px;
+      @media(min-width:992px) {
+        margin-top: 110px;
+      }
+      @media(max-width:991px) {
+        line-height: 38px;
+        font-size: 26px;
+      }
+    }
+    &.bigger {
+      line-height: 58px;
+      font-size: 46px;
+      @media(max-width:991px) {
+        font-size: 30px;
+        line-height: 38px;
+      }
+    }
+    span {
+      display: block;
+      &.margin-b {
+        margin-bottom: 10px;
+        @media(min-width:992px) {
+          font-size: 36px;
+        }
+      }
+    }
+    @media(max-width:991px) {
+      text-align: center;
+    }
+  }
+  .desc,.text {
+    color: #055492;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 30px;
+    &.big {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+ .description {
+    color: #055492;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 15px;
+   &:before {
+     content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+     position: absolute;
+     vertical-align: top;
+     left: 0;
+     width: 17px;
+     top: 3px;
+   }
+  }
+  .green-link {
+    outline: none;
+    text-decoration: none;
+    color: #37a148;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    &:hover {
+      color: #0b4592;
+    }
+  }
+
+  @import "main-block";
+  @import "what-we-can-do";
+  @import "our-benefits";
+  @import "financial-perks";
+  @import "how-we-live-up";
+  @import "partners-about";
+}
+
+//#main section.contact-section {
+//  background: none;
+//  h2.title {
+//    color: #023358;
+//  }
+//}
+
+img {
+  max-width: 100%;
+}
