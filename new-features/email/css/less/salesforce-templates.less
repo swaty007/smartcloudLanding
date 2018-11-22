@@ -1,0 +1,76 @@
+.salesforce-templates {
+  background-color: #f5f8fb;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  .salesforce-template-anim-wrap {
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    .img-hover {
+      position: absolute;
+      bottom:0;
+      left: 0;
+      opacity: 0;
+    }
+    .img-screen {
+      //box-shadow: 0 10px 43px rgba(32, 94, 171, 0.1);
+    }
+    .img-text {
+      position: absolute;
+      left: 2%;
+      bottom: 16%;
+      max-width: 47%;
+      opacity: 0;
+    }
+    .img-modal {
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 8%;
+      bottom: 0;
+      max-width: 41.7%;
+      transition: 0.3s;
+      padding: 10px;
+      img {
+        transition: 1s;
+        transform: scale(0) translateY(0)
+      }
+      img.stage-2 {
+        transform: scale(0) translateY(0)
+      }
+      &.do {
+        opacity: 1;
+        img.stage-1 {
+          transform: scale(1) translateY(0);
+        }
+        &.do-2 {
+          img.stage-1 {
+            transform: scale(0) translateY(0);
+            display: none;
+          }
+          img.stage-2 {
+            transform: scale(1) translateY(0);
+          }
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left:0;right:0;top:0;bottom:0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .click.stage-1 {
+        bottom: 51%;
+        right: 36%;
+      }
+      .click.stage-2 {
+        bottom: 48%;
+        right: 40%;
+      }
+    }
+    .click {
+      bottom: 14%;
+      right: 1%;
+    }
+  }
+}

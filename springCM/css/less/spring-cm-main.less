@@ -1,0 +1,268 @@
+.spring-cm-main {
+  padding-top: 70px;
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/vector-smart-object-copy-10.png);
+  overflow: visible;
+  background-size: 110%;
+  background-position: -55px 20%;
+  background-repeat: no-repeat;
+  .title-1 {
+    color: #023358;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-top:0;
+    margin-bottom: 25px;
+  }
+  .text-1 {
+    color: #055492;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+  }
+  .title-2 {
+    color: #023358;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 41px;
+    margin-top: 90px;
+    margin-bottom: 19px;
+    @media(max-width:1200px) {
+      text-align: center;
+      margin-top: 40px;
+    }
+    @media(min-width:1200px) {
+      &.mar {
+        margin-top: 120px;
+      }
+    }
+    @media(min-width:1350px) {
+      &.mar {
+        margin-top: 150px;
+      }
+    }
+  }
+  .text-2 {
+    color: #055492;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31px;
+    @media(max-width:1200px) {
+      text-align: center;
+    }
+  }
+  .white-border-block {
+    box-shadow: 0 0 34px rgba(128, 149, 166, 0.24);
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding: 40px 28px 0;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    overflow: hidden;
+    h3 {
+      color: #023358;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 38px;
+      margin-top: 0;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .margin-cols {
+      @media(min-width:991px) {
+        margin-left: -10%;margin-right: -10%;
+      }
+    }
+    .img-wrap {
+      margin-bottom: 40px;
+      @media(min-width:991px) {
+        margin-left:-5px;
+        margin-right:-5px;
+      }
+      .color-block {
+        color: #023358;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 38px;
+        background-color: #ffeeda;
+        position: relative;
+        text-align: center;
+        &.block-2 {
+          background-color:#ffe9d0 ;
+        }
+        &.block-3 {
+          background-color: #ffe2c2;
+        }
+        &.block-4 {
+          background-color:#ffd5a6 ;
+        }
+        &.block-5 {
+          background-color: #ffca8f;
+        }
+        @media(max-width:991px) {
+          overflow: hidden;
+          line-height: 80px;
+          &:before,&:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 50%;
+            z-index: 100;
+            /*  change the hieght and the color below */
+            border-bottom: 129px solid #fff;
+            -moz-transform: rotate(0.000001deg);
+            -webkit-transform: rotate(0.000001deg);
+            -o-transform: rotate(0.000001deg);
+            -ms-transform: rotate(0.000001deg);
+            transform: rotate(0.000001deg);
+          }
+          &:after {
+            left: 50%;
+            border-left: 500px solid transparent;
+            border-right: 500px solid;
+          }
+          &:before {
+            right: 50%;
+            border-right: 500px solid transparent;
+            border-left: 500px solid;
+          }
+        }
+        @media(min-width:480px) and (max-width:768px) {
+          &:before,&:after {
+            border-bottom: 75px solid #fff;
+          }
+        }
+        @media(min-width:992px) {
+          &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            margin-top: -19px;
+            border-top: 19px solid #ffeeda;
+            border-bottom: 19px solid #ffeeda;
+            border-left: 15px solid transparent;
+            left: -14px;
+            transition: 0.4s all;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            margin-top: -19px;
+            border-top: 19px solid transparent;
+            border-bottom: 19px solid transparent;
+            border-left: 15px solid #ffeeda;
+            right: -14.2px;
+            transition: 0.4s all;
+          }
+          &.block-2 {
+            background-color:#ffe9d0 ;
+            &:before {
+              border-color: #ffe9d0 #ffe9d0 #ffe9d0 transparent;
+            }
+            &:after {
+              border-left-color: #ffe9d0;
+            }
+          }
+          &.block-3 {
+            background-color: #ffe2c2;
+            &:before {
+              border-color: #ffe2c2 #ffe2c2 #ffe2c2 transparent;
+            }
+            &:after {
+              border-left-color: #ffe2c2;
+            }
+          }
+          &.block-4 {
+            background-color:#ffd5a6 ;
+            &:before {
+              border-color: #ffd5a6 #ffd5a6 #ffd5a6 transparent;
+            }
+            &:after {
+              border-left-color: #ffd5a6;
+            }
+          }
+          &.block-5 {
+            background-color: #ffca8f;
+            &:before {
+              border-color: #ffca8f #ffca8f #ffca8f transparent;
+            }
+            &:after {
+              border-left-color: #ffca8f;
+            }
+          }
+        }
+      }
+      .white-text {
+        color: #055492;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+        padding-left: 15px;
+        margin-bottom: 0;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          vertical-align: top;
+          left: 0;
+          display: block;
+          width: 7px;
+          height: 7px;
+          border-radius: 15px;
+          background-color: #ffc536;
+          top: 7px;
+        }
+        @media(max-width:991px) {
+          margin-left: 50%;
+          transform: translateX(-50%);
+          min-width:300px;
+          &:before {
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  img {
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+//(min-width:1100px) and (max-width:1200px),
+  @media(min-width:1350px) {
+    .img-left {
+      width: 122%;
+      max-width:122%;
+      float:right;
+    }
+    .img-right {
+      width: 122%;
+      max-width:122%;
+    }
+  }
+  @media (min-width:1480px) {
+    .img-left {
+      width: 133%;
+      max-width:133%;
+      float:right;
+    }
+    .img-right {
+      width: 133%;
+      max-width:133%;
+    }
+  }
+  @media (min-width:1580px) {
+    .img-left {
+      width: 140%;
+      max-width:140%;
+      float:right;
+    }
+    .img-right {
+      width: 140%;
+      max-width:140%;
+    }
+  }
+}

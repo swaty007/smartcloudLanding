@@ -1,0 +1,98 @@
+@color-1: #ffffff;
+@color-2: #000000;
+@color-3: #023358;
+@color-4: #055492;
+@color-5: #37a148;
+
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+//@font-face {
+//  font-family: 'SFUIDisplay-black';
+//  src: url(https://invisible.io/wp-content/themes/invisible/assets/font/SF-UI-Display-Bold.ttf);
+//  font-weight: bold;
+//  font-style: normal;
+//}
+
+@font-1: 'Open Sans', sans-serif;
+@font-2: 'SFUIDisplay-black', sans-serif!important;
+
+//a.green-btn {
+//  background-color: @color-5;
+//  border-radius: 2px;
+//  color: @color-1;
+//  font-family: @font-2;
+//  border: 2px solid transparent;
+//  font-size: 17px;
+//  font-weight: bold;
+//  line-height: 50px;
+//  padding: 0 50px;
+//  text-transform: uppercase;
+//  outline: none;
+//  text-decoration: none;
+//  display: inline-block;
+//  margin-left: auto;
+//  margin-right: auto;
+//  transition: 0.3s all;
+//  text-align:center;
+//  &:hover {
+//    border-color: @color-5;
+//    color: @color-5;
+//    background-color: transparent;
+//    //background-color: @color-1;
+//  }
+//}
+body {
+  overflow-x: hidden;
+}
+.container {
+  overflow: visible;
+}
+#main {
+  hr {
+    border-color: #e3eff8;
+  }
+
+@import "spring-cm-main";
+@import "spring-four-images";
+
+
+  p.desc {
+    color: @color-4;
+    font-family: @font-1;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    &:before {
+      content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+      position: absolute;
+      vertical-align: top;
+      left: 0;
+      width: 15px;
+    }
+  }
+  p.descript-num {
+    color: @color-4;
+    font-family: @font-1;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    &:nth-child(1) {
+      @media(min-width:991px) {
+        margin-top: 90px;
+      }
+    }
+    &:before {
+      content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+      position: absolute;
+      vertical-align: top;
+      left: 0;
+      width: 15px;
+    }
+  }
+}

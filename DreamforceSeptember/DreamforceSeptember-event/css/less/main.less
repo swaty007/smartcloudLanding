@@ -1,0 +1,120 @@
+@color-1: #ffffff;
+@color-2: #000000;
+@color-3: #023358;
+@color-3-text: #055492;
+@color-4: #055492;
+@color-5: #37a148;
+
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+@font-text: 'Aktiv Grotesk','Cabin','Open Sans', sans-serif !important;
+@font-title: 'Cabin','Open Sans', sans-serif !important;
+
+
+#wrapper {
+  overflow-x: hidden!important;
+}
+#wrapper a.green-btn {
+  background-color: @color-5;
+  border-radius: 2px;
+  color: @color-1;
+  border: 2px solid transparent;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 50px;
+  padding: 0 80px;
+  text-transform: uppercase;
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s all;
+  text-align:center;
+  &:hover {
+    border-color: @color-5;
+    color: @color-5;
+    background-color: transparent;
+    //background-color: @color-1;
+  }
+}
+.container {
+  overflow: visible;
+}
+
+#wrapper .sub-title {
+  color: @color-3;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 45px;
+  @media(max-width:991px) {
+    text-align: center;
+  }
+}
+#wrapper .text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 31px;
+  margin-bottom: 25px;
+  color: @color-3-text;
+  .green {
+    color: @color-5;
+    font-weight: bold;
+    font-size: 19px;
+  }
+  span {
+    color: #7d92bc;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: -4px;
+    display: block;
+  }
+  &.nowrap {
+    line-height: 26px;
+  }
+}
+#wrapper .desc {
+  color: @color-3-text;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 47px;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 15px;
+  &:before {
+    content: url(https://smartcloudconnect.io/wp-content/uploads/ok-green-icon.svg);
+    position: absolute;
+    vertical-align: top;
+    left: 0;
+    width: 17px;
+    top: 3px;
+  }
+}
+
+.adaptive-col {
+  @media(min-width:992px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#wrapper {
+  @import "main-block-dream";
+  @import "image-speakers";
+  @import "map-find-us";
+  //@import "slider";
+}
+
+#main section.contact-section {
+  margin-top: -150px;
+  position: relative;
+  padding-bottom: 80px;
+  padding-top: 0;
+  background-color: transparent;
+  overflow: visible;
+  background-image: none;
+  h2.title {
+    color: #023358;
+  }
+}

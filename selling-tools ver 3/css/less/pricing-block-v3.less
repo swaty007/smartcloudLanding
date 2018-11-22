@@ -1,0 +1,96 @@
+.pricing-block-v3 {
+  padding: 150px 0;
+  background-color: #f5f8fb;
+  .sub-title {
+    margin-bottom: 15px;
+  }
+  .sub-title-wizard {
+    color: @color-3;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 35px;
+    text-align: center;
+    span {
+      background-color: fade(#a4daf1,64%);
+      border-radius: 3px;
+      color: #fff;
+      padding: 3px 8px;
+    }
+  }
+
+  .item-v3-block-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    @media(max-width:991px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .item-v3-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-basis: 20%;
+    @media(max-width:991px) {
+      flex-basis: 47%;
+      flex-grow: 1;
+    }
+
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #dae6ef;
+    text-align: center;
+    padding: 50px 20px 40px;
+    position: relative;
+    &.active,&:hover {
+      background-color: #ffffff;
+      .green-btn {
+        display: inline-block;
+      }
+    }
+    .green-btn {
+      line-height: 36px;
+      padding: 0 20px;
+      font-size: 15px;
+      display: none;
+      position: absolute;
+      left:0;
+      right:0;
+      bottom: -18px;
+      max-width: 150px;
+      min-width: unset;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+    .users-amount {
+      color: @color-3;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .gradient {
+      background-image: linear-gradient(66deg, #4a96d1 0%, #49beea 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 53px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    .under-text {
+      color: #7095c2;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21px;
+      margin-bottom: 0;
+    }
+  }
+}

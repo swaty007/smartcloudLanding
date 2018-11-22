@@ -1,0 +1,58 @@
+.salesforce-attachments-section {
+  padding: 120px 0;
+  background-color: #f5f8fb;
+  @media(max-width:992px) {
+    padding-top: 80px;
+  }
+  .attachment-anim {
+    position: relative;
+    text-align: right;
+    z-index: 50;
+    .email {
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      z-index: -1;
+      left: -40%;
+      @media(max-width:1200px) {
+        left: -30%;
+        max-width: 70%;
+      }
+    }
+    .icons {
+      position: absolute;
+      transform: translateY(-50%);
+      z-index: -2;
+      left: 40%;
+      width: 38px;
+      height: 46px;
+      @media(max-width:768px) {
+        transform: translateY(-50%) scale(0.6);
+      }
+      &.icon-1 {
+        top: 49%
+      }
+      &.icon-2 {
+        top:51%;
+      }
+    }
+    .main-block {
+      max-width: 70%;
+      @media(max-width:991px) {
+        max-width: 80%;
+      }
+      @media(min-width:992px) and (max-width:1400px) {
+        max-width: 60%
+      }
+    }
+    img {
+
+      max-width: 100%;
+    }
+  }
+  @media(min-width:1401px) {
+    .img-svg-link {
+      margin-top: 50px;
+    }
+  }
+}

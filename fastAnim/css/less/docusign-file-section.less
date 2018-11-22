@@ -1,0 +1,56 @@
+.docusign-file-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .docusign-anim {
+    display: inline-block;
+    position: relative;
+    @media(max-width:991px) {
+      margin: 0 -5%;
+    }
+    .img-modal {
+      right: 3.5%;
+      max-width: 39%;
+      top: 36%;
+      img {
+        margin: 0 -5%;
+        max-width: 110%;
+        width: 110%;
+      }
+    }
+    .img-document {
+      position: absolute;
+      top: 8%;
+      right: 23%;
+      max-width: 59%;
+      transform: scale(0) translateY(0);
+      transition: 0.7s all;
+      &.do {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+    .img-text {
+      position: absolute;
+      bottom: 14%;
+      left: 5%;
+      max-width: 45.5%;
+      opacity: 0;
+    }
+    .click {
+      &.one {
+        bottom: 7%;
+        right: 5%;
+      }
+      &.two {
+        bottom: 11%;
+        right: 19%;
+      }
+      &.three {
+        bottom: 15%;
+        right: 32%;
+      }
+    }
+  }
+
+}

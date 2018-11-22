@@ -1,0 +1,174 @@
+.alex-slider {
+  background-image: linear-gradient(22deg, #062972 0%, #07438d 100%);
+  padding-top: 150px;
+  position: relative;
+  &:before {
+    content: "";
+    background-image: url(https://smartcloudconnect.io/wp-content/uploads/vector-smart-object-copy-10-min-1.png);
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 58%;
+    background-size: 105% auto;
+  }
+  .image-block {
+    text-align: center;
+    img {
+      height: 94px;
+      margin-bottom: 40px;
+      &:first-child {
+        margin-right: 50px;
+      }
+    }
+  }
+  .slider-title {
+    color: #ffffff;
+    //font-family: @font-1;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 47px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    a {
+      color: #4c94d0;
+      &:hover {
+        color: lighter(#4c94d0,20%);
+        text-decoration: none;
+      }
+    }
+  }
+  .carousel {
+    .carousel-inner {
+      padding-bottom: 140px;
+      .item {
+        text-align: center;
+        min-height: 300px;
+        padding-bottom: 80px;
+      }
+      .slide-next-btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+    }
+  }
+  .slide-next-btn {
+    border-radius: 2px;
+    background-color: #37a148;
+    color: #ffffff;
+    //font-family: @font-2;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 7px 80px 7px 35px;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    position: relative;
+    border: 2px solid #37a148;
+    display: inline-block;
+    &:before {
+      content: "";
+      background-image: url(https://smartcloudconnect.io/wp-content/uploads/line_white.svg);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      position: absolute;
+      top:0;
+      width: 40px;
+      height: 100%;
+      right: 15px;
+    }
+    &.video-link {
+      padding: 7px 35px 7px 35px;
+      &:before {
+        content: none;
+      }
+    }
+    &:hover,&:focus {
+      background-color: transparent;
+      color: #37a148;
+      &:before {
+        background-image: url(https://smartcloudconnect.io/wp-content/uploads/line_green.svg);
+      }
+    }
+  }
+  .slider-indicators {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    li {
+      width: 44px;
+      height: 44px;
+      border: 2px solid transparent;
+      display: inline-block;
+      border-radius: 50%;
+      position: relative;
+      background-color: transparent;
+      text-indent: 0;
+      margin: 0 80px 0 0;
+      @media(max-width:780px) {
+      margin: 0;
+      }
+      .circle {
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        color: #062972;
+        //font-family: @font-1;
+        font-size: 15px;
+        font-weight: 700;
+        background: #41639a;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        line-height: 32px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: linear-gradient(66deg, #6bbcfb 0%, #49beea 100%);
+          height: 1px;
+          width: 104px;
+          left: 100%;
+          @media(max-width:780px) {
+            content: none;
+            display: none;
+          }
+        }
+      }
+      &.active {
+        border: 2px solid #8ed0ff;
+        .circle {
+          background: linear-gradient(66deg, #4a96d1 0%, #49beea 100%);
+          &:before {
+            background: linear-gradient(66deg, #4a96d1 0%, #49beea 100%);
+          }
+        }
+        ~ li .circle:before {
+          background: #41639a;
+        }
+      }
+      &:last-child {
+        margin: 0;
+        .circle {
+          &:before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}

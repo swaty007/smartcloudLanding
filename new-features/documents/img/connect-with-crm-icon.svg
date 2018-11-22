@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 66.8 23" style="enable-background:new 0 0 66.8 23;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#37A148;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#37A148;}
+	.st2{font-family:'Arial-BoldMT';}
+	.st3{font-size:6.9092px;}
+</style>
+<path class="st0" d="M65.7,22.4h-28c-0.3,0-0.6-0.3-0.6-0.6V1.2c0-0.3,0.3-0.6,0.6-0.6h28c0.3,0,0.6,0.3,0.6,0.6v20.7
+	C66.2,22.2,66,22.4,65.7,22.4z"/>
+<line class="st0" x1="37.1" y1="5.5" x2="66.2" y2="5.5"/>
+<line class="st0" x1="39.1" y1="3" x2="44.9" y2="3"/>
+<line class="st0" x1="4.8" y1="6.1" x2="15.7" y2="6.1"/>
+<line class="st0" x1="4.8" y1="11.4" x2="15.7" y2="11.4"/>
+<line class="st0" x1="4.8" y1="16.9" x2="15.7" y2="16.9"/>
+<line class="st0" x1="61.2" y1="3" x2="63.8" y2="3"/>
+<text transform="matrix(1 0 0 1 43.2913 16.0466)" class="st1 st2 st3">CRM</text>
+<g>
+	<path class="st0" d="M18.5,22.4H1.8c-0.7,0-1.2-0.5-1.2-1.2V1.8c0-0.7,0.5-1.2,1.2-1.2h16.7c0.7,0,1.2,0.5,1.2,1.2v19.4
+		C19.7,21.9,19.2,22.4,18.5,22.4z"/>
+	<line class="st0" x1="28.2" y1="8.5" x2="28.2" y2="14.5"/>
+	<line class="st0" x1="31.2" y1="11.5" x2="25.2" y2="11.5"/>
+</g>
+</svg>

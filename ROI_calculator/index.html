@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" id="wrapper">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROI CALCULATOR</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet/less" type="text/css" href="css/less/main.less"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js"></script>
+    <script>
+        WebFontConfig = {
+            google: {families: ['Cabin:400,500,700']}
+        };
+
+        (function(d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script>
+</head>
+<body id="main">
+<script>
+    var async_css=document.createElement("link");
+    async_css.rel="stylesheet";
+    async_css.href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
+    document.body.insertBefore(async_css,document.body.childNodes[document.body.childNodes.length-1].nextSibling);
+</script>
+
+
+<div id="roi-calc" class="roi-calc">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="title">
+                    ROI Calculations
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="form-group clearfix" id="n_sales_email">
+                    <div class="row">
+                        <label class="col-xs-8 col-sm-9 control-label">
+                            Number of sales emails received daily
+                        </label>
+                        <div class="col-xs-4 col-sm-3">
+                            <input class="form-control" type="text" value="90">
+                        </div>
+                    </div>
+                    <div class="range-input" data-text="300+">
+                        <input type="range" min="0" max="300" value="90">
+                        <span class="line-substrate"></span>
+                        <span class="line-bg"></span>
+                    </div>
+                </div>
+                <div class="form-group clearfix" id="n_calendar_invites">
+                    <div class="row">
+                        <label class="col-xs-8 col-sm-9 control-label">
+                            Number of daily sales related calendar invites
+                        </label>
+                        <div class="col-xs-4 col-sm-3">
+                            <input class="form-control" type="text" value="20">
+                        </div>
+                    </div>
+                    <div class="range-input" data-text="100+">
+                        <input type="range" min="0" max="100" value="20">
+                        <span class="line-substrate"></span>
+                        <span class="line-bg"></span>
+                    </div>
+                </div>
+                <div class="form-group clearfix" id="n_size_team">
+                    <div class="row">
+                        <label class="col-xs-8 col-sm-9 control-label">
+                            Size of sales team
+                        </label>
+                        <div class="col-xs-4 col-sm-3">
+                            <input class="form-control" type="text" value="15">
+                        </div>
+                    </div>
+                    <div class="range-input" data-text="1000+">
+                        <input type="range" min="0" max="1000" value="15">
+                        <span class="line-substrate"></span>
+                        <span class="line-bg"></span>
+                    </div>
+                </div>
+                <div class="form-group clearfix" id="n_wage">
+                    <div class="row">
+                        <label class="col-xs-8 col-sm-9 control-label">
+                            Wage of a sales person (per year)
+                        </label>
+                        <div class="col-xs-4 col-sm-3">
+                            <input class="form-control" type="text" value="60000">
+                        </div>
+                    </div>
+                    <div class="range-input" data-text="$500 000+">
+                        <input type="range" min="0" max="500000" value="60000">
+                        <span class="line-substrate"></span>
+                        <span class="line-bg"></span>
+                    </div>
+                </div>
+
+                <div class="form-group" id="appoint_scheduling">
+                  <div class="row">
+                      <label class="col-xs-8 col-sm-9 control-label">Would you like to use Appointment Scheduling?</label>
+
+                      <div class="col-xs-4 col-sm-3 text-right">
+                          <input type="checkbox" id="switch" checked/><label class="checkbox-label" for="switch"></label>
+                      </div>
+                  </div>
+                </div>
+
+                <p class="text main">
+                    You can easily calculate your expected benefits when rolling out SmartCloud Connect.
+                    Current calculator will show you how much time and money you can actually save around productivity improvements. These do not involve other benefits like quality of CRM data, user adoption, forecasting and others.
+                </p>
+            </div>
+
+            <div class="col-md-6 col-lg-5 col-lg-offset-1">
+
+                <div  class="result-wrap">
+                    <h2 class="sub-title">
+                        Results
+                    </h2>
+                    <div id="day" class="result-block">
+                        <p class="time">
+                            Day
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3 class="hours-saved all_time"></h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="money-saved money_safe"></h3>
+                                <p class="res-text">Saved money</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="week" class="result-block">
+                        <p class="time">
+                            Week
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3 class="hours-saved all_time"></h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="money-saved money_safe"></h3>
+                                <p class="res-text">Saved money</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="month" class="result-block hidden">
+                        <p class="time">
+                            Month
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3 class="hours-saved all_time"></h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="money-saved money_safe"></h3>
+                                <p class="res-text">Saved money</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="year" class="result-block">
+                        <p class="time">
+                            Year
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3 class="hours-saved all_time"></h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="money-saved money_safe"></h3>
+                                <p class="res-text">Saved money</p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="text-center" style="margin-top: 20px;">
+                       <a target="_self" data-toggle="modal" data-target=".share-result" href="#" class="green-btn">
+                           <i class="fa fa-chain" style="margin-right:5px;"></i>Share results
+                       </a>
+                   </div>
+                </div>
+                <p class="text small">
+                    * SmartCloud Connect saves up to 160 seconds per 1 email/invite, or 190 sec with Appointment scheduling. These are based on our case studies, best practices of our partners and customers, as well as in-house research.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="contact-section" class="contact-section">
+    <div class="container fade-bottom">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="https://smartcloudconnect.io/wp-content/uploads/morgan-logo.png" style="width: 211px;height: 61px;margin-bottom: 20px;">
+                <h2 class="title slide-top">How Morgan & Morgan resolves Customer Cases 20%
+                    faster with SmartCloud Connect</h2>
+                <a href="https://smartcloudconnect.io/morgan-morgan/" target="_blank" class="green-btn">Read case study</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        jQuery.noConflict();
+        (function ($) {
+
+            function calculate_roi(e) {
+
+                var n_sales_email1 = Number($('#n_sales_email input[type="text"]').val());
+                var n_sales_email2 = Number($('#n_sales_email input[type="range"]').val());
+                if( e!== undefined){(e.currentTarget.className == "form-control") ? n_sales_email = n_sales_email1 :  n_sales_email = n_sales_email2;} else {
+                    n_sales_email = n_sales_email1
+                }
+
+                var n_calendar_invites1 = Number($('#n_calendar_invites input[type="text"]').val());
+                var n_calendar_invites2 = Number($('#n_calendar_invites input[type="range"]').val());
+                 if( e!== undefined){(e.currentTarget.className == "form-control") ? n_calendar_invites = n_calendar_invites1 : n_calendar_invites = n_calendar_invites2;} else {
+                     n_calendar_invites = n_calendar_invites1
+                 }
+                var appoint_scheduling = $('#appoint_scheduling input').prop("checked");
+                var n_size_team1 = Number($('#n_size_team input[type="text"]').val());
+                var n_size_team2 = Number($('#n_size_team input[type="range"]').val());
+                 if( e!== undefined){(e.currentTarget.className == "form-control") ?  n_size_team = n_size_team1 : n_size_team = n_size_team2;} else {
+                     n_size_team = n_size_team1
+                 }
+                var n_wage1 = Number($('#n_wage input[type="text"]').val());
+                var n_wage2 = Number($('#n_wage input[type="range"]').val());
+                 if( e!== undefined){(e.currentTarget.className == "form-control") ? n_wage = n_wage1 : n_wage = n_wage2;} else {
+                     n_wage = n_wage1
+                 }
+
+                $('#n_sales_email input').val(n_sales_email);
+                $('#n_sales_email .line-bg').css('width',
+                    100-((n_sales_email/$('#n_sales_email input[type="range"]').attr('max'))*100)+'%'
+                );
+                $('#n_calendar_invites input').val(n_calendar_invites);
+                $('#n_calendar_invites .line-bg').css('width',
+                    100-((n_calendar_invites/$('#n_calendar_invites input[type="range"]').attr('max'))*100)+'%'
+                );
+                $('#n_size_team input').val(n_size_team);
+                $('#n_size_team .line-bg').css('width',
+                    100-((n_size_team/$('#n_size_team input[type="range"]').attr('max'))*100)+'%'
+                );
+                $('#n_wage input').val(n_wage);
+                $('#n_wage .line-bg').css('width',
+                    100-((n_wage/$('#n_wage input[type="range"]').attr('max'))*100)+'%'
+                );
+
+//                var second_wage = (n_wage/3600); // если зп за час
+                var second_wage = (n_wage/(3600*24*365)); // если зп за год
+
+                var safe_time = 0; //Общее сохраненное время
+                var email_safe_time = n_sales_email*160; //Время сохраненное на эмейлах в день
+                safe_time += email_safe_time;
+                var calendar_safe_time = n_calendar_invites * (appoint_scheduling ? 190 : 160); //Время сохраненное на инвайтах в день
+                safe_time += calendar_safe_time;
+                if (n_size_team > 0) {
+                    safe_time = safe_time*n_size_team;
+                }
+                var safe_money_day = (second_wage*safe_time); //деньги сохраненные в день
+
+                echoSafe('day',1);
+                echoSafe('week',5);
+                echoSafe('month',20);
+                echoSafe('year',265);
+
+                function echoSafe(id,days) {
+                    id = $('#'+id);
+//                    id.find('.email_time').text(email_safe_time*days);
+//                    id.find('.invite_time').text(calendar_safe_time*days);
+
+                    let saveMinutes = Math.round(safe_time*days/60);
+                    let saveMoney = safe_money_day*days;
+
+                    if (saveMinutes <= 120) {
+                        id.find('.all_time').text(Math.round(saveMinutes)+" Minutes");
+                    } else if (saveMinutes/60 <= 480) {
+                        id.find('.all_time').text(Math.round(saveMinutes/60)+" Hours");
+                    } else if (saveMinutes/60 > 480) {
+                        let days = Math.round(saveMinutes/60/24);
+                        if (days > 1000) {
+                            id.find('.all_time').text(String(days).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')+" Days");
+                        } else {
+                            id.find('.all_time').text(days+" Days");
+                        }
+                    }
+
+
+                    if (saveMoney > 10000) {
+                        id.find('.money_safe').text("$"+String(saveMoney.toFixed(0)).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+                    } else if (saveMoney > 1000) {
+                        id.find('.money_safe').text("$"+saveMoney.toFixed(0));
+                    } else {
+                        id.find('.money_safe').text("$"+saveMoney.toFixed(2));
+                    }
+
+                }
+            }
+
+            $('#share_email_button').on('click', function (e) {
+               e.preventDefault();
+                let submitBtn = $('#share_email_button');
+                let share_email = $('#share_email_input').val();
+                $('#answer_result').remove();
+                if (share_email == "") {
+                    $('#share_email_input').addClass('has-error');
+                    return;
+                } else {
+                    $('#share_email_input').removeClass('has-error');
+                }
+                submitBtn.attr('disabled', 'disabled');//выключить повторное нажатие
+                submitBtn.addClass('loading');//выключить повторное нажатие
+
+               let data = {
+                   share_email: share_email,
+                   n_email:  $('#n_sales_email input').val(),
+                   n_calendar: $('#n_calendar_invites input').val(),
+                   n_size: $('#n_size_team input').val(),
+                   n_wage: $('#n_wage input').val(),
+                   n_app: $('#appoint_scheduling input').prop("checked") ? true : false,
+               };
+                ga('send', 'event', 'button', 'click', 'Roi calculation');
+                _dcq.push(
+                    [
+                        "track", "Roi calculation"
+                    ]
+                );
+
+                $.ajax({
+                    type: "POST",
+                    url: "/wp-content/themes/smartcloud/getPdf.php",
+                    data: data,
+                    success: function (msg) {
+                        console.log(msg);
+                        if (msg.msg === "ok") {
+
+                            let modal = $('#hidden_salesforce');
+                            modal.find("input[name='first_name']").val('Roi');
+                            modal.find("input[name='last_name']").val('Calculator');
+                            modal.find("input[name='your-email']").val(data.share_email);
+                            modal.find("input[name='company']").val('ROI calculator');
+                            modal.find("textarea[name='textarea-183']").val("Number emails: "+data.n_email+"\nNumber calendars invites: "+data.n_calendar+"\nTeam size: "+data.n_size+"\nWage: "+data.n_wage+"\n");
+                            modal.find('form').submit();
+
+
+                            $('#share_email_button').closest('.modal-body').append("<p id='answer_result' style='text-align: center;margin-top: 10px;color: #37a148;'>Email sended</p>")
+                        }
+                        submitBtn.removeAttr('disabled'); //включить кнопку
+                        submitBtn.removeClass('loading')
+                    }
+                });
+            });
+
+
+            calculate_roi();
+//            calculate_roi_pdf()
+            $('input').on('input',function (e) {
+                calculate_roi(e);
+            });
+
+
+
+            //var url_mail = encodeURIComponent('https://smartcloudconnect.io/roi-calculate-for-pdf-screen/?n_email=30&n_calendar=30&n_size=5&n_wage=30000&n_app=true');
+           // https://www.sejda.com/html-to-pdf?save-link=+url_mail;
+            //"https://smartcloudconnect.io/wp-content/themes/smartcloud/getPdf.php"
+            function calculate_roi_pdf() {
+
+                let urls = getAllUrlParams.url;
+
+                let n_sales_email = urls.n_email;
+                let n_calendar_invites =  urls.n_calendar;
+                let n_size_team =  urls.n_size;
+                let n_wage =  urls.n_wage;
+                let appoint_scheduling =  (urls.n_app === 'true') ? true : false;
+
+
+//                    "https://www.sejda.com/html-to-pdf?save-link= ?n_email=1&n_calendar=10&n_size=5&n_wage=20000&n_app=true";
+
+                //https://smartcloudconnect.io/wp-content/themes/smartcloud/getPdf.php?n_email=40&n_calendar=40&n_size=15&n_wage=40000&n_app=true&share_email=swaty0007@gmail.com
+
+                $('#n_sales_email input').val(n_sales_email);
+                $('#n_sales_email .line-bg').css('width',
+                    100-((n_sales_email/$('#n_sales_email input[type="range"]').attr('max'))*100)+'%'
+                );
+                $('#n_calendar_invites input').val(n_calendar_invites);
+                $('#n_calendar_invites .line-bg').css('width',
+                    100-((n_calendar_invites/$('#n_calendar_invites input[type="range"]').attr('max'))*100)+'%'
+                );
+                $('#n_size_team input').val(n_size_team);
+                $('#n_size_team .line-bg').css('width',
+                    100-((n_size_team/$('#n_size_team input[type="range"]').attr('max'))*100)+'%'
+                );
+                $('#n_wage input').val(n_wage);
+                $('#n_wage .line-bg').css('width',
+                    100-((n_wage/$('#n_wage input[type="range"]').attr('max'))*100)+'%'
+                );
+
+                if (appoint_scheduling) {
+                    $('#switch').attr("checked",'checked');
+                }
+
+
+//                var second_wage = (n_wage/3600); // если зп за час
+                var second_wage = (n_wage/(3600*24*365)); // если зп за год
+
+                var safe_time = 0; //Общее сохраненное время
+                var email_safe_time = n_sales_email*160; //Время сохраненное на эмейлах в день
+                safe_time += email_safe_time;
+                var calendar_safe_time = n_calendar_invites * (appoint_scheduling ? 190 : 160); //Время сохраненное на инвайтах в день
+                safe_time += calendar_safe_time;
+                if (n_size_team > 0) {
+                    safe_time = safe_time*n_size_team;
+                }
+                var safe_money_day = (second_wage*safe_time); //деньги сохраненные в день
+
+                echoSafe('day',1);
+                echoSafe('week',7);
+                echoSafe('month',30);
+                echoSafe('year',365);
+
+
+            }
+
+
+
+        })(jQuery);
+
+    });
+</script>
+</body>
+
+
+
+
+
+</html>

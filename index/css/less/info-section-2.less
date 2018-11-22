@@ -1,0 +1,164 @@
+#main section.info-section-2 {
+  background-color: @color-1;
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/vector-smart-background-1.png);
+  overflow: hidden;
+  background-size: 125%;
+  background-position: -58px 0;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+  @media (max-width:991px) {
+    padding: 30px 0;
+  }
+  .center-vertical-block {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    box-shadow: 0 6px 29px rgba(93, 97, 101, 0.15);
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @media (min-width:992px) {
+      height: 516px;
+    }
+    @media(max-width:991px) {
+      padding: 40px;
+    }
+    .QQ-img {
+      width: 48px;
+      margin-bottom: 15px;
+    }
+    .desc {
+      color: @color-3;
+      font-family: @font-1;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 41px;
+      margin-bottom: 0px;
+      @media (max-width:991px){
+        line-height: 35px;
+        margin-bottom: 5px;
+      }
+    }
+    .star-block {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-align: right;
+      span {
+        color: @color-3;
+        font-family: @font-1;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+      }
+      .stars {
+        width: 67px;
+      }
+      .exchange {
+        width: 175px;
+        float: right;
+        @media(max-width:375px) {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .white-block {
+    background-image: linear-gradient(22deg, #062972 0%, #07438d 100%);
+    @media(min-width: 991px) {
+      margin-right: -30px;
+    }
+    min-height: 516px;
+    line-height: 516px;
+
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 10px;
+    h2.title {
+      margin-bottom: 55px;
+      color: #ffffff;
+      font-family: @font-1;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 34px;
+      margin-top: 0;
+    }
+    @media (max-width:450px){
+      padding-top:30px;
+      padding-bottom: 30px;
+      min-height: 471px;
+      line-height: 471px;
+    }
+    @media (min-width: 451px) and (max-width: 991px) {
+      min-height: 500px;
+      line-height: 500px;
+    }
+    &>div {
+      vertical-align: middle;
+      display: inline-block;
+    p.descript {
+      position: relative;
+      padding-left: 30px;
+      &:nth-child(2):before {  content: '1';  }
+      &:nth-child(3):before {  content: '2';  }
+      &:nth-child(4):before {  content: '3';  }
+      &:nth-child(5):before {  content: '4';  }
+      &:nth-child(6):before {  content: '5';  }
+      &:nth-child(7):before {  content: '6';  }
+      &:before {
+        background-image: linear-gradient(66deg, #49bbe8 0%, #49beea 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: @font-1;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-right: 25px;
+        float: left;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @media (max-width:1177px) {
+          margin-right: 15px;
+          font-size: 30px;
+        }
+      }
+      @media (max-width:1177px) {
+        font-size: 20px;
+      }
+      @media (max-width:470px){
+        margin-bottom: 30px;
+      }
+      &:last-child{
+        margin-bottom: 0!important;
+      }
+      color: @color-1;
+      font-family: @font-1;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 34px;
+      margin-bottom: 30px;
+      span.num {
+        background-image: linear-gradient(66deg, #49bbe8 0%, #49beea 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: @font-1;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-right: 25px;
+        float: left;
+        @media (max-width:1177px) {
+          margin-right: 15px;
+          font-size: 30px;
+        }
+      }
+      >span.text {
+        display: block;
+        padding-left: 45px;
+      }
+    }
+    }
+  }
+}

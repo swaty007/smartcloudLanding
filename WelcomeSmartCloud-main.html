@@ -1,0 +1,1082 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minty-Multipurpose Responsive Email Template</title>
+    <style type="text/css">
+        /* Client-specific Styles */
+        #outlook a {
+            padding: 0;
+        }
+
+        /* Force Outlook to provide a "view in browser" menu link. */
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+        #backgroundTable {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            line-height: 100% !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a img {
+            border: none;
+        }
+
+        .image_fix {
+            display: block;
+        }
+
+        p {
+            margin: 0px 0px !important;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /*a {color: #e95353;text-decoration: none;text-decoration:none!important;}*/
+        /*STYLES*/
+        table[class=full] {
+            width: 100%;
+            clear: both;
+        }
+
+        /*################################################*/
+        /*IPAD STYLES*/
+        /*################################################*/
+        @media only screen and (max-width: 640px) {
+            a[href^="tel"], a[href^="sms"] {
+                text-decoration: none;
+                color: #ffffff; /* or whatever your want */
+                pointer-events: none;
+                cursor: default;
+            }
+
+            .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+                text-decoration: default;
+                color: #ffffff !important;
+                pointer-events: auto;
+                cursor: default;
+            }
+
+            table[class=partners-icons]{
+                width: 95% !important;
+            }
+
+            table[class=partners-icons] td{
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+            table[class=devicewidth] {
+                width: 440px !important;
+                text-align: center !important;
+            }
+
+            table[class=devicewidthinner] {
+                width: 420px !important;
+                text-align: center !important;
+            }
+
+            table[class="sthide"] {
+                display: none !important;
+            }
+
+            img[class="bigimage"] {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            img[class="col2img"] {
+                width: 420px !important;
+                height: 258px !important;
+            }
+
+            img[class="image-banner"] {
+                width: 440px !important;
+                height: 106px !important;
+            }
+
+            td[class="menu"] {
+                text-align: center !important;
+                padding: 0 0 10px 0 !important;
+            }
+
+            td[class="logo"] {
+                padding: 10px 0 5px 0 !important;
+                margin: 0 auto !important;
+            }
+
+            img[class="logo"] {
+                padding: 0 !important;
+                margin: 0 auto !important;
+            }
+            table[class=table-title] td {
+                font-size: 21px !important;
+                line-height: 30px !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+
+        /*##############################################*/
+        /*IPHONE STYLES*/
+        /*##############################################*/
+        @media only screen and (max-width: 480px) {
+            a[href^="tel"], a[href^="sms"] {
+                text-decoration: none;
+                color: #ffffff; /* or whatever your want */
+                pointer-events: none;
+                cursor: default;
+            }
+
+            .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+                text-decoration: default;
+                color: #ffffff !important;
+                pointer-events: auto;
+                cursor: default;
+            }
+
+            table[class=devicewidth] {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            table[class=devicewidthinner] {
+                width: 260px !important;
+                text-align: center !important;
+            }
+
+            table[class="sthide"] {
+                display: none !important;
+            }
+
+            img[class="bigimage"] {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            img[class="col2img"] {
+                width: 260px !important;
+                height: 160px !important;
+            }
+
+            img[class="image-banner"] {
+                width: 280px !important;
+                height: 68px !important;
+            }
+
+            table[class=table-title] td {
+                font-size: 24px !important;
+                line-height: 35px !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            table[class=header-top]>tbody>tr>th:first-child{
+                padding-right: 0 !important;
+                padding-left: 15px !important;
+                width: 55% !important;
+            }
+            table[class=header-top]>tbody>tr>th:last-child{
+                padding-right: 10px !important;
+                padding-left: 0px !important;
+                width: 45% !important;
+            }
+            table[class=header-top]>tbody>tr>th:last-child p {
+                font-size: 9px !important;
+            }
+            table[class=header-top]>tbody>tr>th:last-child p a{
+                font-size: 11px !important;
+            }
+            table td[class=alex-image] img[class="bigimage"] {
+                width: 55px!important;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+<table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="3columns">
+    <tbody>
+    <tr>
+        <td>
+            <table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width:100%;max-width:800px;" class="devicewidth" modulebg="edit">
+                <tbody>
+                <tr>
+                    <td width="100%" height="20" style="font-size:1px;max-width:800px; line-height:1px; mso-line-height-rule: exactly;">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%">
+
+
+                        <table class="header-top" style="border-collapse:collapse;
+                               border-spacing:0;
+                               display:table;
+                               padding:0;
+                               position:relative;
+                               text-align:left;
+                               vertical-align:top;
+                               width:100%;max-width:800px!important;">
+                            <tbody>
+                            <tr style="padding:0;text-align:left;vertical-align:top;">
+                                <th class="small-6 large-6 columns first" style="margin:0 auto;color:#5b6f8e;font-family:'Open Sans', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;padding-bottom:0;padding-left:25px;padding-right:12.5px;text-align:left;width:350px;">
+                                    <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%;">
+                                        <tbody>
+                                        <tr style="padding:0;text-align:left;vertical-align:top;">
+                                            <th style="margin:0;color:#5b6f8e;font-family:'Open Sans', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;text-align:left;">
+                                                <a href="https://smartcloudconnect.io" title="SmartCloud Connect for Salesforce powered by Invisible" style="margin:0;color:#5b6f8e;font-family:'Open Sans', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:none;"><img width="270" src="https://smartcloudconnect.io/wp-content/uploads/Logo-Color.png" alt="SmartCloud Connect for Salesforce powered by Invisible" style="-ms-interpolation-mode:bicubic;border:none;clear:both;color:#fff;display:block;font-family:'Open Sans',Arial,sans-serif;font-size:15px;max-width:100%;outline:0;text-decoration:none;width:auto"></a>
+                                                <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%;">
+                                                    <tbody>
+                                                    <tr style="padding:0;text-align:left;vertical-align:top;">
+                                                        <td height="12" style="-webkit-hyphens:auto;margin:0;border-collapse:collapse !important;color:#5b6f8e;font-family:'Open Sans', Arial, sans-serif;font-size:12px;font-weight:400;line-height:12px;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </th>
+                                <th class="small-6 large-6 columns last" style="margin:0 auto;color:#5b6f8e;font-family:'Open Sans', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;padding-bottom:0;padding-left:12.5px;padding-right:25px;text-align:left;width:350px;">
+                                    <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%;">
+                                        <tbody>
+                                        <tr style="padding:0;text-align:left;vertical-align:top;">
+                                            <th style="margin:0;color:#5b6f8e;font-family:'Open Sans', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;text-align:left;">
+                                                <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%;">
+                                                    <tbody>
+                                                    <tr style="padding:0;text-align:left;vertical-align:top;">
+                                                        <td height="8" style="-webkit-hyphens:auto;margin:0;border-collapse:collapse !important;color:#5b6f8e;font-family:'Open Sans', Arial, sans-serif;font-size:8px;font-weight:400;line-height:8px;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="view-in-browser-header" style="margin:0;margin-bottom:0;color: #023358;font-family:'Open Sans', Arial, sans-serif;font-size:14px;font-weight:300;line-height:1.3;padding:0;text-align:right;">
+                                                    Problem viewing this email?<br><a href="https://smartcloudconnect.io/wp-content/uploads/WelcomeSmartCloud-main.html" style="margin:0;color: #023358;font-family:'Open Sans', Arial, sans-serif;font-size:14px;font-weight:400;line-height:1.3;padding:0;text-align:left;text-decoration:underline;">Click
+                                                    here</a> for view in browser</p>
+                                            </th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </th>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+                        <table class="row header-top" style="border-collapse:collapse;
+                               border-spacing:0;
+                               display:table;
+                               padding:0;
+                               position:relative;
+                               text-align:left;
+                               vertical-align:top;
+                               width:100%;max-width:800px;">
+                            <tbody>
+                            <tr style="padding:0;text-align:left;vertical-align:middle;">
+                                <th class="small-6 large-6 columns first" style="margin:0 auto;color:#5b6f8e;font-family:'Open Sans', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;text-align:left;width:100%;padding-left:20px;">
+                                    <table align="center" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%;" class="table-title">
+                                        <tbody>
+
+                                        <tr>
+                                            <td width="100%" height="40" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Segoe UI, sans-serif;font-size: 32px;padding-left:50px;padding-right:50px;color: #023358;text-align: center;line-height: 40px;font-weight: 500;" st-title="fulltext-title">
+                                                SmartCloud Connect for Salesforce brings Dropbox and other leading file-management solutions to Outlook and Gmail
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="100%" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table width="220" height="50" bgcolor="#37a148" align="center" valign="middle" border="0" cellpadding="0" cellspacing="0" style="border-radius:2px;" st-button="learnmore">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td height="15" align="center" style="font-size:1px; line-height:1px !important;">
+                                                            <a style="font-family: Segoe UI, sans-serif;display:block;font-weight: 700;	font-size: 14px;	line-height:15px;	text-align: center;text-decoration: none;color: #ffffff; text-align:center;" href="https://smartcloudconnect.io/smartcloud-dropbox-2018/">&nbsp;</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="15" align="center" valign="middle" style="font-family: Segoe UI, sans-serif;font-weight: 700;	font-size: 17px;	line-height: 20px;	text-align: center;text-decoration: none;color: #ffffff; text-align:center; -webkit-text-size-adjust:none;" st-title="fulltext-btn">
+                                                            <a style="font-family: Segoe UI, sans-serif;font-weight: 700;	font-size: 14px;display:block;	line-height: 20px;	text-align: center;text-decoration: none;color: #ffffff; text-align:center;" href="https://smartcloudconnect.io/smartcloud-dropbox-2018/">LEARN MORE</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="15" align="center" style="font-size:1px; line-height:1px !important;">
+                                                            <a style="font-family: Segoe UI, sans-serif;display:block;font-weight: 700;	font-size: 14px;	line-height:15px;	text-align: center;text-decoration: none;color: #ffffff; text-align:center;" href="https://smartcloudconnect.io/smartcloud-dropbox-2018/">&nbsp;</a>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </th>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+                    </td>
+                </tr>
+                <!--<tr>-->
+                <!--<td align="center">-->
+                <!--<a target="_blank" href="https://smartcloudconnect.io/smartcloud-dropbox-2018/">-->
+                <!--<img width="100%" height="270" border="0" alt="Dropbox slider image"-->
+                <!--style="display:block;max-width:580px!important;height: 270px border:none; outline:none; text-decoration:none;"-->
+                <!--src="https://smartcloudconnect.io/wp-content/uploads/13-layers-noheader.png"-->
+                <!--class="bigimage"></a>-->
+                <!--</td>-->
+                <!--</tr>-->
+
+                <tr>
+                    <td width="100%" height="40" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                        &nbsp;
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <table class="partners-icons" width="100%" cellpadding="10" style="width:100%;max-width:800px;">
+                            <tbody>
+                            <tr>
+                                <td class="alex-image" align="center" style="padding-left:25px;padding-right:5px;">
+                                    <img width="41%" border="0" alt="Smartcloud" style="display:block;max-width:100px;width:41%; border:none; outline:none; text-decoration:none;" src="https://smartcloudconnect.io/wp-content/uploads/vector-smart-object.png" class="bigimage">
+                                </td>
+
+                                <td align="center" style="padding-left:5px;padding-right: 15px;">
+                                    <img width="100%" border="0" alt="Dropbox" style="display:block;max-width:200px;width:100%; border:none; outline:none; text-decoration:none;" src="https://smartcloudconnect.io/wp-content/uploads/dropbox.png" class="bigimage">
+                                </td>
+
+                                <td align="center" style="padding-left:5px;padding-right:25px;">
+                                    <img width="100%" border="0" alt="Share Point" style="display:block;max-width:200px;width:100%; border:none; outline:none; text-decoration:none;" src="https://smartcloudconnect.io/wp-content/uploads/SharePoint.png" class="bigimage">
+                                </td>
+
+                            </tr>
+                            <!--<tr>-->
+                            <!--<td colspan="3" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;"></td>-->
+                            <!--</tr>-->
+                            <tr>
+                                <td align="center" style="padding-left:25px;padding-right: 11px;">
+                                    <img width="100%" border="0" alt="Spring CM" style="display:block;max-width:200px;width:100%; border:none; outline:none; text-decoration:none;" src="https://smartcloudconnect.io/wp-content/uploads/springcm-rgb.png" class="bigimage">
+                                </td>
+
+                                <td align="center" style="padding-left: 10px;padding-right:5px;">
+                                    <img width="100%" border="0" alt="Google Drive" style="display:block;max-width:200px;width:100%; border:none; outline:none; text-decoration:none;" src="https://smartcloudconnect.io/wp-content/uploads/Google-Drive.png" class="bigimage">
+                                </td>
+
+                                <td class="alex-image" align="center" style="padding-left:35px;padding-right:25px;">
+                                    <img width="48%" border="0" alt="Box" style="display:block;max-width:100px;width:45%; border:none; outline:none; text-decoration:none;" src="https://smartcloudconnect.io/wp-content/uploads/layer-3.png" class="bigimage">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td width="100%" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" height="1" bgcolor="#062972" style=" background:#dbdada;font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="650" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                            <tbody>
+
+                            <tr>
+                                <td style="font-family: Segoe UI, sans-serif; font-size: 24px; color: #023358; text-align:center;line-height: 35px;font-weight: 500;" st-title="fulltext-title">
+                                    SmartCloud Connect unites and simplifies all your
+                                    cloud storage, Salesforce, and Inbox-based workflow
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%" height="60" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <!--row1-->
+                            <tr>
+                                <td>
+
+
+                                    <!-- col 1 -->
+                                    <table width="48%" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                        <tbody>
+                                        <!-- image 2 -->
+                                        <tr>
+                                            <td width="87" height="86" align="center" class="devicewidth">
+                                                <img src="https://smartcloudconnect.io/wp-content/uploads/Снимок.jpg" alt="Salesforce" border="0" width="87" height="86" style="display:block; border:none; outline:none; text-decoration:none;" class="col3img">
+                                            </td>
+                                        </tr>
+                                        <!-- end of image2 -->
+                                        <tr>
+                                            <td>
+                                                <!-- start of text content table -->
+                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                    <tbody>
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+                                                    <!-- title2 -->
+                                                    <tr>
+                                                        <td style="
+                                                        font-family: Segoe UI, sans-serif;
+                                                        color: #055492;
+                                                        font-size: 17px;
+                                                        font-weight: 400;
+                                                        text-align:center;
+                                                        line-height: 24px;
+                                                        " st-title="3col-title1">
+                                                            Make sure all your files are in-line with your Salesforce
+                                                            records
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- end of content2 -->
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+
+
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- end of text content table -->
+                                        </tbody>
+                                    </table>
+                                    <!-- spacing -->
+
+                                    <!-- end of spacing -->
+
+                                    <!-- col 2 -->
+                                    <table width="48%" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                        <tbody>
+                                        <!-- image 2 -->
+                                        <tr>
+                                            <td width="105" height="86" align="center" class="devicewidth">
+                                                <img src="https://smartcloudconnect.io/wp-content/uploads/list2.png" alt="Mail" border="0" width="105" height="86" style="display:block; border:none; outline:none; text-decoration:none;" class="col3img">
+                                            </td>
+                                        </tr>
+                                        <!-- end of image2 -->
+                                        <tr>
+                                            <td>
+                                                <!-- start of text content table -->
+                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                    <tbody>
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+                                                    <!-- title2 -->
+                                                    <tr>
+                                                        <td style="
+                                                        font-family: Segoe UI, sans-serif;
+                                                        color: #055492;
+                                                        font-size: 17px;
+                                                        font-weight: 400;
+                                                        text-align:center;
+                                                        line-height: 24px;" st-title="3col-title2">
+                                                            Save time on attaching files while working in mailbox
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end of title2 -->
+
+
+                                                    <!-- content2 -->
+
+                                                    <!-- end of content2 -->
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- /Spacing -->
+                                                    <!-- button -->
+
+                                                    <!-- /button -->
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- end of text content table -->
+                                        </tbody>
+                                    </table>
+                                    <!-- end of col 2 -->
+
+
+                                </td>
+                                <!-- spacing -->
+                                <!-- end of spacing -->
+                            </tr>
+                            <!--row1 end-->
+
+                            <!--row2-->
+                            <tr>
+                                <td>
+
+
+                                    <!-- col 1 -->
+                                    <table width="48%" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                        <tbody>
+                                        <!-- image 2 -->
+                                        <tr>
+                                            <td width="87" height="86" align="center" class="devicewidth">
+                                                <img src="https://smartcloudconnect.io/wp-content/uploads/Vector-Smart-Object3.png" alt="List" border="0" width="87" height="86" style="display:block; border:none; outline:none; text-decoration:none;" class="col3img">
+                                            </td>
+                                        </tr>
+                                        <!-- end of image2 -->
+                                        <tr>
+                                            <td>
+                                                <!-- start of text content table -->
+                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                    <tbody>
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+                                                    <!-- title2 -->
+                                                    <tr>
+                                                        <td style="
+                                                        font-family: Segoe UI, sans-serif;
+                                                        color: #055492;
+                                                        font-size: 17px;
+                                                        font-weight: 400;
+                                                        text-align:center;
+                                                        line-height: 24px;
+                                                        " st-title="3col-title1">
+                                                            Add files to your prefered Salesforce records
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- end of content2 -->
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+
+
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- end of text content table -->
+                                        </tbody>
+                                    </table>
+                                    <!-- spacing -->
+
+                                    <!-- end of spacing -->
+
+                                    <!-- col 2 -->
+                                    <table width="48%" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                        <tbody>
+                                        <!-- image 2 -->
+                                        <tr>
+                                            <td width="96" height="86" align="center" class="devicewidth">
+                                                <img src="https://smartcloudconnect.io/wp-content/uploads/Vector-Smart-Object4.png" alt="Cloud" border="0" width="96" height="82" style="display:block; border:none; outline:none; text-decoration:none;" class="col3img">
+                                            </td>
+                                        </tr>
+                                        <!-- end of image2 -->
+                                        <tr>
+                                            <td>
+                                                <!-- start of text content table -->
+                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                    <tbody>
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+                                                    <!-- title2 -->
+                                                    <tr>
+                                                        <td style="
+                                                        font-family: Segoe UI, sans-serif;
+                                                        color: #055492;
+                                                        font-size: 17px;
+                                                        font-weight: 400;
+                                                        text-align:center;
+                                                        line-height: 24px;
+                                                        " st-title="3col-title2">
+                                                            Eliminate the desktop mess when downloading one-time files
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end of title2 -->
+
+
+                                                    <!-- content2 -->
+
+                                                    <!-- end of content2 -->
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- /Spacing -->
+                                                    <!-- button -->
+
+                                                    <!-- /button -->
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- end of text content table -->
+                                        </tbody>
+                                    </table>
+                                    <!-- end of col 2 -->
+
+
+                                </td>
+                                <!-- spacing -->
+                                <!-- end of spacing -->
+                            </tr>
+                            <!--row2 end-->
+
+                            <!--row3-->
+                            <tr>
+                                <td>
+
+
+                                    <!-- col 1 -->
+                                    <table width="48%" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                        <tbody>
+                                        <!-- image 2 -->
+                                        <tr>
+                                            <td width="89" height="86" align="center" class="devicewidth">
+                                                <img src="https://smartcloudconnect.io/wp-content/uploads/Vector-Smart-Object5.png" alt="List Generate" border="0" width="89" height="86" style="display:block; border:none; outline:none; text-decoration:none;" class="col3img">
+                                            </td>
+                                        </tr>
+                                        <!-- end of image2 -->
+                                        <tr>
+                                            <td>
+                                                <!-- start of text content table -->
+                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                    <tbody>
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+                                                    <!-- title2 -->
+                                                    <tr>
+                                                        <td style="
+                                                        font-family: Segoe UI, sans-serif;
+                                                        color: #055492;
+                                                        font-size: 17px;
+                                                        font-weight: 400;
+                                                        text-align:center;
+                                                        line-height: 24px;
+                                                        " st-title="3col-title1">
+                                                            Generate a shareable link for your documents and
+                                                            spreadsheets
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- end of content2 -->
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+
+
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- end of text content table -->
+                                        </tbody>
+                                    </table>
+                                    <!-- spacing -->
+
+                                    <!-- end of spacing -->
+
+                                    <!-- col 2 -->
+                                    <table width="48%" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                        <tbody>
+                                        <!-- image 2 -->
+                                        <tr>
+                                            <td width="96" height="86" align="center" class="devicewidth">
+                                                <img src="https://smartcloudconnect.io/wp-content/uploads/Vector-Smart-Object6.png" alt="List Reminders" border="0" width="96" height="86" style="display:block; border:none; outline:none; text-decoration:none;" class="col3img">
+                                            </td>
+                                        </tr>
+                                        <!-- end of image2 -->
+                                        <tr>
+                                            <td>
+                                                <!-- start of text content table -->
+                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                    <tbody>
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+                                                    <!-- title2 -->
+                                                    <tr>
+                                                        <td style="
+                                                        font-family: Segoe UI, sans-serif;
+                                                        color: #055492;
+                                                        font-size: 17px;
+                                                        font-weight: 400;
+                                                        text-align:center;
+                                                        line-height: 24px;
+                                                        " st-title="3col-title2">
+                                                            Set reminders on each file-based workflow
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end of title2 -->
+
+
+                                                    <!-- content2 -->
+
+                                                    <!-- end of content2 -->
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- /Spacing -->
+                                                    <!-- button -->
+
+                                                    <!-- /button -->
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- end of text content table -->
+                                        </tbody>
+                                    </table>
+                                    <!-- end of col 2 -->
+
+
+                                </td>
+                                <!-- spacing -->
+                                <!-- end of spacing -->
+                            </tr>
+                            <!--row3 end-->
+                            <!--row4-->
+                            <tr>
+                                <td>
+
+
+                                    <!-- col 1 -->
+                                    <table width="48%" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                        <tbody>
+                                        <!-- image 2 -->
+                                        <tr>
+                                            <td width="98" height="86" align="center" class="devicewidth">
+                                                <img src="https://smartcloudconnect.io/wp-content/uploads/Vector-Smart-Object7.png" alt="Folder" border="0" width="98" height="85" style="display:block; border:none; outline:none; text-decoration:none;" class="col3img">
+                                            </td>
+                                        </tr>
+                                        <!-- end of image2 -->
+                                        <tr>
+                                            <td>
+                                                <!-- start of text content table -->
+                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                    <tbody>
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+                                                    <!-- title2 -->
+                                                    <tr>
+                                                        <td style="
+                                                        font-family: Segoe UI, sans-serif;
+                                                        color: #055492;
+                                                        font-size: 17px;
+                                                        font-weight: 400;
+                                                        text-align:center;
+                                                        line-height: 24px;
+                                                        " st-title="3col-title1">
+                                                            Have all latest versions of your files within a 1-click
+                                                            reach
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- end of content2 -->
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+
+
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- end of text content table -->
+                                        </tbody>
+                                    </table>
+                                    <!-- spacing -->
+
+                                    <!-- end of spacing -->
+
+                                    <!-- col 2 -->
+                                    <table width="48%" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">
+                                        <tbody>
+                                        <!-- image 2 -->
+                                        <tr>
+                                            <td width="77" height="86" align="center" class="devicewidth">
+                                                <img src="https://smartcloudconnect.io/wp-content/uploads/Vector-Smart-Object8.png" alt="Cloud Connect" border="0" width="77" height="86" style="display:block; border:none; outline:none; text-decoration:none;" class="col3img">
+                                            </td>
+                                        </tr>
+                                        <!-- end of image2 -->
+                                        <tr>
+                                            <td>
+                                                <!-- start of text content table -->
+                                                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">
+                                                    <tbody>
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+                                                    <!-- title2 -->
+                                                    <tr>
+                                                        <td style="
+                                                        font-family: Segoe UI, sans-serif;
+                                                        color: #055492;
+                                                        font-size: 17px;
+                                                        font-weight: 400;
+                                                        text-align:center;
+                                                        line-height: 24px;
+                                                        " st-title="3col-title2">
+                                                            Connect with Salesforce, any other CRM, or use no CRM at all
+                                                        </td>
+                                                    </tr>
+                                                    <!-- end of title2 -->
+
+
+                                                    <!-- content2 -->
+
+                                                    <!-- end of content2 -->
+                                                    <!-- Spacing -->
+                                                    <tr>
+                                                        <td width="100%" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <!-- /Spacing -->
+                                                    <!-- button -->
+
+                                                    <!-- /button -->
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- end of text content table -->
+                                        </tbody>
+                                    </table>
+                                    <!-- end of col 2 -->
+
+
+                                </td>
+                                <!-- spacing -->
+                                <!-- end of spacing -->
+                            </tr>
+                            <!--row4 end-->
+
+                            <!--button-->
+                            <tr>
+                                <td>
+                                    <table width="220" height="50" bgcolor="#37a148" align="center" valign="middle" border="0" cellpadding="0" cellspacing="0" style="border-radius:2px;" st-button="learnmore">
+                                        <tbody>
+                                        <tr>
+                                            <td height="15" align="center" style="font-size:1px; line-height:1px;">
+
+                                                <a style="font-family: Segoe UI, sans-serif;display:block;font-weight: 700;	font-size: 14px;	line-height:15px;	text-align: center;text-decoration: none;color: #ffffff; text-align:center;" href="https://smartcloudconnect.io/smartcloud-dropbox-2018/">&nbsp;</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="15" align="center" valign="middle" style="font-family: Segoe UI, sans-serif;font-weight: 700;	font-size: 17px;	line-height: 20px;	text-align: center;text-decoration: none;color: #ffffff; text-align:center; -webkit-text-size-adjust:none;" st-title="fulltext-btn">
+                                                <a style="font-family: Segoe UI, sans-serif;display:block;font-weight: 700;	font-size: 14px;	line-height: 20px;	text-align: center;text-decoration: none;color: #ffffff; text-align:center;" href="https://smartcloudconnect.io/smartcloud-dropbox-2018/">LEARN MORE</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="15" align="center" style="font-size:1px; line-height:1px;">
+                                                <a style="font-family: Segoe UI, sans-serif;display:block;font-weight: 700;	font-size: 14px;	line-height:15px;	text-align: center;text-decoration: none;color: #ffffff; text-align:center;" href="https://smartcloudconnect.io/smartcloud-dropbox-2018/">&nbsp;</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!--button end-->
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" height="60"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%" align="center" class="container container-body-bottom" style="margin:0 auto;background:#fff;border-collapse:collapse;border-spacing:0;padding:0;text-align:inherit;vertical-align:top;width:100%;max-width:800px">
+                            <tbody>
+                            <tr style="padding:0;text-align:left;vertical-align:top;">
+                                <td style="-webkit-hyphens:auto;margin:0;border-collapse:collapse !important;color:#070303;font-family:'Segoe UI', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;">
+                                    <table class="wrapper footer" align="center" style="background:#062972;border-collapse:collapse;border-spacing:0;min-height:110px;padding:0;text-align:left;vertical-align:top;width:100%;">
+                                        <tbody>
+                                        <tr style="padding:0;text-align:left;vertical-align:top;">
+                                            <td class="wrapper-inner" style="-webkit-hyphens:auto;margin:0;border-collapse:collapse !important;color:#070303;font-family:'Segoe UI', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;">
+                                                <table class="row" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%;">
+                                                    <tbody>
+                                                    <tr style="padding:0;text-align:left;vertical-align:top;">
+                                                        <th class="small-6 large-6 columns first" style="margin:0 auto;color:#070303;font-family:'Segoe UI', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;padding-bottom:16px;padding-left:20px;padding-right:10px;text-align:left;width:50%;">
+                                                            <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%;">
+                                                                <tbody>
+                                                                <tr style="padding:0;text-align:left;vertical-align:top;">
+                                                                    <th style="margin:0;color:#070303;font-family:'Segoe UI', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;text-align:left;">
+                                                                        <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%;">
+                                                                            <tbody>
+                                                                            <tr style="padding:0;text-align:left;vertical-align:top;">
+                                                                                <td height="22" style="-webkit-hyphens:auto;margin:0;border-collapse:collapse !important;color:#070303;font-family:'Segoe UI', Arial, sans-serif;font-size:22px;font-weight:400;line-height:22px;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;">
+                                                                                    &nbsp;
+                                                                                </td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p style="margin:0;margin-bottom:3px;color:#fff;font-family:'Segoe UI', Arial, sans-serif;font-size:14px;font-weight:300;line-height:1.3;padding:0;text-align:left;">
+                                                                            <a href="https://smartcloudconnect.io" style="margin:0;color:#fff;font-family:'Segoe UI', Arial, sans-serif;font-size:14px;font-weight:300;line-height:1.3;margin-bottom:3px;padding:0;text-align:left;text-decoration:none;">smartcloudconnect.io</a>
+                                                                        </p>
+                                                                    </th>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </th>
+                                                        <th class="small-6 large-6 columns last" style="margin:0 auto;color:#070303;font-family:'Segoe UI', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;padding-bottom:16px;padding-left:10px;padding-right:20px;text-align:left;width:50%;">
+                                                            <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%;">
+                                                                <tbody>
+                                                                <tr style="padding:0;text-align:left;vertical-align:top;">
+                                                                    <th style="margin:0;color:#070303;font-family:'Segoe UI', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.3;padding:0;text-align:left;">
+                                                                        <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%;">
+                                                                            <tbody>
+                                                                            <tr style="padding:0;text-align:left;vertical-align:top;">
+                                                                                <td height="30" style="-webkit-hyphens:auto;margin:0;border-collapse:collapse !important;color:#070303;font-family:'Segoe UI', Arial, sans-serif;font-size:15px;font-weight:400;line-height:15px;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;">
+                                                                                    &nbsp;
+                                                                                </td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="socials" style="margin:0;margin-bottom:3px;color:#fff;font-family:'Segoe UI', Arial, sans-serif;font-size:14px;font-weight:300;line-height:1.3;padding:0;text-align:right;">
+                                                                            <a href="https://www.facebook.com/InvisibleSolutions" style="margin:0;color:#fff;display:inline-block;font-family:'Segoe UI', Arial, sans-serif;font-size:14px;font-weight:300;line-height:1.3;margin-bottom:3px;padding:0;text-align:center;text-decoration:none;"><img src="http://newsletters.invisible.io/wp-content/uploads/2017/02/soc-fb-1.png" alt="Facebook" width="36" border="0" style="-ms-interpolation-mode:bicubic;border:none;clear:both;color:#fff;display:inline-block;font-family:'Segoe UI',Arial,sans-serif;font-size:14px;max-width:100%;outline:0;text-decoration:none;width:auto;z-index:2"></a><a href="https://twitter.com/Invis_Solutions" style="margin:0;color:#fff;display:inline-block;font-family:'Segoe UI', Arial, sans-serif;font-size:14px;font-weight:300;line-height:1.3;margin-bottom:3px;padding:0;text-align:center;text-decoration:none;"><img src="http://newsletters.invisible.io/wp-content/uploads/2017/02/soc-tw-1.png" alt="Twitter" width="36" border="0" style="-ms-interpolation-mode:bicubic;border:none;clear:both;color:#fff;display:inline-block;font-family:'Segoe UI',Arial,sans-serif;font-size:14px;max-width:100%;outline:0;text-decoration:none;width:auto;z-index:2"></a><a href="https://www.linkedin.com/company/smartcloud-connect" style="margin:0;color:#fff;display:inline-block;font-family:'Segoe UI', Arial, sans-serif;font-size:14px;font-weight:300;line-height:1.3;margin-bottom:3px;padding:0;text-align:center;text-decoration:none;"><img src="http://newsletters.invisible.io/wp-content/uploads/2017/02/soc-in-1.png" alt="LinkedIn" width="36" border="0" style="-ms-interpolation-mode:bicubic;border:none;clear:both;color:#fff;display:inline-block;font-family:'Segoe UI',Arial,sans-serif;font-size:14px;max-width:100%;outline:0;text-decoration:none;width:auto;z-index:2"></a>
+                                                                        </p>
+                                                                    </th>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </th>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+
+</body></html>

@@ -1,0 +1,25 @@
+.last-img-block {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  .sub-title {
+    margin-top: 90px;
+  }
+  .img-container {
+    @media(min-width:1200px) {
+      position: absolute;
+      left: -15px;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  .img-block {
+    img {
+      max-width: 100%;
+      @media(max-width:1199px) {
+        margin-left: -15px;
+        max-width: calc(100% + 30px);
+      }
+    }
+  }
+}

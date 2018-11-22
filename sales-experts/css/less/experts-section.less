@@ -1,0 +1,382 @@
+.experts-section {
+  margin-bottom: 200px;
+  background-color: @color-1;
+  margin-top: -10px;
+  position: relative;
+  padding-top: 50px;
+  @media(max-width:991px) {
+    margin-bottom: 75px;
+    padding-top: 10px;
+  }
+  .sub-title-i {
+    color: #073a84;
+    font-size: 38px;
+    line-height: 45px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 700;
+   @media(max-width:991px) {
+     margin-bottom: 50px;
+     font-size: 30px;
+     line-height: 41px;
+   }
+  }
+  .my-container {
+    max-width: 1500px;
+  }
+  .expert-block {
+    //transform: perspective(801px) rotateX(0deg) rotateY(-25deg) scaleX(0.8) scaleY(0.8);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: normal;
+    @media(max-width:991px) {
+      flex-direction: column;
+      align-items: flex-start;
+      background: #ccedfe;
+      margin-top: 0;
+      padding: 50px 0;
+      word-break: break-word;
+      margin: 0 -15px;
+      &:nth-child(even) {
+        background: #002763;
+      }
+    }
+
+    .name-expert {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      flex-basis: 30%;
+      z-index: 59;
+      max-width: 430px;
+      position: relative;
+      @media(max-width:991px) {
+        max-width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 30px;
+        margin-bottom: 30px;
+        .name-social-wrap {
+          margin-left: 15px;
+        }
+      }
+      .social-a {
+        margin-right: 15px;
+        display: inline-block;
+        i {
+          font-size: 24px;
+          color: #073a84;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      .name-text {
+        color: #073a84;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-top:0;
+        margin-bottom: 5px;
+        @media(min-width:992px) and (max-width:1199px) {
+          font-size: 25px;
+          margin-bottom: 0;
+          line-height: 30px;
+        }
+        @media(max-width:768px) {
+          font-size: 28px;
+          line-height: 28px;
+        }
+      }
+      img {
+        object-fit: contain;
+        max-width: unset;
+        //max-height: 100%;
+        //height: 100%;
+        width: 430px;
+        @media(max-width:991px) {
+          max-height: 200px;
+          width: auto;
+          max-width: 45%;
+        }
+        @media(max-width:768px) {
+          max-width:41%;
+        }
+        @media(min-width:992px) and (max-width:1199px) {
+            width: 320px;
+        }
+      }
+    }
+    .content-expert {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      padding: 0 30px;
+      background: #ccedfe;
+      z-index: 1;
+      flex-basis: 70%;
+      @media(max-width:991px) {
+        width: 100%;
+      }
+      .achievement-block {
+        .title-wrap {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: normal;
+          margin-bottom: 15px;
+          text-decoration: none;
+          .achievement-title {
+            color: #055492;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;
+            margin-top: 0;
+            margin-bottom: 0;
+            @media(min-width:992px) and (max-width:1199px) {
+              font-size: 22px;
+            }
+            @media(max-width:768px) {
+              font-size: 22px;
+            }
+          }
+          img {
+            margin-right: 15px;
+            width: 60px;
+            @media(min-width:992px) and (max-width:1200px) {
+             width: 40px;
+            }
+            @media(max-width:768px) {
+              width: 45px;
+            }
+          }
+        }
+        .texts {
+          color: @color-4;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          @media(min-width:992px) and (max-width:1199px) {
+            font-size: 14px!important;
+            line-height: 20px!important;
+            margin-bottom: 10px;
+          }
+          @media(max-width:768px) {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    &:nth-child(even) {
+      @media(max-width:991px) {
+        //align-items: flex-end;
+      }
+      .name-expert {
+        @media(max-width:991px) {
+          //max-width: 100%;
+          //flex-direction: row-reverse;
+          .name-social-wrap {
+            //margin-left: 0;
+            //margin-right: 15px;
+          }
+          img {
+            transform: scale(-1, 1);
+          }
+        }
+        .name-text {
+          color: @color-1;
+        }
+        .social-a {
+          i {
+            color: @color-1;
+          }
+        }
+      }
+      .content-expert {
+        background-color: #002763;
+        .achievement-block {
+          .title-wrap {
+            .achievement-title {
+              color: @color-1;
+            }
+          }
+          .texts {
+            color: @color-1;
+          }
+        }
+      }
+    }
+
+    //adapt
+    @media(min-width:992px) {
+      max-height: 500px;
+      max-width: 1300px;
+      margin-left: auto;
+      margin-top: 220px;
+      &:first-child {
+        margin-top: 160px;
+      }
+      @media(max-width:1199px) {
+        max-height: 370px;
+      }
+      .name-expert {
+        .name-social-wrap {
+          position: absolute;
+          bottom: 0;
+          left: 37%;
+        }
+        &:before {
+          content: '';
+          width: 50%;
+          height: 50%;
+          display: block;
+          position: absolute;
+          right: 0;
+          top:0;
+          background-color: #ccedfe;
+          z-index: -1;
+        }
+        &:after {
+          content: '';
+          width: 69%;
+          height: 50%;
+          display: block;
+          position: absolute;
+          right: 0;
+          background-color: #ccedfe;
+          bottom:0;
+          z-index: -1;
+        }
+      }
+      .content-expert {
+        @media(min-width:1300px) {
+          padding-left: 30px;
+          padding-right: 9%;
+        }
+        &:before {
+          content: "";
+          background-image: url(https://smartcloudconnect.io/wp-content/uploads/left_top_bg.png);
+          background-size: 100% 100%;
+          display: block;
+          height: 90px;
+          position: absolute;
+          top: -84px;
+          z-index: -1;
+
+          width: calc(100% - 161px);
+          left: 161px;
+          @media(min-width:1200px) {
+            width: calc(100% - 196px);
+            left: 196px;
+          }
+
+        }
+        &:after {
+          content: "";
+          background-image: url(https://smartcloudconnect.io/wp-content/uploads/left_bottom_bg.png);
+          background-size: 100% 100%;
+          display: block;
+          height: 90px;
+          position: absolute;
+          bottom: -88px;
+          z-index: -1;
+          width: 89%;
+          left: 11%;
+          @media(min-width:1200px) {
+            width: 89.3%;
+            left: 10.7%;
+          }
+        }
+      }
+
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        margin-right: auto;
+        margin-left: unset;
+        .name-expert {
+          .name-social-wrap {
+            right: 37%;
+            text-align: right;
+            left: unset;
+          }
+          &:before,&:after {
+            right: unset;
+            left:0;
+            background-color: #002763;
+          }
+          &:after {
+            width: 67%;
+          }
+        }
+        .content-expert {
+          @media(min-width:1300px) {
+            padding-left: 9%;
+            padding-right: 30px;
+          }
+          &:before {
+            background-image: url(https://smartcloudconnect.io/wp-content/uploads/right_top_bg.png);
+            //left: 0;
+            width: calc(100% - 161px);
+            right: 161px;
+            left: unset;
+            @media(min-width:1200px) {
+              width: calc(100% - 196px);
+              right: 196px;
+              left: unset;
+            }
+          }
+          &:after {
+            background-image: url(https://smartcloudconnect.io/wp-content/uploads/right_bottom_bg.png);
+            left: 0;
+            width: 89%;
+            @media(min-width:1200px) {
+              width: 89.3%;
+            }
+          }
+        }
+      }
+      &.big-md {
+        .content-expert{
+          .achievement-block .texts {
+            line-height: 22px;
+          }
+          &:before {
+            height: 139px;
+            top: -132px;
+          }
+          &:after {
+            height: 139px;
+            bottom: -136px;
+          }
+        }
+      }
+      &.large-md {
+        .content-expert{
+          .achievement-block .texts {
+            font-size: 14px;
+            line-height: 22px;
+          }
+          &:before {
+            height: 221px;
+            top: -211px;
+          }
+          &:after {
+            height: 200px;
+            bottom: -195px;
+          }
+        }
+      }
+    }
+
+
+
+  }
+}

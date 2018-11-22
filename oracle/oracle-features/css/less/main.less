@@ -1,0 +1,172 @@
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+//@import url('https://fonts.googleapis.com/css?family=Cabin:700');
+
+//@font-face {
+//  font-family: 'Aktiv Grotesk';
+  //src: url(https://invisible.io/wp-content/themes/invisible/assets/font/SF-UI-Display-Bold.ttf);
+  //src: url("https://smartcloudconnect.io/wp-content/themes/smartcloud/assets/fonts/Berthold_Akzidenz_Grotesk_Regular.otf");
+  //font-weight: normal;
+  //font-style: normal;
+//}
+
+@font-1: 'Cabin', sans-serif !important;
+@font-2: 'Aktiv Grotesk', sans-serif !important;
+
+
+@color-1: #ffffff;
+@color-2: #000000;
+@color-3: #c70901;
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/bg-line.png);
+  background-position-x: 50%;
+  background-repeat-x: no-repeat;
+}
+
+.modal .under-form-policy-texts {
+  color: rgba(60, 78, 98, 0.53)!important;
+}
+.fusion-modal .modal-title, .fusion-modal h3 {
+  color: #3c4e62;
+}
+#main {
+ .under-form-policy-texts {
+   color: #fff;
+   margin: 0!important;
+   margin-top: 15px!important;
+   margin-bottom: 3px!important;
+ }
+  @import "global";
+  @import "header";
+  @import "contact-us";
+  @import "footer";
+
+  @import "main-block";
+  @import "circle-block";
+  @import "add-ina-block";
+  @import "CRM-block";
+  @import "animate-block";
+  @import "last-img-block";
+
+  .sub-title {
+    color: #3c4e62;
+    font-family: @font-1;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+  .text {
+    color: #446a80;
+    font-family: @font-2;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+  .description {
+    color: #446a80;
+    font-family: @font-2;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 35px;
+    position: relative;
+    padding-left: 30px;
+    &:before {
+      content: "";
+      vertical-align: top;
+      position: absolute;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-image: url(https://smartcloudconnect.io/wp-content/uploads/circle-oracle.png);
+      background-size: 20px 20px;
+    }
+  }
+
+  .big-image-right {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: right}
+  .big-image-left {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: left}
+
+
+  .big-img {
+    max-width: 100%;
+    @media(min-width: 1350px) {
+      max-width: 118%!important;
+      img {
+        max-width: 118%!important;
+      }
+    }
+    @media (min-width: 1480px) {
+      max-width: 133%!important;
+      img {
+        max-width: 133%!important;
+      }
+    }
+    @media (min-width: 1580px) {
+      max-width: 140%!important;
+      img {
+        max-width: 140%!important;
+      }
+    }
+  }
+
+  .container {
+    overflow: visible;
+  }
+}
+@import "oracle-flow-forms";
+
+.gradient-background-wrap {
+  background: linear-gradient(-93deg, rgba(15, 37, 110, 1) 0%, rgba(255, 4, 1, 1) 100%);
+}
+#main .main-btn-oracle,.modal .wpcf7-form input[type="submit"].main-btn-oracle {
+  color: @color-1 !important;
+  font-family: @font-1 !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  line-height: 30px !important;
+  text-transform: uppercase !important;
+  padding: 10px 50px !important;
+  outline: none !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+  background-color: @color-3 !important;
+  display: inline-block !important;
+  border: 1px solid transparent !important;
+  transition: 0.3s all !important;
+  width: auto !important;
+  &:hover {
+    text-decoration: none !important;
+    color: @color-3 !important;
+    background-color: @color-1 !important;
+    border-color: @color-3 !important;
+  }
+}
+
+.slidesY {
+  animation-name: slidesY;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes slidesY {
+  0%   {transform: translateY(0);}
+  50%  {transform: translateY(-35px);}
+  100% {transform: translateY(0);}
+}

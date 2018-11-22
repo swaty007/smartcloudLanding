@@ -1,0 +1,89 @@
+.complex-meeting {
+  margin-top: 120px;
+  padding-bottom: 80px;
+
+  background: url(https://smartcloudconnect.io/wp-content/uploads/bg-selling-video-section.png);
+  background-size: 115% auto;
+  background-position: -64px 100%;
+  background-repeat: no-repeat;
+
+  .complex-anim-wrap {
+    text-align: center;
+    margin-top: 50px;
+    @media(max-width:991px) {
+      overflow-x: scroll;
+      &>.row {
+        width: 300%;
+        max-width: 1500px;
+        .col-xs-4 {
+          max-width: 500px;
+        }
+      }
+    }
+
+    .complex-anim {
+      transition: 0.8s all;
+      position: relative;
+      display: inline-block;
+      margin: 0 auto 40px;
+      opacity: .2;
+      img {
+        max-width:100%;
+      }
+      &.active {
+        opacity: 1 !important;
+      }
+      &#complex-anim-1 {
+        opacity: .6;
+        .click {
+          bottom: 1%;
+          right: 20%;
+        }
+      }
+      &#complex-anim-2 {
+        opacity: .4;
+        .click {
+          bottom: 1%;
+          right: 20%;
+        }
+      }
+
+      .img-screen {
+        box-shadow: 0 10px 43px rgba(32, 94, 171, 0.1);
+        max-width: 100%;
+      }
+      .img-message {
+        position: absolute;
+        left: 15.5%;
+        max-width: 77.7%;
+        display: none;
+        &.first {
+          top: 42.3%;
+        }
+        &.second {
+          top: 66%;
+        }
+      }
+      .click {
+        &.do {
+          animation: pulsate 0.6s linear;
+          animation-iteration-count: 1;
+        }
+        position: absolute;
+        opacity: 0.0;
+        border: 17px solid fade(#37a148,80);
+        border-radius: 50px;
+        display: inline-block;
+        text-align: center;
+        width: 20%;
+        .click-child {
+          width: 100%;
+          padding-top: 100%;
+          background-color: fade(#37a148,90);
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+}

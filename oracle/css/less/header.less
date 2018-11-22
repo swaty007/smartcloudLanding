@@ -1,0 +1,175 @@
+.header {
+  nav.navbar {
+    background-color: @color-1;
+    margin-bottom: 0;
+    border: none;
+    border-bottom: 1px solid fade(#d3d7e9,30%);
+    min-height: 40px;
+    border-radius: 0;
+    //@media (min-width: 768px) and (max-width: 991px) {
+    //  .navbar-collapse.collapse {
+    //    display: none !important;
+    //  }
+    //  .navbar-collapse.collapse.in {
+    //    display: block !important;
+    //  }
+    //  .navbar-header .collapse, .navbar-toggle {
+    //    display:block !important;
+    //  }
+    //  .navbar-header {
+    //    float:none;
+    //  }
+    //  .navbar-nav {
+    //    float: none!important;
+    //    margin: 7.5px -15px;
+    //    &>li {
+    //      float: none;
+    //    }
+    //  }
+    //}
+    .navbar-container {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    //@media (min-width: 991px) {
+    @media (min-width: 768px) {
+      .navbar-collapse {
+        line-height: 0;
+      }
+      .navbar-nav {
+        display: inline-block;
+        &:first-child {
+          float:none;
+        }
+      }
+    }
+    .navbar-brand {
+      height: auto;
+      outline: none;
+      padding: 0;
+      overflow: hidden;
+      max-height: 70px;
+      &:hover {
+        opacity: 0.8;
+      }
+      img {
+        max-height: 115px;
+        width: auto;
+        margin-top: -22px;
+      }
+    }
+    ul {
+      li {
+        line-height: 70px;
+        a {
+          //@media (min-width:992px) and (max-width:1200px) {
+          //  padding: 20px 8px;
+          //}
+          color: #023358;
+          font-family: @font-1;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          transition: 0.3s all;
+          background-color: transparent;
+          padding-top: 25px;
+          padding-bottom: 25px;
+          text-transform: uppercase;
+          @media (max-width:767px) {
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+          &:hover {
+            background-color: transparent;
+            color: @color-3;
+          }
+          &.active {
+            color: @color-3;
+          }
+          &.invest-btn {
+            background-color: @color-3;
+            color: @color-1;
+            padding: 6px 20px;
+            border-radius: 4px;
+            vertical-align: middle;
+            display: inline-block;
+            box-shadow: 0 5px 14px rgba(249, 117, 115, 0.64);
+            border: 1px solid @color-3;
+            &:hover {
+              color: @color-3;
+              background-color: @color-1;
+            }
+          }
+        }
+        &.open {
+          a {
+            background-color: transparent;
+          }
+          table.table.dropdown-menu {
+            display: table;
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    #menu-btn {
+      //width: 24px;
+      //height: 18px;
+      width: 28px;
+      cursor: pointer;
+      text-decoration: none !important;
+      outline: none !important;
+      margin: 0;
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      &:not(.collapsed) {
+        span {
+          background-color:@color-3;
+          &#bar-1 {
+            top: 9px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+          &#bar-2 {
+            opacity: 0;
+          }
+          &#bar-3 {
+            top: 9px;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+          }
+        }
+      }
+      span {
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 4px;
+        background-color: @color-3;
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+        &#bar-1 {
+          top: 0;
+        }
+        &#bar-2 {
+          top: 7px;
+        }
+        &#bar-3 {
+          top: 14px;
+        }
+      }
+    }
+  }
+}

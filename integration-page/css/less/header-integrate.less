@@ -1,0 +1,106 @@
+.header-integrate {
+  background-color: #002552;
+  .title {
+    color: @color-1;
+    font-family: @font-1;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 53px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    text-align: center;
+  }
+.search-input {
+  background-color: #063266;
+  border-radius: 3px;
+  color: #a0d8f1;
+  font-family: @font-1;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  //margin-top: 10px;
+  padding: 10px 20px 10px 50px;
+  background-repeat: no-repeat;
+  background-position: 20px 50%;
+  background-size: auto 20px;
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/search_icon.svg);
+  margin-bottom: 15px;
+  max-width: 100%;
+  &::placeholder {
+    color: fade(#a0d8f1,60%);
+  }
+  @media(max-width:991px) {
+    width: 100%;
+  }
+}
+  .nav-tabs.nav-justified {
+    margin-bottom: 12px;
+    > li{
+      &>a{
+        border-top:0;
+        border-bottom:0;
+        border-left:0;
+        border-right: 1px solid transparent;
+        background-color: transparent;
+        border-radius:0;
+        color: @color-1;
+        font-family: @font-1;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        opacity: 1;
+        outline: none;
+        @media (min-width:1200px) {
+          white-space: nowrap;
+        }
+      }
+      &.active > a {
+        border-bottom: 0;
+        border-top:0;
+        border-left:0;
+        border-right: 1px solid transparent;
+        background-color: transparent;
+        color: @color-5;
+        font-family: @font-1;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        @media (max-width:991px) {
+          border-bottom:4px solid @color-5;
+        }
+      }
+    }
+    &:after {
+      //content: '';
+      content: none;
+      width: 100%;
+      height: 1px;
+      background: #e3eff8;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      @media (max-width:767px) {
+        content: none;
+      }
+    }
+  }
+  .tab-highlighter {
+    height: 3px;
+    width: 20%;
+    left: 15px;
+    margin-top: 0;
+    background: @color-5;
+    position: absolute;
+    -moz-transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+    -ms-transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+    -o-transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+    transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+    @media (max-width:991px) {
+      display:none;
+    }
+  }
+}

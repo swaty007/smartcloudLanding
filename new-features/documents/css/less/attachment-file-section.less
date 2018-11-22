@@ -1,0 +1,51 @@
+.attachment-file-section {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #f5f8fb;
+  .img-svg-link {
+    margin-top: 80px;
+  }
+
+  .attach-file-anim {
+    display: inline-block;
+    position: relative;
+    @media(max-width:991px) {
+      margin: 0 -5%;
+    }
+    .stage {
+      position: absolute;
+      right: 4.2%;
+      top: 49.1%;
+      max-width: 37%;
+      transition: 0.5s all;
+      &.one {
+
+      }
+      &.two {
+        top: 48.9%;
+        opacity: 0;
+      }
+    }
+    .attach-img {
+      position: absolute;
+      left: 11%;
+      top: 42.5%;
+      max-width: 32%;
+      opacity: 0;
+    }
+    .click {
+      &.one {
+        bottom: 42%;
+        right: 4%;
+      }
+      &.two {
+        bottom: 22%;
+        right: 11%;
+      }
+      &.three {
+        bottom: 2%;
+        right: 27%;
+      }
+    }
+  }
+}

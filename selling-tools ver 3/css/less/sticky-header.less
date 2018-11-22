@@ -1,0 +1,113 @@
+.container-sticky {
+  //@media(max-width:1080px) {
+  //  position: static;
+  //}
+  //@media(max-width:768px) {
+  //  margin-top: -150px;
+  //  display: none;
+  //}
+  //position: sticky;
+  //margin-top: -80px;
+  //top: 68px;
+  z-index: 590;
+  border-bottom: 1px solid #e3eff8;
+  &.sticked {
+    background-color: @color-1;
+    .nav-tabs.nav-justified.nav-highlighter {
+      > li {
+        &>a {
+          font-size: 17px;
+          padding: 4px 15px;
+          transition: 0.3s all;
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+.nav-tabs.nav-justified.nav-highlighter {
+  > li{
+    //display: table-cell;
+    //width: 1%;
+    &>a{
+      border-top:0;
+      border-bottom:0;
+      border-left:0;
+      border-right:1px solid transparent;
+      background-color: transparent;
+      border-radius:0;
+      color: @color-3;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      opacity: 1;
+      outline: none;
+      text-align: center;
+      @media(max-width:768px) {
+        padding: 5px 15px;
+        margin-bottom: 0;
+      }
+      @media(min-width:1200px) {
+        white-space: nowrap;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+      }
+
+    }
+    &.active > a {
+      border-bottom: 0;
+      border-top:0;
+      border-left:0;
+      border-right:1px solid transparent;
+      background-color: transparent;
+      color: @color-5;
+      font-size: 18px;
+      line-height: 22px;
+      @media(max-width:991px) {
+        border-bottom:4px solid @color-5;
+      }
+    }
+  }
+  &:after {
+    //content: '';
+    //width: 100%;
+    //height: 1px;
+    //background: #e3eff8;
+    //position: absolute;
+    //bottom: -2px;
+    //left: 0;
+    //right: 0;
+    //@media (max-width:767px) {
+    //  content: none;
+    //}
+  }
+}
+
+.tab-highlighter {
+  height: 3px;
+  width: 13%;
+  left: 15px;
+  margin-top: 0;
+  background: @color-5;
+  position: absolute;
+  -moz-transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+  -ms-transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+  -o-transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+  transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+  @media(max-width:991px) {
+    display:none;
+  }
+}

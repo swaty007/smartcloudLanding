@@ -1,0 +1,478 @@
+<style>
+    .wpcf7-form > *:last-child, .wpcf7-form > *:nth-last-child(2) {
+        position: absolute;
+        right: 34px;
+        left: 34px;
+        bottom: 55px;
+        width: calc(100% - 68px) !important;
+        margin: 0;
+    }
+
+    div.wpcf7 .ajax-loader {
+        /*display: none;*/
+    }
+
+    .newa-wizard-main-bg {
+        background-image: url(https://smartcloudconnect.io/wp-content/uploads/2-layers-min-1.png);
+        background-size: cover;
+    }
+
+    .fusion-body .wpcf7-form .fusion-slider-loading {
+        display: none !important;
+    }
+
+    #button1p1.newa-wizard-ms-right-buttonheadingsp1 {
+        margin-top: 0 !important;
+    }
+
+    .wpcf7-form .wpcf7-text:disabled {
+        background-color: #EBEBE4;
+        opacity: 0.6;
+        filter: grayscale(50%);
+    }
+
+    .wpcf7-form input[type="submit"].wizard-form-button:disabled {
+        opacity: 0.6;
+        filter: grayscale(100%);
+        background: #37a148 !important;
+        color: #fff !important;
+    }
+
+    .wpcf7-form > p {
+        margin-bottom: 10px;
+    }
+
+    .newa-wizard-ms-right-button {
+        margin-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .newa-wizard-ms-right-button:before {
+        content: url(https://smartcloudconnect.io/wp-content/uploads/ic_checkbox0.svg);
+        display: block;
+        float: left;
+        height: 20px;
+        width: 20px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .newa-wizard-ms-right-button.checked-product {
+        border: 1px solid #055492;
+    }
+
+    .newa-wizard-ms-right-button.checked-product:before {
+        content: url(https://smartcloudconnect.io/wp-content/uploads/tick.svg);
+    }
+
+    .alex-js-radio {
+        display: none;
+    }
+
+    @media (max-width: 480px) {
+        .newa-wizard-ms-form-new {
+            width: 100%;
+        }
+
+        .newa-wizard-ms-right-buttonheadings {
+            width: calc(100% - 70px);
+        }
+
+        .newa-wizard-ms-right-button {
+            width: 100%;
+        }
+    }
+</style>
+
+
+<div class="row new-wizard-widndows-on">
+
+    <div class="newa-wizard-ms-form-new">
+        [contact-form-7 id="6369" title="Request a demo (name,email,phone,company)_wizard"]
+
+        <a class="newa-wizard-ms-right-button" onclick="selectProduct(this,1);" id="button1">
+            <div class="newa-wizard-ms-right-buttonimg">
+                <img src="/wp-content/uploads/office365_g.png" alt="Enable for Office 365" id="img1_grey">
+                <img src="/wp-content/uploads/office365.png" alt="Enable for Office 365" class="hidden" id="img1">
+            </div>
+
+            <div class="newa-wizard-ms-right-buttonheadings">
+                <p class="newa-wizard-ms-right-buttonheadingsp1" id="button1p1">Office 365</p>
+                <!--<p class="newa-wizard-ms-right-buttonheadingsp2" id="button1p2">Also supports Outlook for Mac/Outlook for IOS</p>-->
+            </div>
+        </a>
+
+        <a class="newa-wizard-ms-right-button" onclick="selectProduct(this,2);" id="button2">
+            <div class="newa-wizard-ms-right-buttonimg">
+                <img src="/wp-content/uploads/outlook_g.png" alt="Download for Outlook" id="img2_grey">
+                <img src="/wp-content/uploads/outlook.png" alt="Download for Outlook" class="hidden" id="img2">
+            </div>
+
+            <div class="newa-wizard-ms-right-buttonheadings">
+                <p class="newa-wizard-ms-right-buttonheadingsp1" id="button2p1">Outlook</p>
+                <p class="newa-wizard-ms-right-buttonheadingsp2" id="button2p2">Supports all Outlook and Exchange
+                    versions</p>
+            </div>
+        </a>
+
+        <a class="newa-wizard-ms-right-button" onclick="selectProduct(this,3);" id="button3">
+            <div class="newa-wizard-ms-right-buttonimg newa-wizard-ms-right-buttonimg-paddgmail">
+                <img src="/wp-content/uploads/gmal_g.png" alt="Install Now for Gmail" id="img3_grey">
+                <img src="/wp-content/uploads/gmail.png" alt="Install Now for Gmail" class="hidden" id="img3">
+            </div>
+
+            <div class="newa-wizard-ms-right-buttonheadings">
+                <p class="newa-wizard-ms-right-buttonheadingsp1" id="button3p1">Gmail</p>
+                <p class="newa-wizard-ms-right-buttonheadingsp2" id="button3p2">Extension for Chrome</p>
+            </div>
+        </a>
+        <script type="text/javascript">
+            (function () {
+                link_chrome_in = document.createElement('link');
+                link_chrome_in.href = 'https://chrome.google.com/webstore/detail/agfekjndkedoakoeahndfnjilkifbicn';
+                link_chrome_in.rel = 'chrome-webstore-item';
+                document.getElementsByTagName('head')[0].appendChild(link_chrome_in);
+            })();
+        </script>
+
+
+        <a class="newa-wizard-ms-right-button" onclick="selectProduct(this,6);" id="button4">
+            <div class="newa-wizard-ms-right-buttonimg newa-wizard-ms-right-buttonimg-paddinfo">
+                <img src="/wp-content/uploads/notsuer_g.png" alt="Enable for Office 365" id="img4_grey">
+                <img src="/wp-content/uploads/notsuer.png" alt="Enable for Office 365" class="hidden" id="img4">
+            </div>
+
+            <div class="newa-wizard-ms-right-buttonheadings">
+                <p class="newa-wizard-ms-right-buttonheadingsp1" id="button4p1">I’m not sure...</p>
+                <p class="newa-wizard-ms-right-buttonheadingsp2" id="button4p2">We'll help you to identify proper configuration</p>
+            </div>
+        </a>
+
+
+        <p class="formtextafter-new">no credit card required</p>
+
+    </div>
+
+    <div class="newa-wizard-ms-success" id="ty">
+        <img src="/wp-content/uploads/success.png" class="newa-wizard-ms-success-img">
+        <p class="newa-wizard-ms-success-p1">Thank You</p>
+        <p class="newa-wizard-ms-success-p2">The form was submitted successfully.</p>
+    </div>
+
+</div>
+<!--windows end-->
+<div class="row new-wizard-macos-off">
+
+    <!-- LEFT SIDE -->
+    <div class="col-md-12">
+
+        <div class="newa-wizard-ms-form-new">
+            [contact-form-7 id="6369" title="Request a demo (name,email,phone,company)_wizard"]
+
+
+            <a class="newa-wizard-ms-right-button" onclick="selectProduct(this,4);" id="button1mac">
+                <div class="newa-wizard-ms-right-buttonimg">
+                    <img style="margin-top:  -10px;" src="/wp-content/uploads/officeoutlook_g.png"
+                         alt="Enable for Office 365 / Outlook" id="img1mac_grey">
+                    <img style="margin-top:  -10px;" src="/wp-content/uploads/officeoutlook.png"
+                         alt="Enable for Office 365 / Outlook" class="hidden" id="img1mac">
+                </div>
+
+                <div class="newa-wizard-ms-right-buttonheadings">
+                    <p class="newa-wizard-ms-right-buttonheadingsp1" id="button1p1mac">Office 365/Outlook</p>
+                    <p class="newa-wizard-ms-right-buttonheadingsp2" id="button1p2mac">Supports all Outlook and Exchange
+                        versions</p>
+                </div>
+            </a>
+
+            <a class="newa-wizard-ms-right-button" onclick="selectProduct(this,5);" id="button2mac">
+                <div class="newa-wizard-ms-right-buttonimg newa-wizard-ms-right-buttonimg-paddgmail">
+                    <img src="/wp-content/uploads/gmal_g.png" alt="Install Now for Gmail" id="img2mac_grey">
+                    <img src="/wp-content/uploads/gmail.png" alt="Install Now for Gmail" class="hidden" id="img2mac">
+                </div>
+
+                <div class="newa-wizard-ms-right-buttonheadings ">
+                    <p class="newa-wizard-ms-right-buttonheadingsp1" id="button2p1mac">Gmail</p>
+                    <p class="newa-wizard-ms-right-buttonheadingsp2" id="button2p2mac">Extension for Chrome</p>
+                </div>
+            </a>
+
+            <a class="newa-wizard-ms-right-button" onclick="selectProduct(this,7);" id="button3mac">
+                <div class="newa-wizard-ms-right-buttonimg newa-wizard-ms-right-buttonimg-paddinfo" >
+                    <img src="/wp-content/uploads/notsuer_g.png" alt="Enable for Office 365" id="img3mac_grey">
+                    <img src="/wp-content/uploads/notsuer.png" alt="Enable for Office 365" class="hidden" id="img3mac">
+                </div>
+
+                <div class="newa-wizard-ms-right-buttonheadings">
+                    <p class="newa-wizard-ms-right-buttonheadingsp1" id="button3p1mac">I’m not sure...</p>
+                    <p class="newa-wizard-ms-right-buttonheadingsp2" id="button3p2mac">We'll help you to identify proper configuration</p>
+                </div>
+
+            </a>
+
+            <p class="formtextafter-new">no credit card required</p>
+
+
+        </div>
+    </div>
+
+
+</div>
+<!--mac end-->
+
+
+<input class="alex-js-radio" id="win-office-radio" value="1" type="radio" name="dva"/>
+<input class="alex-js-radio" id="win-outlook-radio" value="2" type="radio" name="dva"/>
+<input class="alex-js-radio" id="win-gmail-radio" value="3" type="radio" name="dva"/>
+<input class="alex-js-radio" id="mac-officeoutlook-radio" value="4" type="radio" name="dva"/>
+<input class="alex-js-radio" id="mac-gmail-radio" value="5" type="radio" name="dva"/>
+<input class="alex-js-radio" id="wizard2018-pc-notsure" value="6" type="radio" name="dva"/>
+<input class="alex-js-radio" id="wizard2018-mac-notsure" value="7" type="radio" name="dva"/>
+
+
+<script type="text/javascript">
+
+    jQuery.noConflict();
+    (function($) {
+        $(window).ready(function(){
+
+            if (navigator.appVersion.indexOf("Win")!=-1) {
+                $(".new-wizard-macos-off").css('display','none');
+            } else {
+                $(".new-wizard-macos-off").css('display','block');
+                $(".new-wizard-widndows-on").css('display','none');
+            }
+
+
+        });
+    })(jQuery);
+</script>
+
+
+
+<script type="text/javascript">
+    function selectProduct(_this, prod) {
+        jQuery.noConflict();
+        (function ($) {
+            $('.newa-wizard-ms-right-button').removeClass('checked-product');
+            switch (prod) {
+                case 1:
+                    $('#button1').addClass('checked-product');
+                    document.getElementById('win-office-radio').checked = true;
+                    break;
+                case 2:
+                    $('#button2').addClass('checked-product');
+                    document.getElementById('win-outlook-radio').checked = true;
+                    break;
+                case 3:
+                    $('#button3').addClass('checked-product');
+                    document.getElementById('win-gmail-radio').checked = true;
+                    break;
+                case 4:
+                    $('#button1mac').addClass('checked-product');
+                    document.getElementById('mac-officeoutlook-radio').checked = true;
+                    break;
+                case 5:
+                    $('#button2mac').addClass('checked-product');
+                    document.getElementById('mac-gmail-radio').checked = true;
+                    break;
+                case 6:
+                    $('#button4').addClass('checked-product');
+                    document.getElementById('wizard2018-pc-notsure').checked = true;
+                    break;
+                case 7:
+                    $('#button3mac').addClass('checked-product');
+                    document.getElementById('wizard2018-mac-notsure').checked = true;
+                    break;
+            }
+            $('input[type="submit"]').prop("disabled", false);
+        })(jQuery);
+    }
+
+
+    function getWizzardCookie() {
+        function get_cookie(cookie_name) {
+            var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
+            if (results)
+                return ( unescape(results[2]) );
+            else
+                return null;
+        }
+
+        var answer = JSON.parse(get_cookie('form6369'));
+        if (answer !== null) {
+            var name_inp = document.querySelectorAll('input[name="first_name"]');
+            var lastn_inp = document.querySelectorAll('input[name="last_name"]');
+            var email_inp = document.querySelectorAll('input[name="your-email"]');
+            var company_inp = document.querySelectorAll('input[name="company"]');
+            name_inp[0].value = answer.name;
+            name_inp[1].value = answer.name;
+            lastn_inp[0].value = answer.lastName;
+            lastn_inp[1].value = answer.lastName;
+            email_inp[0].value = answer.email;
+            email_inp[1].value = answer.email;
+            company_inp[0].value = answer.company;
+            company_inp[1].value = answer.company;
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        jQuery.noConflict();
+        (function ($) {
+            $('input[type="submit"]').prop("disabled", true);
+        })(jQuery);
+
+        CompleteFormWizard();
+        getWizzardCookie();
+    });
+
+
+    function CompleteFormWizard() {
+        jQuery.noConflict();
+        (function ($) {
+            $("#slider").addClass('newa-wizard-slider2');
+
+            $("#button1").addClass('newa-wizard-ms-right-buttonactivate');
+            $("#button2").addClass('newa-wizard-ms-right-buttonactivate');
+            $("#button3").addClass('newa-wizard-ms-right-buttonactivate');
+            $("#button4").addClass('newa-wizard-ms-right-buttonactivate');
+
+            $("#button1p1").addClass('newa-wizard-ms-right-p1activate');
+            $("#button1p2").addClass('newa-wizard-ms-right-p2activate');
+            $("#button2p1").addClass('newa-wizard-ms-right-p1activate');
+            $("#button2p2").addClass('newa-wizard-ms-right-p2activate');
+            $("#button3p1").addClass('newa-wizard-ms-right-p1activate');
+            $("#button3p2").addClass('newa-wizard-ms-right-p2activate');
+            $("#button4p1").addClass('newa-wizard-ms-right-p1activate');
+            $("#button4p2").addClass('newa-wizard-ms-right-p2activate');
+
+
+            $("#tymac").addClass('newa-wizard-ms-form-visible');
+            $("#header2mac").addClass('newa-wizard-ms-form-header2s');
+            $("#leftbgmac").addClass('newa-wizard-ms-left-white');
+            $("#leftformhidemac").addClass('newa-wizard-ms-leftformhide');
+
+            $("#rightbgmac").addClass('newa-wizard-color-right-active');
+            $("#button1mac").addClass('newa-wizard-ms-right-buttonactivate');
+            $("#button2mac").addClass('newa-wizard-ms-right-buttonactivate');
+            $("#button3mac").addClass('newa-wizard-ms-right-buttonactivate');
+
+            $("#button1p1mac").addClass('newa-wizard-ms-right-p1activate');
+            $("#button1p2mac").addClass('newa-wizard-ms-right-p2activate');
+            $("#button2p1mac").addClass('newa-wizard-ms-right-p1activate');
+            $("#button2p2mac").addClass('newa-wizard-ms-right-p2activate');
+            $("#button3p1mac").addClass('newa-wizard-ms-right-p1activate');
+            $("#button3p2mac").addClass('newa-wizard-ms-right-p2activate');
+
+
+            $("#img1").addClass('newa-wizard-ms-showimg');
+            $("#img2").addClass('newa-wizard-ms-showimg');
+            $("#img3").addClass('newa-wizard-ms-showimg');
+            $("#img4").addClass('newa-wizard-ms-showimg');
+
+            $("#img1mac").addClass('newa-wizard-ms-showimg');
+            $("#img2mac").addClass('newa-wizard-ms-showimg');
+            $("#img3mac").addClass('newa-wizard-ms-showimg');
+
+
+            $("#img1_grey").addClass('hidden');
+            $("#img2_grey").addClass('hidden');
+            $("#img3_grey").addClass('hidden');
+            $("#img4_grey").addClass('hidden');
+
+            $("#img1mac_grey").addClass('hidden');
+            $("#img2mac_grey").addClass('hidden');
+            $("#img3mac_grey").addClass('hidden');
+        })(jQuery);
+    }
+
+    document.addEventListener('wpcf7mailsent', function (event) {
+        jQuery.noConflict();
+        (function ($) {
+            $('input[type="submit"]').prop("disabled", true);
+
+            var product = $('.alex-js-radio:checked').val();
+            switch (Number(product)) {
+                case 1:
+                    ga('send', 'event', 'Download SCC', 'Download', 'wizard2018-pc-office365');
+                    document.location.href = "https://outlook.office365.com/owa/?path=/options/manageapps/action/installFromURL.slab&assetid=WA104379517&lc=en-US&pm=US&scope=3";
+//                    window.open(
+//                        'https://outlook.office365.com/owa/?path=/options/manageapps/action/installFromURL.slab&assetid=WA104379517&lc=en-US&pm=US&scope=3',
+//                        '_blank' // <- This is what makes it open in a new window.
+//                    );
+                    break;
+                case 2:
+                    ga('send', 'event', 'Download SCC', 'Download', 'wizard2018-pc-Outlook');
+                    document.location.href = "https://smartcloudconnect.io/download/SmartCloudConnectAddIn_x32-bit.msi";
+//                    window.open(
+//                        'https://smartcloudconnect.io/download/SmartCloudConnectAddIn_x32-bit.msi',
+//                        '_blank' // <- This is what makes it open in a new window.
+//                    );
+                    break;
+                case 3:
+//                    chrome.webstore.install();
+                    document.location.href = "https://chrome.google.com/webstore/detail/agfekjndkedoakoeahndfnjilkifbicn";
+//                    window.open(
+//                        'https://chrome.google.com/webstore/detail/agfekjndkedoakoeahndfnjilkifbicn',
+//                        '_blank' // <- This is what makes it open in a new window.
+//                    );
+                    ga('send', 'event', 'Download SCC', 'Download', 'wizard2018-pc-gmail');
+                    break;
+                case 4:
+                    ga('send', 'event', 'Download SCC', 'Download', 'wizard2018-mac-outlook-office365');
+                    document.location.href = "https://outlook.office365.com/owa/?path=/options/manageapps/action/installFromURL.slab&assetid=WA104379517&lc=en-US&pm=US&scope=3";
+//                    window.open(
+//                        'https://outlook.office365.com/owa/?path=/options/manageapps/action/installFromURL.slab&assetid=WA104379517&lc=en-US&pm=US&scope=3',
+//                        '_blank' // <- This is what makes it open in a new window.
+//                    );
+                    break;
+                case 5:
+//                    chrome.webstore.install();
+                    document.location.href = "https://chrome.google.com/webstore/detail/agfekjndkedoakoeahndfnjilkifbicn";
+//                    window.open(
+//                        'https://chrome.google.com/webstore/detail/agfekjndkedoakoeahndfnjilkifbicn',
+//                        '_blank' // <- This is what makes it open in a new window.
+//                    );
+                    ga('send', 'event', 'Download SCC', 'Download', 'wizard2018-mac-gmail');
+                    break;
+                case 6:
+                    Tawk_API.toggle();
+                    ga('send', 'event', 'Download SCC', 'Download', 'wizard2018-pc-notsure');
+                    break;
+                case 7:
+                    Tawk_API.toggle();
+                    ga('send', 'event', 'Download SCC', 'Download', 'wizard2018-mac-notsure');
+                    break;
+            }
+        })(jQuery);
+
+        var name_inp = document.querySelectorAll('input[name$="first_name"]');
+        var lastn_inp = document.querySelectorAll('input[name$="last_name"]');
+        var email_inp = document.querySelectorAll('input[name$="your-email"]');
+        var company_inp = document.querySelectorAll('input[name$="company"]');
+
+        var name = (name_inp[0].value != '') ? name_inp[0].value : name_inp[1].value;
+        var last_name = (lastn_inp[0].value != '') ? lastn_inp[0].value : lastn_inp[1].value;
+        var email = (email_inp[0].value != '') ? email_inp[0].value : email_inp[1].value;
+        var company = (company_inp[0].value != '') ? company_inp[0].value : company_inp[1].value;
+
+        var info = {
+            name: name,
+            lastName: last_name,
+            email: email,
+            company: company,
+        };
+        var form = JSON.stringify(info);
+
+        var d = new Date();
+        var exdays = 180;
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = "form6369=" + form + ";" + expires + ";domain=smartcloudconnect.io;path=/;";
+
+
+        setTimeout(getWizzardCookie(), 2000);
+
+    }, false);
+</script>

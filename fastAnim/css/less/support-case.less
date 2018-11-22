@@ -1,0 +1,193 @@
+.support-case {
+overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .support-anim {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 8%;
+    @media(max-width:991px) {
+      margin: 0 -5%;
+    }
+    .img-modal {
+      right: 2.5%;
+      max-width: 39%;
+      top: 11%;
+      .m1_h1 {
+        position: absolute;
+        left: 8%;
+        top: 63.5%;
+        max-width: 94%;
+        opacity: 0;
+        transition: 0.4s max-width;
+        &.do {max-width: 110%;opacity:1;}
+      }
+      .m1_h2 {
+        position: absolute;
+        left: 8%;
+        top: 47%;
+        max-width: 94%;
+        opacity: 0;
+        transition: 0.4s max-width;
+        &.do {max-width: 110%;opacity:1;}
+      }
+      img {
+        margin: 0 -5%;
+        max-width: 110%;
+        width: 110%;
+      }
+    }
+    .screen1_t1 {
+      position: absolute;
+      left: 3.6%;
+      top: 32.1%;
+      max-width: 91%;
+    }
+    .screen1_t2 {
+      position: absolute;
+      left: 3.6%;
+      top: 32.1%;
+      max-width: 105%;
+      opacity:0;
+    }
+    .change-screen {
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      transition: 1s all;
+      position: absolute;
+      top:0;left:0;right:0;bottom:0;
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      opacity:0;
+      .c-wrap {
+        position: relative;
+      }
+      &.do {
+        opacity: 1;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+      }
+      &.do-change {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        .screen2,.screen4 {
+          opacity: 0;
+          transition: 1s;
+        }
+      }
+      &.do-fade {
+        .screen_change_img {
+          opacity: 0;
+        }
+      }
+      .screen2,.screen4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        z-index: 3;
+        transition: 1s all;
+      }
+      .screen_change_img {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+      }
+    }
+
+    .screen3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: 0.6s all;
+      &.do {
+        opacity: 1;
+      }
+    }
+    .screen3_pop,.screen4_pop {
+      opacity:0;
+      position: absolute;
+      right: 3.5%;
+      top: 68%;
+      max-width: 22%;
+      transition: 0.3s;
+      &.do {
+        opacity: 1;
+      }
+    }
+    .screen3_status,.screen4_status {
+      opacity:0;
+      position: absolute;
+      right: 4.6%;
+      top: 64.2%;
+      max-width: 12%;
+      z-index: 1;
+      transition: 0.3s;
+      &.do {
+        opacity: 1;
+      }
+    }
+    .screen_finish {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: 0.6s all;
+      &.do {
+        opacity: 1;
+      }
+    }
+
+    .click {
+      &.one {
+        bottom: 33%;
+        right: 5%;
+      }
+      &.two {
+        bottom: -8%;
+        right: 4%;
+      }
+      &.three {
+        bottom: 28%;
+        right: 5%;
+      }
+      &.four.pop {
+        bottom: 12%;
+        right: 13%;
+      }
+      &.five {
+        bottom: 28%;
+        right: 5%;
+      }
+      &.six.pop {
+        bottom: 7%;
+        right: 14%;
+      }
+    }
+    .moveRight {
+      transition: 0.7s all!important;
+      transform: translateX(100%)!important;
+      opacity: 0!important;
+    }
+  }
+}

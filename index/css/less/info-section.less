@@ -1,0 +1,112 @@
+#main section.info-section {
+  background-color: @color-1;
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/vector-smart-background-1.png);
+  overflow: hidden;
+  background-size: 108%;
+  background-position: -58px 0;
+  background-repeat: no-repeat;
+  @media (max-width:991px) {
+    padding: 30px 0;
+  }
+  .center-vertical-block {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+
+    @media (min-width:992px) {
+      height: 650px;
+    }
+    .QQ-img {
+      width: 48px;
+      margin-bottom: 15px;
+    }
+    .desc {
+      color: @color-3;
+      font-family: @font-1;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 42px;
+      margin-bottom: 18px;
+      @media (max-width:991px){
+        line-height: 35px;
+        margin-bottom: 10px;
+      }
+    }
+    .star-block {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      span {
+        color: @color-3;
+        font-family: @font-1;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+      }
+      .stars {
+        width: 67px;
+      }
+    }
+  }
+  .white-block {
+    box-shadow: 0 6px 29px rgba(93, 97, 101, 0.15);
+    background-color: @color-1;
+
+    min-height: 650px;
+    line-height: 650px;
+
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 10px;
+    @media (max-width:450px){
+      padding-top:30px;
+      padding-bottom: 30px;
+      min-height: 471px;
+      line-height: 471px;
+    }
+    @media (min-width: 451px) and (max-width: 991px) {
+      min-height: 500px;
+      line-height: 500px;
+    }
+    &>div {
+      vertical-align: middle;
+      display: inline-block;
+    }
+    p.descript {
+      @media (max-width:1177px) {
+        font-size: 20px;
+      }
+      @media (max-width:470px){
+        margin-bottom: 30px;
+      }
+      &:last-child{
+        margin-bottom: 0!important;
+      }
+      color: @color-4;
+      font-family: @font-1;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 34px;
+      margin-bottom: 50px;
+      span.num {
+        background-image: linear-gradient(66deg, #49bbe8 0%, #49beea 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: @font-1;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-right: 25px;
+        float: left;
+        @media (max-width:1177px) {
+          margin-right: 15px;
+          font-size: 32px;
+        }
+      }
+      >span.text {
+        display: block;
+        padding-left: 45px;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+section.transform-icons {
+  background-color: @color-1;
+  box-shadow: 0 23px 29px rgba(93, 97, 101, 0.15);
+  .rotate-img {
+    width: 100%;
+    transform: perspective(800px) rotateX(58deg) scaleX(0.8) scaleY(0.8);
+    margin-top: -19%;
+    margin-bottom: -9%;
+  }
+  .sub-title {
+    margin-bottom: 15px;
+  }
+  .rotate-wrapp {
+    .item-block {
+      display: inline-block;
+      border: 3px solid #e4ebf4;
+      border-radius: 20%;
+      width: calc(20% - 4.5%);
+      margin-right: 5%;
+      margin-bottom: 5%;
+      float:left;
+      padding: 3%;
+      text-align: center;
+      &:nth-child(5n) {
+        margin-right: 0;
+      }
+        &:before {
+          content: "";
+          padding-top: 100%;
+          float: left;
+        }
+      &.shadow {
+        box-shadow: 0 13px 7px 8px #0000000f, 1px 20px 20px 14px #0303031a;
+        border: 0;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

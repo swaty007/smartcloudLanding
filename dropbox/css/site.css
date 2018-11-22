@@ -1,0 +1,38 @@
+#content .post .post-content {
+    box-shadow: 0 6px 29px rgba(93, 97, 101, 0.15);
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 4234;
+    bottom: -175px;
+    background: #fff;
+    transition: 1s all;
+    height: 175px;
+    overflow: hidden;
+}
+#content .post:hover .post-content {
+    height: 140%;
+}
+.blog .fusion-meta-info {
+    display: none;
+}
+.blog .post .post-content .entry-title{
+    min-height: 96px;
+}
+.fusion-blog-layout-medium .fusion-post-slideshow {
+    width: 100%;
+    margin: 0;
+    float: none;
+}
+.fusion-post-medium {
+    width: 60%;
+    border-bottom: 0;
+    position: relative;
+    margin-bottom: 200px;
+}
+.fusion-image-wrapper .fusion-rollover {
+    display: none;
+}

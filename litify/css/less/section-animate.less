@@ -1,0 +1,116 @@
+.section-animate {
+  min-height: 600px;
+  position: relative;
+  margin-top: -50px;
+  @media(max-width:991px) {
+    background-image: linear-gradient(-261deg, #23578e 0%, #2dbad4 100%);
+    padding-top: 80px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .title-2 {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+  .bg-images-grad {
+    @media(max-width:991px) {
+      display: none;
+    }
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: -1;
+    max-width: 90%;
+    transform: translateY(-50%);
+  }
+  .text-wrap {
+    @media(min-width: 992px) {
+      margin-top: 130px;
+    }
+  }
+  .desc {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 27px;
+    position: relative;
+    padding-left: 30px;
+    text-align: left;
+    &:before {
+      content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+      position: absolute;
+      vertical-align: top;
+      left: 0;
+      width: 15px;
+      top: 3px;
+    }
+  }
+  .animate-block {
+    position: relative;
+    min-height: 450px;
+    @media(min-width:992px) and (max-width:1200px) {
+      min-height: 335px;
+    }
+    @media(max-width: 991px) {
+      min-height: unset;
+      margin-top: 210px;
+      margin-bottom: 190px;
+    }
+    @media(max-width:520px) {
+      margin-bottom: 90px;
+    }
+    .anim {
+      position: absolute;
+      max-width: 100%;
+      img {
+        max-width:100%;
+      }
+      @media(min-width: 1350px) {
+        max-width: 118%;
+        img {
+          max-width: 118%;
+        }
+      }
+      @media (min-width: 1480px) {
+        max-width: 133%;
+        img {
+          max-width: 133%;
+        }
+      }
+      @media (min-width: 1580px) {
+        max-width: 140%;
+        img {
+          max-width: 140%;
+        }
+      }
+      &.anim-1 {
+        //top: 267px;
+        bottom: -154px;
+        left: 0;
+        @media(min-width:992px) and (max-width:1200px) {
+        bottom: -100px;
+        }
+        @media(max-width:991px) {
+          position: relative;
+        }
+        @media(max-width:520px) {
+          bottom: -70px;
+        }
+      }
+      &.anim-2 {
+        //top: 185px;
+        left: 40px;
+        bottom: 28px;
+      }
+      &.anim-3 {
+        //top: -20px;
+        bottom: 151px;
+        left: 16px;
+      }
+    }
+  }
+}

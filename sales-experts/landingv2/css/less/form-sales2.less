@@ -1,0 +1,58 @@
+.form-sales2 {
+  //overflow-x: hidden; not for sticky
+  padding-bottom: 50px;
+  //.img-block {
+  //  img {
+  //    transform: translateX(25%);
+  //  }
+  //}
+  //.text {
+  //  margin-top: 25px;
+  //}
+    .absolute-block {
+      img {
+        width: calc(100% + 30px);
+        max-width: calc(100% + 30px);
+        margin: 0 -15px 80px;
+        @media(min-width:992px) {
+          width: calc(100% + 15px);
+          max-width: calc(100% + 15px);
+          margin: 0 -15px 130px 0;
+        }
+      }
+    }
+  .sticky-block-col {
+    @media(min-width:992px) {
+      position: sticky;
+      top: -65px;
+    }
+    .sticky-block {
+      .main-title {
+        color: #023358;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 52px;
+        @media(max-width:991px) {
+          font-size: 36px;
+          line-height: 45px;
+        }
+        span {
+          font-size: 30px;
+            display: block;
+        }
+      }
+      .sub-text {
+        color: #023358;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+      }
+      .img-block {
+        margin-bottom: 20px;
+        img {
+          width: 196px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.reminder-layout {
+  background-color: #f5f8fb;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  .img-svg-link {
+    margin-top: 80px;
+  }
+  .reminder-anim-wrap {
+    position: relative;
+    .img-modal {
+      position: absolute;
+      opacity: 0;
+      right: 0;
+      top: 15%;
+      max-width: 42%;
+      transition: 0.3s;
+      padding: 10px;
+      img {
+        transition: 1s;
+        transform: scale(0) translateY(0)
+      }
+      &.do {
+        opacity: 1;
+        img {
+          transform: scale(1) translateY(0);
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left:0;right:0;top:0;bottom:0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    .img-screen {
+      box-shadow: 0 10px 43px rgba(32, 94, 171, 0.1);
+    }
+    .click {
+      bottom: 31%;
+      right: 30%;
+    }
+  }
+}

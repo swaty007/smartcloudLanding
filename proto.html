@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROI CALCULATOR</title>
+
+</head>
+<body id="main">
+
+
+<script>
+
+class Car {
+    constructor(radius) {
+        this.radius = radius;
+		this.status = 1;
+        console.log("Создан экземпляр Car!");
+    };
+
+   showRadius() {
+        console.log(this.radius);
+		console.log('status',this.status);
+    }
+
+    static loadAll() {
+        console.log("Загружаем все Car...");
+    }
+
+}
+
+var elem = new Car(5);
+Car.loadAll();
+elem.showRadius();
+console.log(elem);
+
+console.log(Car.constructor,'car');
+
+class Byke extends Car {
+
+   constructor(radius) {
+   super();
+        this.radius = radius*2;
+        console.log("Создан экземпляр Byke!");
+    };
+
+    static loadAll() {
+        console.log("Загружаем все Byke...");
+    }
+
+}
+
+var elem2 = new Byke(5);
+Byke.loadAll();
+elem2.showRadius();
+console.log(elem2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Animal(name) {
+  this.name = name;
+  this.speed = 1;
+  this.fast = 10;
+}
+
+Animal.prototype.run = function(speed) {
+  this.speed += speed;
+  console.log( this.name + ' бежит, скорость ' + this.speed );
+};
+
+Animal.prototype.stop = function() {
+  this.speed = 0;
+  console.log( this.name + ' стоит' );
+};
+
+
+var Animsss = new Animal('Животное');
+Animsss.run(5);
+
+
+
+
+
+
+function Rabbit(name) {
+  this.name = name;
+  this.speed = 1;
+  this.fast = 50;
+}
+
+Rabbit.prototype.jump = function() {
+  this.speed++;
+  console.log( this.name + ' прыгает' );
+};
+Rabbit.prototype.__proto__ = Animal.prototype;
+
+var rabbit = new Rabbit('Кроль');
+console.log(rabbit.speed,'speed',rabbit.fast);
+rabbit.jump();
+rabbit.run(5);
+console.log(rabbit.speed,'speed',rabbit.fast);
+
+Animal.prototype.run = function(speed) {
+  console.log('xyi');
+};
+rabbit.run(5,'vajno');
+Animsss.run(5,'vajno');
+
+
+</script>
+
+
+
+</body>
+
+
+
+
+
+</html>

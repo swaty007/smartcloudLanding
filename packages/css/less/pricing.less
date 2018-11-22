@@ -1,0 +1,122 @@
+.block-info-wrap {
+  margin-bottom: 100px;
+  .title {
+    color: #023358;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 25px;
+  }
+  .flex-row {
+    @media(min-width:991px) {
+      display: flex;
+    }
+  }
+  .white-block{
+    z-index: 5;
+    right: 1px;
+    left: 1px;
+    &>.row {
+    box-shadow: 0 6px 29px rgba(93, 97, 101, 0.15);
+    background-color: #ffffff;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  }
+  .white-block.col-block-white {
+    box-shadow: 0 6px 29px rgba(93, 97, 101, 0.15);
+    background-color: #ffffff;
+    margin-top: 30px;
+  }
+  #white-block-scroll {
+    @media(min-width:991px) {
+      position: relative;
+    }
+  }
+  #white-scroll-3 {
+    @media(min-width:991px) {
+      position: absolute;
+      right: 25%;
+      top: 0;
+      background: #fff;
+    }
+  }
+  #white-scroll-4 {
+    @media(min-width:991px) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: #fff;
+    }
+  }
+  .col-block:not(.col-block-white) {
+    padding-top: 25px;
+    border-left: 1px solid #e3eff8;
+    border-bottom: 1px solid #e3eff8;
+    @media (max-width:991px) {
+      border-right:1px solid #e3eff8;
+    }
+    @media(min-width:991px) {
+      //padding-top: 200px;
+    }
+    &:last-child {
+      border-right:1px solid #e3eff8;
+    }
+  }
+  .col-block-white:not(.col-block) {
+    padding: 20px 0;
+    @media (min-width:991px) {
+      border-right:1px solid #e3eff8;
+    }
+    &:last-child {
+      //border-right: none;
+    }
+  }
+  .block-title {
+    color: #023358;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .gradient-text {
+    background: linear-gradient(66deg, #4a96d1 0%, #49beea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    span {
+      font-size: 19px;
+    }
+  }
+  .text {
+    color: #055492;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+  .desc {
+    color: @color-4;
+    font-family: @font-1;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 20px;
+    &:before {
+      content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+      position: absolute;
+      vertical-align: top;
+      left: 0;
+      width: 15px;
+    }
+  }
+}

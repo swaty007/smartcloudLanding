@@ -1,0 +1,78 @@
+.slide-vertical {
+  overflow: hidden;
+  background-color: #f8f8f8;
+  .title {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    color: #3c4e62;
+    font-family: @font-1;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    @media(max-width:991px) {
+      text-align: center;
+    }
+  }
+  .text {
+    color: #446a80;
+    font-family: @font-2;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  .sdk-grid-container {
+    z-index: 2;
+    height: 280px;
+    position: relative;
+    @media (max-width:991px) {
+      width: 370px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      min-height: 370px;
+      margin-bottom: 25px;
+    }
+    @media (max-width:400px) {
+      display: none;
+    }
+    .sdk {
+      position: absolute;
+      will-change: transform;
+      transition: opacity 0.3s;
+      width: 170px;
+      height: 170px;
+      box-shadow: 0 7px 45px rgba(229, 232, 237, 0.64);
+      background-color: @color-1;
+      img {
+        height: 60px;
+        width: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      //background-size: auto 60px;
+      //background-repeat: no-repeat;
+      //background-position: 50%!important;
+      //&:nth-child(6n+1) {
+      //  background-image: url(https://smartcloudconnect.io/wp-content/uploads/all_day_work.svg);
+      //}
+      //&:nth-child(6n+2) {
+      //  background-image: url(https://smartcloudconnect.io/wp-content/uploads/settings.svg);
+      //}
+      //&:nth-child(6n+3) {
+      //  background-image: url(https://smartcloudconnect.io/wp-content/uploads/unswer.svg);
+      //}
+      //&:nth-child(6n+4) {
+      //  background-image: url(https://smartcloudconnect.io/wp-content/uploads/blocks_plus.svg);
+      //}
+      //&:nth-child(6n+5) {
+      //  background-image: url(https://smartcloudconnect.io/wp-content/uploads/instruments.svg);
+      //}
+      //&:nth-child(6n+6) {
+      //  background-image: url(https://smartcloudconnect.io/wp-content/uploads/pazzl.svg);
+      //}
+    }
+  }
+}

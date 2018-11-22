@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmartCloud Price</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet/less" type="text/css" href="css/less/main.less"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js"></script>
+</head>
+<body id="main">
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        jQuery.noConflict();
+        (function($) {
+            $(window).scroll(function () {
+                var windowWidth = $(window).width();
+                var block1 = $('#white-block-scroll');
+                var block2 = $('#white-scroll-3');
+                var block3 = $('#white-scroll-4');
+                var scrollTop = $(window).scrollTop();
+
+                if (windowWidth > 991) {
+                    if (scrollTop > 125) {
+                        block2.css('top',scrollTop - 125);
+                        block3.css('top',scrollTop - 125);
+                    } else {
+                        block2.css('top',0);
+                        block3.css('top',0);
+                    }
+                }
+            });
+        })(jQuery);
+    });
+</script>
+
+<section id="block-info-wrap" class="block-info-wrap">
+    <h1 class="title text-center">
+        Customer success packages
+    </h1>
+
+        <div id="white-block-scroll" class="white-block hidden-sm hidden-xs container">
+            <div class="row flex-row">
+                <div class="col-md-3 text-center col-block-white">
+                    <p class="block-title">Basic</p>
+                    <p class="gradient-text">Free</p>
+                    <a target="_self" data-toggle="modal" data-target=".request_user" data-whatever="Basic" href="#" class="green-btn-invert">Choose this plan</a>
+                </div>
+                <div class="col-md-3 text-center col-block-white">
+                    <p class="block-title">Professional</p>
+                    <p class="gradient-text">$5 000<span>/year</span></p>
+                    <a target="_self" data-toggle="modal" data-target=".request_user" data-whatever="Professional" href="#" class="green-btn-invert">Choose this plan</a>
+                </div>
+                <div class="col-md-3 text-center col-block-white" id="white-scroll-3">
+                    <p class="block-title">Team</p>
+                    <p class="gradient-text">$10 000<span>/year</span></p>
+                    <a target="_self" data-toggle="modal" data-target=".request_user" data-whatever="Team" href="#" class="green-btn-invert">Choose this plan</a>
+                </div>
+                <div class="col-md-3 text-center col-block-white" id="white-scroll-4">
+                    <p class="block-title">Enterprise</p>
+                    <p class="gradient-text">$25 000<span>/year</span></p>
+                    <a target="_self" data-toggle="modal" data-target=".request_user" data-whatever="Enterprise" href="#" class="green-btn-invert">Choose this plan</a>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="row flex-row">
+            <div class="col-md-3 text-center col-block-white white-block hidden-lg hidden-md">
+                <p class="block-title">Basic</p>
+                <p class="gradient-text">Free</p>
+                <a target="_self" data-toggle="modal" data-target=".request_user" data-whatever="Basic" href="#" class="green-btn-invert">Choose this plan</a>
+            </div>
+            <div class="col-block col-md-3">
+                <p class="text">Access to dynamic KB</p>
+                <p class="text">1 Hour training session for users</p>
+                <p class="text">Email\WebChat support</p>
+                <p class="text">Remote access web-sessions for troubleshootins as needed</p>
+                <p class="text">Automatic monitoring of user account "health" with notifications on critical issues that need user input</p>
+            </div>
+            <div class="col-md-3 text-center col-block-white white-block hidden-lg hidden-md">
+                <p class="block-title">Professional</p>
+                <p class="gradient-text">$5 000<span>/year</span></p>
+                <a target="_self" data-toggle="modal" data-target=".request_user" data-whatever="Professional" href="#" class="green-btn-invert">Choose this plan</a>
+            </div>
+            <div class="col-block col-md-3">
+                <p class="text">All in Free + </p>
+                <p class="text">Up to 3 training sessions 1 Hour each for users
+
+                </p>
+                <p class="text">1 Application support\customization\deployment training (for admins)</p>
+                <p class="text">Phone line support</p>
+                <p class="text">Migration assistance
+                </p>
+                <p class="text">Providing inputs and best practices on migration from another synchronization tool</p>
+            </div>
+            <div class="col-md-3 text-center col-block-white white-block hidden-lg hidden-md">
+                <p class="block-title">Team</p>
+                <p class="gradient-text">$10 000<span>/year</span></p>
+                <a target="_self" data-toggle="modal" data-target=".request_user" href="#" data-whatever="Team" class="green-btn-invert">Choose this plan</a>
+            </div>
+            <div class="col-block col-md-3">
+                <p class="text">All in Professional +</p>
+                <p class="text">Up to 5 training sessions 1 Hour each for users +</p>
+                <p class="text">1 Application support\customization training (for admins):</p>
+                <p class="desc"> (1 Training session can be done ONSITE at a customer location of choice)</p>
+                <p class="text">Quarterly analytical check-ins (new features review, workflow analytics)
+                </p>
+                <p class="text">Custom Product Branding:</p>
+                <p class="desc">Logos</p>
+                <p class="desc">Colors</p>
+                <p class="desc">Etc.</p>
+                <p class="text">Deployment Assistance</p>
+                <p class="text">Premium Support (8/5/Business hours):</p>
+                <p class="desc">Assigned support professional</p>
+                <p class="desc">Direct phone line support</p>
+                <p class="desc">Bug tracking portal</p>
+                <p class="desc">Priority handling</p>
+                <p class="desc">Dedicated Customer Success Account Manager with direct communication channels</p>
+                <p class="text">Up to 20 hours of advanced customization services included for free:</p>
+                <p class="desc">Can be used for advanced customization\configuration requests, any other advanced services around the application</p>
+                <p class="text">POC included for free:</p>
+                <p class="desc">Minimal customizations</p>
+                <p class="desc">Assistance with POC deployment\testing</p>
+                <p class="desc">POC durationg is not counted towards billed license use if conducted within a reasonable timeframe (2 weeks)</p>
+                <p class="text">Advance Migration assistance:</p>
+                <p class="desc">Providing inputs and best practices on migration from another synchronization tool</p>
+                <p class="desc">Testing of the migration scenario based on the actual customer setup and environment (where possible if previous tool is not custom)</p>
+                <p class="desc">Customization of deduplication logic where possible (to be counted towards the 20 free hours of advanced services)</p>
+            </div>
+            <div class="col-md-3 text-center col-block-white white-block hidden-lg hidden-md">
+                <p class="block-title">Enterprise</p>
+                <p class="gradient-text">$25 000<span>/year</span></p>
+                <a target="_self" data-toggle="modal" data-target=".request_user" data-whatever="Enterprise" href="#" class="green-btn-invert">Choose this plan</a>
+            </div>
+            <div class="col-block col-md-3">
+                <p class="text">All in Enterprise +</p>
+                <p class="text">Up to 5 training sessions 1 Hour each for users PER YEAR +</p>
+                <p class="text">Application support\customization training (for admins) PER YEAR:</p>
+                <p class="desc">(Any number of trainings can be done onsite)</p>
+                <p class="text">Quarterly analytical check-ins (new features review, workflow analytics)</p>
+                <p class="text">Deployment Assistance</p>
+                <p class="text">Gold Support (24/7):</p>
+                <p class="desc">Assigned support professional</p>
+                <p class="desc">Direct phone line support</p>
+                <p class="desc">Bug tracking portal</p>
+                <p class="desc">Priority handling even during off-hours</p>
+                <p class="text">Full Turn-Key Implementation:</p>
+                <p class="desc">Onsite Design Sessions  to discuss requirements that suite your business cases and allow to maximize productivity for SmartCloud Connect in your business environment</p>
+                <p class="desc">1-2 days</p>
+                <p class="desc">Sessions with both Business and ITс</p>
+                <p class="desc">Detailed FDD produced by our team as an outcomeBusiness and ITс</p>
+                <p class="text">Application customization according to the detailed requirements</p>
+                <p class="desc">Application UI</p>
+                <p class="desc">Business Logic and workflows to maximize user productivity</p>
+                <p class="desc">Any Salesforce.com objects</p>
+                <p class="desc">Up to 100 hours included for free ($17,500 value)</p>
+                <p class="desc">Locked in reduced rates for additional services for duration of contract </p>
+                <p class="desc">Ability to purchase 20 hour blocks of developer access at a discount over standard pricing</p>
+                <p class="text">Acceptance Testing Support</p>
+                <p class="desc">On Demand assistance to discuss any issues identified</p>
+                <p class="desc">Ability to quickly log defects</p>
+                <p class="text">Dedicated Customer Success Account Manager with direct communication channels</p>
+                <p class="text">Full Migration assistance</p>
+                <p class="desc">Providing inputs and best practices on migration from another synchronization tool</p>
+                <p class="desc">Testing of the migration scenario based on the actual customer setup and environment (where possible if previous tool is not custom)</p>
+                <p class="desc">Migration included as part of POC</p>
+                <p class="desc">Customization of deduplication logic where possible</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+    });
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

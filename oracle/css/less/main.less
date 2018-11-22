@@ -1,0 +1,68 @@
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Cabin:700');
+
+@font-face {
+  font-family: 'Aktiv Grotesk';
+//  src: url(https://invisible.io/wp-content/themes/invisible/assets/font/SF-UI-Display-Bold.ttf);
+  src: url("https://smartcloudconnect.io/wp-content/themes/smartcloud/assets/fonts/Berthold_Akzidenz_Grotesk_Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-1: 'Cabin', sans-serif !important;
+@font-2: 'Aktiv Grotesk', sans-serif !important;
+
+
+@color-1: #ffffff;
+@color-2: #000000;
+@color-3: #c70901;
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/bg-line.png);
+  background-position-x: 50%;
+  background-repeat-x: no-repeat;
+}
+
+#main {
+  @import "global";
+  @import "header";
+  @import "main-block";
+  @import "oracle-driven";
+  @import "partners";
+  @import "slide-vertical";
+  @import "contact-us";
+  @import "footer";
+}
+@import "oracle-flow-forms";
+
+.gradient-background-wrap {
+  background: linear-gradient(-93deg, rgba(15, 37, 110, 1) 0%, rgba(255, 4, 1, 1) 100%);
+}
+#main .main-btn-oracle,.modal .wpcf7-form input[type="submit"].main-btn-oracle {
+  color: @color-1 !important;
+  font-family: @font-1 !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  line-height: 30px !important;
+  text-transform: uppercase !important;
+  padding: 10px 50px !important;
+  outline: none !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+  background-color: @color-3 !important;
+  display: inline-block !important;
+  border: 1px solid transparent !important;
+  transition: 0.3s all !important;
+  width: auto !important;
+  &:hover {
+    text-decoration: none !important;
+    color: @color-3 !important;
+    background-color: @color-1 !important;
+    border-color: @color-3 !important;
+  }
+}

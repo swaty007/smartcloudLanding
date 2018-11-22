@@ -1,0 +1,135 @@
+#main section.who-we-help {
+  background-color: #f5f8fb;
+  padding: 80px 0;
+  overflow: hidden;
+  &#who-we-help-2 .nav-tabs.nav-justified > li {
+    overflow: hidden;
+    &> a{
+      &:not(.collapsed) {
+        border-bottom: 4px solid #37a148;
+        i {
+          transform: rotate(180deg);
+        }
+      }
+      i {
+        margin-left:10px;
+        transition: 0.3s all;
+      }
+    }
+  }
+
+  h2.title {
+    color: @color-3;
+    margin-top:0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: @font-1;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+  .nav-tabs.nav-justified {
+    > li{
+      &>a{
+        border-top:0;
+        border-bottom:0;
+        border-left:0;
+        border-right:1px solid transparent;
+        background-color: transparent;
+        border-radius:0;
+        color: @color-3;
+        font-family: @font-1;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        opacity: 1;
+        outline: none;
+        @media(min-width:1200px) {
+          white-space: nowrap;
+        }
+      }
+      &.active > a {
+        border-bottom: 0;
+        border-top:0;
+        border-left:0;
+        border-right:1px solid transparent;
+        background-color: transparent;
+        color: @color-5;
+        font-family: @font-1;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        @media(max-width:991px) {
+          border-bottom:4px solid @color-5;
+        }
+      }
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: #e3eff8;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      @media (max-width:767px) {
+        content: none;
+      }
+    }
+  }
+  .tab-content {
+    padding: 25px 0;
+    min-height: 500px;
+  }
+  .img-tab {
+    width: 100%;
+  }
+  h4 {
+    color: @color-3;
+    font-family: @font-1;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    @media (max-width:991px) {
+      margin-bottom: 25px;
+      margin-top: 50px;
+    }
+  }
+  p.desc {
+    color: @color-4;
+    font-family: @font-1;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+    &:before {
+      content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+      position: absolute;
+      vertical-align: top;
+      left: 0;
+      width: 15px;
+      top: 3px;
+    }
+  }
+
+  .tab-highlighter {
+    height: 4px;
+    width: 20%;
+    left:15px;
+    margin-top: 0;
+    background: @color-5;
+    position: absolute;
+    -moz-transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+    -ms-transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+    -o-transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+    transition: all 0.6s cubic-bezier(0.21, 0.61, 0.36, 1);
+    @media(max-width:991px) {
+      display:none;
+    }
+  }
+}

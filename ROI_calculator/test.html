@@ -1,0 +1,602 @@
+<html lang="en" id="wrapper" class="wf-cabin-n4-active wf-cabin-n5-active wf-cabin-n7-active wf-active"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROI CALCULATOR</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" async=""></script><script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet/less" type="text/css" href="css/less/main.less"><style type="text/css" id="less:ROI_calculator-css-less-main">.container {
+    overflow: visible;
+}
+#wrapper a.green-btn {
+    background-color: #37a148;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: 'Cabin', sans-serif !important;
+    border: 2px solid transparent;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 50px;
+    padding: 0 50px;
+    text-transform: uppercase;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s all;
+    text-align: center !important;
+    min-width: 220px;
+    max-width: 100%;
+}
+#wrapper #main #roi-calc .title {
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+#wrapper #main .green-text {
+    color: #37a148;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    display: inline-block;
+    outline: 0;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+#wrapper #main .green-text:hover {
+    color: #0b4592;
+}
+#wrapper #main .sub-title {
+    color: #023358;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+#wrapper #main .text {
+    color: #055492;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+}
+#wrapper #main .roi-calc {
+    padding-top: 160px;
+    padding-bottom: 75px;
+    background-color: #062972;
+    background-image: linear-gradient(22deg, #062972 0%, #07438d 100%);
+}
+#wrapper #main .roi-calc .range-input {
+    position: relative;
+    height: 24px;
+    margin-top: 10px;
+}
+#wrapper #main .roi-calc .range-input:before {
+    content: attr(data-text);
+    color: #476bba;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    position: absolute;
+    right: 0;
+    top: 14px;
+}
+#wrapper #main .roi-calc .range-input .line-bg {
+    position: absolute;
+    margin-top: 7px;
+    right: 0;
+    height: 3px;
+    background-color: #476bba;
+    top: 0;
+    cursor: pointer;
+    z-index: 14;
+}
+#wrapper #main .roi-calc .range-input .line-bg:before {
+    height: 14px;
+    width: 14px;
+    border-radius: 20px;
+    background: #37a148;
+    margin-top: -6px;
+    display: block;
+}
+#wrapper #main .roi-calc .range-input .line-substrate {
+    position: absolute;
+    margin-top: 7px;
+    right: 0;
+    height: 3px;
+    background-color: #37a148;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+#wrapper #main .roi-calc .range-input input {
+    position: absolute;
+    z-index: 15;
+}
+#wrapper #main .roi-calc .control-label {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+}
+#wrapper #main .roi-calc input.form-control {
+    color: #023358;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    border: 1px solid #476bba;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: none;
+}
+#wrapper #main .roi-calc .result-wrap {
+    background-color: #ffffff;
+    box-shadow: 0 5px 57px rgba(0, 0, 0, 0.12);
+    padding: 25px;
+}
+@media (max-width: 768px) {
+    #wrapper #main .roi-calc .result-wrap {
+        margin: 0 -15px;
+    }
+}
+#wrapper #main .roi-calc .result-wrap .result-block {
+    border: 1px solid #cbd4df;
+}
+#wrapper #main .roi-calc .result-wrap .result-block .time {
+    background-image: url(http://smartcloudlanding/ROI_calculator/Rounded_Rectangle_5.png);
+    background-size: 70px 27px;
+    background-repeat: no-repeat;
+    line-height: 27px;
+    min-width: 70px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    margin-left: -1px;
+    padding-left: 20px;
+}
+#wrapper #main .roi-calc .result-wrap .result-block .hours-saved,
+#wrapper #main .roi-calc .result-wrap .result-block .money-saved {
+    color: #002552;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+#wrapper #main .roi-calc .result-wrap .result-block .money-saved {
+    color: #37a148;
+}
+#wrapper #main .roi-calc .result-wrap .result-block .res-text {
+    color: #002552;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+#wrapper #main .roi-calc input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin-top: 7px;
+    background: transparent;
+}
+#wrapper #main .roi-calc input[type=range]:focus {
+    outline: none;
+}
+#wrapper #main .roi-calc input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    height: 14px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #37a148;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+}
+#wrapper #main .roi-calc input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #37a148;
+    background: transparent;
+    border-radius: 1.3px;
+    border: none;
+}
+#wrapper #main .roi-calc input[type=range]::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+#wrapper #main .roi-calc input[type=range]::-webkit-slider-thumb {
+    box-shadow: none;
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 20px;
+    background: #37a148;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+}
+#wrapper #main .roi-calc input[type=range]::-ms-thumb,
+#wrapper #main .roi-calc input[type=range]::-moz-range-thumb {
+    box-shadow: none;
+    border: none;
+    width: 14px;
+    border-radius: 20px;
+    background: #37a148;
+    cursor: pointer;
+    height: 14px;
+}
+#wrapper #main .roi-calc input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #37a148;
+    background: transparent;
+}
+#wrapper #main .roi-calc input[type=range]::-ms-fill-lower {
+    background: #37a148;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+#wrapper #main .roi-calc input[type=range]::-ms-fill-upper {
+    background: #37a148;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+#wrapper #main .roi-calc input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    margin: 0;
+    display: block;
+}
+#wrapper #main .roi-calc label.checkbox-label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 55px;
+    height: 28px;
+    background-color: #476bba;
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+}
+#wrapper #main .roi-calc label.checkbox-label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+#wrapper #main .roi-calc input:checked + label.checkbox-label {
+    background: #37a148;
+}
+#wrapper #main .roi-calc input:checked + label.checkbox-label:after {
+    left: calc(100% - 3px);
+    transform: translateX(-100%);
+}
+#wrapper #main .roi-calc label.checkbox-label:active:after {
+    width: 32px;
+}
+img {
+    max-width: 100%;
+}
+#main section.contact-section {
+    background: white;
+}
+#main section.contact-section h2 {
+    color: #002552;
+}
+</style>
+    <script>
+        WebFontConfig = {
+            google: {families: ['Cabin:400,500,700']}
+        };
+
+        (function(d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:400,500,700" media="all">
+</head>
+<body id="main">
+<script>
+    var async_css=document.createElement("link");
+    async_css.rel="stylesheet";
+    async_css.href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
+    document.body.insertBefore(async_css,document.body.childNodes[document.body.childNodes.length-1].nextSibling);
+</script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+<div id="roi-calc" class="roi-calc">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <h1 class="title">
+                    ROI Calculations
+                </h1>
+
+                <div class="form-group clearfix" id="n_sales_email">
+                    <div class="row">
+                        <label class="col-sm-9 control-label">
+                            Number of sales emails received daily
+                        </label>
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" value="0">
+                        </div>
+                    </div>
+                    <div class="range-input" data-text="300+">
+                        <input type="range" min="0" max="300" value="0">
+                        <span class="line-substrate"></span>
+                        <span class="line-bg" style="width: 100%;"></span>
+                    </div>
+                </div>
+                <div class="form-group clearfix" id="n_calendar_invites">
+                    <div class="row">
+                        <label class="col-sm-9 control-label">
+                            Number of daily sales related calendar invites
+                        </label>
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" value="0">
+                        </div>
+                    </div>
+                    <div class="range-input" data-text="100+">
+                        <input type="range" min="0" max="100" value="0">
+                        <span class="line-substrate"></span>
+                        <span class="line-bg" style="width: 100%;"></span>
+                    </div>
+                </div>
+                <div class="form-group clearfix" id="n_size_team">
+                    <div class="row">
+                        <label class="col-sm-9 control-label">
+                            Size of sales team
+                        </label>
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" value="0">
+                        </div>
+                    </div>
+                    <div class="range-input" data-text="100+">
+                        <input type="range" min="0" max="100" value="0">
+                        <span class="line-substrate"></span>
+                        <span class="line-bg" style="width: 100%;"></span>
+                    </div>
+                </div>
+                <div class="form-group clearfix" id="n_wage">
+                    <div class="row">
+                        <label class="col-sm-9 control-label">
+                            Wage of the sales person (per Year)
+                        </label>
+                        <div class="col-sm-3">
+                            <input class="form-control" type="text" value="20000">
+                        </div>
+                    </div>
+                    <div class="range-input" data-text="$200000+">
+                        <input type="range" min="0" max="200000" value="20000">
+                        <span class="line-substrate"></span>
+                        <span class="line-bg" style="width: 90%;"></span>
+                    </div>
+                </div>
+
+                <div class="form-group" id="appoint_scheduling">
+                    <div class="row">
+                        <label class="col-sm-9 control-label">Would you like to use Appointment scheduling</label>
+
+                        <div class="col-sm-3 text-right">
+                            <input type="checkbox" id="switch"><label class="checkbox-label" for="switch"></label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-5 col-lg-offset-1">
+
+                <div class="result-wrap">
+                    <h2 class="sub-title">
+                        Results
+                    </h2>
+                    <div id="day" class="result-block">
+                        <p class="time">
+                            Day
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3 class="hours-saved all_time">0 Minutes</h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="money-saved money_safe">$0.00</h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="week" class="result-block">
+                        <p class="time">
+                            Day
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3 class="hours-saved all_time">0 Minutes</h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="money-saved money_safe">$0.00</h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="month" class="result-block hidden">
+                        <p class="time">
+                            Day
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3 class="hours-saved all_time">0 Minutes</h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="money-saved money_safe">$0.00</h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="year" class="result-block">
+                        <p class="time">
+                            Day
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h3 class="hours-saved all_time">0 Minutes</h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="money-saved money_safe">$0.00</h3>
+                                <p class="res-text">Saved time</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center" style="margin-top: 20px;">
+                        <a href="#" class="green-btn">
+                            <i class="fa fa-chain" style="margin-right:5px;"></i>Share results
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        jQuery.noConflict();
+        (function ($) {
+
+            function calculate_roi() {
+
+                var n_sales_email1 = Number($('#n_sales_email input[type="text"]').val());
+                var n_sales_email2 = Number($('#n_sales_email input[type="range"]').val());
+                (event.currentTarget.className == "form-control") ? n_sales_email = n_sales_email1 :  n_sales_email = n_sales_email2;
+
+                var n_calendar_invites1 = Number($('#n_calendar_invites input[type="text"]').val());
+                var n_calendar_invites2 = Number($('#n_calendar_invites input[type="range"]').val());
+                (event.currentTarget.className == "form-control") ? n_calendar_invites = n_calendar_invites1 : n_calendar_invites = n_calendar_invites2;
+                var appoint_scheduling = $('#appoint_scheduling input').prop("checked");
+                var n_size_team1 = Number($('#n_size_team input[type="text"]').val());
+                var n_size_team2 = Number($('#n_size_team input[type="range"]').val());
+                (event.currentTarget.className == "form-control") ?  n_size_team = n_size_team1 : n_size_team = n_size_team2;
+                var n_wage1 = Number($('#n_wage input[type="text"]').val());
+                var n_wage2 = Number($('#n_wage input[type="range"]').val());
+                (event.currentTarget.className == "form-control") ? n_wage = n_wage1 : n_wage = n_wage2;
+
+                $('#n_sales_email input').val(n_sales_email);
+                $('#n_sales_email .line-bg').css('width',
+                    100-((n_sales_email/$('#n_sales_email input[type="range"]').attr('max'))*100)+'%'
+                );
+                $('#n_calendar_invites input').val(n_calendar_invites);
+                $('#n_calendar_invites .line-bg').css('width',
+                    100-((n_calendar_invites/$('#n_calendar_invites input[type="range"]').attr('max'))*100)+'%'
+                );
+                $('#n_size_team input').val(n_size_team);
+                $('#n_size_team .line-bg').css('width',
+                    100-((n_size_team/$('#n_size_team input[type="range"]').attr('max'))*100)+'%'
+                );
+                $('#n_wage input').val(n_wage);
+                $('#n_wage .line-bg').css('width',
+                    100-((n_wage/$('#n_wage input[type="range"]').attr('max'))*100)+'%'
+                );
+
+//                var second_wage = (n_wage/3600); // если зп за час
+                var second_wage = (n_wage/(3600*24*365)); // если зп за год
+
+                var safe_time = 0; //Общее сохраненное время
+                var email_safe_time = n_sales_email*160; //Время сохраненное на эмейлах в день
+                safe_time += email_safe_time;
+                var calendar_safe_time = n_calendar_invites * (appoint_scheduling ? 190 : 160); //Время сохраненное на инвайтах в день
+                safe_time += calendar_safe_time;
+                if (n_size_team > 0) {
+                    safe_time = safe_time*n_size_team;
+                }
+                var safe_money_day = (second_wage*safe_time); //деньги сохраненные в день
+
+                echoSafe('day',1);
+                echoSafe('week',7);
+                echoSafe('month',30);
+                echoSafe('year',365);
+
+                function echoSafe(id,days) {
+                    id = $('#'+id);
+//                    id.find('.email_time').text(email_safe_time*days);
+//                    id.find('.invite_time').text(calendar_safe_time*days);
+
+                    let saveMinutes = Math.round(safe_time*days/60);
+                    let saveMoney = safe_money_day*days;
+
+                    if (saveMinutes <= 120) {
+                        id.find('.all_time').text(Math.round(saveMinutes)+" Minutes");
+                    } else if (saveMinutes/60 <= 480) {
+                        id.find('.all_time').text(Math.round(saveMinutes/60)+" Hours");
+                    } else if (saveMinutes/60 > 480) {
+                        id.find('.all_time').text(Math.round(saveMinutes/60/24)+" Days");
+                    }
+
+
+                    (saveMoney > 1000)? id.find('.money_safe').text("$"+saveMoney.toFixed(0)): id.find('.money_safe').text("$"+saveMoney.toFixed(2));
+
+
+
+                }
+            }
+
+            calculate_roi();
+            $('input').on('input',function (e) {
+                calculate_roi(e);
+            })
+
+        })(jQuery);
+
+    });
+</script>
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,29 @@
+#main section.partners-section-top {
+  text-align: center;
+  .img-xs-block {
+    display: inline-block;
+    filter: grayscale(100%) brightness(115%);
+    line-height: 100px;
+    padding: 0 20px;
+    transition: 0.3s all;
+    outline: none;
+    opacity: 0.9;
+    //display: table-cell;
+    //width: 1%;
+    &:hover {
+      filter:grayscale(0) brightness(100%)!important;
+      opacity: 1!important;
+    }
+    @media(max-width:480px) {
+      padding: 0 5px;
+      img {
+        max-height: 50px;
+        width: auto!important;
+      }
+    }
+    img {
+      vertical-align: middle;
+      display: inline;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.events-slide-block {
+background-image: url(https://smartcloudconnect.io/wp-content/uploads/background-events.png);
+  background-size: cover;
+ .event-item {
+   padding: 30px 20px;
+   border-left: 3px solid transparent;
+   @media(max-width:480px) {
+     padding: 10px 20px;
+   }
+   &:hover {
+     background-color: #04359b;
+     border-left: 8px solid #37a148;
+   }
+   .date {
+     display: inline-block;
+     width: 25%;
+     p.num {
+       color: #fefefe;
+       font-family: @font-1;
+       font-size: 33px;
+       font-weight: 400;
+       line-height: 19px;
+       margin-bottom: 7px;
+       margin-left: -3px;
+     }
+     p.month {
+       margin-bottom: 0;
+       color: #ffffff;
+       font-family: @font-2;
+       font-size: 21px;
+       font-weight: bold;
+       line-height: 19px;
+       text-transform: uppercase;
+       /* Text style for "MAR" */
+       letter-spacing: 0.84px;
+     }
+   }
+   .info {
+     display: inline-block;
+     width: 48%;
+     .desc {
+       color: #ffffff;
+       font-family: @font-1;
+       font-size: 22px;
+       font-weight: 700;
+       line-height: 19px;
+       text-decoration: none;
+       outline: none;
+       margin-top: 0;
+       margin-bottom: 5px;
+       &:hover {
+         color: #37a148;
+       }
+     }
+     .place {
+       color: #ffffff;
+       font-family: @font-1;
+       font-size: 16px;
+       font-weight: 400;
+       line-height: 32px;
+       margin-bottom: 0;
+       i {
+         margin-right:8px;
+       }
+     }
+   }
+   .details {
+     display: inline-block;
+     width: 25%;
+     text-align: right!important;
+     a {
+       color: #37a148;
+       font-family: @font-2;
+       font-size: 14px;
+       font-weight: bold;
+       line-height: 50px;
+       text-transform: uppercase;
+       outline: none;
+       text-decoration: none;
+       &:hover {
+         opacity: 0.9;
+       }
+     }
+   }
+ }
+}

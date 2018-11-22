@@ -1,0 +1,44 @@
+.reminder-set-layout {
+  //background-color: #f5f8fb;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  @media(max-width:991px) {
+    padding-bottom: 80px;
+  }
+  .img-svg-link {
+    margin-top: 80px;
+  }
+
+  .reminder-set-anim {
+    position: relative;
+    display: inline-block;
+    .img-modal {
+      top: 10%;
+      left: 7.5%;
+      right: 0;
+      bottom: 3%;
+      max-width: 82%;
+        .click {
+          bottom: 4%;
+          right: 11%;
+        }
+    }
+    .modal-2-img {
+      position: absolute;
+      top: 30%;
+      left: -10%;
+      right: 0;
+      width: 120%;
+      max-width: 120%;
+      transition: 1s;
+      transform: scale(0) translateY(0);
+      &.do {
+        transform: scale(1) translateY(0);
+      }
+    }
+    .click {
+      bottom: 23%;
+      right: 15%;
+    }
+  }
+}

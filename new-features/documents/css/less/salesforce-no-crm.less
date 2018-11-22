@@ -1,0 +1,74 @@
+.salesforce-no-crm {
+  //background-color: #f5f8fb;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/vector-smart-background-1.png);
+  background-size: 110%;
+  background-position: -120px 90%;
+  background-repeat: no-repeat;
+  @media(max-width:991px) {
+    background-position: -30px 90%;
+  }
+  .no-crm-anim {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10%;
+    @media(max-width:991px) {
+      margin: 0 -5%;
+    }
+    .modal-img {
+      position: absolute;
+      right: 13%;
+      max-width: 37%;
+      transition: 1s;
+      bottom: -15%;
+      transform: scale(0) translateY(0);
+      &.do {
+        transform: scale(1) translateY(0);
+      }
+    }
+    .icon-ok {
+      position: absolute;
+      right: 4.9%;
+      transition: 0.3s all;
+      opacity: 0;
+      max-width: 2%;
+      &.one {
+        top: 26.2%;
+      }
+      &.two {
+        top: 32.5%;
+      }
+      &.do {
+        opacity: 1;
+      }
+      &.do-2 {
+        opacity: 1;
+        margin-right: -0.4%;
+        margin-top: -0.4%;
+        background: #fff;
+        width: 2%;
+        min-height: 1vw;
+        max-height: 2vw;
+      }
+    }
+    .click {
+      &.one {
+        bottom: 67%;
+        right: 2%;
+      }
+      &.two {
+        bottom: 60%;
+        right: 2%;
+      }
+      &.three {
+        bottom: 4%;
+        right: 16%;
+      }
+      &.modal-click {
+        bottom: -11%;
+        right: 28%;
+      }
+    }
+  }
+}

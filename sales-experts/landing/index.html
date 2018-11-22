@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" id="wrapper">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales Experts</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet/less" type="text/css" href="css/less/main.less"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js"></script>
+
+    <script>
+        WebFontConfig = {
+            google: {families: ['Cabin:400,500,700']}
+        };
+
+        (function(d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script>
+</head>
+<body id="main">
+<script>
+    var async_css=document.createElement("link");
+    async_css.rel="stylesheet";
+    async_css.href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
+    document.body.insertBefore(async_css,document.body.childNodes[document.body.childNodes.length-1].nextSibling);
+</script>
+
+
+<section id="main-block" class="main-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-push-8 text-center">
+                <div class="img-block">
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/Book-bang-for-entherpise-big.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-8 col-md-pull-4">
+                <h1 class="title">
+                    Sales automation: the Ultimate Guide
+                </h1>
+                <p class="sub-text">
+                    Bang for the buck a for the enterprise
+                </p>
+                <a href="#" class="green-btn">
+                    Download the guide ​
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="form-sales" class="form-sales">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-7 col-lg-8">
+                <p class="text">
+                    Sales automation may just be the answer to all your selling woes.  From reducing the amount of time you spend on busy work to investing your time and energy where it actually counts: selling
+                </p>
+                <p class="text">
+                    The fact of the matter is that sales is changing every day and as sales conversions become more and more buyer focused sales reps will need to develop their own hacks, processes
+                    and techniques for sales cycle stages from prospecting clients to closing deals.
+                </p>
+                <p class="text">
+                    This is where our guide comes into play.It outlines some key measurable ways you can
+                    increase your productivity and efficiency at every stage of the sales cycle. You'll learn
+                    tools and tactics to help you:
+                </p>
+                <p class="text">
+                    - Enable sales reps to focus on core selling activities, automating the administrative ones<br>
+                    - Shrink time to close and roll up deals into your forecast sooner<br>
+                    - Reduce your risk of losing track of contracts (and revenue).
+                </p>
+            </div>
+
+            <div class="col-md-5 col-lg-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+                <div class="white-block">
+                    <h2 class="sub-title small text-center">
+                        Download Whitepaper
+                    </h2>
+                    [contact-form-7 id="8850" title=":enDownload guide (name,last_name,email,company)_sales_experts:"]
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--<script src="https://smartcloudconnect.io/wp-content/uploads/jquery-ui.min_.js"></script>-->
+
+<!--<script defer src="/wp-content/uploads/jquery.animateNumber.min_.js"></script>-->
+<script defer src="/wp-content/uploads/jquery.fadethis.min_.js"></script>
+<!--<script defer src="/wp-content/uploads/jquery.viewportchecker.min_.js"></script>-->
+<script>
+    window.addEventListener("load", function () {
+
+        jQuery.noConflict();
+        (function ($) {
+
+            //smooth scroll
+            $('.scroll-nav').on('click', function (e) {
+                e.preventDefault();
+
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500, 'linear');
+            });
+
+            if(document.documentElement.clientWidth > 1024)
+            {
+                $(window).fadeThis({
+                    speed: 300,
+                    reverse: false,
+                    offset:-400
+                });
+            }
+
+        })(jQuery);
+
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

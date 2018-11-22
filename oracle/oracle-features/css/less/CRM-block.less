@@ -1,0 +1,35 @@
+.CRM-block {
+  background-color: #f8f8f8;
+  position: relative;
+  padding-bottom: 0;
+  padding-top: 80px;
+  @media(min-width:1200px) {
+    padding-top: 25px;
+    padding-bottom: 70px;
+  }
+  .sub-title {
+    margin-top: 100px;
+    @media(max-width:1200px) {
+      margin-top: 0;
+    }
+  }
+  .img-container {
+    @media(min-width:1200px) {
+      position: absolute;
+      left: -15px;
+     bottom: 0;
+      width: 100%;
+    }
+  }
+  .img-block {
+    img {
+      max-width: 100%;
+      margin-bottom: -3px;
+      @media(max-width:1199px) {
+        margin-bottom: -5px;
+        margin-left: -15px;
+        max-width: calc(100% + 30px);
+      }
+    }
+  }
+}
