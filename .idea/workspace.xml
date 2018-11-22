@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c86662d-0f25-4ec1-8008-7f0565ccb3bd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/our-partners/css/less/how-we-live-up.less" afterPath="$PROJECT_DIR$/our-partners/css/less/how-we-live-up.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/our-partners/css/less/main-block.less" afterPath="$PROJECT_DIR$/our-partners/css/less/main-block.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/our-partners/css/less/main.less" afterPath="$PROJECT_DIR$/our-partners/css/less/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/our-partners/css/less/what-we-can-do.less" afterPath="$PROJECT_DIR$/our-partners/css/less/what-we-can-do.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/our-partners/index.html" afterPath="$PROJECT_DIR$/our-partners/index.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/our-partners/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="753">
+              <caret line="202" column="10" lean-forward="true" selection-start-line="202" selection-start-column="10" selection-end-line="202" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="what-we-can-do.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/our-partners/css/less/what-we-can-do.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main-block.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/our-partners/css/less/main-block.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding>
+                <marker date="1542906839494" expanded="true" signature="12:928" ph="{...}" />
+                <marker date="1542906839494" expanded="true" signature="683:781" ph="{...}" />
+                <marker date="1542906839494" expanded="true" signature="791:926" ph="{...}" />
+                <marker date="1542906839494" expanded="true" signature="939:1039" ph="{...}" />
+                <marker date="1542906839494" expanded="true" signature="1010:1037" ph="{...}" />
+                <marker date="1542906839494" expanded="true" signature="1229:1281" ph="{...}" />
+                <marker date="1542906839494" expanded="true" signature="1288:1318" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="financial-perks.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/our-partners/css/less/financial-perks.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="our-benefits.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/our-partners/css/less/our-benefits.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/our-partners/css/less/main.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="896">
+              <caret line="131" column="48" lean-forward="false" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
+              <folding>
+                <marker date="1542906839485" expanded="true" signature="2748:2851" ph="{...}" />
+                <marker date="1542906839485" expanded="true" signature="2748:2855" ph="{...}" />
+                <marker date="1542906839485" expanded="true" signature="2748:3246" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partners-about.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/our-partners/css/less/partners-about.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="how-we-live-up.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/our-partners/css/less/how-we-live-up.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>zoomi</find>
+      <find>boomer</find>
+      <find>spring</find>
+      <find>google</find>
+      <find>social se</find>
+      <find>outre</find>
+      <find>execvi</find>
+      <find>gainsigh</find>
+      <find>connectandsell</find>
+      <find>vidy</find>
+      <find>sifda</find>
+      <find>sigstr</find>
+      <find>exec</find>
+      <find>quote-to-cas</find>
+      <find>spekit</find>
+      <find>title-wrap</find>
+      <find>SwagIQ</find>
+      <find>swagIQ</find>
+      <find>ms-track</find>
+      <find>input[type=range]::-moz-range-thumb</find>
+      <find>stan</find>
+      <find>awesome</find>
+      <find>downloa</find>
+      <find>download</find>
+      <find>download scc</find>
+      <find>g</find>
+      <find>ga(</find>
+      <find>success-stories-hidebutton</find>
+      <find>.success-stories-hidebutton</find>
+      <find>brick-b</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>height=&quot;30&quot;</replace>
+      <replace>font-size: 19px;</replace>
+      <replace>Segoe UI</replace>
+      <replace>width=&quot;50%&quot;</replace>
+      <replace>width=&quot;49%&quot; style=&quot;width:49%;&quot;</replace>
+      <replace>width=&quot;280&quot;</replace>
+      <replace>width=&quot;48%&quot;</replace>
+      <replace>&quot;https://smartcloudconnect.io//wp-content</replace>
+      <replace>182%</replace>
+      <replace>ellipse-2.</replace>
+      <replace>'Roboto', 'Open Sans'</replace>
+      <replace>https://smartcloudconnect.io/wp-content/uploads/task-icon.svg</replace>
+      <replace>https://smartcloudconnect.io/wp-content/uploads/Group-calendar-sync-2-icon.svg</replace>
+      <replace />
+      <replace>?chat</replace>
+      <replace>width=&quot;200&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;</replace>
+      <replace>alt=&quot;Linkedin logo&quot; style=&quot;width:20px;height:20px;&quot;</replace>
+      <replace>font-size: 15px</replace>
+      <replace>margin: 0 0 15px;</replace>
+      <replace>img src=&quot;https://smartcloudconnect.io/wp-content/uploads/</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Open Server\OSPanel\domains\smartcloudLanding\wp-smartcloudconnect.io\wp-content\plugins\schema</dir>
+      <dir>D:\Open Server\OSPanel\domains\smartcloudLanding\wp-smartcloudconnect.io\wp-content\plugins\schema\includes</dir>
+      <dir>D:\Open Server\OSPanel\domains\smartcloudLanding\new-features</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sales-experts/css/less/popup-fixed.less" />
+        <option value="$PROJECT_DIR$/sales-experts/css/less/form-sales.less" />
+        <option value="$PROJECT_DIR$/sales-experts/landing/css/less/main.less" />
+        <option value="$PROJECT_DIR$/sales-experts/landing/wp-postratings.php" />
+        <option value="$PROJECT_DIR$/sales-experts/landing/avada-functions.php" />
+        <option value="$PROJECT_DIR$/sales-experts/landing/css/less/form-sales.less" />
+        <option value="$PROJECT_DIR$/sales-experts/landing/css/less/main-block.less" />
+        <option value="$PROJECT_DIR$/sales-experts/landing/index.html" />
+        <option value="$PROJECT_DIR$/morgan/css/less/box-right.less" />
+        <option value="$PROJECT_DIR$/morgan/css/less/main.less" />
+        <option value="$PROJECT_DIR$/morgan/css/less/percent-wrap.less" />
+        <option value="$PROJECT_DIR$/morgan/css/less/rotate-section.less" />
+        <option value="$PROJECT_DIR$/morgan/index.html" />
+        <option value="$PROJECT_DIR$/morgan/css/less/image-right.less" />
+        <option value="$PROJECT_DIR$/drip-mails/morgan-email.html" />
+        <option value="$PROJECT_DIR$/sales-whitepaperv2/index.html" />
+        <option value="$PROJECT_DIR$/sales-whitepaperv2/css/less/main.less" />
+        <option value="$PROJECT_DIR$/sales-whitepaperv2/css/less/form-sales2.less" />
+        <option value="$PROJECT_DIR$/integration-page/index.html" />
+        <option value="$PROJECT_DIR$/drip-mails/360sms-mail.html" />
+        <option value="$PROJECT_DIR$/sales-experts/css/less/main.less" />
+        <option value="$PROJECT_DIR$/sales-experts/landingFinal/css/less/main.less" />
+        <option value="$PROJECT_DIR$/sales-experts/landingFinal/index.html" />
+        <option value="$PROJECT_DIR$/sales-experts/landingFinal/css/less/form-sales2.less" />
+        <option value="$PROJECT_DIR$/about-us ver 2/index.html" />
+        <option value="$PROJECT_DIR$/drip-mails/whitepaper/email3.html" />
+        <option value="$PROJECT_DIR$/drip-mails/whitepaper/email1.html" />
+        <option value="$PROJECT_DIR$/drip-mails/whitepaper/email2.html" />
+        <option value="$PROJECT_DIR$/drip-mails/whitepaper/email4.html" />
+        <option value="$PROJECT_DIR$/ROI_calculator/test.html" />
+        <option value="$PROJECT_DIR$/sales-experts/css/less/experts-section.less" />
+        <option value="$PROJECT_DIR$/sales-experts/index.html" />
+        <option value="$PROJECT_DIR$/docs.sf.invisiblesolutions.com" />
+        <option value="$PROJECT_DIR$/success-stories/oldhtml.html" />
+        <option value="$PROJECT_DIR$/ROI_calculator/css/less/roi-calc.less" />
+        <option value="$PROJECT_DIR$/ROI_calculator/css/less/main.less" />
+        <option value="$PROJECT_DIR$/ROI_calculator/index.html" />
+        <option value="$PROJECT_DIR$/getPdf.php" />
+        <option value="$PROJECT_DIR$/success-stories/css/less/main.less" />
+        <option value="$PROJECT_DIR$/success-stories/css/less/main-block.less" />
+        <option value="$PROJECT_DIR$/success-stories/index.html" />
+        <option value="$PROJECT_DIR$/our-partners/css/less/financial-perks.less" />
+        <option value="$PROJECT_DIR$/our-partners/css/less/our-benefits.less" />
+        <option value="$PROJECT_DIR$/our-partners/css/less/partners-about.less" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/success-stories/css/less/stories-block.less" />
+        <option value="$PROJECT_DIR$/our-partners/css/less/main-block.less" />
+        <option value="$PROJECT_DIR$/our-partners/css/less/how-we-live-up.less" />
+        <option value="$PROJECT_DIR$/our-partners/css/less/main.less" />
+        <option value="$PROJECT_DIR$/our-partners/index.html" />
+        <option value="$PROJECT_DIR$/our-partners/css/less/what-we-can-do.less" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1928" />
+    <option name="y" value="-95" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="success-stories" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="success-stories" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="success-stories" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our-partners" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our-partners" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcloudLanding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our-partners" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CoinsHarborLanding" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="nodejs_interpreter_path" value="D:/nodejs/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Open Server\OSPanel\domains\smartcloudLanding\fastAnim\css\less" />
+      <recent name="D:\Open Server\OSPanel\domains\smartcloudLanding" />
+      <recent name="D:\Open Server\OSPanel\domains\smartcloudLanding\fall-release\css\less" />
+      <recent name="D:\Open Server\OSPanel\domains\smartcloudLanding\new-features\documents\css\less" />
+      <recent name="D:\Open Server\OSPanel\domains\smartcloudLanding\ROI_calculator" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Open Server\OSPanel\domains\smartcloudLanding\ROI_calculator" />
+      <recent name="D:\Open Server\OSPanel\domains\smartcloudLanding\price\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c86662d-0f25-4ec1-8008-7f0565ccb3bd" name="Default" comment="" />
+      <created>1520268962157</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520268962157</updated>
+      <workItem from="1520268963554" duration="7651000" />
+      <workItem from="1520337231917" duration="82865000" />
+      <workItem from="1521109314375" duration="16689000" />
+      <workItem from="1521221384846" duration="17011000" />
+      <workItem from="1522070030141" duration="4022000" />
+      <workItem from="1522141189282" duration="2894000" />
+      <workItem from="1522153873036" duration="30157000" />
+      <workItem from="1522332261538" duration="24000" />
+      <workItem from="1522420580117" duration="89000" />
+      <workItem from="1522486260017" duration="8210000" />
+      <workItem from="1522878609303" duration="29000" />
+      <workItem from="1523464726412" duration="3640000" />
+      <workItem from="1523521249582" duration="840000" />
+      <workItem from="1523526321588" duration="97143000" />
+      <workItem from="1524136120663" duration="55434000" />
+      <workItem from="1525793968897" duration="3055000" />
+      <workItem from="1525798075784" duration="28420000" />
+      <workItem from="1526474458046" duration="287000" />
+      <workItem from="1526476912640" duration="67230000" />
+      <workItem from="1526917956463" duration="20774000" />
+      <workItem from="1527083854214" duration="792000" />
+      <workItem from="1527332743446" duration="20383000" />
+      <workItem from="1528795028045" duration="5685000" />
+      <workItem from="1528815771642" duration="13000" />
+      <workItem from="1528978180588" duration="20244000" />
+      <workItem from="1529400964621" duration="50000" />
+      <workItem from="1529401441758" duration="42989000" />
+      <workItem from="1530536683756" duration="64529000" />
+      <workItem from="1531821184903" duration="25609000" />
+      <workItem from="1532335777571" duration="664000" />
+      <workItem from="1532426075144" duration="67574000" />
+      <workItem from="1532685974313" duration="5364000" />
+      <workItem from="1532703727108" duration="14975000" />
+      <workItem from="1532800099619" duration="5354000" />
+      <workItem from="1532881719501" duration="1528000" />
+      <workItem from="1532953268100" duration="2714000" />
+      <workItem from="1532960365212" duration="28722000" />
+      <workItem from="1533721598001" duration="44381000" />
+      <workItem from="1535363796486" duration="22528000" />
+      <workItem from="1535536738516" duration="76140000" />
+      <workItem from="1536842789461" duration="4357000" />
+      <workItem from="1537265498926" duration="14611000" />
+      <workItem from="1537455516495" duration="1636000" />
+      <workItem from="1537866700625" duration="18238000" />
+      <workItem from="1537986843216" duration="4282000" />
+      <workItem from="1537999817376" duration="2000" />
+      <workItem from="1537999828043" duration="22369000" />
+      <workItem from="1538049269837" duration="5253000" />
+      <workItem from="1538055726585" duration="3390000" />
+      <workItem from="1538404666265" duration="3726000" />
+      <workItem from="1538408440428" duration="28444000" />
+      <workItem from="1539251897394" duration="818000" />
+      <workItem from="1540207410974" duration="50416000" />
+      <workItem from="1540551307018" duration="44928000" />
+      <workItem from="1540920489179" duration="2511000" />
+      <workItem from="1541178447818" duration="93238000" />
+      <workItem from="1542107682277" duration="452000" />
+      <workItem from="1542108149283" duration="1630000" />
+      <workItem from="1542109955068" duration="706000" />
+      <workItem from="1542119399619" duration="4869000" />
+      <workItem from="1542237629597" duration="81000" />
+      <workItem from="1542718231240" duration="22902000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1518353000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1928" y="-95" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2457356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20260021" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.029252438" sideWeight="0.4936034" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/about-us ver 2/css/less/main-block.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about-us ver 2/css/less/roi-block.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="95" column="3" lean-forward="true" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/morgan/css/less/rotate-section.less" />
+    <entry file="file://$PROJECT_DIR$/morgan/css/less/box-right.less" />
+    <entry file="file://$PROJECT_DIR$/morgan/css/less/image-right.less" />
+    <entry file="file://$PROJECT_DIR$/morgan/css/less/percent-wrap.less" />
+    <entry file="file://$PROJECT_DIR$/sales-whitepaperv2/index.html" />
+    <entry file="file://$PROJECT_DIR$/sales-whitepaperv2/css/less/form-sales2.less" />
+    <entry file="file://$PROJECT_DIR$/integration-page/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="339" column="108" lean-forward="true" selection-start-line="339" selection-start-column="108" selection-end-line="339" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales-whitepaperv2/css/less/main.less" />
+    <entry file="file://$PROJECT_DIR$/sales-experts/css/less/form-sales.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drip-mails/360sms-mail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="547" column="391" lean-forward="false" selection-start-line="547" selection-start-column="385" selection-end-line="547" selection-end-column="391" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales-experts/landingFinal/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1726">
+          <caret line="189" column="10" lean-forward="false" selection-start-line="189" selection-start-column="10" selection-end-line="189" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales-experts/css/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="62" column="10" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drip-mails/morgan-email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="734" column="54" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="764" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drip-mails/sales-tool-of-the-week.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="800" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales-experts/landingFinal/css/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-86">
+          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales-experts/landingFinal/css/less/form-sales2.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1478">
+          <caret line="89" column="43" lean-forward="true" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about-us ver 2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drip-mails/whitepaper/email3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="669" column="14" lean-forward="false" selection-start-line="669" selection-start-column="14" selection-end-line="669" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drip-mails/whitepaper/email4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="819" column="14" lean-forward="false" selection-start-line="819" selection-start-column="14" selection-end-line="819" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drip-mails/whitepaper/email2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="463" column="178" lean-forward="false" selection-start-line="463" selection-start-column="150" selection-end-line="463" selection-end-column="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drip-mails/whitepaper/email1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="757" column="14" lean-forward="false" selection-start-line="757" selection-start-column="14" selection-end-line="757" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DreamforceSeptember/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="462" column="0" lean-forward="false" selection-start-line="462" selection-start-column="0" selection-end-line="473" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/morgan/css/less/main.less" />
+    <entry file="file://$PROJECT_DIR$/morgan/index.html" />
+    <entry file="file://$PROJECT_DIR$/ROI_calculator/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="597" column="14" lean-forward="false" selection-start-line="597" selection-start-column="14" selection-end-line="597" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales-experts/css/less/experts-section.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="133" column="32" lean-forward="false" selection-start-line="133" selection-start-column="32" selection-end-line="133" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales-experts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="676" column="95" lean-forward="true" selection-start-line="676" selection-start-column="95" selection-end-line="676" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartcloudconnect.io.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2771">
+          <caret line="163" column="63" lean-forward="true" selection-start-line="163" selection-start-column="63" selection-end-line="163" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs.sf.invisiblesolutions.com">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="1" lean-forward="false" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ROI_calculator/css/less/roi-calc.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ROI_calculator/css/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="92" column="21" lean-forward="false" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ROI_calculator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="377" column="56" lean-forward="true" selection-start-line="377" selection-start-column="56" selection-end-line="377" selection-end-column="56" />
+          <folding>
+            <marker date="1542639055192" expanded="true" signature="18232:18283" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getPdf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1921">
+          <caret line="116" column="45" lean-forward="false" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success-stories/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="97" column="173" lean-forward="false" selection-start-line="97" selection-start-column="173" selection-end-line="97" selection-end-column="173" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#6;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#9;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#10;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#11;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#12;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#13;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#14;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#15;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success-stories/css/less/main-block.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success-stories/css/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success-stories/oldhtml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="61" lean-forward="false" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="102" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/our-partners/css/less/financial-perks.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/our-partners/css/less/partners-about.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success-stories/css/less/stories-block.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/our-partners/css/less/our-benefits.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/our-partners/css/less/how-we-live-up.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/our-partners/css/less/main-block.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <marker date="1542906839494" expanded="true" signature="12:928" ph="{...}" />
+            <marker date="1542906839494" expanded="true" signature="683:781" ph="{...}" />
+            <marker date="1542906839494" expanded="true" signature="791:926" ph="{...}" />
+            <marker date="1542906839494" expanded="true" signature="939:1039" ph="{...}" />
+            <marker date="1542906839494" expanded="true" signature="1010:1037" ph="{...}" />
+            <marker date="1542906839494" expanded="true" signature="1229:1281" ph="{...}" />
+            <marker date="1542906839494" expanded="true" signature="1288:1318" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/our-partners/css/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="131" column="48" lean-forward="false" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
+          <folding>
+            <marker date="1542906839485" expanded="true" signature="2748:2851" ph="{...}" />
+            <marker date="1542906839485" expanded="true" signature="2748:2855" ph="{...}" />
+            <marker date="1542906839485" expanded="true" signature="2748:3246" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/our-partners/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="202" column="10" lean-forward="true" selection-start-line="202" selection-start-column="10" selection-end-line="202" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/our-partners/css/less/what-we-can-do.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
