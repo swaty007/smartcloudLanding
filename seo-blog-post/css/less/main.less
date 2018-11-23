@@ -1,0 +1,215 @@
+@color-1: #ffffff;
+@color-2: #000000;
+@color-3: #023358;
+@color-4: #055492;
+@color-5: #37a148;
+
+@font-1: 'Cabin','Open Sans', sans-serif;
+@font-2: 'Cabin','Open Sans', sans-serif;
+
+.container {
+  overflow: visible;
+}
+body {
+  //overflow-x: hidden;
+}
+
+body.single-post.has-sidebar #main #content {
+  width: 100%;
+  padding: 0;
+}
+.post-ratings {
+  display: none;
+}
+h1 {
+  display: none;
+}
+
+#wrapper #main {
+  .green-text {
+    color: #37a148;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    display: inline-block;
+    outline: 0;
+    text-decoration: none;
+    transition: 0.3s all;
+    &:hover {
+      color: #0b4592;
+    }
+  }
+  .sub-title {
+    color: #023358!important;
+    font-size: 29px!important;
+    font-weight: 700!important;
+    line-height: 40px!important;
+    margin-bottom: 27px!important;
+    margin-top: 20px!important;
+    span {
+      @media(min-width:992px) {
+        font-size: 19px!important;
+        display: block;
+      }
+      &.small {
+        font-size: 18px;
+        line-height: 31px;
+        color: #023358;
+        font-weight: 700;
+      }
+    }
+    &.margin {
+      margin-top: 80px;
+    }
+    @media(max-width:991px) {
+      text-align: center;
+      &.margin {
+        margin-top: 0;
+      }
+    }
+  }
+  .text {
+    color: #055492;
+    color: #023358!important;
+    font-size: 19px!important;
+    font-weight: 400;
+    line-height: 33px!important;
+    margin-bottom: 35px;
+    i {
+      color: #055492!important;
+    }
+
+  }
+
+  hr.line {
+    border-top: 1px solid rgba(53, 117, 156, 0.14);
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  hr.seporate {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border: none;
+  }
+
+
+  .white-block {
+    //box-shadow: 0 5px 14px 2px rgba(32,94,171,.15);
+    box-shadow: 0 5px 39px rgba(115, 136, 151, 0.18);
+    border-radius: 5px;
+    padding: 45px 25px;
+    background-color: @color-1;
+    @media(max-width:991px) {
+      margin-top: 40px;
+    }
+  }
+
+
+  .main-block {
+    background-image: url(https://smartcloudconnect.io/wp-content/uploads/seo-blog-bg.png);
+    padding-top: 80px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-position: 50% 100%;
+    margin-bottom: 40px;
+    @media(max-width:991px) {
+      padding-bottom: 80px;
+    }
+    .title {
+      color: #fff!important;
+      font-size: 70px!important;
+      font-weight: 700!important;
+      margin-top: 0!important;
+      line-height: 80px!important;
+      @media(max-width:991px) {
+        font-size: 50px!important;
+        line-height: 70px!important;
+      }
+      span {
+        display: block;
+        font-size: 50px!important;
+      }
+      margin-bottom: 70px!important;
+    }
+    .text {
+      color: #fff!important;
+    }
+  }
+
+
+  .content-block {
+   @media(min-width:992px) {
+     .row {
+       display: flex;
+       .col-md-5 {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         display: flex;
+       }
+       .flex-end {
+         justify-content: flex-end;
+       }
+       >div {
+         flex-direction: column;
+         justify-content: center;
+         display: flex;
+       }
+     }
+   }
+    .img-block {
+      @media(max-width:991px) {
+        text-align: center;
+        img {
+          max-width: 250px;
+        }
+      }
+      img {
+
+      }
+    }
+    .sub-title-wrap {
+      margin-bottom: 50px;
+      margin-top: 80px;
+      @media(max-width:991px) {
+        text-align: center;
+        margin-top: 40px;
+      }
+      .circle {
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #f9f9f9;
+        width: 64px;
+        height: 64px;
+        border-radius: 50px;
+        color: fade(#023358, 36%);
+        line-height: 64px;
+        font-size: 26px;
+        text-align: center;
+        font-weight: 900;
+        margin-right: 30px;
+        @media(max-width:991px) {
+          display: block;
+          margin: 0 auto 15px;
+        }
+      }
+      .sub-title-block {
+        display: inline-block;
+        vertical-align: middle;
+        h2.sub-title {
+          margin: 0!important;
+        }
+      }
+    }
+
+  }
+
+
+
+}
+
+img {
+  max-width: 100%;
+}
