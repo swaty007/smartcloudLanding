@@ -282,7 +282,7 @@
                 );
 
 //                var second_wage = (n_wage/3600); // если зп за час
-                var second_wage = (n_wage/(3600*24*365)); // если зп за год
+                var second_wage = (n_wage/(3600*8*260)); // если зп за год
 
                 var safe_time = 0; //Общее сохраненное время
                 var email_safe_time = n_sales_email*160; //Время сохраненное на эмейлах в день
@@ -297,7 +297,7 @@
                 echoSafe('day',1);
                 echoSafe('week',5);
                 echoSafe('month',20);
-                echoSafe('year',265);
+                echoSafe('year',260);
 
                 function echoSafe(id,days) {
                     id = $('#'+id);
@@ -312,7 +312,7 @@
                     } else if (saveMinutes/60 <= 480) {
                         id.find('.all_time').text(Math.round(saveMinutes/60)+" Hours");
                     } else if (saveMinutes/60 > 480) {
-                        let days = Math.round(saveMinutes/60/24);
+                        let days = Math.round(saveMinutes/60/8);
                         if (days > 1000) {
                             id.find('.all_time').text(String(days).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')+" Days");
                         } else {
