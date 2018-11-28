@@ -34,11 +34,14 @@
   line-height: 50px;
   vertical-align: middle;
   display: inline-block;
-  margin: 0 20px 30px;
+  margin: 0 25px 30px;
   transition: 0.3s all;
   @media(min-width:991px) and (max-width:1200px) {
-    margin: 0 10px 30px;
+    margin: 0 50px 30px;
     max-width: 185px;
+  }
+  @media(min-width:1201px) {
+    margin: 0 85px 30px;
   }
   img {
     object-fit: contain;
@@ -52,6 +55,7 @@
     }
   }
   @media(max-width:767px) {
-    width: calc(50% - 40px);
+    width: calc(50% - 44px);
+    margin: 0 20px 30px;
   }
 }
