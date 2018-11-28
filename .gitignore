@@ -29,6 +29,8 @@ phpunit.phar
 tests/_output/*
 tests/_support/_generated
 
+# phpstorm project files
+.idea
 #vagrant folder
 /.vagrant
 config/db.php
