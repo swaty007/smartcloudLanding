@@ -1,0 +1,115 @@
+.enjoy-calendar {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  .enjoy-anim-wrap {
+    text-align: center;
+    margin-top: 50px;
+    @media(max-width:991px) {
+      overflow-x: scroll;
+      &>.row {
+        width: 300%;
+        max-width: 1500px;
+        .col-xs-4 {
+          max-width: 500px;
+        }
+      }
+    }
+    .enjoy-anim {
+      img {
+        max-width:100%;
+      }
+      transition: 0.8s all;
+      position: relative;
+      display: inline-block;
+      margin: 0 auto 40px;
+      opacity: .2;
+      &.active {
+        opacity: 1 !important;
+      }
+      &#enjoy-anim-1 {
+        opacity: .6;
+        .img-active {
+          position: absolute;
+          left: 5%;
+          max-width: 90%;
+          top: 43%;
+          display: none;
+        }
+        .img-dropdown {
+          position: absolute;
+          left: 4%;
+          max-width: 92%;
+          top: 51%;
+          display: none;
+        }
+      }
+      &#enjoy-anim-2 {
+        opacity: .4;
+        .click {
+          bottom: 37%;
+          right: 0;
+        }
+      }
+      &#enjoy-anim-3 {
+        .img-modal {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          transition: 0.3s;
+          opacity: 0;
+          img {
+            transition: 1s;
+            transform: scale(0) translateY(0)
+          }
+          &.do {
+            opacity: 1;
+            img {
+              transform: scale(1) translateY(0);
+            }
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            left:0;right:0;top:0;bottom:0;
+            background-color: rgba(0, 0, 0, 0.16);
+          }
+        }
+        .click {
+          bottom: 50%;
+          right: 20%;
+        }
+      }
+
+
+
+      .img-screen {
+        box-shadow: 0 10px 43px rgba(32, 94, 171, 0.1);
+        max-width: 100%;
+      }
+      .click {
+        bottom: 3%;
+        right: 20%;
+        &.do {
+          animation: pulsate 0.6s linear;
+          animation-iteration-count: 1;
+        }
+        position: absolute;
+        opacity: 0.0;
+        border: 17px solid fade(#37a148,80);
+        border-radius: 50px;
+        display: inline-block;
+        text-align: center;
+        width: 20%;
+        .click-child {
+          width: 100%;
+          padding-top: 100%;
+          background-color: fade(#37a148,90);
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+}
