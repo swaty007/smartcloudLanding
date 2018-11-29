@@ -1,0 +1,45 @@
+.salesforce-search-section {
+  padding-top: 0;
+  padding-bottom: 120px;
+  @media(max-width:991px) {
+    padding-bottom: 80px;
+  }
+  .sub-title {
+    margin-top: 60px;
+    @media(max-width:991px) {
+      margin-top: 15px;
+    }
+  }
+  .salesforce_search_anim {
+    display: inline-block;
+    position: relative;
+    @media(max-width:991px) {
+      margin: 0 -5%;
+    }
+    .stage {
+      position: absolute;
+      transition: 0.5s all;
+      opacity: 0;
+      &.one {
+        left: 12.2%;
+        top: 21%;
+        max-width: 75%;
+      }
+      &.two {
+        top: 31%;
+        left: 28%;
+        max-width: 52%;
+      }
+    }
+    .click {
+      &.one {
+        bottom: 60%;
+        right: 12%;
+      }
+      &.two {
+        bottom: 62%;
+        right: 16%;
+      }
+    }
+  }
+}
