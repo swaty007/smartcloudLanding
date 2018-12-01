@@ -24,6 +24,16 @@ body.single-post.has-sidebar #main #content {
 h1 {
   display: none;
 }
+.fusion-meta-info {
+  margin: 0 auto;
+  float: none;
+}
+#main section.contact-section {
+  background-color: transparent;
+  h2.title {
+    color: #023358;
+  }
+}
 
 #wrapper #main {
   .green-text {
@@ -43,11 +53,12 @@ h1 {
   }
   .sub-title {
     color: #023358!important;
-    font-size: 38px!important;
+    font-size: 32px!important;
     font-weight: 700!important;
-    line-height: 55px!important;
+    line-height: 58px!important;
     margin-bottom: 27px!important;
     margin-top: 35px!important;
+    display: inline-block;
     span {
       @media(min-width:992px) {
         font-size: 19px!important;
@@ -65,11 +76,50 @@ h1 {
       line-height: 40px!important;
     }
     &.small {
-      font-size: 24px!important;;
-      line-height: 33px!important;;
+      font-size: 25px!important;
+      line-height: 34px!important;
+      text-align: left;
+    }
+    &.data-number {
+      text-align: left;
+      position: relative;
+      margin-top: 80px!important;
+      &:before {
+        content: attr(data-number);
+        font-size: 120px;
+        letter-spacing: -9px;
+        opacity: 0.09;
+        position: absolute;
+        left: -30px;
+        top: -30px;
+        @media(max-width:991px) {
+          left: -15px;
+        }
+      }
     }
     @media(max-width:991px) {
       text-align: center;
+    }
+  }
+  .number-block {
+    text-align: left;
+    position: relative;
+    padding-left: 70px;
+    &:before {
+      content: attr(data-number);
+      font-size: 50px;
+      font-weight: 700;
+      opacity: 0.09;
+      position: absolute;
+      font-style: italic;
+      left: 0;
+      top: -28px;
+      letter-spacing: -3px;
+      @media(max-width:768px) {
+        top: 50%;
+        letter-spacing: -3px;
+        transform: translateY(-50%);
+      }
     }
   }
   .description {
@@ -100,7 +150,7 @@ h1 {
     line-height: 33px!important;
     margin-bottom: 35px;
     i {
-      color: #055492!important;
+      color: #023358!important;
     }
 
   }
@@ -137,20 +187,25 @@ h1 {
   }
 
   .main-block {
-    margin-top: 50px;
-    .sub-title {
-      margin-top: 10px!important;
+    background-image: url(https://smartcloudconnect.io/wp-content/uploads/seo-blog-background.png);
+    background-color: #023358;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-position: 50% -30px;
+    margin-bottom: 40px;
+    @media(max-width:991px) {
+      padding-bottom: 80px;
     }
     .title {
-      color: #023358!important;
-      font-size: 55px!important;
+      color: #fff!important;
+      font-size: 70px!important;
       font-weight: 700!important;
       margin-top: 0!important;
-      line-height: 70px!important;
+      line-height: 80px!important;
       @media(max-width:991px) {
-        font-size: 42px!important;
-        text-align: center;
-        line-height: 55px!important;
+        font-size: 50px!important;
+        line-height: 70px!important;
       }
       span {
         display: block;
@@ -158,25 +213,13 @@ h1 {
       }
       margin-bottom: 70px!important;
     }
-  }
-
-  @media(min-width:992px) {
-    .row {
-      display: flex;
-      .col-md-5 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-      }
-      .flex-end {
-        justify-content: flex-end;
-      }
-      >div {
-        flex-direction: column;
-        justify-content: center;
-        display: flex;
-      }
+    .sub-title {
+      color: #fff!important;
+      font-size: 40px!important;
+      line-height: 58px!important;
+    }
+    .text {
+      color: #fff!important;
     }
   }
 
@@ -199,8 +242,24 @@ h1 {
   }
 
   .content-block {
-
-
+    background-image: url(https://smartcloudconnect.io/wp-content/uploads/post-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 28%;
+    background-size: 110% auto;
+    @media(max-width:991px) {
+      background-size: 2000px auto;
+      background-position: 1% 28%;
+    }
+    .absolute-img {
+      position: absolute;
+      top: 87px;
+      width: 563px;
+      max-width: unset;
+      right: 0;
+      @media(max-width:991px) {
+        display: none;
+      }
+    }
   }
 
 

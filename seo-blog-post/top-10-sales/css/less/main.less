@@ -24,6 +24,16 @@ body.single-post.has-sidebar #main #content {
 h1 {
   display: none;
 }
+.fusion-meta-info {
+  margin: 0 auto;
+  float: none;
+}
+#main section.contact-section {
+  background-color: transparent;
+  h2.title {
+    color: #023358;
+  }
+}
 
 #wrapper #main {
   .green-text {
@@ -43,9 +53,9 @@ h1 {
   }
   .sub-title {
     color: #023358!important;
-    font-size: 38px!important;
+    font-size: 32px!important;
     font-weight: 700!important;
-    line-height: 55px!important;
+    line-height: 58px!important;
     margin-bottom: 27px!important;
     margin-top: 35px!important;
     span {
@@ -65,8 +75,12 @@ h1 {
       line-height: 40px!important;
     }
     &.small {
-      font-size: 24px!important;;
-      line-height: 33px!important;;
+      font-size: 25px!important;
+      line-height: 34px!important;
+    }
+    &.big {
+      font-size: 40px!important;;
+      line-height: 52px!important;;
     }
     @media(max-width:991px) {
       text-align: center;
@@ -100,7 +114,7 @@ h1 {
     line-height: 33px!important;
     margin-bottom: 35px;
     i {
-      color: #055492!important;
+      color: #023358!important;
     }
 
   }
@@ -137,46 +151,42 @@ h1 {
   }
 
   .main-block {
-    margin-top: 50px;
-    .sub-title {
-      margin-top: 10px!important;
+    background-image: url(https://smartcloudconnect.io/wp-content/uploads/top-10-sales-background.png);
+    padding-top: 160px;
+    padding-bottom: 160px;
+    background-size: cover;
+    background-position: 50% 0;
+    margin-bottom: 40px;
+    @media(max-width:991px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
     .title {
-      color: #023358!important;
-      font-size: 55px!important;
+      color: #fff!important;
+      font-size: 70px!important;
       font-weight: 700!important;
       margin-top: 0!important;
-      line-height: 70px!important;
+      line-height: 80px!important;
+      margin-bottom: 40px!important;
       @media(max-width:991px) {
-        font-size: 42px!important;
+        font-size: 50px!important;
+        line-height: 70px!important;
         text-align: center;
-        line-height: 55px!important;
       }
       span {
         display: block;
         font-size: 50px!important;
       }
-      margin-bottom: 70px!important;
     }
-  }
-
-  @media(min-width:992px) {
-    .row {
-      display: flex;
-      .col-md-5 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-      }
-      .flex-end {
-        justify-content: flex-end;
-      }
-      >div {
-        flex-direction: column;
-        justify-content: center;
-        display: flex;
-      }
+    .sub-title {
+      margin-top: 0!important;
+      color: #ffffff!important;
+      font-size: 32px!important;
+      font-weight: 400!important;
+      line-height: 46px!important;
+    }
+    .text {
+      color: #fff!important;
     }
   }
 
@@ -199,8 +209,67 @@ h1 {
   }
 
   .content-block {
-
-
+    background-image: url(https://smartcloudconnect.io/wp-content/uploads/post-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 82%;
+    background-size: 110% auto;
+    @media(max-width:991px) {
+      background-size: 2000px auto;
+      background-position: 1% 28%;
+    }
+    .number-flex-wrap {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: normal;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        .number-flex-block {
+          padding-left: 60px;
+          padding-right: 0;
+        }
+      }
+      &:last-child {
+        margin-bottom: 50px;
+      }
+      @media(max-width:991px) {
+        flex-direction: column!important;
+        .sub-title {
+          margin-top: 0!important;
+        }
+      }
+      .number-flex-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        flex-basis: 30%;
+        padding-right: 60px;
+        @media(max-width:991px) {
+          text-align: center;
+          margin-top: 30px;
+          padding: 0!important;
+        }
+        .number {
+          font-size: 180px;
+          font-weight: 700;
+          color: #023358;
+          opacity: 0.09;
+          margin: 0;
+          line-height: 1;
+          @media(max-width:991px) {
+            font-size: 80px;
+          }
+        }
+      }
+      .text-flex-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+      }
+    }
   }
 
 
