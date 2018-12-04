@@ -1,0 +1,40 @@
+.adaptive-ui {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  @media(max-width:991px) {
+    margin-bottom: 60px;
+  }
+    .ui-design-anim-wrap {
+      text-align: center;
+      margin-top: 50px;
+      @media(max-width:991px) {
+        overflow-x: scroll;
+        &>.row {
+          width: 300%;
+          max-width: 900px;
+          .col-xs-4 {
+            //max-width: 500px;
+          }
+        }
+      }
+
+      .complex-anim {
+        transition: 0.8s all;
+        position: relative;
+        display: inline-block;
+        margin: 0 auto 40px;
+        opacity: 1;
+        img {
+          max-width:100%;
+        }
+        &.active {
+          opacity: 1 !important;
+        }
+        .img-screen {
+          //max-width: 115%;
+          //margin: 0 -7%;
+        }
+      }
+    }
+
+}

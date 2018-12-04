@@ -1,0 +1,62 @@
+.save-eml-section {
+    padding-top: 0px;
+    padding-bottom: 80px;
+  overflow-x: hidden;
+  .sub-title {
+    margin-top: 70px;
+    @media(min-width:1200px) {
+      margin-top: 120px;
+    }
+    @media(max-width:991px) {
+      margin-top: 15px;
+    }
+  }
+
+    .save_eml_anim {
+      display: inline-block;
+      position: relative;
+      @media(max-width:991px) {
+        margin: 0 -5%;
+      }
+      .stage {
+        position: absolute;
+        transition: 0.5s all;
+        right: 5.5%;
+        top: 32%;
+        max-width: 38%;
+        opacity: 0;
+        &.one {
+          opacity: 1;
+        }
+        &.two {
+
+        }
+      }
+      .loader-modal {
+        position: absolute;
+        transition: 0.5s;
+        background-color: rgba(255, 255, 255, 0.66);
+        top: 42%;
+        right: 4%;
+        width: 40%;
+        bottom: 7%;
+        opacity: 0;
+        img {
+          margin-top: 47%;
+          transition: all .3s;
+          width: 12%;
+          transition-timing-function: ease-in;
+          animation: ld-spin 1s infinite;
+        }
+        &.do {
+          opacity: 1;
+        }
+      }
+      .click {
+        &.one {
+          bottom: 7%;
+          right: 5.7%;
+        }
+      }
+    }
+}
