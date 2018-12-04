@@ -305,7 +305,13 @@
 <script defer src="/wp-content/uploads/jquery.fadethis.min_.js"></script>
 <script>
     window.addEventListener("load", function () {
+        jQuery.noConflict();
+        (function ($) {
 
+            $('h1').remove();
+            $('.main-block h2.title').replaceWith($('<h1 class="title">' +  $('.main-block h2.title').html() + '</h1>'));
+
+        })(jQuery);
         jQuery.noConflict();
         (function ($) {
 

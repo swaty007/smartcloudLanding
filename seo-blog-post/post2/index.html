@@ -181,7 +181,13 @@
 
         jQuery.noConflict();
         (function ($) {
+            jQuery.noConflict();
+            (function ($) {
 
+                $('h1').remove();
+                $('.main-block h2.title').replaceWith($('<h1 class="title">' +  $('.main-block h2.title').html() + '</h1>'));
+
+            })(jQuery);
             if(document.documentElement.clientWidth > 1024)
             {
                 $(window).fadeThis({
