@@ -59,9 +59,19 @@ body {
 
 #wrapper #main {
   .green-btn {
-    margin-top: 20px;
+    margin-bottom: 20px;
+    @media(max-width:991px) {
+     margin-top: 20px;
+    }
     &.invert {
-
+      background: transparent;
+      border-color: #37a148;
+      color: #37a148;
+      &:hover {
+        background: #37a148;
+        border-color: transparent;
+        color: #fff;
+      }
     }
   }
   .sub-title {
