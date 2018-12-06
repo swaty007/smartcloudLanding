@@ -1,0 +1,113 @@
+
+server {
+  listen 80;
+  server_name www.invisiblesolutions.com www.invisible.io invisiblecrm.com www.invisiblecrm.com;
+  return 301 $scheme://invisible.io$request_uri;
+}
+
+server {
+  listen 80;
+  listen 443;
+  server_name dialer.invisiblesolutions.com invisibledialer.com www.invisibledialer.com;
+  return 301 $scheme://dialer.invisible.io$request_uri;
+}
+
+server {
+  listen 80;
+  listen 443;
+  server_name smart-contacts.invisiblesolutions.com;
+  return 301 $scheme://smart-contacts.invisible.io$request_uri;
+}
+
+server {
+  listen 80;
+  listen 443;
+  server_name mobiletocrm.invisiblesolutions.com;
+  return 301 $scheme://mobiletocrm.invisible.io$request_uri;
+}
+
+server {
+    pagespeed standby;
+    listen 80;
+    listen 443;
+
+    server_name invisible.io mobiletocrm.invisible.io dialer.invisible.io smart-contacts.invisible.io invisiblesolutions.com *.invisiblesolutions.com *.invisible.io;
+    root /var/www/icrm/web;
+
+    #ssl on;
+    ssl_certificate /etc/ssl/certs/invisible.io.crt;
+    ssl_certificate_key /etc/ssl/private/invisible.io.key;
+
+    error_log /var/log/nginx/icrm.error.log;
+    access_log /var/log/nginx/icrm.access.log;
+
+    # strip app.php/ prefix if it is present
+    rewrite ^/app\.php/?(.*)$ /$1 permanent;
+
+    location / {
+        index app.php;
+        try_files $uri @rewriteapp;
+    }
+
+    location @rewriteapp {
+        rewrite ^(.*)$ /app.php/$1 last;
+    }
+
+    # pass the PHP scripts to FastCGI server from upstream phpfcgi
+    location ~ ^/(.+)\.php($|/) {
+        fastcgi_read_timeout 150;
+        fastcgi_send_timeout  5m;
+        fastcgi_pass phpfcgi;
+        fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param HTTPS on;
+    }
+
+    send_timeout 2m;
+    client_body_timeout 2m;
+    client_header_timeout 2m;
+    client_max_body_size 20M;
+}
+
+server {
+    pagespeed standby;
+    listen 80;
+    server_name amocrm-bot.invisible.io;
+    root /var/www/amocrm-bot.invisible.io/web;
+
+    location / {
+        # try to serve file directly, fallback to front controller
+        try_files $uri /index.php$is_args$args;
+    }
+
+    # If you have 2 front controllers for dev|prod use the following line instead
+    # location ~ ^/(index|index_dev)\.php(/|$) {
+    location ~ ^/index\.php(/|$) {
+        # the ubuntu default
+        #fastcgi_pass   unix:/var/run/php/phpX.X-fpm.sock;
+        # for running on centos
+        #fastcgi_pass   unix:/var/run/php-fpm/www.sock;
+        fastcgi_pass phpfcgi;
+
+        fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param HTTPS off;
+
+        # Prevents URIs that include the front controller. This will 404:
+        # http://domain.tld/index.php/some-path
+        # Enable the internal directive to disable URIs like this
+        # internal;
+    }
+
+    #return 404 for all php files as we do have a front controller
+    location ~ \.php$ {
+        return 404;
+    }
+
+    error_log /var/log/nginx/amocrm-bot.invisible.io.error.log;
+    access_log /var/log/nginx/amocrm-bot.invisible.io.access.log;
+}
+
+
