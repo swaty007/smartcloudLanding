@@ -116,6 +116,38 @@ body div.wpcf7 {
   }
 }
 
+.line-form-wpcf7 {
+  form {
+    p:not(.under-form-policy-texts) {
+      width: calc(20% - 20px);
+      display: inline-block;
+      margin-right: 20px;
+      @media(max-width:991px) {
+        width: calc(50% - 20px);
+      }
+      @media(max-width:768px) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+    input[type="submit"] {
+      height: 40px!important;
+      margin-bottom: 5px!important;
+      line-height: 40px!important;
+      @media(max-width:991px) {
+        height: 50px!important;
+        line-height: 50px!important;
+        width: 200%!important;
+        margin-left: 10px;
+      }
+      @media(max-width:768px) {
+        width: 100%!important;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 img {
   max-width: 100%;
 }
