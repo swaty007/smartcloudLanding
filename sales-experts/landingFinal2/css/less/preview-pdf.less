@@ -1,12 +1,39 @@
 .preview-pdf {
-  .preview-iframe-wrap {
-    //overflow-x: hidden;
-    max-height: 502px;
-    iframe {
-      transform: rotateZ(-90deg);
-      transform-origin: 49% 17% 0;
-      //width: 510px;
-      //height: 1450px;
+  .sub-title {
+    @media(min-width:1200px) {
+      margin-top: 110px;
+    }
+  }
+
+  .full_info {
+    display: inline-block;
+    vertical-align: top;
+    width: 292px;
+    width: 70%;
+    margin-right: 3%;
+    .slick-slide {
+      padding: 15px;
+    }
+    img {
+      width: 260px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(128, 149, 166, 0.24);
+    }
+  }
+  .image_info {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    width: 16%;
+    .slick-track {
+      width: 100%!important;
+      transform: none!important;
+      .slick-slide {
+        width: 100%!important;
+        margin-bottom: 10px;
+        cursor: pointer;
+        outline: none!important;
+      }
     }
   }
 }

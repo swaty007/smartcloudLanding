@@ -67,7 +67,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="sub-title text-center">
+                <h2 class="sub-title big text-center">
                     Solve sales pain points with automation
                 </h2>
             </div>
@@ -109,9 +109,35 @@
                 <p class="description ask">The efficiency/cost overview of each tool, for every stage.</p>
             </div>
             <div class="col-md-6">
-                <div class="preview-iframe-wrap">
-                    <iframe width="510" height="1450" src="https://smartcloudconnect.io/wp-content/uploads/file-manager/Sales-Automation-the-Ultimate-Guide.pdf" frameborder="0"></iframe>
-                    <embed class="pdf" src="https://smartcloudconnect.io/wp-content/uploads/file-manager/Sales-Automation-the-Ultimate-Guide.pdf" type="application/pdf">
+                <div class="row">
+
+                        <div class="full_info">
+                            <div>
+                                <img src="Book-bang-for-entherpise-no-shadow.png" alt="">
+                            </div>
+                            <div>
+                                <img src="Sales-automation-page-1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="Sales-automation-page-2.png" alt="">
+                            </div>
+                            <div>
+                                <img src="Sales-automation-page-3.png" alt="">
+                            </div>
+                            <div>
+                                <img src="Sales-automation-page-4.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <div class="image_info">
+                            <div class="hidden"><img class="hidden" src="https://smartcloudconnect.io/wp-content/uploads/Book-bang-for-entherpise.png" alt=""></div>
+                            <div><img src="Sales-automation-page-1.png" alt=""></div>
+                            <div><img src="Sales-automation-page-2.png" alt=""></div>
+                            <div><img src="Sales-automation-page-3.png" alt=""></div>
+                            <div><img src="Sales-automation-page-4.png" alt=""></div>
+                        </div>
+
                 </div>
             </div>
         </div>
@@ -133,44 +159,135 @@
 
 
 
-<!--<script src="https://smartcloudconnect.io/wp-content/uploads/jquery-ui.min_.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 
-<!--<script defer src="/wp-content/uploads/jquery.animateNumber.min_.js"></script>-->
-<script defer src="/wp-content/uploads/jquery.fadethis.min_.js"></script>
-<!--<script defer src="/wp-content/uploads/jquery.viewportchecker.min_.js"></script>-->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    setTimeout("ga('send','event','Engaged users','More than 15 seconds')",15000);
+    jQuery.noConflict();
+    (function ($) {
+        $(window).load(function () {
+            $('.wpcf7 input[type="submit"]').prop("disabled", true);
+            $('.wpcf7 input[type="text"]:not(".hidden"),.wpcf7 input[type="email"]:not(".hidden")').on('input',function () {
+                let active = true;
+                $('.wpcf7 input[type="text"]:not(".hidden"),.wpcf7 input[type="email"]:not(".hidden")').each(function (i,el) {
+                    if($(this).val().length === 0) {
+                        active = false;
+                    }
+                });
+                if (active) {
+                    $('input[type="submit"]').prop("disabled", false);
+                } else {
+                    $('.wpcf7 input[type="submit"]').prop("disabled", true);
+                }
+            });
+        });
+    })(jQuery);
+</script>
+
 <script>
     window.addEventListener("load", function () {
-
         jQuery.noConflict();
         (function ($) {
 
-            //smooth scroll
-            $('.scroll-nav').on('click', function (e) {
-                e.preventDefault();
+//            if( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+//                $('head').append('<style type="text/css">@media (min-width: 992px){#wrapper #main .form-sales2 .sticky-block-col {margin-top: -260px!important;}}@media (min-width: 1200px){#wrapper #main .form-sales2 .sticky-block-col {margin-top: -330px!important;}}</style>');
+//            }
 
-                $('html, body').animate({
-                    scrollTop: $($(this).attr('href')).offset().top
-                }, 500, 'linear');
-            });
 
-            if(document.documentElement.clientWidth > 1024)
-            {
-                $(window).fadeThis({
+
+
+            function adaptive_slick_slide() {
+                if ($('#preview-pdf .full_info').hasClass('slick-initialized')) {return;}
+                $('#preview-pdf .full_info').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    centerMode: true,
+                    fade: true,
+                    cssEase: 'linear',
+                    asNavFor: '.image_info',
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                });
+                $('#preview-pdf .image_info').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    asNavFor: '.full_info',
+                    dots: false,
+                    focusOnSelect: true,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 5
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 5
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 5
+                            }
+                        }
+                    ]
+                });
+                $('#alex-slider-partners').slick({
+                    dots: false,
+                    infinite: true,
+                    arrows: false,
                     speed: 300,
-                    reverse: false,
-                    offset:-400
+                    slidesToScroll: 1,
+                    slidesToShow: 8,
+                    variableWidth: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    responsive: [
+                        {
+                            breakpoint: 99999,
+                            settings: {
+                                dots: false,
+                                infinite: true,
+                                arrows: false,
+                                speed: 300,
+                                slidesToScroll: 1,
+                                slidesToShow: 8,
+                                variableWidth: true,
+                                autoplay: true,
+                                autoplaySpeed: 2000,
+                            }
+                        },
+                        {
+                            breakpoint: 991,
+                            settings: "unslick"
+                        }
+                    ]
                 });
             }
+            $(window).resize(function(){
+                if ($(window).width() > 991) {
+                    adaptive_slick_slide();
+                }
+            });
+            adaptive_slick_slide();
+
+
+
 
         })(jQuery);
-
     });
 </script>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
+
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
