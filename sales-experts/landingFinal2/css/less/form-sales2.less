@@ -2,13 +2,28 @@
   padding-bottom: 50px;
   padding-top: 160px;
   margin-top: -1px;
-  background-image: url(../../sales-expert-background-rock.png);
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/sales-expert-background-rock.png);
   background-size: cover;
   background-position: 50% 50%;
+  @media(max-width:991px) {
+    padding-top: 80px;
+  }
+  a.green-btn:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
     .img-block.bottom {
       margin-bottom: -130px;
       img {
-
+        width: 100%;
+        max-width: 300px;
+      }
+      @media(max-width:991px) {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 45px;
+        img {
+          width: unset;
+        }
       }
     }
 

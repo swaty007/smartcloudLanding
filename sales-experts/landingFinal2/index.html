@@ -44,17 +44,17 @@
         <div class="row">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="img-block bottom">
-                            <img src="https://smartcloudconnect.io/wp-content/uploads/Book-bang-for-entherpise.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-8 text-center">
+                    <div class="col-md-7 text-center col-md-push-3">
                         <h1 class="title">
                             <span>Sales automation:</span>
                             the Ultimate Guide
                         </h1>
-                        <a href="#" class="green-btn">Get A free Copy</a>
+                        <a href="#form-scroll-anchor" class="green-btn form-scroll-btn">Get A free Copy</a>
+                    </div>
+                    <div class="col-md-3 col-md-pull-7">
+                        <div class="img-block bottom">
+                            <img src="https://smartcloudconnect.io/wp-content/uploads/Book-bang-for-entherpise.png" alt="">
+                        </div>
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="img-block">
-                    <img src="sales-expert-circle.png" alt="">
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/sales-expert-circle.png" alt="">
                 </div>
             </div>
             <div class="col-md-6">
@@ -108,45 +108,47 @@
                 </p>
                 <p class="description ask">The efficiency/cost overview of each tool, for every stage.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <div class="row">
 
                         <div class="full_info">
                             <div>
-                                <img src="Book-bang-for-entherpise-no-shadow.png" alt="">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/Book-bang-for-entherpise-no-shadow.png" alt="">
                             </div>
                             <div>
-                                <img src="Sales-automation-page-1.png" alt="">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/Sales-automation-page-1.png" alt="">
                             </div>
                             <div>
-                                <img src="Sales-automation-page-2.png" alt="">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/Sales-automation-page-2.png" alt="">
                             </div>
                             <div>
-                                <img src="Sales-automation-page-3.png" alt="">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/Sales-automation-page-3.png" alt="">
                             </div>
                             <div>
-                                <img src="Sales-automation-page-4.png" alt="">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/Sales-automation-page-4.png" alt="">
                             </div>
                         </div>
 
 
                         <div class="image_info">
                             <div class="hidden"><img class="hidden" src="https://smartcloudconnect.io/wp-content/uploads/Book-bang-for-entherpise.png" alt=""></div>
-                            <div><img src="Sales-automation-page-1.png" alt=""></div>
-                            <div><img src="Sales-automation-page-2.png" alt=""></div>
-                            <div><img src="Sales-automation-page-3.png" alt=""></div>
-                            <div><img src="Sales-automation-page-4.png" alt=""></div>
+                            <div><img src="https://smartcloudconnect.io/wp-content/uploads/Sales-automation-page-1.png" alt=""></div>
+                            <div><img src="https://smartcloudconnect.io/wp-content/uploads/Sales-automation-page-2.png" alt=""></div>
+                            <div><img src="https://smartcloudconnect.io/wp-content/uploads/Sales-automation-page-3.png" alt=""></div>
+                            <div><img src="https://smartcloudconnect.io/wp-content/uploads/Sales-automation-page-4.png" alt=""></div>
                         </div>
 
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <h2>
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="sub-title text-center sub-form-title">
                     Small improvements of each sales cycle steps make a big difference to the bottom line
                 </h2>
-                <div class="line-form-wpcf7">
+            </div>
+            <div class="col-md-12">
+                <div class="line-form-wpcf7" id="form-scroll-anchor">
                     [contact-form-7 id="8850" title=":enDownload guide (name,last_name,email,company)_sales_experts:"]
                 </div>
             </div>
@@ -166,7 +168,9 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
-    setTimeout("ga('send','event','Engaged users','More than 15 seconds')",15000);
+    setTimeout(function () {
+        ga('send','event','Engaged users','More than 15 seconds');
+    },15000);
     jQuery.noConflict();
     (function ($) {
         $(window).load(function () {
@@ -184,6 +188,60 @@
                     $('.wpcf7 input[type="submit"]').prop("disabled", true);
                 }
             });
+                function adaptive_slick_slide() {
+                    if ($('#preview-pdf .full_info').hasClass('slick-initialized')) {return;}
+                    $('#preview-pdf .full_info').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        centerMode: true,
+                        fade: true,
+                        cssEase: 'linear',
+                        asNavFor: '.image_info',
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                    });
+                    $('#preview-pdf .image_info').slick({
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        asNavFor: '.full_info',
+                        dots: false,
+                        focusOnSelect: true,
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 5
+                                }
+                            },
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    slidesToShow: 5
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 5
+                                }
+                            }
+                        ]
+                    });
+                }
+                $(window).resize(function(){
+                    if ($(window).width() > 991) {
+                        adaptive_slick_slide();
+                    }
+                });
+                adaptive_slick_slide();
+        });
+        $('.form-scroll-btn').on('click', function (e) {
+            e.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 500, 'linear');
         });
     })(jQuery);
 </script>
@@ -200,84 +258,7 @@
 
 
 
-            function adaptive_slick_slide() {
-                if ($('#preview-pdf .full_info').hasClass('slick-initialized')) {return;}
-                $('#preview-pdf .full_info').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    centerMode: true,
-                    fade: true,
-                    cssEase: 'linear',
-                    asNavFor: '.image_info',
-                    autoplay: true,
-                    autoplaySpeed: 4000,
-                });
-                $('#preview-pdf .image_info').slick({
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
-                    asNavFor: '.full_info',
-                    dots: false,
-                    focusOnSelect: true,
-                    responsive: [
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 5
-                            }
-                        },
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 5
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 5
-                            }
-                        }
-                    ]
-                });
-                $('#alex-slider-partners').slick({
-                    dots: false,
-                    infinite: true,
-                    arrows: false,
-                    speed: 300,
-                    slidesToScroll: 1,
-                    slidesToShow: 8,
-                    variableWidth: true,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    responsive: [
-                        {
-                            breakpoint: 99999,
-                            settings: {
-                                dots: false,
-                                infinite: true,
-                                arrows: false,
-                                speed: 300,
-                                slidesToScroll: 1,
-                                slidesToShow: 8,
-                                variableWidth: true,
-                                autoplay: true,
-                                autoplaySpeed: 2000,
-                            }
-                        },
-                        {
-                            breakpoint: 991,
-                            settings: "unslick"
-                        }
-                    ]
-                });
-            }
-            $(window).resize(function(){
-                if ($(window).width() > 991) {
-                    adaptive_slick_slide();
-                }
-            });
-            adaptive_slick_slide();
+
 
 
 

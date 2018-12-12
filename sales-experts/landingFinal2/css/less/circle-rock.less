@@ -1,9 +1,18 @@
 .circle-rock {
   padding-top: 70px;
   padding-bottom: 150px;
+  @media(max-width:991px) {
+    padding-bottom: 80px;
+  }
   .img-block {
     img {
 
+    }
+    @media(max-width:991px) {
+      text-align: center;
+      img {
+        max-width: 220px;
+      }
     }
   }
 }
