@@ -32,8 +32,8 @@
 
 
 
-https://www.outreach.io/
-http://smartcloudlanding/new_header/
+<!--https://www.outreach.io/-->
+<!--http://smartcloudlanding/new_header/-->
 <nav id="w0" class="navbar-scc">
     <div class="container-fluid navbar-container">
         <div class="navbar-scc-header">
@@ -47,11 +47,11 @@ http://smartcloudlanding/new_header/
                 <img src="//smartcloudconnect.io/wp-content/uploads/Logo-Color.png" alt="logo">
             </a>
         </div>
-        <div id="w0-collapse" class="collapse navbar-collapse text-center">
+        <div id="w0-collapse" class="collapse navbar-collapse text-center collapse-scc">
             <ul id="w1" class="navbar-nav nav menu-scc">
                 <li class="menu-item">
                     <a class="menu-link" href="#about-ua">Product</a>
-                    <ul class="sub-menu">
+                    <ul class="sub-menu-drop">
                         <li class="sub-item">
                             <div class="container">
                                 <div class="row">
@@ -97,7 +97,7 @@ http://smartcloudlanding/new_header/
                 </li>
                 <li class="menu-item">
                     <a class="menu-link" href="https://smartcloudconnect.io/pricing/">Why SmartCloud</a>
-                    <ul class="sub-menu">
+                    <ul class="sub-menu-drop">
                         <li class="sub-item">
                             <div class="container">
                                 <div class="row">
@@ -157,6 +157,81 @@ http://smartcloudlanding/new_header/
     </div>
 </nav>
 
+<script>
+    ( function( $ ) {
+        $( document ).ready(function() {
+
+            $(document).on('click', '#cssmenu>ul>li.menu-item-has-children span.holder', function(){
+
+                // var silka = $(this).Attr('href');
+                // $(this).removeAttr('href'); //удалять ссылку
+                // $(this).append("<a class='silka' href='"+silka+"' ></a>");
+                var element = $(this).parent('li');
+
+                if (element.hasClass('open')) {
+                    element.removeClass('open');
+                    element.find('li').removeClass('open');
+                    element.find('ul').slideUp();
+                    // $('a').attr('href', silka);
+                } else {
+                    element.addClass('open');
+                    element.children('ul').slideDown();
+                    element.siblings('li').children('ul').slideUp();
+                    element.siblings('li').removeClass('open');
+                    element.siblings('li').find('li').removeClass('open');
+                    element.siblings('li').find('ul').slideUp();
+                }
+
+            });
+
+// $('#cssmenu>ul>li.menu-item-has-children>a').append("<span class='holder'></span>");
+            $('#cssmenu li.menu-item-has-children').append("<span class='holder'></span>");
+
+            (function getColor() {
+                var r, g, b;
+                var textColor = $('#cssmenu').css('color');
+                textColor = textColor.slice(4);
+                r = textColor.slice(0, textColor.indexOf(','));
+                textColor = textColor.slice(textColor.indexOf(' ') + 1);
+                g = textColor.slice(0, textColor.indexOf(','));
+                textColor = textColor.slice(textColor.indexOf(' ') + 1);
+                b = textColor.slice(0, textColor.indexOf(')'));
+                var l = rgbToHsl(r, g, b);
+                if (l > 0.7) {
+                    $('#cssmenu>ul>li>a').css('text-shadow', '0 1px 1px rgba(0, 0, 0, .35)');
+                    $('#cssmenu>ul>li>a>span').css('border-color', 'rgba(0, 0, 0, .35)');
+                }
+                else
+                {
+                    $('#cssmenu>ul>li>a').css('text-shadow', '0 1px 0 rgba(255, 255, 255, .35)');
+                    $('#cssmenu>ul>li>a>span').css('border-color', 'rgba(255, 255, 255, .35)');
+                }
+            })();
+
+            function rgbToHsl(r, g, b) {
+                r /= 255, g /= 255, b /= 255;
+                var max = Math.max(r, g, b), min = Math.min(r, g, b);
+                var h, s, l = (max + min) / 2;
+
+                if(max == min){
+                    h = s = 0;
+                }
+                else {
+                    var d = max - min;
+                    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                    switch(max){
+                        case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                        case g: h = (b - r) / d + 2; break;
+                        case b: h = (r - g) / d + 4; break;
+                    }
+                    h /= 6;
+                }
+                return l;
+            }
+        });
+    } )( jQuery );
+
+</script>
 
 </body>
 

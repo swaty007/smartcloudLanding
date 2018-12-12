@@ -22,6 +22,8 @@ img {
   background-color: #ffffff;
   position: relative;
   .navbar-scc-header {
+    display: inline-block;
+    float: left;
     .navbar-scc-brand {
       line-height: 77px;
       height: 77px;
@@ -30,28 +32,40 @@ img {
       }
     }
   }
-  &.show-scc-navbar {
+
+  &.show-scc-navbar .collapse-scc{
     opacity: 1;
     pointer-events: inherit;
   }
-  ul.menu-scc {
+  .collapse-scc {
+    display: inline-block;
+    text-align: center;
     @media(max-width:991px) {
       position: fixed;
       z-index: 1000;
       overflow: scroll;
       background: white;
-      padding: 1.125em 1.5em;
+      padding: 77px 25px 25px;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      opacity: 0;
+      //opacity: 0;
       pointer-events: none;
       transition: opacity .3s ease;
     }
+  }
+  ul.menu-scc {
+    display: inline-block;
+    float: none;
+
     li.menu-item {
       position: static;
       border-bottom: 4px solid transparent;
+      @media(max-width:991px) {
+        display: block;
+        width: 100%;
+      }
       a.menu-link {
         line-height: 73px;
         padding: 0 15px;
@@ -61,12 +75,17 @@ img {
       }
       &:hover {
         border-bottom: 4px solid #37a148;
-        .sub-menu {
+        .sub-menu-drop {
           opacity: 1;
           visibility: visible;
         }
       }
-      ul.sub-menu {
+      ul.sub-menu-drop {
+        @media(max-width:991px) {
+          position: relative;
+          padding: 0;
+          top: 0;
+        }
         list-style: none;
         margin: 0;
         padding: 25px 0;
