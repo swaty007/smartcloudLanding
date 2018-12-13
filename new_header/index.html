@@ -23,9 +23,18 @@
 
     <link rel="stylesheet/less" type="text/css" href="css/less/main.less"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js"></script>
-</head>
-<body id="main" lang="lo">
 
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:400,500,700" media="all">
+
+</head>
+
+<body id="main" lang="lo" style="background: black;">
+<script>
+    var async_css=document.createElement("link");
+    async_css.rel="stylesheet";
+    async_css.href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
+    document.body.insertBefore(async_css,document.body.childNodes[document.body.childNodes.length-1].nextSibling);
+</script>
 
 
 
@@ -34,10 +43,10 @@
 
 <!--https://www.outreach.io/-->
 <!--http://smartcloudlanding/new_header/-->
-<nav id="w0" class="navbar-scc">
+<nav id="navbar_scc" class="navbar-scc">
     <div class="container-fluid navbar-container">
         <div class="navbar-scc-header">
-            <button id="menu-btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#w0-collapse">
+            <button id="menu-btn" class="collapsed">
                 <span class="sr-only">Toggle navigation</span>
                 <span id="bar-1" class=""></span>
                 <span id="bar-2" class=""></span>
@@ -47,28 +56,26 @@
                 <img src="//smartcloudconnect.io/wp-content/uploads/Logo-Color.png" alt="logo">
             </a>
         </div>
-        <div id="w0-collapse" class="collapse navbar-collapse text-center collapse-scc">
-            <ul id="w1" class="navbar-nav nav menu-scc">
+        <div id="scc_collapse" class="collapse-scc">
+            <ul id="menu_scc" class="menu-scc">
                 <li class="menu-item">
                     <a class="menu-link" href="#about-ua">Product</a>
+                    <a class="menu_drop_trigger" href="#"><i class="fa fa-angle-down"></i></a>
                     <ul class="sub-menu-drop">
                         <li class="sub-item">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-3"><h4 class="menu-sub-title">Features</h4></div>
-                                    <div class="col-md-3"><a href="" class="menu-sub-title">Integrations</a></div>
-                                    <div class="col-md-3"><h4 class="menu-sub-title">Comparison</h4></div>
-                                    <div class="col-md-3"><h4 class="menu-sub-title">Personas</h4></div>
-                                </div>
-                                <hr class="menu-seporate">
-                                <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-xs-6 col-sm-3">
+                                        <h4 class="menu-sub-title">Features</h4>
+                                        <hr class="menu-seporate">
                                         <a href="" class="menu-sub-link">Data Synchronization</a>
                                         <a href="" class="menu-sub-link">Email Sidebar</a>
                                         <a href="" class="menu-sub-link">Calendar Features</a>
                                         <a href="" class="menu-sub-link">Document Features</a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-xs-6 col-sm-3">
+                                        <a href="" class="menu-sub-title">Integrations</a>
+                                        <hr class="menu-seporate">
                                         <a href="" class="menu-sub-link">Salesforce</a>
                                         <a href="" class="menu-sub-link">Oracle Siebel</a>
                                         <a href="" class="menu-sub-link">SAP</a>
@@ -78,10 +85,14 @@
                                         <a href="" class="menu-sub-link">Gmail</a>
                                         <a href="" class="menu-sub-link">IBM Notes</a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-xs-6 col-sm-3">
+                                        <h4 class="menu-sub-title">Comparison</h4>
+                                        <hr class="menu-seporate">
                                         <a href="" class="menu-sub-link">SmartCloud Connect vs Salesforce Inbox</a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-xs-6 col-sm-3">
+                                        <h4 class="menu-sub-title">Personas</h4>
+                                        <hr class="menu-seporate">
                                         <a href="" class="menu-sub-link">Sales managers</a>
                                         <a href="" class="menu-sub-link">Sales reps</a>
                                         <a href="" class="menu-sub-link">Sales operations</a>
@@ -97,30 +108,32 @@
                 </li>
                 <li class="menu-item">
                     <a class="menu-link" href="https://smartcloudconnect.io/pricing/">Why SmartCloud</a>
+                    <a class="menu_drop_trigger" href="#"><i class="fa fa-angle-down"></i></a>
                     <ul class="sub-menu-drop">
                         <li class="sub-item">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-3"><h4 class="menu-sub-title">Customers</h4></div>
-                                    <div class="col-md-3"><a href="" class="menu-sub-title">Enterprise</a></div>
-                                    <div class="col-md-3"><h4 class="menu-sub-title">Parterships</h4></div>
-                                    <div class="col-md-3"><h4 class="menu-sub-title">About us</h4></div>
-                                </div>
-                                <hr class="menu-seporate">
-                                <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-xs-6 col-sm-3">
+                                        <h4 class="menu-sub-title">Customers</h4>
+                                         <hr class="menu-seporate">
                                         <a href="" class="menu-sub-link">Customer voice</a>
                                         <a href="" class="menu-sub-link">Case study - Morgan & Morgan</a>
                                         <a href="" class="menu-sub-link">Case study - Vapotherm</a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-xs-6 col-sm-3">
+                                        <a href="" class="menu-sub-title">Enterprise</a>
+                                         <hr class="menu-seporate">
                                         <a href="" class="menu-sub-link">SmartCloud Connect for Enterprise</a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-xs-6 col-sm-3">
+                                        <h4 class="menu-sub-title">Parterships</h4>
+                                         <hr class="menu-seporate">
                                         <a href="" class="menu-sub-link">Our parters</a>
                                         <a href="" class="menu-sub-link">Become a partner</a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-xs-6 col-sm-3">
+                                        <h4 class="menu-sub-title">About us</h4>
+                                         <hr class="menu-seporate">
                                         <a href="" class="menu-sub-link">Who we are</a>
                                         <a href="" class="menu-sub-link">Our vision & mission</a>
                                         <a href="" class="menu-sub-link">Core value</a>
@@ -154,6 +167,7 @@
                 </li>
             </ul>
         </div>
+        <div class="scc-bg"></div>
     </div>
 </nav>
 
@@ -161,8 +175,7 @@
     ( function( $ ) {
         $( document ).ready(function() {
 
-            $(document).on('click', '#cssmenu>ul>li.menu-item-has-children span.holder', function(){
-
+            $(document).on('click', '#menu_scc .menu_drop_trigger', function(){
                 // var silka = $(this).Attr('href');
                 // $(this).removeAttr('href'); //удалять ссылку
                 // $(this).append("<a class='silka' href='"+silka+"' ></a>");
@@ -170,64 +183,25 @@
 
                 if (element.hasClass('open')) {
                     element.removeClass('open');
-                    element.find('li').removeClass('open');
-                    element.find('ul').slideUp();
+//                    element.find('ul').slideUp();
+
                     // $('a').attr('href', silka);
                 } else {
                     element.addClass('open');
-                    element.children('ul').slideDown();
-                    element.siblings('li').children('ul').slideUp();
-                    element.siblings('li').removeClass('open');
-                    element.siblings('li').find('li').removeClass('open');
-                    element.siblings('li').find('ul').slideUp();
-                }
+//                    element.children('ul').slideDown(3000);
 
+//                    element.siblings('li').children('ul').slideUp();
+//                    element.siblings('li').removeClass('open');
+                }
             });
-
-// $('#cssmenu>ul>li.menu-item-has-children>a').append("<span class='holder'></span>");
-            $('#cssmenu li.menu-item-has-children').append("<span class='holder'></span>");
-
-            (function getColor() {
-                var r, g, b;
-                var textColor = $('#cssmenu').css('color');
-                textColor = textColor.slice(4);
-                r = textColor.slice(0, textColor.indexOf(','));
-                textColor = textColor.slice(textColor.indexOf(' ') + 1);
-                g = textColor.slice(0, textColor.indexOf(','));
-                textColor = textColor.slice(textColor.indexOf(' ') + 1);
-                b = textColor.slice(0, textColor.indexOf(')'));
-                var l = rgbToHsl(r, g, b);
-                if (l > 0.7) {
-                    $('#cssmenu>ul>li>a').css('text-shadow', '0 1px 1px rgba(0, 0, 0, .35)');
-                    $('#cssmenu>ul>li>a>span').css('border-color', 'rgba(0, 0, 0, .35)');
-                }
-                else
-                {
-                    $('#cssmenu>ul>li>a').css('text-shadow', '0 1px 0 rgba(255, 255, 255, .35)');
-                    $('#cssmenu>ul>li>a>span').css('border-color', 'rgba(255, 255, 255, .35)');
-                }
-            })();
-
-            function rgbToHsl(r, g, b) {
-                r /= 255, g /= 255, b /= 255;
-                var max = Math.max(r, g, b), min = Math.min(r, g, b);
-                var h, s, l = (max + min) / 2;
-
-                if(max == min){
-                    h = s = 0;
-                }
-                else {
-                    var d = max - min;
-                    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-                    switch(max){
-                        case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-                        case g: h = (b - r) / d + 2; break;
-                        case b: h = (r - g) / d + 4; break;
-                    }
-                    h /= 6;
-                }
-                return l;
-            }
+            $(document).on('click', '#menu-btn', function () {
+                $(this).toggleClass('collapsed');
+                $('#navbar_scc').toggleClass('show-scc-navbar');
+//                    $('#scc_collapse').slideToggle();
+                   setTimeout(function () {
+                       $('#scc_collapse').show();
+                   },300)
+            })
         });
     } )( jQuery );
 
