@@ -12,16 +12,39 @@
 }
 body {
   overflow-x: hidden;
-  font-family: 'Cabin';
 }
-img {
-  max-width: 100%;
+html {
+  overflow: unset!important;
 }
 
+.navbar-scc-height-fix {
+  height: 77px;
+}
+body.show-scc-navbar {
+  overflow: hidden!important;
+  .navbar-scc{
+    .collapse-scc{
+      opacity: 1;
+      pointer-events: inherit;
+    }
+    .scc-bg {
+      &:before {
+        width: 3000px;
+        height: 3000px;
+        top: -1500px;
+        right: -1500px;
+      }
+    }
+  }
+}
 .navbar-scc {
   box-shadow: 0 5px 39px rgba(115, 136, 151, 0.15);
   background-color: #ffffff;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99997;
   display: block;
   .navbar-scc-header {
     display: inline-block;
@@ -34,20 +57,6 @@ img {
       height: 77px;
       img {
         height: 51px;
-      }
-    }
-  }
-  &.show-scc-navbar {
-    .collapse-scc{
-      opacity: 1;
-      pointer-events: inherit;
-    }
-    .scc-bg {
-      &:before {
-        width: 3000px;
-        height: 3000px;
-        top: -1500px;
-        right: -1500px;
       }
     }
   }
@@ -138,11 +147,16 @@ img {
       &.open {
         &:hover {
           &>a.menu_drop_trigger {
-            background-color: transparent;
+            //background-color: transparent;
           }
         }
         ul.sub-menu-drop {
           max-height: 160em;
+          @media(max-width:480px) {
+            .col-xs-6 {
+
+            }
+          }
         }
       }
       .menu-link {
@@ -167,7 +181,7 @@ img {
         line-height: 73px;
         padding: 0 15px;
         &:hover {
-          background-color: fade(#023358, 40);
+          //background-color: fade(#023358, 40);
         }
       }
       ul.sub-menu-drop {
@@ -207,6 +221,11 @@ img {
     line-height: 42px;
     text-decoration: none;
     outline: none;
+    @media(max-width: 480px) {
+      display: inline-block;
+      margin-top: 15px;
+      margin-bottom: -5px;
+    }
   }
   .menu-sub-link {
     display: block;
@@ -234,7 +253,6 @@ img {
     border: 1px solid transparent;
     border-radius: 4px;
 
-
     //width: 24px;
     //height: 18px;
     width: 28px;
@@ -246,6 +264,9 @@ img {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    @media (max-width: 991px) {
+      display: block;
+    }
   &:not(.collapsed) {
       span {
         background-color:@color-3;
@@ -290,12 +311,6 @@ img {
       &#bar-3 {
         top: 14px;
       }
-    }
-  }
-  @media (max-width: 991px) {
-    #menu-btn {
-      margin-left: 20px;
-      display: block;
     }
   }
 }
