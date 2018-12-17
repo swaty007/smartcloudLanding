@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" id="wrapper">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Header</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet/less" type="text/css" href="css/less/main.less"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js"></script>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:400,500,700" media="all">
+
+</head>
+
+<body id="main" lang="lo">
+<script>
+    var async_css = document.createElement("link");
+    async_css.rel = "stylesheet";
+    async_css.href = "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
+    document.body.insertBefore(async_css, document.body.childNodes[document.body.childNodes.length - 1].nextSibling);
+</script>
+
+
+<section id="wizard-scc" class="wizard-scc">
+    <div class="wizard-wrap">
+        <div class="wizard-header">
+            <img src="scc-logo.png" alt="" class="logo">
+        </div>
+        <div class="wizard-carousel">
+            <div class="item">
+                <h2 class="title big">
+                    #1
+                </h2>
+                <h2 class="title">
+                    Enterprise solution for integrating Salesforce with Outlook that actually works
+                </h2>
+            </div>
+            <div class="item">
+                <div class="img-block">
+                    <img src="screen-2-img.svg" alt="">
+                </div>
+                <h2 class="title">
+                    Increase Sales Productivity by
+                </h2>
+                <h2 class="title big">
+                    20%
+                </h2>
+                <p class="text">
+                    Work with all your Salesforse right from Outlook
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="title">
+                    Keep your Salesforce data always up-to-date
+                </h2>
+                <p class="text">
+                    Automatically synchronize:
+                </p>
+            </div>
+            <div class="item">
+                <div class="img-block">
+                    <img src="screen-4-img.svg" alt="">
+                </div>
+                <h2 class="title">
+                    Book every meeting with a single email
+                </h2>
+                <p class="text">
+                    Schedule meetings by inserting clickable timeslots into emails
+                </p>
+            </div>
+        </div>
+        <div class="wizard-bottom">
+            <ol class="wizard-indicators">
+                <li data-target="#alex-Carousel" data-slide-to="0" class="">
+                    <div class="circle">1</div>
+                </li>
+                <li data-target="#alex-Carousel" data-slide-to="1" class="">
+                    <div class="circle">2</div>
+                </li>
+                <li data-target="#alex-Carousel" data-slide-to="2" class="active">
+                    <div class="circle">3</div>
+                </li>
+                <li data-target="#alex-Carousel" data-slide-to="3" class="">
+                    <div class="circle">4</div>
+                </li>
+                <li data-target="#alex-Carousel" data-slide-to="4" class="">
+                    <div class="circle">5</div>
+                </li>
+            </ol>
+            <div class="wizard-buttons">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    jQuery.noConflict();
+    (function ($) {
+        $(document).ready(function () {
+
+            $(document).on('click', '#menu_scc .menu_drop_trigger', function () {
+                // var silka = $(this).Attr('href');
+                // $(this).removeAttr('href'); //удалять ссылку
+                // $(this).append("<a class='silka' href='"+silka+"' ></a>");
+                var element = $(this).parent('li');
+
+                if (element.hasClass('open')) {
+                    element.removeClass('open');
+//                    element.find('ul').slideUp();
+
+                    // $('a').attr('href', silka);
+                } else {
+                    element.addClass('open');
+//                    element.children('ul').slideDown(3000);
+
+//                    element.siblings('li').children('ul').slideUp();
+//                    element.siblings('li').removeClass('open');
+                }
+            });
+            var block = 0;
+            $(document).on('click', '#menu-btn', function () {
+                if (block === 1) {
+                    return;
+                }
+                block = 1;
+                $(this).toggleClass('collapsed');
+                $('body').toggleClass('show-scc-navbar');
+//                    $('#scc_collapse').slideToggle();
+                setTimeout(function () {
+                    $('#scc_collapse').show();
+                    block = 0;
+                }, 300)
+            })
+        });
+    })(jQuery);
+
+</script>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
