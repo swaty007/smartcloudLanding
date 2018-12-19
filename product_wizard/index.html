@@ -6,310 +6,416 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>wizard</title>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!--<link rel="stylesheet/less" type="text/css" href="css/less/main.less"/>-->
-    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js"></script>-->
+    <link rel="stylesheet/less" type="text/css" href="css/less/main.less"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js"></script>
 
 </head>
-<style type="text/css" id="less:smartcloudLanding-product_wizard-css-less-main">
-    .wizard-scc .title {
+<body id="main" lang="lo">
+
+<section id="wizard-scc" class="wizard-scc" style="background-image: url(scc-wizard-background.png);
+    background-size: 300% auto;
+    background-position-y: 50%;
+    background-position-x: 0;">
+    <div class="wizard-wrap" style="
+    width: 100%;">
+        <div class="wizard-header" style="
+    text-align: center;">
+            <img src="scc-logo.png" class="logo" style="
+    max-height: 78px;
+    width: auto;">
+        </div>
+        <div class="wizard-carousel">
+            <div class="item active" style="
+    min-height: 700px;
+    display: block;
+    text-align: center;
+    max-width: 100%;
+">
+                <h2 class="title big" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    margin: 0;
+">
+                    #1
+                </h2>
+                <h2 class="title" style="
     color: #06337c;
     font-family: 'Cabin', 'Open Sans', sans-serif;
     font-size: 40px;
     font-weight: 700;
     margin: 0;
-}
-.wizard-scc .title.big {
-    font-size: 150px;
-}
-.wizard-scc .text {
+">
+                    Enterprise solution for integrating Salesforce with Outlook that actually works
+                </h2>
+                <div class="inline-img-block">
+                    <div style="
+    display: inline-block;
+    width: 27%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img src="SellingPowerlogo2019.png" alt="" style="
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+">
+                    </div>
+                    <div style="
+    display: inline-block;
+    width: 26%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img src="g2crowd.png" alt="" style="
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+">
+                    </div>
+                    <div style="
+    display: inline-block;
+    width: 26%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img src="2018_Blue&Green.png" alt="" style="
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+">
+                    </div>
+                </div>
+                <div class="inline-img-block">
+                    <div style="
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img src="Gartner-Cool-Vendor_color.png" alt="" style="
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+">
+                    </div>
+                    <div style="
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img src="app_rating.png" alt="" style="
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="item" style="
+    min-height: 700px;
+    display: block;
+    text-align: center;
+    max-width: 100%;
+">
+                <div class="img-block" style="
+    margin: 10px 0 20px;
+">
+                    <img src="screen-2-img.svg" alt="" style="
+    max-width: 100%;
+">
+                </div>
+                <h2 class="title" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+">
+                    Increase Sales Productivity by
+                </h2>
+                <h2 class="title big" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    margin: 0;
+">
+                    20%
+                </h2>
+                <p class="text" style="
     color: #06337c;
     font-family: 'Cabin', 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: 400;
     margin: 0;
-}
-.wizard-scc .text.small {
-    font-size: 20px;
-    margin-top: 10px;
-}
-.wizard-scc .img-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0 20px;
-}
-.wizard-scc .img-block img {
-    max-width: 100%;
-}
-.wizard-scc .inline-img-block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-.wizard-scc .inline-img-block > div {
-    display: flex;
-    width: 25%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 30px 10px 25px;
-}
-.wizard-scc .inline-img-block img {
+">
+                    Work with all your Salesforse right from Outlook
+                </p>
+            </div>
+
+
+
+
+
+            <div class="item" style="
+    min-height: 700px;
+    display: block;
+    text-align: center;
+    max-width: 100%;">
+                <div class="inline-img-block" style="
+    margin-bottom: 35px;
+">
+                    <div style="
+    display: inline-block;
+    width: 26%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img src="logo-salesforce.svg" alt="" style="
     max-width: 100%;
     max-height: 150px;
     object-fit: contain;
-}
-.wizard-scc .inline-img-block img.icons-svg {
-    max-height: 46px;
-}
-.wizard-scc .btn-blue {
-    border-radius: 5px;
-    background-color: #106ebe;
-    line-height: 58px;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Cabin', 'Open Sans', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    border: 1px solid #106ebe;
-    transition: .3s all;
-    outline: none;
+">
+                    </div>
+                    <div style="
     display: inline-block;
-    text-decoration: none;
-    width: 48%;
-}
-.wizard-scc .btn-blue:hover {
-    background-color: #fff;
-    color: #106ebe;
-}
-.wizard-scc .btn-white {
-    border-radius: 5px;
-    background-color: #ffffff;
-    line-height: 58px;
-    text-align: center;
-    color: #53595f;
-    font-family: 'Cabin', 'Open Sans', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    border: 1px solid #cccccc;
-    transition: .3s all;
-    outline: none;
-    display: inline-block;
-    text-decoration: none;
-    width: 48%;
-}
-.wizard-scc .btn-white:hover {
-    background-color: #106ebe;
-    color: #fff;
-    border: 1px solid #106ebe;
-}
-.wizard-scc .wizard-wrap {
-    width: 100%;
-}
-.wizard-scc .wizard-wrap .wizard-header {
-    text-align: center;
-}
-.wizard-scc .wizard-wrap .wizard-header .logo {
-    max-height: 78px;
-    width: auto;
-}
-.wizard-scc .wizard-wrap .wizard-carousel {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: stretch;
-}
-.wizard-scc .wizard-wrap .wizard-carousel .item {
-    display: none;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-evenly;
-    text-align: center;
-    flex-basis: 100%;
-    min-height: 700px;
+    width: 26%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img src="3-layers.png" alt="" style="
     max-width: 100%;
-    background-image: url(scc-wizard-background.png);
-    background-size: 300% auto;
-    background-position-y: 50%;
-    background-position-x: 0;
-}
-.wizard-scc .wizard-wrap .wizard-carousel .item:nth-child(2) {
-    background-position-x: 25%;
-}
-.wizard-scc .wizard-wrap .wizard-carousel .item:nth-child(3) {
-    background-position-x: 50%;
-}
-.wizard-scc .wizard-wrap .wizard-carousel .item:nth-child(4) {
-    background-position-x: 75%;
-}
-.wizard-scc .wizard-wrap .wizard-carousel .item.active {
-    display: flex;
-}
-.wizard-scc .wizard-wrap .wizard-bottom .wizard-indicators {
+    max-height: 150px;
+    object-fit: contain;
+">
+                    </div>
+                    <div style="
+    display: inline-block;
+    width: 26%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img src="Microsoft_Outlook_2013_logo.png" alt="" style="
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+">
+                    </div>
+                </div>
+                <h2 class="title" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 35px;
+">
+                    Keep your Salesforce data always up-to-date
+                </h2>
+                <p class="text" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 50px;
+">
+                    Automatically synchronize:
+                </p>
+                <div class="inline-img-block">
+                    <div style="
+    display: inline-block;
+    width: 18%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img class="icons-svg" src="email-icon.svg" alt="" style="
+    max-height: 46px;
+    object-fit: contain;
+    max-width: 100%;
+">
+                        <p class="text small" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+">Emails</p>
+                    </div>
+                    <div style="
+    display: inline-block;
+    width: 18%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img class="icons-svg" src="task-icon.svg" alt="" style="
+    max-height: 46px;
+    object-fit: contain;
+    max-width: 100%;
+">
+                        <p class="text small" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+">Tasks</p>
+                    </div>
+                    <div style="
+    display: inline-block;
+    width: 18%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img class="icons-svg" src="contact-icon.svg" alt="" style="
+    max-height: 46px;
+    object-fit: contain;
+    max-width: 100%;
+">
+                        <p class="text small" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+">Contacts</p>
+                    </div>
+                    <div style="
+    display: inline-block;
+    width: 18%;
+    vertical-align: middle;
+    margin: 30px 3% 25px;
+">
+                        <img class="icons-svg" src="calendar-icon.svg" alt="" style="
+    max-height: 46px;
+    object-fit: contain;
+    max-width: 100%;
+">
+                        <p class="text small" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+">Calendars</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="item" style="
+    min-height: 700px;
+    display: block;
+    text-align: center;
+    max-width: 100%;
+">
+                <div class="img-block" style="
+    margin: 10px 0 60px;
+">
+                    <img src="screen-4-img.svg" alt="" style="
+    max-width: 100%;
+">
+                </div>
+                <h2 class="title" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 50px;
+">
+                    Book every meeting with a single email
+                </h2>
+                <p class="text" style="
+    color: #06337c;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+">
+                    Schedule meetings by inserting clickable timeslots into emails
+                </p>
+            </div>
+
+
+
+        </div>
+        <div class="wizard-bottom">
+            <ol class="wizard-indicators" style="
     list-style: none;
     text-align: center;
-    padding-left: 0;
-}
-.wizard-scc .wizard-wrap .wizard-bottom .wizard-indicators li {
+    padding-left: 0;">
+                <li data-target="#wizard-scc" class="active" style="
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid #106ebe;">
+                    <div class="circle" style="
+    border-radius: 50px;
+    background-color: #106ebe;
+    width: 8px;
+    height: 8px;
+    margin: 2px;"></div>
+                </li>
+                <li data-target="#wizard-scc" class="" style="
     cursor: pointer;
     display: inline-block;
     border: 1px solid #d9d9d9;
-    border-radius: 50px;
-}
-.wizard-scc .wizard-wrap .wizard-bottom .wizard-indicators li .circle {
+    border-radius: 50px;">
+                    <div class="circle" style="
     border-radius: 50px;
     background-color: #d9d9d9;
     width: 8px;
     height: 8px;
-    margin: 2px;
-}
-.wizard-scc .wizard-wrap .wizard-bottom .wizard-indicators li.active {
-    border: 1px solid #106ebe;
-}
-.wizard-scc .wizard-wrap .wizard-bottom .wizard-indicators li.active .circle {
-    background-color: #106ebe;
-}
-</style>
-<body id="main" lang="lo">
-
-<section id="wizard-scc" class="wizard-scc" data-ride="carousel" data-interval="false">
-    <div class="wizard-wrap">
-        <div class="wizard-header">
-            <img src="scc-logo.png" class="logo">
-        </div>
-        <div class="wizard-carousel carousel-inner">
-                <div class="item active">
-                    <h2 class="title big">
-                        #1
-                    </h2>
-                    <h2 class="title">
-                        Enterprise solution for integrating Salesforce with Outlook that actually works
-                    </h2>
-                    <div class="inline-img-block">
-                        <div>
-                            <img src="SellingPowerlogo2019.png" alt="">
-                        </div>
-                        <div>
-                            <img src="g2crowd.png" alt="">
-                        </div>
-                        <div>
-                            <img src="2018_Blue & Green.png" alt="">
-                        </div>
-                    </div>
-                    <div class="inline-img-block">
-                        <div>
-                            <img src="Gartner-Cool-Vendor_color.png" alt="">
-                        </div>
-                        <div>
-                            <img src="app_rating.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-block">
-                        <img src="screen-2-img.svg" alt="">
-                    </div>
-                    <h2 class="title">
-                        Increase Sales Productivity by
-                    </h2>
-                    <h2 class="title big">
-                        20%
-                    </h2>
-                    <p class="text">
-                        Work with all your Salesforse right from Outlook
-                    </p>
-                </div>
-                <div class="item">
-                    <div class="inline-img-block">
-                        <div>
-                            <img src="logo-salesforce.svg" alt="">
-                        </div>
-                        <div>
-                            <img src="3-layers.png" alt="">
-                        </div>
-                        <div>
-                            <img src="Microsoft_Outlook_2013_logo.png" alt="">
-                        </div>
-                    </div>
-                    <h2 class="title">
-                        Keep your Salesforce data always up-to-date
-                    </h2>
-                    <p class="text">
-                        Automatically synchronize:
-                    </p>
-                    <div class="inline-img-block">
-                        <div>
-                            <img class="icons-svg" src="email-icon.svg" alt="">
-                            <p class="text small">Emails</p>
-                        </div>
-                        <div>
-                            <img class="icons-svg" src="task-icon.svg" alt="">
-                            <p class="text small">Tasks</p>
-                        </div>
-                        <div>
-                            <img class="icons-svg" src="contact-icon.svg" alt="">
-                            <p class="text small">Contacts</p>
-                        </div>
-                        <div>
-                            <img class="icons-svg" src="calendar-icon.svg" alt="">
-                            <p class="text small">Calendars</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-block">
-                        <img src="screen-4-img.svg" alt="">
-                    </div>
-                    <h2 class="title">
-                        Book every meeting with a single email
-                    </h2>
-                    <p class="text">
-                        Schedule meetings by inserting clickable timeslots into emails
-                    </p>
-                </div>
-        </div>
-        <div class="wizard-bottom">
-            <ol class="wizard-indicators carousel-indicators">
-                <li data-target="#wizard-scc" data-slide-to="0" class="active">
-                    <div class="circle"></div>
+    margin: 2px;"></div>
                 </li>
-                <li data-target="#wizard-scc" data-slide-to="1" class="">
-                    <div class="circle"></div>
+                <li data-target="#wizard-scc" class="" style="
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    border-radius: 50px;">
+                    <div class="circle" style="
+    border-radius: 50px;
+    background-color: #d9d9d9;
+    width: 8px;
+    height: 8px;
+    margin: 2px;"></div>
                 </li>
-                <li data-target="#wizard-scc" data-slide-to="2" class="">
-                    <div class="circle"></div>
-                </li>
-                <li data-target="#wizard-scc" data-slide-to="3" class="">
-                    <div class="circle"></div>
+                <li data-target="#wizard-scc" class="" style="
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    border-radius: 50px;">
+                    <div class="circle" style="
+    border-radius: 50px;
+    background-color: #d9d9d9;
+    width: 8px;
+    height: 8px;
+    margin: 2px;"></div>
                 </li>
             </ol>
-            <div class="wizard-buttons inline-img-block">
-                <a class="btn-white carousel-control" href="#wizard-scc" data-slide="next">
-                    Skip
-                </a>
-                <a class="btn-blue carousel-control" href="#wizard-scc" data-slide="next">
-                    Next
-                </a>
-            </div>
+
         </div>
     </div>
 </section>
 
 
+
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:400,500,700" media="all">
-<script src="bootstrap-native.min.js"></script>
-<script>
-    var myCarouselInit = new Carousel(document.getElementById('wizard-scc'));
-</script>
 
 </body>
 </html>
