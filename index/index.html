@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sales Experts</title>
+    <title>Index v2</title>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +39,16 @@
 <body id="main">
 
 <section id="main-block" class="main-block">
-
+    <h1 class="title">
+        #1 Enterprise Class Solution for
+        integrating Salesforce with Outlook and Gmail that actually works
+    </h1>
+    <p class="text">
+        The only solution which integrates processes, not only data.
+    </p>
+    <a href="#" class="green-btn">
+        Free Download
+    </a>
 </section>
 
 <section id="partners-section" class="partners-section">
@@ -48,6 +57,14 @@
             <div class="col-md-12">
                 <h2 class="sub-title">Powering the fastest growing companies around the globe</h2>
             </div>
+            https://smartcloudconnect.io/wp-content/uploads/volvo.png
+            https://smartcloudconnect.io/wp-content/uploads/desjardins.png
+            https://smartcloudconnect.io/wp-content/uploads/eaton.png
+            https://smartcloudconnect.io/wp-content/uploads/basf.png
+            https://smartcloudconnect.io/wp-content/uploads/honeywell.png
+            https://smartcloudconnect.io/wp-content/uploads/skf-logo-svg.png
+            https://smartcloudconnect.io/wp-content/uploads/lufthansa.png
+            https://smartcloudconnect.io/wp-content/uploads/pella.png
         </div>
     </div>
 </section>
@@ -63,8 +80,30 @@
 <section id="we-succeed" class="we-succeed">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10 col-md-offset-1" >
+                <div class="percent-block">
 
+                    <div class="col-md-4 col-border">
+                        <div class="counter_number">
+                            <h3 class="couting" id="fun-leve1">24%</h3>
+                            <span class="desc">Boost CRM Utilization</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-border">
+                        <div class="counter_number">
+                            <h3 class="couting" id="fun-leve2">25%</h3>
+                            <span class="desc">Shortening deal time</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-border">
+                        <div class="counter_number">
+                            <h3 class="couting" id="fun-leve3">18%</h3>
+                            <span class="desc">Increased sales productivity</span>
+                        </div>
+                    </div>
+
+                    <a target="_self" href="#" data-toggle="modal" data-target=".roi_calculation" class="download-btn">Download ROI report</a>
+                </div>
             </div>
         </div>
     </div>
@@ -74,7 +113,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-
+                https://smartcloudconnect.io/wp-content/uploads/2018_Blue__Green.png
+                https://smartcloudconnect.io/wp-content/uploads/Selling_Power_logo_2019.png
+                https://smartcloudconnect.io/wp-content/uploads/G2-Crowd_Summer2018-283x3001.png
+                https://smartcloudconnect.io/wp-content/uploads/Gartner-Cool-Vendor.png
             </div>
             <div class="col-md-6">
 
@@ -118,10 +160,41 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+<script src="https://smartcloudconnect.io/wp-content/uploads/jquery.viewportchecker.min_.js"></script>
+
 <script type="text/javascript">
     jQuery.noConflict();
     (function ($) {
 
+        $('#we-succeed').viewportChecker({
+            callbackFunction: function (elem, action) {
+                var percent_number_step = $.animateNumber.numberStepFactories.append(' %');
+                $('#fun-leve1').animateNumber(
+                    {
+                        number: 24,
+                        easing: 'easeInQuad',
+                        numberStep: percent_number_step
+                    },
+                    4000
+                );
+                $('#fun-leve2').animateNumber(
+                    {
+                        number: 25,
+                        easing: 'easeInQuad',
+                        numberStep: percent_number_step
+                    },
+                    4000
+                );
+                $('#fun-leve3').animateNumber(
+                    {
+                        number: 18,
+                        easing: 'easeInQuad',
+                        numberStep: percent_number_step
+                    },
+                    4000
+                );
+            }
+        });
 
     })(jQuery);
 </script>

@@ -1,3 +1,63 @@
 .we-succeed {
-
+  .percent-block {
+    border-radius: 4px;
+    //background-color: @color-1;
+    //padding: 60px 0;
+    text-align: center;
+    @media(max-width:991px){
+      //padding: 40px 0;
+    }
+    .col-border {
+      border-right: 1px solid #e2e9ef;
+      &:nth-child(3) {
+        border-right: 0;
+      }
+    }
+    .counter_number{
+      //margin-bottom: 50px;
+      @media(max-width:991px){
+        margin-bottom: 35px;
+      }
+      h3 {
+        //background: linear-gradient(66deg, #4a96d1 0%, #49beea 100%);
+        //-webkit-background-clip: text;
+        //-webkit-text-fill-color: transparent;
+        color: @color-5;
+        margin: 0 0 15px;
+        font-family: @font-1;
+        font-size: 53px;
+        font-weight: 700;
+        line-height: 50px;
+      }
+      span.desc {
+        color: @color-3;
+        font-family: @font-1;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+    a.download-btn {
+      color: @color-5;
+      //font-family: @font-2;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 30px;
+      border-radius: 2px;
+      //border: 2px solid @color-5;
+      text-transform: uppercase;
+      outline: 0;
+      text-decoration: none;
+      //padding: 14px 25px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      transition: 0.3s all;
+      display:inline-block;
+      font-family: 'Cabin','Open Sans', sans-serif !important;
+      &:hover {
+        //background-color: @color-5;
+        color: #0b4592;
+      }
+    }
+  }
 }
