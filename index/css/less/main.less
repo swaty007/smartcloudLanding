@@ -4,52 +4,125 @@
 @color-4: #055492;
 @color-5: #37a148;
 
-//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@font-1: 'Cabin','Open Sans', sans-serif;
+@font-2: 'Cabin','Open Sans', sans-serif;
 
-@font-face {
-  font-family: 'SFUIDisplay-black';
-  src: url(https://invisible.io/wp-content/themes/invisible/assets/font/SF-UI-Display-Bold.ttf);
-  font-weight: bold;
-  font-style: normal;
+//@media only screen and (min-width: 1080px) {
+//  .fusion-header-wrapper {
+//    position: absolute;
+//    left: 0;
+//    right: 0;
+//    z-index: 10000;
+//  }
+//}
+//.fusion-header-wrapper .fusion-header {
+//  background:transparent;
+//}
+//.container {
+//  overflow: visible;
+//}
+body {
+  //overflow-x: hidden; //off for sticky
 }
 
-@font-1: 'Open Sans', sans-serif;
-@font-2: 'SFUIDisplay-black', sans-serif!important;
+#wrapper #main {
+  .title {
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+    margin-bottom: 30px;
+    @media(max-width:991px) {
+      margin-top: 0;
+    }
+    span {
+      font-size: 28px;
+      display: block;
+    }
+  }
+  .sub-title {
+    color: #023358;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 29px;
+    margin-top: 50px;
+    @media(max-width:991px) {
+      margin-top: 30px;
+      text-align: center;
+    }
+    //&.small {
+    //  font-size: 23px;
+    //  line-height: 30px;
+    //}
+    &.big {
+      font-size: 38px;
+      line-height: 42px;
+      margin-bottom: 75px;
+      @media(max-width:991px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .desc,.text {
+    color: #055492;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 30px;
+    &.big {
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+  .description {
+    color: #055492;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 15px;
+    &:before {
+      content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+      position: absolute;
+      vertical-align: top;
+      left: 0;
+      width: 17px;
+      top: 3px;
+    }
+    &.ask {
+      &:before {
+        content: url(https://smartcloudconnect.io/wp-content/uploads/question-mark-green-icon.svg);
+      }
+    }
+  }
+  .green-link {
+    outline: none;
+    text-decoration: none;
+    color: #37a148;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    &:hover {
+      color: #0b4592;
+    }
+  }
 
-#wrapper a.green-btn {
-  background-color: @color-5;
-  border-radius: 2px;
-  color: @color-1;
-  font-family: @font-2;
-  border: 2px solid transparent;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 50px;
-  padding: 0 50px;
-  text-transform: uppercase;
-  outline: none;
-  text-decoration: none;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  transition: 0.3s all;
-  text-align:center;
-  &:hover {
-    border-color: @color-5;
-    color: @color-5;
-    background-color: transparent;
-    //background-color: @color-1;
+  @import "main-block";
+  @import "partners-section";
+  @import "what-is-scc";
+  @import "we-succeed";
+  @import "approved-section";
+  @import "morgan-section";
+  @import "blog-info-section";
+}
+
+#main section.contact-section {
+  background: transparent;
+  h2.title {
+    color: #023358;
   }
 }
-.container {
-  overflow: visible;
-}
-@import "what-is";
-@import "who-we-help";
-@import "we-succeed";
-//@import "info-section";
-@import "info-section-2";
-//@import "partners-section";
-@import "partners-section-top";
-@import "contact-section";
-//@import "events-slide-block";
