@@ -1,3 +1,64 @@
 .approved-section {
-
+  .rating-text {
+    color: #023358;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+  .under-start {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #4294e5;
+    text-decoration: none;
+    outline: none;
+    span {
+      color: #547697;
+    }
+  }
+  .user-review-block {
+    box-shadow: 0 5px 39px rgba(115, 136, 151, 0.18);
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    padding: 30px 10px 20px;
+    text-align: center;
+    &:before {
+      content: "";
+      background-image: url(../../quote-grey.png);
+      width: 49px;
+      height: 39px;
+      background-size: 49px 39px;
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: -23px;
+    }
+    .user-photo {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+    .user-name {
+      color: #055492;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .user-text {
+      color: #023358;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }

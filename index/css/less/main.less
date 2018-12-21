@@ -24,7 +24,9 @@
 body {
   //overflow-x: hidden; //off for sticky
 }
-
+img {
+  max-width: 100%;
+}
 #wrapper #main {
   .title {
     color: #ffffff;
@@ -44,24 +46,15 @@ body {
     color: #023358;
     font-size: 34px;
     font-weight: 700;
-    line-height: 48px;
-    margin-bottom: 29px;
-    margin-top: 50px;
-    @media(max-width:991px) {
-      margin-top: 30px;
-      text-align: center;
-    }
-    //&.small {
-    //  font-size: 23px;
-    //  line-height: 30px;
-    //}
-    &.big {
-      font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    &.small {
+      font-size: 25px;
       line-height: 42px;
-      margin-bottom: 75px;
-      @media(max-width:991px) {
-        margin-bottom: 40px;
-      }
+    }
+    @media(max-width:991px) {
+      text-align: center;
     }
   }
   .desc,.text {
@@ -98,6 +91,7 @@ body {
       }
     }
   }
+
   .green-link {
     outline: none;
     text-decoration: none;
@@ -118,6 +112,28 @@ body {
   @import "approved-section";
   @import "morgan-section";
   @import "blog-info-section";
+}
+.click {
+  bottom: 3%;
+  right: 20%;
+  &.do {
+    animation: pulsate 0.6s linear;
+    animation-iteration-count: 1;
+  }
+  position: absolute;
+  opacity: 0.0;
+  border: 17px solid fade(#37a148,80);
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  max-width: 80px;
+  .click-child {
+    width: 100%;
+    padding-top: 100%;
+    background-color: fade(#37a148,90);
+    border-radius: 50px;
+  }
 }
 
 #wrapper #main section.contact-section {

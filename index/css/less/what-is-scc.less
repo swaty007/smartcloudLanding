@@ -1,3 +1,81 @@
 .what-is-scc {
+  background-color: #f5f8fb;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .anim-status-block {
+    box-shadow: 0 8px 40px rgba(115, 136, 151, 0.2);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #ffffff;
+    padding: 25px 25px 25px 75px;
+    margin-bottom: 40px;
+    transition: 0.5s all;
+    position: relative;
+    &.active {
+      box-shadow: 0 8px 65px rgba(115, 136, 151, 0.35);
+      transform: trsnslateX(20px);
+    }
+    .line {
+      background-color: #cbd9e5;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 2px;
+        background-color: #37a148;
+      }
+    }
 
+    .status-icon {
+      position: absolute;
+      left: 25px;
+      top: 25px;
+      height: 32px;
+      width: auto;
+    }
+
+    .status-title {
+      font-size: 19px;
+      color: #023358;
+      line-height: 31px;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+    .status-text {
+      color: #055492;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      margin-bottom: 0;
+    }
+  }
+  .learn-more-link {
+    color: #37a148;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    outline: none;
+    text-decoration: none;
+  }
+
+  .what-is-scc-anim {
+    .stage {
+      &.one {
+
+      }
+      &.two {
+
+      }
+    }
+  }
 }
