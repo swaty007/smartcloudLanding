@@ -62,7 +62,19 @@
             </a>
         </div>
         <div class="col-md-6">
+            <div id="scc_main_design_anim" class="scc_main_design_anim">
+                <img src="scc-main-design.png">
+                <div class="stage one">
+                    <img src="scc-main-design-step1.png">
+                </div>
 
+                <div class="click one">
+                    <div class="click-child"></div>
+                </div>
+                <div class="loader-modal">
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/loader_anim.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -70,7 +82,7 @@
 <section id="partners-section" class="partners-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
                 <h2 class="sub-title small">Powering the fastest growing companies around the globe</h2>
             </div>
         </div>
@@ -147,18 +159,47 @@
 
             </div>
             <div class="col-md-6">
-                <div id="what-is-scc-anim" class="what-is-scc-anim">
-                    <img src="what-is-scc-step1.png">
-                    <img class="stage one" src="what-is-scc-step2.png">
-                    <img class="stage two" src="what-is-scc-step3.png">
+                <div id="what_is_scc_anim" class="what_is_scc_anim">
+                    <div id="data_sync" class="data_sync">
 
-                    <div class="click one">
-                        <div class="click-child"></div>
                     </div>
-                    <div class="click two">
-                        <div class="click-child"></div>
-                    </div>
+                    <div id="window_to_salesforce" class="window_to_salesforce">
+                       <img src="window-to-salesforce.png">
+                       <img class="stage one" src="window-to-salesforce-step1.png">
+                       <img class="stage two" src="window-to-salesforce-step2.png">
 
+                       <div class="click one">
+                           <div class="click-child"></div>
+                       </div>
+                       <div class="click two">
+                           <div class="click-child"></div>
+                       </div>
+                    </div>
+                    <div id="enterprise_scheduling" class="enterprise_scheduling">
+                        <div id="complex-anim-1" class="complex-anim">
+                            <img class="img-screen" src="complex_meet_v2_1_screen.png" alt="">
+                            <div class="click">
+                                <div class="click-child"></div>
+                            </div>
+                        </div>
+                        <div id="complex-anim-2" class="complex-anim">
+                            <img class="img-screen" src="complex_meet_v2_2_screen.png" alt="">
+
+                            <div class="img-message first">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/complex_meet_2_message.png" alt="">
+                            </div>
+                            <div class="img-message second">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/complex_meet_2_message.png" alt="">
+                            </div>
+                            <div class="click">
+                                <div class="click-child"></div>
+                            </div>
+                        </div>
+                        <div id="complex-anim-3" class="complex-anim">
+                            <img class="img-screen" src="complex_meet_v2_3_screen.png" alt="">
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -316,16 +357,20 @@
                 var scrollTop = $(window).scrollTop();
                 var WindowHeigth = $(window).height() / 2;
 
-                var mechanics_save_eml_attach = $('#mechanics_save_eml_attach');
+                var what_is_scc_anim = $('#what_is_scc_anim');
+                var scc_main_design_anim = $('#scc_main_design_anim');
 
 
-                if (scrollTop > (mechanics_save_eml_attach.offset().top - WindowHeigth) && scrollTop < (mechanics_save_eml_attach.offset().top + WindowHeigth)) {
-                    app.mechanics_save_eml_attach(mechanics_save_eml_attach);
+                if (scrollTop > (what_is_scc_anim.offset().top - WindowHeigth) && scrollTop < (what_is_scc_anim.offset().top + WindowHeigth)) {
+                    app.what_is_scc_anim(what_is_scc_anim);
+                }
+                if (scrollTop > (scc_main_design_anim.offset().top - WindowHeigth) && scrollTop < (scc_main_design_anim.offset().top + WindowHeigth)) {
+                    app.scc_main_design_anim(scc_main_design_anim);
                 }
             },
-            mechanics_save_eml_attach:function (elem) {
-                if (app.mechanics_save_eml_attach.done === false) return;
-                app.mechanics_save_eml_attach.done = false;
+            what_is_scc_anim:function (elem) {
+                if (app.what_is_scc_anim.done === false) return;
+                app.what_is_scc_anim.done = false;
                 elem.find('.click.one').addClass('do');
                 setTimeout(function () {
                     elem.find('.ok-icon.one').animate({opacity:1},300);
@@ -336,15 +381,87 @@
                             elem.find('img,div').removeAttr('style');
                             elem.find('div,img').removeClass('do');
                             setTimeout(function () {
-                                app.mechanics_save_eml_attach.done = true;
+                                app.what_is_scc_anim.done = true;
                             },2000);
                         },document.documentElement.clientWidth > 991 ? 3500 : 10000);//3 end
 
                     },300);//ok icon
                 },600);//click icon
+            },
+            enterprise_scheduling: function () {
+
+                if (app.enterprise_scheduling.done === false) return;
+                app.enterprise_scheduling.done = false;
+
+                $('#complex-anim-1').addClass('active');
+
+                $('#complex-anim-1 .click').addClass('do');
+                setTimeout(function () {
+                    $('#complex-anim-2').addClass('active');
+                    document.documentElement.clientWidth > 991 ? stepTwo() :
+                        moveTo("#complex-anim-2",stepTwo,800);//2
+                },800);//click
+                function stepOne() {
+
+                }
+                $('#complex-anim-2 .img-message.second').slideDown(500);
+                $('#complex-anim-2 .img-message.first').slideDown(500,function () {
+
+                    setTimeout(function () {
+
+                        $('#complex-anim-2 .click').addClass('do');
+                        setTimeout(function () {
+                            stepThree();
+                        },800); //click
+
+                    },500);//2
+
+                });
+                function stepTwo() {
+
+                }
+                setTimeout(function () {
+                    $('#complex-anim-2 .img-message').removeAttr("style");
+                    $('#complex-anim-wrap .complex-anim').removeClass('active');
+                    $("#complex-anim-wrap .click").removeClass('do');
+
+                    app.complex_anim.done = true;
+                },document.documentElement.clientWidth > 991 ? 3500 : 30000);//3
+                function stepThree() {
+                    $('#complex-anim-3').addClass('active');
+                    if(document.documentElement.clientWidth < 992)  {moveTo("#complex-anim-3")};
+
+
+                }
+            },
 
 
 
+            scc_main_design_anim:function (elem) {
+                if (app.scc_main_design_anim.done === false) return;
+                app.scc_main_design_anim.done = false;
+                elem.find('.click.one').addClass('do');
+
+                setTimeout(function () {
+                    elem.find('.loader-modal').addClass('do');
+                    setTimeout(function () {
+                        elem.find('.stage.one').animate({opacity:1},700);
+                        setTimeout(function () {
+                            elem.find('.loader-modal').removeClass('do');
+
+                            setTimeout(function () {
+                                elem.find('img,div').removeAttr('style');
+                                elem.find('div,img').removeClass('do');
+                                setTimeout(function () {
+                                    app.scc_main_design_anim.done = true;
+                                },2000);
+                            },document.documentElement.clientWidth > 991 ? 3500 : 10000);//3 end
+
+                        },800);//modal out
+
+                    },800); //modal in
+
+                },800);
 
             },
         };

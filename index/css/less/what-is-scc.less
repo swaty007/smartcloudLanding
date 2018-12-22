@@ -3,7 +3,6 @@
   padding-top: 80px;
   padding-bottom: 80px;
   .anim-status-block {
-    box-shadow: 0 8px 40px rgba(115, 136, 151, 0.2);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 5px;
@@ -15,7 +14,7 @@
     position: relative;
     &.active {
       box-shadow: 0 8px 65px rgba(115, 136, 151, 0.35);
-      transform: trsnslateX(20px);
+      transform: translateX(20px);
     }
     .line {
       background-color: #cbd9e5;
@@ -68,14 +67,81 @@
     text-decoration: none;
   }
 
-  .what-is-scc-anim {
-    .stage {
-      &.one {
+  .what_is_scc_anim {
+    display: inline-block;
+    position: relative;
+    @media(max-width:991px) {
+      margin: 0 -5%;
+    }
+    .data_sync {
 
+    }
+    .window_to_salesforce {
+      .stage {
+        position: absolute;
+        transition: 0.5s all;
+        right: 1%;
+        top: 19.5%;
+        max-width: 36%;
+        opacity: 0;
+        &.one {
+
+        }
+        &.two {
+
+        }
       }
-      &.two {
-
+      .click {
+        &.one {
+          bottom: 79%;
+          right: 10%;
+        }
       }
     }
+    .enterprise_scheduling {
+      transition: 0.8s all;
+      position: relative;
+      display: inline-block;
+      margin: 0 auto 40px;
+      opacity: .2;
+      img {
+        max-width:100%;
+      }
+      &.active {
+        opacity: 1 !important;
+      }
+      &#complex-anim-1 {
+        opacity: .6;
+        .click {
+          bottom: 1%;
+          right: 20%;
+        }
+      }
+      &#complex-anim-2 {
+        opacity: .4;
+        .click {
+          bottom: 1%;
+          right: 20%;
+        }
+      }
+
+      .img-screen {
+        box-shadow: 0 10px 43px rgba(32, 94, 171, 0.1);
+        max-width: 100%;
+      }
+      .img-message {
+        position: absolute;
+        left: 15.5%;
+        max-width: 77.7%;
+        display: none;
+        &.first {
+          top: 42.3%;
+        }
+        &.second {
+          top: 66%;
+        }
+      }
+    }
+
   }
 }

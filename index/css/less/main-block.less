@@ -1,3 +1,86 @@
 .main-block {
+  .title {
+    color: #023358;
+    font-size: 35px;
+    line-height: 47px;
+    font-weight: 700;
+    @media(max-width:991px) {
+      margin-top: 0;
+    }
+    span {
+      font-size: 28px;
+      display: block;
+    }
+  }
 
+
+
+
+  .scc_main_design_anim {
+    display: inline-block;
+    position: relative;
+    @media(max-width:991px) {
+      margin: 0 -5%;
+    }
+    .stage {
+      position: absolute;
+      transition: 0.5s all;
+      right: 1%;
+      top: 19.5%;
+      max-width: 36%;
+      opacity: 0;
+
+      &.one {
+        opacity: 1;
+
+        z-index: 420;
+        max-height: 76%;
+        overflow-y: scroll;
+        img {
+          width: 100%;
+        }
+        &::-webkit-scrollbar {
+          width: 5px;
+          border-radius: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+          -webkit-box-shadow: unset;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 15px;
+          background-color: #cbd9e5;
+          outline: 1px solid slategrey;
+        }
+      }
+
+    }
+    .loader-modal {
+      position: absolute;
+      transition: 0.5s;
+      background-color: rgba(255, 255, 255, 0.66);
+      top: 42%;
+      right: 4%;
+      width: 40%;
+      bottom: 7%;
+      opacity: 0;
+      img {
+        margin-top: 47%;
+        transition: all .3s;
+        width: 12%;
+        transition-timing-function: ease-in;
+        animation: ld-spin 1s infinite;
+      }
+      &.do {
+        opacity: 1;
+      }
+    }
+    .click {
+      &.one {
+        bottom: 79%;
+        right: 10%;
+      }
+    }
+  }
 }
