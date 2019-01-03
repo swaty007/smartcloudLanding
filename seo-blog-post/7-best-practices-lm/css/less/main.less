@@ -1,0 +1,212 @@
+@color-1: #ffffff;
+@color-2: #000000;
+@color-3: #023358;
+@color-4: #055492;
+@color-5: #37a148;
+
+@font-1: 'Cabin','Open Sans', sans-serif;
+@font-2: 'Cabin','Open Sans', sans-serif;
+
+.container {
+  overflow: visible;
+}
+body {
+  //overflow-x: hidden;
+}
+
+body.single-post.has-sidebar #main #content {
+  width: 100%;
+  padding: 0;
+}
+.post-ratings {
+  display: none;
+}
+h1 {
+  display: none;
+}
+
+#wrapper #main {
+  .green-text {
+    color: #37a148;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    display: inline-block;
+    outline: 0;
+    text-decoration: none;
+    transition: 0.3s all;
+    &:hover {
+      color: #0b4592;
+    }
+  }
+  .sub-title {
+    color: #023358!important;
+    font-size: 38px!important;
+    font-weight: 700!important;
+    line-height: 55px!important;
+    margin-bottom: 27px!important;
+    margin-top: 35px!important;
+    span {
+      @media(min-width:992px) {
+        font-size: 19px!important;
+        display: block;
+      }
+      &.small {
+        font-size: 18px;
+        line-height: 31px;
+        color: #023358;
+        font-weight: 700;
+      }
+    }
+    &.middle {
+      font-size: 29px!important;
+      line-height: 40px!important;
+    }
+    &.small {
+      font-size: 24px!important;;
+      line-height: 33px!important;;
+    }
+    @media(max-width:991px) {
+      text-align: center;
+    }
+  }
+  .description {
+    color: #023358!important;
+    font-size: 17px!important;
+    font-weight: 400!important;
+    line-height: 31px!important;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 15px;
+    &:before {
+      //content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+      //content: url(https://smartcloudconnect.io/wp-content/uploads/ok-green-icon.svg);
+      content: url(https://smartcloudconnect.io/wp-content/uploads/ok-green-fill-icon.svg);
+      position: absolute;
+      vertical-align: top;
+      left: 0;
+      width: 17px;
+      top: 3px;
+    }
+  }
+  .text {
+    color: #055492;
+    color: #023358!important;
+    font-size: 19px!important;
+    font-weight: 400;
+    line-height: 33px!important;
+    margin-bottom: 35px;
+    i {
+      color: #055492!important;
+    }
+
+  }
+
+  hr.line {
+    border-top: 1px solid rgba(53, 117, 156, 0.14);
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  hr.seporate {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border: none;
+  }
+
+
+  .white-block {
+    //box-shadow: 0 5px 14px 2px rgba(32,94,171,.15);
+    box-shadow: 0 5px 39px rgba(115, 136, 151, 0.18);
+    border-radius: 5px;
+    padding: 45px 25px;
+    background-color: @color-1;
+    @media(max-width:991px) {
+      margin-top: 40px;
+    }
+  }
+
+  .container-fluid {
+    max-width:1800px;
+  }
+  .img-left {
+      margin-left: -15px;
+    text-align: left;
+  }
+
+  .main-block {
+    margin-top: 50px;
+    .sub-title {
+      margin-top: 10px!important;
+    }
+    .title {
+      color: #023358!important;
+      font-size: 55px!important;
+      font-weight: 700!important;
+      margin-top: 0!important;
+      line-height: 70px!important;
+      @media(max-width:991px) {
+        font-size: 42px!important;
+        text-align: center;
+        line-height: 55px!important;
+      }
+      span {
+        display: block;
+        font-size: 50px!important;
+      }
+      margin-bottom: 70px!important;
+    }
+  }
+
+  @media(min-width:992px) {
+    .row {
+      display: flex;
+      .col-md-5 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .flex-end {
+        justify-content: flex-end;
+      }
+      >div {
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }
+
+  .img-block {
+    @media(max-width:991px) {
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+        max-width: 250px;
+      }
+    }
+    &.full-width {
+      img {
+        max-width: 100%;
+      }
+    }
+    &.margin {
+      margin-bottom: 50px;
+    }
+  }
+
+  .content-block {
+
+
+  }
+
+
+
+}
+
+img {
+  max-width: 100%;
+}

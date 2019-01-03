@@ -14,8 +14,6 @@
   }
 
 
-
-
   .scc_main_design_anim {
     display: inline-block;
     position: relative;
@@ -25,14 +23,13 @@
     .stage {
       position: absolute;
       transition: 0.5s all;
-      right: 1%;
+      right: 1.1%;
       top: 19.5%;
-      max-width: 36%;
+      width: 36%;
       opacity: 0;
 
       &.one {
-        opacity: 1;
-
+        //opacity: 1;
         z-index: 420;
         max-height: 76%;
         overflow-y: scroll;
@@ -60,11 +57,12 @@
       position: absolute;
       transition: 0.5s;
       background-color: rgba(255, 255, 255, 0.66);
-      top: 42%;
-      right: 4%;
-      width: 40%;
-      bottom: 7%;
+      right: 1.1%;
+      top: 19.5%;
+      width: 36%;
+      bottom: 5%;
       opacity: 0;
+      text-align: center;
       img {
         margin-top: 47%;
         transition: all .3s;
@@ -74,6 +72,7 @@
       }
       &.do {
         opacity: 1;
+        z-index: 421;
       }
     }
     .click {

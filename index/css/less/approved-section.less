@@ -1,20 +1,39 @@
 .approved-section {
+  background-color: #f5f8fb;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .sub-title {
+    margin-bottom: 15px;
+  }
   .rating-text {
     color: #023358;
     font-size: 40px;
     font-weight: 400;
-    line-height: 60px;
+    line-height: 36px;
+    margin-bottom: 0;
   }
-  .under-start {
+  .under-star {
     font-size: 12px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 30px;
     text-transform: uppercase;
     color: #4294e5;
     text-decoration: none;
     outline: none;
+    vertical-align: middle;
+    display: block;
     span {
       color: #547697;
+    }
+  }
+  .logos-under-star {
+    margin-top: 25px;
+    img {
+      height: 92px;
+      display: block;
+      width: 124px;
+      object-fit: contain;
+      margin-bottom: 30px;
     }
   }
   .user-review-block {
@@ -24,6 +43,13 @@
     position: relative;
     padding: 30px 10px 20px;
     text-align: center;
+    margin-top: 23px;
+    margin-bottom: 35px;
+    display: inline-block;
+    width: 100%;
+    &.row-second {
+      margin-top: 58px;
+    }
     &:before {
       content: "";
       background-image: url(../../quote-grey.png);
