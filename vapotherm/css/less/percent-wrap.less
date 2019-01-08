@@ -3,45 +3,25 @@
   padding: 20px 0;
   @media (max-width:991px) {
     padding-top: 35px;
-    padding-bottom: 0;
+    padding-bottom: 35px;
   }
   .percent-block {
-    border-radius: 4px;
-    //background-color: @color-1;
-    //padding: 60px 0;
-    text-align: center;
-    @media(max-width:991px){
-      //padding: 40px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: normal;
+    .quote-green {
+      margin-right: 40px;
     }
-    .col-border {
-      @media(min-width:992px) {
-        border-right: 1px solid #e2e9ef;
-        &:nth-child(3) {
-          border-right: 0;
-        }
-      }
+    .logo {
+      width: 223px;
     }
-    .counter_number{
-      //margin-bottom: 50px;
-      @media(max-width:991px){
-        margin-bottom: 35px;
-      }
-      h3 {
-        background: linear-gradient(66deg, #4a96d1 0%, #49beea 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin: 0 0 0px;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 34px;
-      }
-      span.desc {
-        color: @color-3;
-        font-size: 17px;
-        font-weight: 400;
-        line-height: 24px;
+    @media(max-width:991px) {
+      flex-direction: column;
+      .quote-green {
+        margin-right: 0;
       }
     }
   }
-
 }

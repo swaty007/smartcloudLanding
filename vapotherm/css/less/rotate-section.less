@@ -1,9 +1,14 @@
 .rotate-section {
-  background-size: 100% auto;
-  background-position: 50% 70%;
   padding-bottom: 20px;
-  background-repeat: no-repeat;
   //box-shadow: 0 20px 29px rgba(93, 97, 101, 0.21);
+  background: url(https://smartcloudconnect.io/wp-content/uploads/bg-selling-video-section.png);
+  background-size: 115% auto;
+  background-position: -64px 100%;
+  background-repeat: no-repeat;
+  @media(max-width:991px) {
+    background-size: 180% auto;
+    background-position: -64px 66%;
+  }
   .title {
     margin-bottom: 35px;
     margin-top: 15px;
@@ -11,6 +16,7 @@
   .logo {
     margin-top: 50px!important;
     width: 281px;
+    margin-bottom: 40px;
   }
   .desc {
     margin-bottom: 100px;
@@ -18,9 +24,31 @@
       margin-bottom: 50px;
     }
   }
+  .text {
+    font-size: 18px;
+    color: #002552;
+    &.text-under-grad {
+      line-height: 22px;
+      font-size: 17px;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .green-btn {
     line-height: 50px;
     padding: 0 80px;
     margin-bottom: 50px;
+  }
+  .gradient-text {
+    background: linear-gradient(66deg, #4a96d1 0%, #49beea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
   }
 }
