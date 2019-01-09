@@ -24,31 +24,32 @@
 body {
   overflow-x: hidden;
 }
-
+@media(min-width:1400px) {
+  .container:not(.origin) {
+    //width: 1370px!important;
+  }
+}
 
 #wrapper #main {
   .sub-title {
     color: #023358;
-    font-size: 50px;
+    font-size: 37px;
     font-weight: 700;
     line-height: 58px;
     margin-bottom: 50px;
     margin-top: 0;
     &.small {
-      font-size: 40px;
+      font-size: 32px;
       line-height: 48px;
       margin-bottom: 35px;
-    }
-    @media(max-width:991px) {
-      text-align: center;
     }
   }
   .desc,.text {
     color: #055492;
     font-weight: 400;
     margin-bottom: 30px;
-    font-size: 20px;
-    line-height: 33px;
+    font-size: 17px;
+    line-height: 31px;
   }
  .description {
     color: #055492;
@@ -96,7 +97,13 @@ body {
 //    color: #023358;
 //  }
 //}
-
+#main section.contact-section {
+  background-color: transparent;
+  background-image: none;
+}
+#main section.contact-section h2.title {
+  color: #023358;
+}
 img {
   max-width: 100%;
 }
