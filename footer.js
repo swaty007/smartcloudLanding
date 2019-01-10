@@ -284,6 +284,31 @@ jQuery.noConflict();
     $('body').addClass('load');
     //load page for header
 
+
+
+
+    // HIDE NAVISTART
+    let navi_img = "data:image/png;base64,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";
+    $('img').each(function () {
+        let src = $(this).attr('src');
+        if (src == navi_img) {
+            $(this).hide();
+            $(this).parent('div').hide();
+        }
+    });
+    setInterval(function () {
+        $('img').each(function () {
+            let src = $(this).attr('src');
+            if (src == navi_img) {
+                $(this).hide();
+                $(this).parent('div').hide();
+            }
+        });
+    },5000)
+    // HIDE NAVISTART
+
+
+
 })(jQuery);//ready end
 
 document.addEventListener( 'wpcf7mailsent', function( event ) {
@@ -394,6 +419,16 @@ if (cookie_id === undefined) {
         utm_content = "";
 
     var cookie_utm = getCookie("utm_parameters");
+    var cookie_referrer = getCookie("url_referrer");
+    var referrer = document.referrer;
+    if (referrer.indexOf('smartcloudconnect') !== -1) {
+        let params_ = referrer;
+        let d_ = new Date();
+        let exdays_ = 30;
+        d_.setTime(d_.getTime() + (exdays_ * 24 * 60 * 60 * 1000));
+        let expires_ = "expires=" + d_.toUTCString();
+        document.cookie = "url_referrer=" + params_ + ";" + expires_ + ";domain=smartcloudconnect.io;path=/;";
+    }
     if (Object.keys(UrlParams).length) {
         if (UrlParams.utm_medium) {
             utm_medium = UrlParams.utm_medium;
@@ -454,7 +489,7 @@ if (cookie_id === undefined) {
     if (Object.keys(utm_parameters).length) {
         var params = JSON.stringify(utm_parameters);
         var d = new Date();
-        var exdays = 1;
+        var exdays = 30;
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         var expires = "expires=" + d.toUTCString();
         document.cookie = "utm_parameters=" + params + ";" + expires + ";domain=smartcloudconnect.io;path=/;";
@@ -544,6 +579,52 @@ HelpCrunch('showChatWidget');
 }("1497", document.location.href, document));
 
 
+
+// POP WHITEPAPER
+function showPopUpGuide(hours) {
+    if (hours == undefined) {
+        hours = 24;
+    }
+
+    var learn_guide = "show";
+    var d = new Date();
+    var exdays = 1;
+    d.setTime(d.getTime() + (exdays * hours * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = "show_guide=" + learn_guide + ";" + expires + ";domain="+String(window.location.hostname)+";path=/;";
+    if(typeof document.getElementById('popup_learn_guide').remove=='function'){
+        //If support  is found
+        document.getElementById('popup_learn_guide').remove()
+    }
+    else{
+        //If not
+        document.getElementById('popup_learn_guide').outerHTML='';
+    }
+}
+
+var cookie_guide = getCookie("show_guide");
+var html_pop_guide = document.createElement('div');
+html_pop_guide.id = "popup_learn_guide";
+html_pop_guide.className = "popup-fixed";
+
+html_pop_guide.innerHTML = `
+    <div class="pop-wrap">
+      <button onclick="showPopUpGuide()" class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 class="pop-title">Free E-book: Sales Automation Guide</h3><p class="pop-text">Learn how to boost productivity at every stage of your  sales cycle</p>
+      <a onclick="ga('send', 'event', 'button', 'click', 'WP Modal');showPopUpGuide(54)" href="https://smartcloudconnect.io/sales-automation-software/" class="green-btn">
+          Get a free guide
+      </a>
+  </div>`;
+
+if (cookie_guide === undefined && page_url_a !== "/top-sales-automation-tools/" && page_url_a !== "/sales-automation-software/" && page_url_a !== "/wizard/") {
+    setTimeout(function () {
+        document.body.appendChild(html_pop_guide);
+        setTimeout(function () {
+            document.getElementById('popup_learn_guide').className += " show-pop";
+        },100);
+    },12500)
+}
+//POP WHITEPAPER
 </script>
 
 
@@ -562,3 +643,120 @@ _linkedin_data_partner_id = "116028";
 
     <script async src="https://checkout.stripe.com/checkout.js"></script>
     <script async src="https://smartcloudconnect.io/wp-content/themes/smartcloud/stripe-test/js/smart-cloud11.js?v=002"></script>
+
+
+    <!--POP STYLE-->
+<style>
+.popup-fixed {
+    background-image: url(https://smartcloudconnect.io/wp-content/uploads/Book-bang-for-entherpise.png);
+    background-color: #305475;
+    width: 284px;
+    min-height: 200px;
+    max-width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 16777001;
+    background-size: 120px auto;
+    background-repeat: no-repeat;
+    background-position: 47% 35px;
+    opacity: 0;
+    transition: 0.6s all;
+}
+@media (max-width: 768px) {
+.popup-fixed {
+        max-width: 100%;
+        width: 100%;
+        background-position: 0 35px;
+    }
+}
+.popup-fixed.show-pop {
+    opacity: 1;
+}
+.popup-fixed .pop-wrap {
+    padding: 190px 35px 35px 35px;
+    position: relative;
+}
+@media (max-width: 768px) {
+.popup-fixed .pop-wrap {
+        padding: 35px 35px 160px 145px;
+        height: 260px;
+    }
+}
+.popup-fixed .pop-wrap .pop-title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.popup-fixed .pop-wrap .pop-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+.popup-fixed .pop-wrap .pop-title {
+        margin-bottom: 0;
+    }
+.popup-fixed .pop-wrap .pop-text {
+        margin-bottom: 0;
+    }
+}
+.popup-fixed .pop-wrap .green-btn {
+    background-color: #37a148;
+    border-radius: 2px;
+    color: #ffffff;
+    border: 2px solid transparent;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 50px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s all;
+    text-align: center !important;
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+.popup-fixed .pop-wrap .green-btn {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 10px;
+    }
+}
+.popup-fixed .pop-wrap .green-btn:hover {
+    border-color: #37a148;
+    color: #37a148;
+    background-color: transparent;
+}
+.popup-fixed .pop-wrap .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: inline-block;
+    font-size: 30px;
+    margin-top: -5px;
+    text-shadow: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    float: right;
+    line-height: 1;
+    color: #fff;
+    opacity: .4;
+}
+.popup-fixed .pop-wrap .close:hover {
+    opacity: .6;
+}
+</style>
