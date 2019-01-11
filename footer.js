@@ -185,6 +185,9 @@ var _dcq_msg = function() {
                 case "LeadOwner":
                     params["LeadOwner"] = item.value;
                     break;
+                case "url_referrer":
+                    params["Refferer"] = item.value;
+                    break;
                 default:
                     params[item.name.replace('-','_')] = item.value;
                     break;
@@ -410,24 +413,30 @@ if (cookie_id === undefined) {
     var utm_term_input = document.querySelectorAll('input[name="utm_term"]');
     var utm_campaign_input = document.querySelectorAll('input[name="utm_campaign"]');
     var utm_content_input = document.querySelectorAll('input[name="utm_content"]');
+    var url_referrer_input = document.querySelectorAll('input[name="url_referrer"]');
 
     var utm_parameters = {},
         utm_source = "",
         utm_medium = "",
         utm_term = "",
         utm_campaign = "",
-        utm_content = "";
+        utm_content = "",
+        url_referrer = "";
 
     var cookie_utm = getCookie("utm_parameters");
     var cookie_referrer = getCookie("url_referrer");
     var referrer = document.referrer;
-    if (referrer.indexOf('smartcloudconnect') !== -1) {
+    if (cookie_referrer !== undefined) {
+        url_referrer = cookie_referrer;
+    }
+    if (referrer.indexOf('smartcloudconnect.io') == -1 && referrer != "" && referrer !== " ") {
         let params_ = referrer;
         let d_ = new Date();
         let exdays_ = 30;
         d_.setTime(d_.getTime() + (exdays_ * 24 * 60 * 60 * 1000));
         let expires_ = "expires=" + d_.toUTCString();
         document.cookie = "url_referrer=" + params_ + ";" + expires_ + ";domain=smartcloudconnect.io;path=/;";
+        url_referrer = referrer;
     }
     if (Object.keys(UrlParams).length) {
         if (UrlParams.utm_medium) {
@@ -484,6 +493,9 @@ if (cookie_id === undefined) {
     }
     for (var i4 = 0;i4 < utm_content_input.length; ++i4) {
         utm_content_input[i4].value = utm_content;
+    }
+    for (var i5 = 0;i5 < url_referrer_input.length; ++i5) {
+        url_referrer_input[i5].value = url_referrer;
     }
 
     if (Object.keys(utm_parameters).length) {
