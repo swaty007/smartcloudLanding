@@ -791,12 +791,12 @@
             //+scroll
             function onScroll(){
 
-                var scroll_top = $(window).scrollTop();
-                $("#container-sticky a.scroll-nav").each(function(){
+                var scroll_top = $(document).scrollTop();
+                $("a.scroll-nav").each(function(){
                     var hash = $(this).attr("href");
                     var target = $(hash);
 
-                    if (target.position().top <= scroll_top + 400  && target.position().top + target.outerHeight() > scroll_top + 400) {
+                    if (target.offset().top <= scroll_top + 400  && target.offset().top + target.outerHeight() > scroll_top + 400) { //важно что б было offset а не position
 
                         $("#container-sticky .nav-highlighter li.active").removeClass("active");
                         $(this).closest('li').addClass("active");
@@ -807,7 +807,7 @@
                 });
             }
 
-            $(window).on("scroll", onScroll);
+            $(document).on("scroll", onScroll);
 
             $(document).on('click', '#container-sticky ul.nav-highlighter li a', function (e) {
                 e.preventDefault();
