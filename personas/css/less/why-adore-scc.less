@@ -1,16 +1,30 @@
 .why-adore-scc {
-  background-image: url(https://smartcloudconnect.io/wp-content/uploads/shape_20.png);
-  background-image: url(../../2-layers.png);
-  background-image: url(../../BG.png);
-  background-image: url(../../6-layers.png);
-  background-size: cover;
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/why-adore-scc-bg.png);
+  background-size: auto 136%;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-
+  overflow: hidden;
   padding-top: 40px;
+  @media(max-width:991px) {
+    background-size: auto 136%;
+    padding-top: 80px;
+  }
+  @media(max-width:610px) {
+    background-size: auto 120%;
+  }
+  @media(max-width:380px) {
+    background-size: auto 108%;
+  }
   .green-link {
     margin-top: 50px;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
     display: inline-block;
+    @media(max-width:991px) {
+      margin-bottom: 200px;
+    }
   }
+  a.green-btn {
+    margin-bottom: 40px;
+  }
+  @import "scc-main-design-anim";
 }

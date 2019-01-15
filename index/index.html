@@ -61,14 +61,18 @@
                 Free Download
             </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 text-center">
             <div id="scc_main_design_anim" class="scc_main_design_anim">
-                <img src="scc-main-design.png">
+                <img src="https://smartcloudconnect.io/wp-content/uploads/scc-main-design.png">
+
                 <div class="loader-modal">
                     <img src="https://smartcloudconnect.io/wp-content/uploads/loader_anim.png" alt="">
                 </div>
+                <div class="stage first">
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/scc-main-design-with-sidebar.png">
+                </div>
                 <div class="stage one">
-                    <img src="scc-main-design-step1.png">
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/scc-main-design-step1.png">
                 </div>
 
                 <div class="click one">
@@ -682,6 +686,7 @@
 
                 setTimeout(function () {
                     elem.find('.loader-modal').addClass('do');
+                    elem.find('.stage.first').addClass('do');
                     setTimeout(function () {
                         elem.find('.stage.one').animate({opacity:1},400);
                         setTimeout(function () {

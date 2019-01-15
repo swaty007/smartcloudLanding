@@ -1,0 +1,78 @@
+.scc_main_design_anim {
+  margin-bottom: -25px;
+
+  display: inline-block;
+  position: relative;
+  .stage {
+    position: absolute;
+    transition: 0.5s all;
+    right: 1.1%;
+    top: 19.5%;
+    width: 36%;
+    opacity: 0;
+
+    &.first {
+      left: 0;
+      top: 0;
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      &.do {
+        opacity: 1;
+        z-index: 419;
+      }
+    }
+    &.one {
+      //opacity: 1;
+      z-index: 420;
+      max-height: 76%;
+      overflow-y: scroll;
+      img {
+        width: 100%;
+      }
+      &::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: unset;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        background-color: #cbd9e5;
+        outline: 1px solid slategrey;
+      }
+    }
+
+  }
+  .loader-modal {
+    position: absolute;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.66);
+    right: 1.1%;
+    top: 19.5%;
+    width: 36%;
+    bottom: 5%;
+    opacity: 0;
+    text-align: center;
+    img {
+      margin-top: 47%;
+      transition: all .3s;
+      width: 12%;
+      transition-timing-function: ease-in;
+      animation: ld-spin 1s infinite;
+    }
+    &.do {
+      opacity: 1;
+      z-index: 421;
+    }
+  }
+  .click {
+    &.one {
+      bottom: 79%;
+      right: 10%;
+    }
+  }
+}

@@ -4,15 +4,6 @@
 @color-4: #055492;
 @color-5: #37a148;
 
-.container {
-
-}
-.container-fluid {
-  //max-width: 1400px;
-}
-body {
-  overflow-x: hidden;
-}
 html {
   overflow: unset!important;
 }
@@ -21,8 +12,10 @@ html {
   height: 77px;
 }
 body.show-scc-navbar {
-  overflow: hidden!important;
-  .navbar-scc{
+  @media(max-width:991px) {
+    overflow: hidden!important;
+  }
+  .navbar-scc {
     .collapse-scc{
       opacity: 1;
       pointer-events: inherit;
@@ -149,7 +142,7 @@ body.show-scc-navbar {
       }
       &.no-border {
         @media(min-width:992px) {
-          border-bottom: 4px solid transparent;
+          border-bottom: 4px solid transparent!important;
         }
       }
       &.open {
@@ -335,4 +328,62 @@ body.show-scc-navbar {
   border-radius: 2px;
   border: 1px solid #37a148;
   text-transform: uppercase;
+  padding: 7px 23px;
+}
+.menu-search {
+  position: relative!important;
+  .fusion-main-menu-icon {
+    font-family: FontAwesome;
+    cursor: pointer;
+    &:after {
+      border-radius: 50%;
+      content: '\f002';
+      height: 15px;
+      width: 15px;
+      color: #29639a;
+    }
+    &:hover {
+      &:after {
+        color: #023358;
+      }
+    }
+  }
+  .fusion-custom-menu-item-contents {
+    display: none;
+    width: 250px;
+    padding: 0;
+    text-align: right;
+    border: 0;
+    top: 48%;
+    transform: translateY(-50%);
+    right: -13px;
+    background: 0 0!important;
+    position: absolute;
+    left: auto;
+    transition: opacity .2s ease-in;
+  }
+  .searchform {
+    margin: 0;
+    padding: 0;
+    .search-field input {
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+      line-height: 33px;
+      height: 33px;
+      border-color: #d2d2d2;
+      background-color: #fff;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .search-button input[type="submit"] {
+      border-top-right-radius: 16px;
+      border-bottom-right-radius: 16px;
+      line-height: 33px;
+      height: 33px;
+      background: #055492;
+      &:hover {
+        background: #37a148;
+      }
+    }
+  }
 }
