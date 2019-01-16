@@ -419,7 +419,7 @@
             <div class="col-md-6">
                 <div class="blog-container">
                     <a href="https://smartcloudconnect.io/ai-in-sales-a-threat-or-an-opportunity/" class="img-block">
-                        <img src="https://smartcloudconnect.io/wp-content/uploads/AI-In-Sales_-A-Threat-Or-An-Opportunity.png" >
+                        <img src="AI_In_Sales__A_Threat_Or_An_Opportunity.png" >
                     </a>
                     <p class="info-text">
                         Blog
@@ -436,7 +436,7 @@
             <div class="col-md-3">
                 <div class="blog-container">
                     <a href="https://smartcloudconnect.io/top-10-sales-closing-techniques/" class="img-block">
-                        <img src="https://smartcloudconnect.io/wp-content/uploads/top-10-sales-closing-blog.png" >
+                        <img src="hamish-clark-377301-unsplash.png" >
                     </a>
                     <p class="info-text">
                         Blog
@@ -454,7 +454,7 @@
             <div class="col-md-3">
                 <div class="blog-container">
                     <a href="https://smartcloudconnect.io/seal-deals-faster-with-99-sms-open-rates-within-your-salesforce-enabled-inbox/" class="img-block">
-                        <img src="https://smartcloudconnect.io/wp-content/uploads/fb.jpg" >
+                        <img src="360sms-app-main-blog.png" >
                     </a>
                     <p class="info-text">
                         partnership
@@ -474,7 +474,7 @@
             <div class="col-md-3">
                 <div class="blog-container">
                     <a href="https://smartcloudconnect.io/7-sales-follow-up-email-templates/" class="img-block">
-                        <img src="https://smartcloudconnect.io/wp-content/uploads/7-sales-follow-email-blog.png" >
+                        <img src="7-sales-follow-up-email-templates-main-blog.png" >
                     </a>
                     <p class="info-text">
                         Blog
@@ -492,7 +492,7 @@
             <div class="col-md-3">
                 <div class="blog-container">
                     <a href="https://smartcloudconnect.io/experts-interview-top-sales-automation-tools-to-crush-your-sales-goals/" class="img-block">
-                        <img src="https://smartcloudconnect.io/wp-content/uploads/sale_op_preview.jpg" >
+                        <img src="expert-interview-main-blog.png" >
                     </a>
                     <p class="info-text">
                         Blog
@@ -541,10 +541,7 @@
     </div>
 </section>
 
-
-
 <div id="footer-partners" style="height: 60px;"><a title="ISO Certificate" target="_blank" rel="noopener"><img src="https://smartcloudconnect.io/wp-content/uploads/ISO.png"/></a><a title="Microsoft partner" href="https://store.office.com/ru-ru/app.aspx?assetid=WA104379517&amp;sourcecorrid=2466a4ef-e60e-4cb3-a4dd-ce0500a04a78&amp;searchapppos=0&amp;ui=ru-RU&amp;rs=ru-RU&amp;ad=RU&amp;appredirect=false" target="_blank" rel="noopener"><img src="https://smartcloudconnect.io/wp-content/uploads/ms-gold-partner.png" alt="Microsoft partner"/></a><a title="Saleforce partner" href="https://appexchange.salesforce.com/listingDetail?listingId=a0N30000000q64KEAQ&amp;tab=g" target="_blank" rel="noopener"><img src="https://smartcloudconnect.io/wp-content/uploads/appexchange-program-partner-rgb.png"/></a></div><style>#footer-partners a:first-child {  max-width: 25%;  }  #footer-partners a {  position: relative;  max-width: 33%;  width: 33%;  text-align: center;  display: inline-block;  vertical-align: middle;  }  #footer-partners a img {  width: unset;  position: static;  }</style>
-
 
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -562,6 +559,10 @@
         setInterval(function () {
             app.start();
         },7000);
+        $(document).on('click', "#what-is-scc .anim-status-block", function () {
+            app.what_is_scc_anim();
+            app.do_anim_line(800,1)
+        });
         var app = {
             start: function () {
                 var scrollTop = $(window).scrollTop();
@@ -582,7 +583,24 @@
                     app.scc_main_design_anim(scc_main_design_anim);
                 }
             },
-
+            do_anim_line: function (time, line_n) {
+                $("#what-is-scc .anim-status-block:nth-child("+line_n+") .line span").width(0);
+                $("#what-is-scc .anim-status-block:nth-child("+line_n+") .line span").animate({width:'100%'},time, function () {
+                    app.next(line_n);
+                });
+            },
+            next: function (n) {
+                switch (n) {
+                    case 1: this.do_anim_line(300, ++n);
+                        break;
+                    case 2: this.do_anim_line(300, ++n);
+                        break;
+                    case 3: this.do_anim_line(300, 1);//тут вызываем первую анимацию
+                        break;
+                    default: this.do_anim_line(300, 1);
+                    break;
+                }
+            },
             what_is_scc_anim:function (elem) {
                 if (app.what_is_scc_anim.done === false) return;
                 app.window_to_salesforce();
