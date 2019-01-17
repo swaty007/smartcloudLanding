@@ -53,18 +53,18 @@
                 <span id="bar-2" class=""></span>
                 <span id="bar-3" class=""></span>
             </button>
-            <a class="navbar-scc-brand" href="">
+            <a class="navbar-scc-brand" href="<?=home_url();?>/">
                 <img src="//smartcloudconnect.io/wp-content/uploads/Logo-Color.png" alt="logo">
             </a>
         </div>
         <div id="scc_collapse" class="collapse-scc">
             <ul id="menu_scc" class="menu-scc">
                 <li class="menu-item">
-                    <a class="menu-link" href="#about-ua">Product</a>
+                    <a class="menu-link">Product</a>
                     <a class="menu_drop_trigger" href="#"><i class="fa fa-angle-down"></i></a>
                     <ul class="sub-menu-drop">
                         <li class="sub-item">
-                            <div class="container">
+                            <div class="container origin">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-3">
                                         <h4 class="menu-sub-title">Features</h4>
@@ -77,6 +77,7 @@
                                     <div class="col-xs-6 col-sm-3">
                                         <a href="<?=home_url();?>/integration-tools/" class="menu-sub-title">Integrations</a>
                                         <hr class="menu-seporate">
+                                        <a href="<?=home_url();?>/integration-tools/" class="menu-sub-link">All</a>
                                         <a href="<?=home_url();?>/integration-tools/" class="menu-sub-link">Salesforce</a>
                                         <a href="<?=home_url();?>/integration-tools/" class="menu-sub-link">Oracle Siebel</a>
                                         <a href="<?=home_url();?>/integration-tools/" class="menu-sub-link">SAP</a>
@@ -113,16 +114,16 @@
                     <a class="menu_drop_trigger" href="#"><i class="fa fa-angle-down"></i></a>
                     <ul class="sub-menu-drop">
                         <li class="sub-item">
-                            <div class="container">
+                            <div class="container origin">
                                 <div class="row">
-                                    <div class="col-xs-6 col-sm-3">
+                                    <div class="col-xs-6 col-sm-3 col-md-offset-2">
                                         <a href="<?=home_url();?>/customer-success/" class="menu-sub-title">Customers</a>
                                          <hr class="menu-seporate">
-                                        <a href="<?=home_url();?>/customer-success/" class="menu-sub-link">Customer voice</a>
+                                        <a href="<?=home_url();?>/customer-voice/" class="menu-sub-link">Customer voice</a>
                                         <a href="<?=home_url();?>/morgan-morgan/" class="menu-sub-link">Case study - Morgan & Morgan</a>
                                         <a href="<?=home_url();?>/vapotherm/" class="menu-sub-link">Case study - Vapotherm</a>
                                     </div>
-                                    <div class="col-xs-6 col-sm-3">
+                                    <div class="col-xs-6 col-sm-3 hidden" style="display: none">
                                         <a href="<?=home_url();?>" class="menu-sub-title">Enterprise</a>
                                          <hr class="menu-seporate">
                                         <a href="<?=home_url();?>" class="menu-sub-link">SmartCloud Connect for Enterprise</a>
@@ -136,11 +137,11 @@
                                     <div class="col-xs-6 col-sm-3">
                                         <a href="<?=home_url();?>/about-us/" class="menu-sub-title">About us</a>
                                          <hr class="menu-seporate">
-                                        <a href="<?=home_url();?>/about-us#who-we-are" class="menu-sub-link">Who we are</a>
+                                        <a href="<?=home_url();?>/about-us/" class="menu-sub-link">Who we are</a>
                                         <a href="<?=home_url();?>/about-us#who-we-are" class="menu-sub-link">Our vision & mission</a>
-                                        <a href="<?=home_url();?>/about-us#who-we-are" class="menu-sub-link">Core value</a>
-                                        <a href="<?=home_url();?>/about-us#partners-block" class="menu-sub-link">Awards</a>
-                                        <a href="<?=home_url();?>/about-us#people-behind" class="menu-sub-link">Invisible.io</a>
+                                        <a href="<?=home_url();?>/about-us#core-values" class="menu-sub-link">Core values</a>
+                                        <a href="<?=home_url();?>/about-us#hall-of-flame" class="menu-sub-link">Awards</a>
+                                        <a href="https://invisible.io/" class="menu-sub-link">Invisible.io</a>
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +153,7 @@
                     <a class="menu_drop_trigger" href="#"><i class="fa fa-angle-down"></i></a>
                     <ul class="sub-menu-drop">
                         <li class="sub-item">
-                            <div class="container">
+                            <div class="container origin">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-3">
                                         <a href="<?=home_url();?>/docs/stable-channel/" class="menu-sub-title">Knowledge base</a>
@@ -162,19 +163,22 @@
                                         <a href="<?=home_url();?>/docs/fast-channel/" class="menu-sub-link">Fast prod</a>
                                     </div>
                                     <div class="col-xs-6 col-sm-3">
-                                        <a href="<?=home_url();?>" class="menu-sub-title">Blog and News</a>
+                                        <a href="<?=home_url();?>/blog/" class="menu-sub-title">Blog and News</a>
                                         <hr class="menu-seporate">
-                                        <a href="<?=home_url();?>" class="menu-sub-link">SmartCloud Connect for Enterprise</a>
+                                        <a href="<?=home_url();?>/top-sales-automation-tools/" class="menu-sub-link">Experts Interview: Top Sales Automation Tools to Crush your Sales Goals</a>
+                                        <a href="<?=home_url();?>/3-inside-sales-activities-to-boost-your-sales/" class="menu-sub-link">3 Inside sales activities to boost your sales</a>
+                                        <a href="<?=home_url();?>/7-best-practices-in-lead-management/" class="menu-sub-link">7 best practices in lead management</a>
                                     </div>
                                     <div class="col-xs-6 col-sm-3">
-                                        <h4 class="menu-sub-title">Events</h4>
+                                        <a href="<?=home_url();?>/salesforce-events/" class="menu-sub-title">Events</a>
                                         <hr class="menu-seporate">
-                                        <a href="<?=home_url();?>/our-partners/" class="menu-sub-link">Our parters</a>
+                                        <a href="<?=home_url();?>/salesforce-events/" class="menu-sub-link">Events 2019</a>
+                                        <!--<a href="<?=home_url();?>/salesforce-events#upcoming_li_block" class="menu-sub-link">Events 2019</a>-->
                                     </div>
                                     <div class="col-xs-6 col-sm-3">
-                                        <a href="<?=home_url();?>/about-us/" class="menu-sub-title">Whitepapers</a>
+                                        <a href="<?=home_url();?>/sales-automation-software/" class="menu-sub-title">Whitepapers</a>
                                         <hr class="menu-seporate">
-                                        <a href="<?=home_url();?>/about-us#who-we-are" class="menu-sub-link">Who we are</a>
+                                        <a href="<?=home_url();?>/sales-automation-software/" class="menu-sub-link">Sales Automation Software: the Ultimate Guide</a>
                                     </div>
                                 </div>
                             </div>
@@ -197,7 +201,7 @@
                                 <div class="search-field">
                                     <input type="text" value="" name="s" class="s" placeholder="Search ...">
                                 </div>
-                                <div class="search-button"><input type="submit" class="searchsubmit" value=""></div>
+                                <div class="search-button"><input type="submit" class="searchsubmit" value="&#xf002;"></div>
                             </div>
                             <input type="hidden" name="lang" value="en" onload="this.value=body.getAttribute('lang');">
                         </form>

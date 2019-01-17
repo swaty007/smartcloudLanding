@@ -43,7 +43,7 @@ body.show-scc-navbar {
   z-index: 99997;
   display: block;
   .navbar-container {
-    max-width: 1800px;
+    max-width: 1370px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -90,7 +90,7 @@ body.show-scc-navbar {
   }
   .collapse-scc {
     display: block;
-    text-align: center;
+    text-align: right;
     height: 77px;
     margin: 0 -15px;
     @media(max-width:991px) {
@@ -119,6 +119,12 @@ body.show-scc-navbar {
     padding-left: 0;
     @media(max-width:991px) {
       display: block;
+    }
+    @media(min-width:992px) {
+      width: 70%;
+    }
+    @media(min-width:1200px) {
+      width: 65%;
     }
     li.menu-item {
       position: static;
@@ -150,6 +156,12 @@ body.show-scc-navbar {
           border-bottom: 4px solid transparent!important;
         }
       }
+      &.fusion-menu-item-button {
+        @media(min-width:992px) {
+          float: right;
+          margin-right: 15px;
+        }
+      }
       &.open {
         &:hover {
           &>a.menu_drop_trigger {
@@ -177,6 +189,8 @@ body.show-scc-navbar {
         font-size: 15px;
         font-weight: 500;
         opacity: 0;
+        cursor: pointer;
+        display: inline-block;
         &:hover {
           background-color: transparent;
         }
@@ -338,6 +352,10 @@ body.show-scc-navbar {
 .menu-search {
   position: relative!important;
   margin-left: 15px;
+  margin-right: 15px;
+  @media(min-width:992px) {
+    float: right!important;
+  }
   .fusion-main-menu-icon {
     font-family: FontAwesome;
     cursor: pointer;
@@ -367,6 +385,11 @@ body.show-scc-navbar {
     position: absolute;
     left: auto;
     transition: opacity .2s ease-in;
+    @media(max-width:991px) {
+      display: block!important;
+      width: 95%;
+      right: 5%;
+    }
   }
   .searchform {
     margin: 0;

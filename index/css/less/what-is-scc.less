@@ -13,6 +13,7 @@
     margin-bottom: 40px;
     transition: 0.5s all;
     position: relative;
+    cursor: pointer;
     &.active {
       box-shadow: 0 8px 65px rgba(115, 136, 151, 0.35);
       transform: translateX(20px);
@@ -69,21 +70,34 @@
     text-transform: uppercase;
     outline: none;
     text-decoration: none;
+    transition: 0.3s all;
+    .fa {
+      transition: 0.3s transform;
+    }
+    &:hover {
+      color: #0b4592;
+      .fa {
+        transform: translateX(10px);
+      }
+    }
   }
 
   .what_is_scc_anim {
-    display: inline-block;
+    //display: inline-block;
     position: relative;
     text-align: center;
-    @media(max-width:991px) {
-      margin: 0 -5%;
+
+    .enterprise_scheduling,.window_to_salesforce,.data_sync {
+      display: none!important;
+      &.show {
+        display: inline-block!important;
+      }
     }
+
     .data_sync {
       display: inline-block;
       position: relative;
     }
-
-
     .window_to_salesforce {
       display: inline-block;
       position: relative;
