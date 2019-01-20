@@ -824,13 +824,15 @@
                 if (app.window_to_salesforce.done === false) return;
                 app.window_to_salesforce.done = false;
                 elem.find('.click.one').addClass('do');
-                setTimeout(function () {
+
+                var refresher = {};
+                refresher.n1 = setTimeout(function () {
                     elem.find('.stage.one').animate({opacity:1},300);
-                    setTimeout(function () {
+                    refresher.n2 = setTimeout(function () {
                         elem.find('.click.two').addClass('do');
-                        setTimeout(function () {
+                        refresher.n3 =  setTimeout(function () {
                             elem.find('.stage.two').animate({opacity:1},500);
-                            setTimeout(function () {
+                            refresher.n4 =  setTimeout(function () {
                                 refresh();
                                 setTimeout(function () {
                                     app.window_to_salesforce.done = true;
@@ -841,6 +843,12 @@
                     },1200);//after show stage 1
                 },600);//click
                 function refresh() {
+
+                    clearTimeout(refresher.n1);
+                    clearTimeout(refresher.n2);
+                    clearTimeout(refresher.n3);
+                    clearTimeout(refresher.n4);
+
                     elem.find('img,div').removeAttr('style');
                     elem.find('div,img').removeClass('do');
                 }
