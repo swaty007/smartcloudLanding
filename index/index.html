@@ -819,20 +819,22 @@
                     },2000);
                 }, document.documentElement.clientWidth > 991 ? 3500 : 10000);//3 end
             },
+            refresher : {},
             window_to_salesforce: function () {
                 var elem = $('#window_to_salesforce');
+                refresh();
                 if (app.window_to_salesforce.done === false) return;
                 app.window_to_salesforce.done = false;
                 elem.find('.click.one').addClass('do');
 
-                var refresher = {};
-                refresher.n1 = setTimeout(function () {
+//                var refresher = {};
+                app.refresher.n1 = setTimeout(function () {
                     elem.find('.stage.one').animate({opacity:1},300);
-                    refresher.n2 = setTimeout(function () {
+                    app.refresher.n2 = setTimeout(function () {
                         elem.find('.click.two').addClass('do');
-                        refresher.n3 =  setTimeout(function () {
+                        app.refresher.n3 =  setTimeout(function () {
                             elem.find('.stage.two').animate({opacity:1},500);
-                            refresher.n4 =  setTimeout(function () {
+                            app.refresher.n4 =  setTimeout(function () {
                                 refresh();
                                 setTimeout(function () {
                                     app.window_to_salesforce.done = true;
@@ -844,10 +846,12 @@
                 },600);//click
                 function refresh() {
 
-                    clearTimeout(refresher.n1);
-                    clearTimeout(refresher.n2);
-                    clearTimeout(refresher.n3);
-                    clearTimeout(refresher.n4);
+                    clearTimeout(app.refresher.n1);
+                    clearTimeout(app.refresher.n2);
+                    clearTimeout(app.refresher.n3);
+                    clearTimeout(app.refresher.n4);
+                    app.window_to_salesforce.done = true;
+                    app.lock = false;
 
                     elem.find('img,div').removeAttr('style');
                     elem.find('div,img').removeClass('do');
