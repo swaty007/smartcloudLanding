@@ -728,10 +728,9 @@
         },7000);
         $(document).on('click', "#what-is-scc .anim-status-block", function () {
             var nth_child = $(this).index();
-//            app.what_is_scc_anim();
-            app.do_anim_line(nth_child +1);
             app.next_n = nth_child +1;
             app.user_click = true;
+            app.do_anim_line();
         });
         var app = {
             start: function () {
@@ -756,12 +755,25 @@
             lock: false,
             next_n: 1,
             user_click: false,
-            do_anim_line: function (line_n) {
-                if (this.lock === true) {return}
+            do_anim_line: function () {
+                if (this.lock === true) {
+                    app.window_to_salesforce.refresh();
+                    app.enterprise_scheduling.refresh();
+                    app.refresher.loop2 = setTimeout(function () {
+                        app.lock = false;
+                        app.do_anim_line();
+                    },300);
+                    return;
+                }
                 this.lock = true;
-                this.next_n = line_n + 1;
-                var time = 0;
-                var block_id = "";
+
+                clearTimeout(app.refresher.loop);
+                clearTimeout(app.refresher.loop2);
+                var time = 0,
+                    block_id = "",
+                    line_n = this.next_n;
+                this.next_n += 1;
+
                 switch (line_n) {
                     case 1:
                         block_id = "#data_sync";
@@ -777,39 +789,29 @@
                         time = 4500;
                         app.enterprise_scheduling();
                         break;
+                    case 4:
+                        block_id = "#data_sync";
+                        time = 5500;
+                        line_n = 1;
+                        this.next_n = 2;
+                        break;
                 }
                 $('#what_is_scc_anim').find('div').removeClass('show');
                 $(block_id).addClass('show');
-                $("#what-is-scc .anim-status-block:nth-child("+line_n+") .line span").width(0);
-                $("#what-is-scc .anim-status-block:nth-child("+line_n+") .line span").animate({width:'100%'},time, function () {
+                $("#what-is-scc .anim-status-block .line span").stop(true, false);
+                $("#what-is-scc .anim-status-block .line span").width(0);
+                $("#what-is-scc .anim-status-block:nth-child("+line_n+") .line span").animate({width:'100%'},time);
+
+                app.refresher.loop = setTimeout(function () {
                     app.lock = false;
-                    if (app.user_click === true) {
-                        app.user_click = false;
-                        app.next();
-                    } else {
-                        setTimeout(function () {
-                            app.next();
-                        },3500);
-                    }
-                });
-            },
-            next: function () {
-                switch (this.next_n) {
-                    case 1:this.do_anim_line(this.next_n);
-                        break;
-                    case 2: this.do_anim_line(this.next_n);
-                        break;
-                    case 3: this.do_anim_line(this.next_n);
-                        break;
-                    default: this.do_anim_line(1);
-                    break;
-                }
+                    app.do_anim_line();
+                },time + 2000);
             },
             what_is_scc_anim:function (elem) {
                 if (app.what_is_scc_anim.done === false) return;
                 app.what_is_scc_anim.done = false;
 
-                app.do_anim_line(1);
+                app.do_anim_line();
 
                 setTimeout(function () {
 //                    elem.find('img,div').removeAttr('style');
@@ -820,14 +822,37 @@
                 }, document.documentElement.clientWidth > 991 ? 3500 : 10000);//3 end
             },
             refresher : {},
+            init: function () {
+                app.window_to_salesforce.refresh = function () {
+                    var elem = $('#window_to_salesforce');
+                    clearTimeout(app.refresher.n1);
+                    clearTimeout(app.refresher.n2);
+                    clearTimeout(app.refresher.n3);
+                    clearTimeout(app.refresher.n4);
+                    app.window_to_salesforce.done = true;
+                    elem.find('img,div').stop(true, false);
+                    elem.find('img,div').removeAttr('style');
+                    elem.find('div,img').removeClass('do');
+                };
+                app.enterprise_scheduling.refresh = function () {
+                    var elem = $('#enterprise_scheduling');
+                    clearTimeout(app.refresher.n1);
+                    clearTimeout(app.refresher.n2);
+                    clearTimeout(app.refresher.n3);
+                    clearTimeout(app.refresher.n4);
+                    app.enterprise_scheduling.done = true;
+                    elem.find('img,div').stop(true, false);
+                    elem.find('img,div').removeAttr('style');
+                    elem.find('div,img').removeClass('do');
+                };
+            },
             window_to_salesforce: function () {
                 var elem = $('#window_to_salesforce');
-                refresh();
+                app.window_to_salesforce.refresh();
                 if (app.window_to_salesforce.done === false) return;
                 app.window_to_salesforce.done = false;
                 elem.find('.click.one').addClass('do');
 
-//                var refresher = {};
                 app.refresher.n1 = setTimeout(function () {
                     elem.find('.stage.one').animate({opacity:1},300);
                     app.refresher.n2 = setTimeout(function () {
@@ -835,58 +860,37 @@
                         app.refresher.n3 =  setTimeout(function () {
                             elem.find('.stage.two').animate({opacity:1},500);
                             app.refresher.n4 =  setTimeout(function () {
-                                refresh();
-                                setTimeout(function () {
-                                    app.window_to_salesforce.done = true;
-                                },2000);
-                            },document.documentElement.clientWidth > 991 ? 3500 : 10000);//3 end
+                                app.window_to_salesforce.refresh();
+                            },document.documentElement.clientWidth > 991 ? 4000 : 10000);//3 end
 
                         },600);//click
                     },1200);//after show stage 1
                 },600);//click
-                function refresh() {
-
-                    clearTimeout(app.refresher.n1);
-                    clearTimeout(app.refresher.n2);
-                    clearTimeout(app.refresher.n3);
-                    clearTimeout(app.refresher.n4);
-                    app.window_to_salesforce.done = true;
-                    app.lock = false;
-
-                    elem.find('img,div').removeAttr('style');
-                    elem.find('div,img').removeClass('do');
-                }
             },
             enterprise_scheduling: function () {
                 var elem = $('#enterprise_scheduling');
+                app.enterprise_scheduling.refresh();
                 if (app.enterprise_scheduling.done === false) return;
                 app.enterprise_scheduling.done = false;
 
                 elem.find('.click.one').addClass('do');
-                setTimeout(function () {
+                app.refresher.n1 = setTimeout(function () {
                     elem.find('.stage.one').animate({opacity:1},600);
-                    setTimeout(function () {
+                    app.refresher.n2 = setTimeout(function () {
                         elem.find('.img-message.second').slideDown(500);
                         elem.find('.img-message.first').slideDown(500,function () {
                             elem.find('.click.two').addClass('do');
-                            setTimeout(function () {
+                            app.refresher.n3 = setTimeout(function () {
                                 elem.find('.stage.two').animate({opacity:1},600);
-                                setTimeout(function () {
-                                    refresh();
-                                    setTimeout(function () {
-                                        app.enterprise_scheduling.done = true;
-                                    },2000);
-                                },document.documentElement.clientWidth > 991 ? 3500 : 10000);//3 end
+                                app.refresher.n4 = setTimeout(function () {
+                                    app.enterprise_scheduling.refresh();
+                                },document.documentElement.clientWidth > 991 ? 4000 : 10000);//3 end
 
-                            },600);//click
+                            },800);//click
                         });
 
                     },1200);//after show stage 1
-                },600);//click
-                function refresh() {
-                    elem.find('img,div').removeAttr('style');
-                    elem.find('div,img').removeClass('do');
-                }
+                },800);//click
             },
 
 
@@ -940,13 +944,18 @@
                             setTimeout(function () {
                                 block.animate({'scrollTop':'0px'},600);
 
-                                setTimeout(function () {
-                                    elem.find('img,div').removeAttr('style');
-                                    elem.find('div,img').removeClass('do');
-                                    setTimeout(function () {
+                                block.on('scroll', function () {
+                                    clearTimeout( app.scc_main_design_anim.scroll );
+                                    app.scc_main_design_anim.scroll = setTimeout(function() {
+                                        elem.find('img,div').removeAttr('style');
+                                        elem.find('div,img').removeClass('do');
+                                        block.off('scroll');
                                         app.scc_main_design_anim.done = true;
-                                    },2000);
-                                },document.documentElement.clientWidth > 991 ? 7000 : 7000);//3 end
+                                    }, 7000);
+                                })
+
+//                                setTimeout(function () {
+//                                },document.documentElement.clientWidth > 991 ? 7000 : 7000);//3 end
 
                             },2800)//scroll bottom
 
@@ -955,10 +964,10 @@
                     },600); //modal in
 
                 },800);
-
             },
         };
-
+        app.init();
+        app.start();
 
 
 

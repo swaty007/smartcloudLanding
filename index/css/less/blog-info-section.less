@@ -11,7 +11,9 @@
     margin-bottom: 25px;
     background: #fff;
 
-    height: 375px;
+    @media(min-width:992px) {
+      height: 375px;
+    }
     .img-block {
       display: block;
       margin-left: -15px;
@@ -20,6 +22,11 @@
         max-width: calc(100% + 15px);
         width: calc(100% + 15px);
         object-fit: cover;
+        @media(max-width: 991px) {
+          max-height: 340px;
+          height: auto;
+          object-fit: contain;
+        }
       }
     }
     .info-text {
