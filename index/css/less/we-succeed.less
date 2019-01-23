@@ -1,6 +1,6 @@
 .we-succeed {
   padding-top: 100px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   .sub-title {
     margin-bottom: 60px;
   }
@@ -122,9 +122,15 @@
       margin-top: 50px;
       transition: 0.3s all;
       display:inline-block;
+      .fa {
+        transition: 0.3s transform;
+      }
       &:hover {
         //background-color: @color-5;
         color: #297335;
+        .fa {
+          transform: translateX(5px);
+        }
       }
     }
   }

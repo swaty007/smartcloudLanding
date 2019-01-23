@@ -33,7 +33,7 @@ img {
 #wrapper #main {
   .sub-title {
     color: #023358;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 42px;
     margin-bottom: 30px;
@@ -99,7 +99,7 @@ img {
     &:hover {
       color: #297335;
       .fa {
-        transform: translateX(10px);
+        transform: translateX(5px);
       }
     }
   }
@@ -163,6 +163,10 @@ img {
   background-repeat: no-repeat;
   padding-top: 310px;
   margin-top: -230px;
+  @media(max-width:991px) {
+    background-size: 401%;
+    background-position: -120px 10%;
+  }
   h2.title {
     color: #023358;
   }

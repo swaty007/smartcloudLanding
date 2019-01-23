@@ -14,11 +14,14 @@
     transition: 0.5s all;
     position: relative;
     cursor: pointer;
+    &:hover {
+      box-shadow: 0 8px 65px rgba(115, 136, 151, 0.35);
+    }
     &.active {
       box-shadow: 0 8px 65px rgba(115, 136, 151, 0.35);
       transform: translateX(20px);
       @media(max-width:991px) {
-        transform: translateX(15px);
+        transform: translateX(10px);
       }
     }
     @media(max-width:991px) {
@@ -92,7 +95,7 @@
     &:hover {
       color: #297335;
       .fa {
-        transform: translateX(10px);
+        transform: translateX(5px);
       }
     }
   }
