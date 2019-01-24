@@ -13734,7 +13734,7 @@ footer.fusion-footer-widget-area {
     color: #fff !important;
     background-color: #2088bd
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .microsoft_logo_footer {
         left: 185px
     }
@@ -13811,7 +13811,7 @@ footer.fusion-footer-widget-area {
 .microsoft_logo_footer:hover, .smart_logo_center:hover {
     opacity: 0.8;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .microsoft_logo_footer {
         left: 0;
     }

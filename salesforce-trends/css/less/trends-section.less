@@ -1,22 +1,18 @@
 .trends-section {
-  background-image: url(../../trends-pattern.jpg);
-  background-image: url(../../trends-pattern2.jpg);
-  background-image: url(../../trends-bg.png);
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/trends-bg.png);
   background-size: 100% auto;
-  background-position: 50% 0;
   overflow: hidden;
 
-  padding-top: 200px;
-  padding-top: 10%;
-  margin-top: -200px; // дожен быть не больше пединга у верхнего блока
-  margin-top: -10%; // дожен быть не больше пединга у верхнего блока
-  padding-bottom: 120px;
+  //padding-top: 10%;
+  //margin-top: -10%; // дожен быть не больше пединга у верхнего блока
+  padding-bottom: 130px;
+  //background-attachment: fixed;
   @media(max-width:991px) {
     padding-bottom: 80px;
+    background-size: 1200px auto;
   }
 
-  background-position: 50% 400px;
-  background-position: 50% 10%;
+  background-position: 50% 0%;
   .trends-wrap-container {
     display: flex;
     flex-direction: row;
@@ -31,6 +27,14 @@
       width: 50%;
       padding: 0 40px;
       position: relative;
+      @media(max-width:991px) {
+        flex-basis: 90% !important;
+        width: 90% !important;
+        padding: 0 40px 0 40px!important;
+      }
+      @media(max-width:767px) {
+        padding: 0 !important;
+      }
       &.white {
         &:before {
           color: #ffffff;
@@ -59,7 +63,7 @@
         padding: 0 40px 0 40px;
       }
       &:before {
-        content: attr(data-number);
+        //content: attr(data-number);
         color: #e3f2fe;
         font-size: 150px;
         font-weight: 400;
@@ -67,6 +71,7 @@
         position: absolute;
         line-height: 107px;
         top: -58px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.1), 0px 0px 2px rgba(0,0,0,0.1);
       }
     }
   }
@@ -77,6 +82,9 @@
     padding: 40px 40px 20px;
     position: relative;
     overflow: hidden;
+    @media(max-width:767px) {
+      padding: 40px 20px 20px;
+    }
     .trends-header {
       margin-bottom: 30px;
       display: flex;
@@ -84,13 +92,24 @@
       align-items: flex-start;
       justify-content: flex-start;
       flex-wrap: nowrap;
+      @media(max-width:767px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
       .face-img {
         width: 90px;
         float: left;
         margin-right: 15px;
+        @media(max-width:767px) {
+          margin-right: 0;
+        }
       }
       .text-block {
         margin-right: 40px;
+        @media(max-width:767px) {
+          margin-right: 0;
+        }
         .trends-title {
           color: #023358;
           font-size: 30px;
@@ -99,6 +118,9 @@
           margin-top: 0;
           margin-bottom: 10px;
           line-height: 32px;
+          @media(max-width:767px) {
+           margin-top: 10px;
+          }
         }
         .trends-list {
           list-style: none;
@@ -125,6 +147,10 @@
       .trends-social {
         width: 88px;
         white-space: nowrap;
+        @media(min-width:992px) {
+          position: absolute;
+          right: 0;
+        }
         .social-a {
           font-size: 23px;
           &:first-child {
@@ -147,20 +173,17 @@
         //font-size: 150px;
         //font-weight: 700;
         //color: #d4dde5;
-        background-image: url(https://smartcloudconnect.io/wp-content/uploads/quote-2.png);
+        background-image: url(https://smartcloudconnect.io/wp-content/uploads/quote-cabin-grey.png.png);
         background-repeat: no-repeat;
         background-position: 2% 0;
         background-size: 49px 39px;
         width: 49px;
         height: 39px;
         position: absolute;
-        left: -30px;
+        left: -15px;
         top: -18px;
         @media(max-width:991px) {
-          background-size: 62px 54px;
-          width: 62px;
-          height: 54px;
-          left: -15px;
+          left: -10px;
         }
       }
     }

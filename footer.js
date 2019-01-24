@@ -675,7 +675,7 @@ _linkedin_data_partner_id = "116028";
     opacity: 0;
     transition: 0.6s all;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .popup-fixed {
         max-width: 100%;
         width: 100%;
@@ -689,7 +689,7 @@ _linkedin_data_partner_id = "116028";
     padding: 190px 35px 35px 35px;
     position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .popup-fixed .pop-wrap {
         padding: 35px 35px 160px 145px;
         height: 260px;
@@ -711,7 +711,7 @@ _linkedin_data_partner_id = "116028";
     margin-top: 0;
     margin-bottom: 15px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .popup-fixed .pop-wrap .pop-title {
         margin-bottom: 0;
     }
@@ -738,7 +738,7 @@ _linkedin_data_partner_id = "116028";
     text-align: center !important;
     max-width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .popup-fixed .pop-wrap .green-btn {
         position: absolute;
         left: 20px;

@@ -164,7 +164,7 @@
                 padding: 7px 7px!important;
             }
         }
-        @media(max-width:768px) {
+        @media(max-width:767px) {
             #event-notification a {
                 margin-left: 0!important;
             }
