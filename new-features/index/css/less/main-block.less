@@ -31,6 +31,7 @@
       height: 31px;
       vertical-align: middle;
       margin-right: 10px;
+      transition: 0.3s all;
     }
     color: #37a148;
     font-size: 15px;
@@ -39,12 +40,18 @@
     text-transform: uppercase;
     display: inline-block;
     margin-top: 64px;
+    outline: none;
+    text-decoration: none;
+    transition: 0.3s all;
     @media(max-width:991px) {
       margin-bottom: 40px;
       margin-top: 0;
     }
     &:hover {
-      color: #297335;
+      color: #fff;
+      img {
+        filter: brightness(500%) grayscale(100%);
+      }
     }
   }
   .footer-fix-bg {
