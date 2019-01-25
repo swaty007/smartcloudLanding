@@ -23,45 +23,33 @@
 //}
 body {
   overflow-x: hidden;
-  font-family: @font-2;
 }
-
 @media(min-width:1400px) {
   .container:not(.origin) {
     //width: 1370px!important;
   }
 }
-body {
-  //background-image: url(../../trends-line.png);
-}
 
 #wrapper #main {
-  .post-content {
-    background-image: url(https://smartcloudconnect.io/wp-content/uploads/trends-line.png);
-    background-position: 50% 0;
-    background-size: 880px auto;
-    background-repeat-x: no-repeat;
-  }
-
-  br {
-    @media(max-width:1200px) {
-      display: none;
-    }
-  }
   .sub-title {
     color: #023358;
-    font-size: 34px;
+    font-size: 37px;
     font-weight: 700;
-    line-height: 42px;
-    margin-bottom: 29px;
+    line-height: 58px;
+    margin-bottom: 50px;
     margin-top: 0;
+    &.small {
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 35px;
+    }
   }
   .desc,.text {
     color: #055492;
-    font-size: 17px;
     font-weight: 400;
-    line-height: 31px;
     margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 31px;
   }
  .description {
     color: #055492;
@@ -73,7 +61,8 @@ body {
     padding-left: 30px;
     padding-right: 15px;
    &:before {
-     content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+     //content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+     content: url(https://smartcloudconnect.io/wp-content/uploads/ok-green-fill-icon.svg);
      position: absolute;
      vertical-align: top;
      left: 0;
@@ -95,8 +84,11 @@ body {
   }
 
   @import "main-block";
-  @import "trends-section";
-  @import "form-sales2";
+  @import "what-we-can-do";
+  @import "our-benefits";
+  @import "financial-perks";
+  @import "how-we-live-up";
+  @import "partners-about";
 }
 
 //#main section.contact-section {
@@ -105,7 +97,13 @@ body {
 //    color: #023358;
 //  }
 //}
-
+#main section.contact-section {
+  background-color: transparent;
+  background-image: none;
+}
+#main section.contact-section h2.title {
+  color: #023358;
+}
 img {
   max-width: 100%;
 }
