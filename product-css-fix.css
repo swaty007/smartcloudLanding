@@ -1,0 +1,47 @@
+.card-page .card-page-info__fields {
+    /*padding-left: 26px;*/
+}
+
+
+
+.card-page-info__fields {
+    padding-left: 31px;
+}
+.adaptive .card-page-info--widget .card-page-info__info {
+    width: calc(100% - 35px);
+    white-space: nowrap;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+    position: relative;
+}
+.adaptive .widget-object:hover .card-page-info--widget .card-page-info__info{
+    width: calc(100% - 50px);
+
+}
+.adaptive .card-widget .sharing-control--checkbox {
+    vertical-align: middle;
+}
+.card-page-info__info {
+    position: relative;
+}
+.card-page-info__title {
+    padding-left: 31px;
+}
+.card-page-info__title .truncate {
+    max-width: calc(100% - 17px);
+    margin-left: 0;
+}
+.card-page-info__title .card-icon {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.not-found__message {
+    display: inline-block;
+    margin-right: 5px;
+}
