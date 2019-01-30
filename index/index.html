@@ -35,6 +35,11 @@
             s.parentNode.insertBefore(wf, s);
         })(document);
     </script>
+    <style>
+        body {
+            font-family: 'Cabin','Open Sans', sans-serif !important;
+        }
+    </style>
 </head>
 <body id="main">
 <script>
@@ -196,18 +201,29 @@
             <div class="col-md-6">
                 <div id="what_is_scc_anim" class="what_is_scc_anim">
 
+
+
+
+
+
                     <div id="data_sync" class="data_sync">
                         <!--<img src="https://smartcloudconnect.io/wp-content/uploads/ezgif.com-gif-maker.gif" alt="">-->
                         <div class="header-block">
-                            <img src="https://smartcloudconnect.io/wp-content/uploads/Outlook.svg" alt="">
-                            <img src="https://smartcloudconnect.io/wp-content/uploads/Gmail.svg" alt="">
-                            <img src="https://smartcloudconnect.io/wp-content/uploads/Office365.svg" alt="">
+                            <img class="logos" src="https://smartcloudconnect.io/wp-content/uploads/Outlook.svg" alt="">
+                            <img class="logos" src="https://smartcloudconnect.io/wp-content/uploads/Gmail.svg" alt="">
+                            <img class="logos" src="https://smartcloudconnect.io/wp-content/uploads/Office365.svg" alt="">
                             <h4 class="sync-title">INBOX</h4>
-                            <div class="circle-img">
-                                <img src="sync-attach-icon.svg" alt="">
+                            <!--<div class="circle-img one">-->
+                                <!--<img src="https://smartcloudconnect.io/wp-content/uploads/sync-attach-icon.svg" alt="">-->
+                            <!--</div>-->
+                            <div class="circle-img one moved">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/sync-attach-icon.svg" alt="">
                             </div>
-                            <div class="circle-img">
-                                <img src="sync-contact-icon.svg" alt="">
+                            <!--<div class="circle-img two">-->
+                                <!--<img src="https://smartcloudconnect.io/wp-content/uploads/sync-contact-icon.svg" alt="">-->
+                            <!--</div>-->
+                            <div class="circle-img two moved">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/sync-contact-icon.svg" alt="">
                             </div>
                         </div>
                         <div class="circle-block">
@@ -216,18 +232,30 @@
                                 SmartCloud
                                 Connect
                             </h4>
-                            <img src="sync-arrows-icon.svg" alt="">
+                            <img class="arrow-img" src="https://smartcloudconnect.io/wp-content/uploads/sync-arrows-icon.svg" alt="">
                         </div>
                         <div class="footer-block">
-                            <div class="circle-img">
-                                <img src="sync-list-icon.svg" alt="">
+                            <!--<div class="circle-img three">-->
+                                <!--<img src="https://smartcloudconnect.io/wp-content/uploads/sync-list-icon.svg" alt="">-->
+                            <!--</div>-->
+                            <div class="circle-img three moved">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/sync-list-icon.svg" alt="">
                             </div>
-                            <div class="circle-img">
-                                <img src="sync-calendar-icon.svg" alt="">
+                            <!--<div class="circle-img four">-->
+                                <!--<img src="https://smartcloudconnect.io/wp-content/uploads/sync-calendar-icon.svg" alt="">-->
+                            <!--</div>-->
+                            <div class="circle-img four moved">
+                                <img src="https://smartcloudconnect.io/wp-content/uploads/sync-calendar-icon.svg" alt="">
                             </div>
-                            <img src="https://smartcloudconnect.io/wp-content/uploads/Salesforce.svg" alt="">
+                            <img class="logos scc-logo" src="https://smartcloudconnect.io/wp-content/uploads/Salesforce.svg" alt="">
                             <h4 class="sync-title">SALESFORCE</h4>
                         </div>
+
+
+
+
+
+
 
                     </div>
 
@@ -801,6 +829,7 @@
                 if (this.lock === true) {
                     app.window_to_salesforce.refresh();
                     app.enterprise_scheduling.refresh();
+                    app.data_sync.refresh();
                     app.refresher.loop2 = setTimeout(function () {
                         app.lock = false;
                         app.do_anim_line();
@@ -819,7 +848,8 @@
                 switch (line_n) {
                     case 1:
                         block_id = "#data_sync";
-                        time = 5500;
+                        time = 7000;
+                        app.data_sync();
                         break;
                     case 2:
                         block_id = "#window_to_salesforce";
@@ -833,8 +863,9 @@
                         break;
                     case 4:
                         block_id = "#data_sync";
-                        time = 5500;
+                        time = 7000;
                         line_n = 1;
+                        app.data_sync();
                         this.next_n = 2;
                         break;
                 }
@@ -889,6 +920,45 @@
                     elem.find('img,div').removeAttr('style');
                     elem.find('div,img').removeClass('do');
                 };
+                app.data_sync.refresh = function () {
+                    var elem = $('#data_sync');
+                    clearTimeout(app.refresher.n1);
+                    clearTimeout(app.refresher.n2);
+                    clearTimeout(app.refresher.n3);
+                    clearTimeout(app.refresher.n4);
+                    app.data_sync.done = true;
+                    elem.find('img,div').stop(true, false);
+                    elem.find('img,div').removeAttr('style');
+                    elem.find('div,img').removeClass('do');
+                };
+            },
+            data_sync: function () {
+                var elem = $('#data_sync');
+                app.data_sync.refresh();
+                if (app.data_sync.done === false) return;
+                app.data_sync.done = false;
+
+                function data_loop () {
+                    elem.find('.circle-img.one,.circle-img.two').animate({opacity:1},500);
+                    app.refresher.n1 = setTimeout(function () {
+                        elem.find('.circle-img.moved.one,.circle-img.moved.two').addClass('do');
+                        elem.find('.circle-img.moved.three,.circle-img.moved.four').removeClass('do');
+                        app.refresher.n2 = setTimeout(function () {
+//                            elem.find('.circle-img.one,.circle-img.two').css({opacity:0});
+                            elem.find('.circle-img.three,.circle-img.four').animate({opacity:1},500);
+                            app.refresher.n3 =  setTimeout(function () {
+                                elem.find('.circle-img.moved.three,.circle-img.moved.four').addClass('do');
+                                app.refresher.n4 =  setTimeout(function () {
+                                    elem.find('.circle-img.three,.circle-img.four').css({opacity:0});
+                                    elem.find('.circle-img.moved.one,.circle-img.moved.two').removeClass('do');
+                                    data_loop();
+                                },1300);
+
+                            },600);//thecond move top
+                        },1300);//after move //1s move
+                    },600);//first move bottom
+                }
+                data_loop();
             },
             window_to_salesforce: function () {
                 var elem = $('#window_to_salesforce');
@@ -1010,8 +1080,8 @@
                 },800);
             },
         };
-//        app.init();
-//        app.start();
+        app.init();
+        app.start();
 
 
 

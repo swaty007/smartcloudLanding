@@ -136,20 +136,21 @@ img {
 }
 @keyframes ld-spin {
   0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    //animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
   50% {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    //animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 @-webkit-keyframes pulsate {
   0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
   50% {opacity: 1.0;}
