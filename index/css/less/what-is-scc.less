@@ -16,15 +16,16 @@
     transition: 0.5s all;
     position: relative;
     cursor: pointer;
+    text-align: left;
     &:hover {
       box-shadow: 0 8px 65px rgba(115, 136, 151, 0.35);
     }
     &.active {
-      box-shadow: 0 8px 65px rgba(115, 136, 151, 0.35);
-      transform: translateX(20px);
-      @media(max-width:991px) {
-        transform: translateX(10px);
+      @media(min-width:992px) {
+        box-shadow: 0 8px 65px rgba(115, 136, 151, 0.35);
+        transform: translateX(20px);
       }
+      //transform: translateX(10px);
     }
     @media(max-width:991px) {
       //padding: 5px 25px 5px 25px;
@@ -46,6 +47,9 @@
         right: 0;
         height: 2px;
         background-color: #37a148;
+      }
+      @media(max-width:991px) {
+        display: none;
       }
     }
 
@@ -121,6 +125,9 @@
 
     .enterprise_scheduling.mobile,.window_to_salesforce.mobile,.data_sync.mobile {
       display: none!important;
+      @media(max-width:991px) {
+        display: inline-block!important;
+      }
       &.show {
         display: none!important;
         @media(max-width:991px) {
