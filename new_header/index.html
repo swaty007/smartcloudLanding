@@ -246,6 +246,32 @@
                        $('#scc_collapse').show();
                        block = 0;
                    },300)
+            });
+
+
+
+
+            $(document).on('click', '.sub-menu-drop', function (e) {
+//                console.log(e.offsetX, 'width click');
+//                console.log($(this).outerHeight(), 'height click');
+
+                let maxH = $(this).offset().top + $(this).outerHeight(),
+                    minH = maxH - 30, // 30 is the height of the :after
+                    maxW = $(this).offset().left + $(this).outerWidth() - (($(this).outerWidth() / 100)*16),
+                    minW = maxW - 140,
+                    y = e.pageY,
+                    x = e.pageX;
+
+//                console.log(maxH,'=>',y,'=>',minH,'HEIGHT');
+//                console.log(maxW,'=>',x,'=>',minW,'width');
+                if (y >= minH && y <= maxH && x >= minW && x <= maxW) {
+//                    console.log('true click')
+                    let url = "https://invisible.io/";
+//                    document.location.href = url;
+                    let win = window.open(url, '_blank');
+                    win.focus();
+                }
+
             })
         });
     } )( jQuery );
