@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" id="wrapper">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lightning</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet/less" type="text/css" href="css/less/main.less"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js"></script>
+</head>
+<body id="main">
+
+
+
+
+<div class="main-block">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title text-center">
+                    Migration to Salesforce Lightning
+                </h1>
+                <p class="text">
+                    Are you Lightning-ready? We’ll navigate you through pitfalls of Lightning migration!
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="content-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <h2 class="sub-title">
+                    How to switch from Salesforce Classic to Lightning Experience as effectively as possible
+                </h2>
+                <h2 class="sub-title small">
+                    Introduction
+                </h2>
+                <p class="text">
+                    The long-anticipated conversion to a new user interface is finally here. The inevitability of migration till 2020 has been recently announced by Salesforce, and now many companies have a lot to worry about. The main pain point is the necessity to spend extra time, money and other resources to switch UIs. So, each and every Salesforce user is worried whether the transition period can be smoothened and quickened as much as possible.
+                    To make our readers’ life easier, we’ll determine pros and cons of both UI versions, discover main user pains, outline migration steps, recommend tools for better switching, and so on.
+                </p>
+                <h2 class="sub-title">
+                    Classic vs Lightning: advantages and disadvantages of different UIs
+                </h2>
+                <p class="text">
+                    Everything forward will be Lightning, as Salesforce executives claim. It offers tons of benefits for businesses and will surely be embraced by every employee in every company, sooner or later. Let’s consider the most prominent advantages and disadvantages of Lightning Experience User Interface.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="inline-img-wrap">
+                    <img src="" alt="">
+                    <h2 class="sub-title">
+                        Lightning UI Pros:
+                    </h2>
+                    <p class="description dot">
+                        It is faster, quicker to customize (with easy drag and drop configuration) and easier to maintain though it requires extra time to get adjusted to.
+                    </p>
+                    <p class="description dot">
+                        It is more flexible and dynamic as compared to Classic UI, with better visualization due to Smarter Views.
+                    </p>
+                    <p class="description dot">
+                        Sales Path efficiently helps define key stages for a Lead to go through, and fields per stage to be completed by a sales rep.
+                    </p>
+                    <p class="description dot">
+                        The new practical Kanban view offers insights into opportunities that help manage them in an easy way.
+                    </p>
+                    <p class="description dot">
+                        Modern design and enhanced functionality represent source of pride of renewed Reports, Charts and Dashboards.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="inline-img-wrap">
+                    <img src="" alt="">
+                    <h2 class="sub-title">
+                        Lightning UI Cons:
+                    </h2>
+                    <p class="description dot">
+                        The necessity to spend more time on migration. It’s an arduous process and can take up to several months or even a year getting up to speed, all in all.
+                    </p>
+                    <p class="description dot">
+                        Slowdown in users’ adoption as a result of their long coexistence with Classic.
+                    </p>
+                    <p class="description dot">
+                        Some applications from the AppExchange might not be supported in the new edition. It’s recommended you check everything minutely before the migration.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-md-10">
+               <p class="text">
+                   Actually, both Classic and Lightning versions lack some great features. For example, sales and support reps heavily use such a Classic UI feature as the ability to assign tasks in Lightning to multiple users, which it’s not available in Lightning now. On the flip side, users will miss some Lightning features – Sales Path, Assistant, Kanban, Einstein Lead Scoring – in Classic UI, and so on.
+               </p>
+           </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="white-block">
+                    <p class="text">
+                        We can consider one case study as a sample of highly successful migration.
+                        T-Mobile implemented Lightning Experience and managed to reduce the number of mouse clicks to create a pricing quote. The implementation lasted more than 5 months and resulted in reduction ratio of 104 to 8.
+                    </p>
+                    <p class="text">
+                        Unfortunately, time wastes in transition period can be significant. For example, in training materials offered by Salesforce, just one trail “Get started with Lightning Experience” for admins takes up 8 hours 45 minutes. So, moving to Lightning is really a hard nut to crack, but we’ll try to help you convert as painlessly as possible.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <h2 class="sub-title">
+                    Some impediments of transition process
+                </h2>
+                <h2 class="sub-title small">
+                    Suggestions how to solve pain points
+                </h2>
+                <p class="text">
+                    While changing UIs, users can naturally experience severe technical roadblocks. The main task of the Salesforce admin team in the company is to identify gaps and help users eliminate them.
+                    As for pain points, we can briefly mention some of them:
+                </p>
+                <div class="line-info-wrap">
+
+                </div>
+                <p class="text">
+                    As for the solutions to the above pains, there are no off-the-shelf answers for all of them right now. Let's hope Salesforce developers will introduce required improvements as soon as possible.
+                </p>
+                <h2 class="sub-title">
+                    How to migrate to Salesforce Lightning Experience hassle-free
+                </h2>
+                <p class="text">
+                    The migration is inevitable now. The main challenge is to assure smooth transition period for your company.
+                    Below we offer a set of tips from our inhouse specialists on how to migrate to Salesforce Lightning with minimum losses.
+                </p>
+                <h2 class="sub-title small">
+                    Salesforce Classic to Lightning migration steps:
+                </h2>
+            </div>
+        </div>
+    </div>
+    <section id="how-we-live-up" class="how-we-live-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="how-live-wrap">
+                        <img class="how-live-line" src="https://smartcloudconnect.io/wp-content/uploads/how-live-line.png" alt="" data-pagespeed-no-transform>
+                        <div class="how-live one">
+                            <h4 class="number">1</h4>
+                            <img class="how-live-img" src="https://smartcloudconnect.io/wp-content/uploads/how-live-one.png" alt="">
+                            <p class="text">We thoroughly research our partners' needs and work habits.</p>
+                        </div>
+                        <div class="how-live two">
+                            <h4 class="number">2</h4>
+                            <p class="text">We are always available for any follow-ups needed.</p>
+                            <img class="how-live-img" src="https://smartcloudconnect.io/wp-content/uploads/how-live-two.png" alt="">
+                        </div>
+                        <div class="how-live three">
+                            <h4 class="number">3</h4>
+                            <img class="how-live-img" src="https://smartcloudconnect.io/wp-content/uploads/how-live-three.png" alt="">
+                            <p class="text">We manage a training custom-tailored specifically for your team to answer every user’s. questions.</p>
+                        </div>
+                        <div class="how-live four">
+                            <h4 class="number">4</h4>
+                            <p class="text">We gather feedback, offer webinars and email updates, as well as introduce new features.</p>
+                            <img class="how-live-img" src="https://smartcloudconnect.io/wp-content/uploads/how-live-four.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <p class="text">
+                    It’s vital to define enablement plan in the first place. It helps you significantly reduce hiccups while swapping user interfaces midstream. Plus, you have to think about adequate training for your team in advance. You can employ versatile sessions, webinars, strategic meetings, face-to-face trainings and coaching sessions.
+                </p>
+                <p class="text">
+                    Sample Plan:
+                </p>
+                <p class="description">
+                    Educate your company on Lightning benefits
+                </p>
+                <p class="description">
+                    Conduct a gap analysis of non-supported features
+                </p>
+                <p class="description">
+                    Decide which users move to Lightning first (test group)
+                </p>
+                <p class="description">
+                    Develop an internal marketing strategy to educate future users
+                </p>
+                <p class="description">
+                    Create a training plan
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="sub-title">
+                    Tools for successful migration
+                </h2>
+                <p class="text">
+                    Salesforce provided users with Salesforce Lightning Readiness Tool. This tool evaluates your company’s readiness to make the quantum leap to Lightning.
+                </p>
+                <p class="text">
+                    Salesforce also supplied Lightning Migration Assistant. The tool offers Lightning mode preview for your company.
+                </p>
+                <p class="text">
+                    If your team uses Outlook / Gmail, you can access Lightning from popular email clients and keep all emails, leads, contacts etc. smoothly synchronized. SmartCloud Connect is the app capable of making your Lightning migration as pleasant as possible. You will definitely have no problems with Inbox contents.
+                </p>
+                <a href="" class="green-btn">
+                    Download PDF
+                </a>
+            </div>
+            <div class="col-md-6">
+                <img src="lightning-overview-jumbo-device.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <h2 class="sub-title">
+                    Bottom line
+                </h2>
+                <p class="text">
+                    From now on, Salesforce intends to build new features only for Lightning Experience. There are already 200 things that you can do on Lightning. Unlocking new opportunities of Lightning Experience, as compared with Classic UI, can become the final straw that breaks the camel’s back. The reason is the apprehension of some companies’ stakeholders to migrate because of the extended learning curve, the need to prove ROI etc.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="contact-section" class="contact-section">
+    <div class="container fade-bottom">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <h2 class="title">
+                    Leap to Lightning speed with SmartCloud Connect!
+                </h2>
+                <p class="text">
+                    So, don’t waste your time, leap to Lightning with SmartCloud Connect! We won’t leave you at setup; our support team accompanies you at every stage of your converting to Lightning
+                </p>
+                <a target="_blank" href="https://smartcloudconnect.io/sales-automation-software/" class="green-btn">Learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script defer src="/wp-content/uploads/jquery.fadethis.min_.js"></script>
+<script>
+    window.addEventListener("load", function () {
+
+        jQuery.noConflict();
+        (function ($) {
+            jQuery.noConflict();
+            (function ($) {
+
+                $('h1').remove();
+                $('.main-block h2.title').replaceWith($('<h1 class="title">' +  $('.main-block h2.title').html() + '</h1>'));
+
+            })(jQuery);
+            if(document.documentElement.clientWidth > 1024)
+            {
+                $(window).fadeThis({
+                    speed: 300,
+                    reverse: false,
+                    offset:-400
+                });
+            }
+
+        })(jQuery);
+
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
