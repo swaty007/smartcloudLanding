@@ -29,13 +29,12 @@
 
 
 <div class="main-block">
-
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="title text-center">
+                <h2 class="title text-center">
                     Migration to Salesforce Lightning
-                </h1>
+                </h2>
                 <p class="text">
                     Are you Lightning-ready? We’ll navigate you through pitfalls of Lightning migration!
                 </p>
@@ -48,7 +47,7 @@
 
 
 <div class="content-block">
-    <div class="container">
+    <div class="container origin">
         <div class="row">
             <div class="col-md-10">
                 <h2 class="sub-title">
@@ -72,8 +71,8 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="inline-img-wrap">
-                    <img src="" alt="">
-                    <h2 class="sub-title">
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/energy-smile-icon.svg" alt="">
+                    <h2 class="sub-title small">
                         Lightning UI Pros:
                     </h2>
                     <p class="description dot">
@@ -95,8 +94,8 @@
             </div>
             <div class="col-md-6">
                 <div class="inline-img-wrap">
-                    <img src="" alt="">
-                    <h2 class="sub-title">
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/energy-smile-icon.svg" alt="">
+                    <h2 class="sub-title small">
                         Lightning UI Cons:
                     </h2>
                     <p class="description dot">
@@ -119,16 +118,20 @@
            </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <div class="white-block">
-                    <p class="text">
-                        We can consider one case study as a sample of highly successful migration.
-                        T-Mobile implemented Lightning Experience and managed to reduce the number of mouse clicks to create a pricing quote. The implementation lasted more than 5 months and resulted in reduction ratio of 104 to 8.
-                    </p>
-                    <p class="text">
-                        Unfortunately, time wastes in transition period can be significant. For example, in training materials offered by Salesforce, just one trail “Get started with Lightning Experience” for admins takes up 8 hours 45 minutes. So, moving to Lightning is really a hard nut to crack, but we’ll try to help you convert as painlessly as possible.
-                    </p>
+            <div class="col-md-12 col-lg-10 col-lg-offset-1">
+                <div class="white-block-wrap">
+                    <div class="white-block">
+                        <p class="text">
+                            We can consider one case study as a sample of highly successful migration.
+                            T-Mobile implemented Lightning Experience and managed to reduce the number of mouse clicks to create a pricing quote. The implementation lasted more than 5 months and resulted in reduction ratio of 104 to 8.
+                        </p>
+                        <p class="text">
+                            Unfortunately, time wastes in transition period can be significant. For example, in training materials offered by Salesforce, just one trail “Get started with Lightning Experience” for admins takes up 8 hours 45 minutes. So, moving to Lightning is really a hard nut to crack, but we’ll try to help you convert as painlessly as possible.
+                        </p>
+                    </div>
+                    <img class="wb-bg" src="https://smartcloudconnect.io/wp-content/uploads/picture_man.png" alt="">
                 </div>
+
             </div>
         </div>
         <div class="row">
@@ -144,7 +147,61 @@
                     As for pain points, we can briefly mention some of them:
                 </p>
                 <div class="line-info-wrap">
-
+                    <div class="line-info-block">
+                        <p class="text">
+                            The most burning issue is the increased amount of time consumed by the potential training for a new UI. As an option for enterprises, we recommend resorting to self-training too: to give employees enough time and freedom to explore new interface themselves.
+                        </p>
+                    </div>
+                    <div class="line-info-block">
+                        <p class="text">
+                            There are problems with record sharing, as Lightning has no such option. The way out (not very efficient, unfortunately) can be to switch to Classic, finish the task and return to Lightning (or employ a special component on Salesforce AppExchange).
+                        </p>
+                    </div>
+                    <div class="line-info-block">
+                        <p class="text">
+                            The new interface is rather loaded with data and functions, causing low speed of operation and setting off a nervous response among sales reps. There are other connected pains: limits for number of fields and controls for a page layout (you can’t add endlessly, like in the previous UI). Besides, the proper functioning of Lightning Experience at virtual machines requires better hardware.
+                        </p>
+                    </div>
+                    <div class="line-info-block">
+                        <p class="text">
+                            Custom JavaScript buttons are not supported in Lightning. The way out can be an alternative build of quick actions, triggers or workflow rules.
+                        </p>
+                    </div>
+                    <div class="line-info-block">
+                        <p class="text">
+                            Ctrl + F doesn’t work as an on-page search. The possibility to find smth in a new system is vital, unfortunately, now the option is unavailable.
+                        </p>
+                    </div>
+                    <div class="line-info-block">
+                        <p class="text">
+                            Visualforce pages must be reviewed, sorted out by relevance and migrated to a new Salesforce Lightning Component. You must redesign all pages with Lightning design system.
+                        </p>
+                    </div>
+                    <div class="line-info-block">
+                        <p class="text">
+                            Adding event attendees feature is missing in Lightning.
+                        </p>
+                    </div>
+                    <div class="line-info-block">
+                        <p class="text">
+                            Auto populate using URL hack is not supported in Lightning.
+                        </p>
+                    </div>
+                    <div class="line-info-block">
+                        <p class="text">
+                            While transferring the completed tasks, their status changes and requires manual processing to be corrected.
+                        </p>
+                    </div>
+                    <div class="line-info-block">
+                        <p class="text">
+                            Using Forecasting, employing persons accounts or relying heavily on Service Cloud can also cause problems in migration.
+                        </p>
+                    </div>
+                    <div class="line-info-block">
+                        <p class="text">
+                            One can also mention some minor pains which still cause disruption of workflow and time wastes. Among them is the absence of customization for activities tabs.
+                        </p>
+                    </div>
                 </div>
                 <p class="text">
                     As for the solutions to the above pains, there are no off-the-shelf answers for all of them right now. Let's hope Salesforce developers will introduce required improvements as soon as possible.
@@ -167,26 +224,36 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="how-live-wrap">
-                        <img class="how-live-line" src="https://smartcloudconnect.io/wp-content/uploads/how-live-line.png" alt="" data-pagespeed-no-transform>
+                        <img class="how-live-line" src="https://smartcloudconnect.io/wp-content/uploads/lightning-line.png" alt="" data-pagespeed-no-transform>
                         <div class="how-live one">
-                            <h4 class="number">1</h4>
-                            <img class="how-live-img" src="https://smartcloudconnect.io/wp-content/uploads/how-live-one.png" alt="">
-                            <p class="text">We thoroughly research our partners' needs and work habits.</p>
+                            <p class="text">Outline your<br> Transition Goals </p>
                         </div>
                         <div class="how-live two">
-                            <h4 class="number">2</h4>
-                            <p class="text">We are always available for any follow-ups needed.</p>
-                            <img class="how-live-img" src="https://smartcloudconnect.io/wp-content/uploads/how-live-two.png" alt="">
+                            <p class="text">Map Out<br> Workflows </p>
                         </div>
                         <div class="how-live three">
-                            <h4 class="number">3</h4>
-                            <img class="how-live-img" src="https://smartcloudconnect.io/wp-content/uploads/how-live-three.png" alt="">
-                            <p class="text">We manage a training custom-tailored specifically for your team to answer every user’s. questions.</p>
+                            <p class="text">Discuss and Prioritize Functionality<br> and Potential Integrations </p>
                         </div>
                         <div class="how-live four">
-                            <h4 class="number">4</h4>
-                            <p class="text">We gather feedback, offer webinars and email updates, as well as introduce new features.</p>
-                            <img class="how-live-img" src="https://smartcloudconnect.io/wp-content/uploads/how-live-four.png" alt="">
+                            <p class="text">Run a Lightning<br> Readiness Check</p>
+                        </div>
+                        <div class="how-live five">
+                            <p class="text">Work in a<br> Sandbox </p>
+                        </div>
+                        <div class="how-live six">
+                            <p class="text">Test Your<br> Goals </p>
+                        </div>
+                        <div class="how-live seven">
+                            <p class="text">Roll Out Lightning<br> to Power Users </p>
+                        </div>
+                        <div class="how-live eight">
+                            <p class="text">Write Detailed<br> Documentation </p>
+                        </div>
+                        <div class="how-live nine">
+                            <p class="text">Introduce Lightning<br> and Training </p>
+                        </div>
+                        <div class="how-live ten">
+                            <p class="text">Launch </p>
                         </div>
                     </div>
                 </div>
@@ -238,7 +305,7 @@
                 </a>
             </div>
             <div class="col-md-6">
-                <img src="lightning-overview-jumbo-device.png" alt="">
+                <img src="https://smartcloudconnect.io/wp-content/uploads/lightning-overview-jumbo-device.png" alt="">
             </div>
         </div>
         <div class="row">

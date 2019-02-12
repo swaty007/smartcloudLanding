@@ -52,22 +52,14 @@ h1 {
   }
   .sub-title {
     color: #023358!important;
-    font-size: 29px!important;
+    font-size: 24px!important;
     font-weight: 700!important;
-    line-height: 40px!important;
+    line-height: 31px!important;
     margin-bottom: 27px!important;
     margin-top: 20px!important;
-    span {
-      @media(min-width:992px) {
-        font-size: 19px!important;
-        display: block;
-      }
-      &.small {
-        font-size: 18px;
-        line-height: 31px;
-        color: #023358;
-        font-weight: 700;
-      }
+    &.small {
+      font-size: 20px!important;
+      line-height: 31px!important;
     }
     &.margin {
       margin-top: 80px;
@@ -82,10 +74,10 @@ h1 {
   .text {
     color: #055492;
     color: #023358!important;
-    font-size: 19px!important;
+    font-size: 17px!important;
     font-weight: 400;
-    line-height: 33px!important;
-    margin-bottom: 35px;
+    line-height: 31px!important;
+    margin-bottom: 30px;
     i {
       color: #055492!important;
     }
@@ -103,35 +95,61 @@ h1 {
     border: none;
   }
 
+  .white-block-wrap {
+    position: relative;
+    .wb-bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 100%;
+      z-index: -1;
+    }
+    .white-block {
+      width: 80%;
 
-  .white-block {
-    //box-shadow: 0 5px 14px 2px rgba(32,94,171,.15);
-    box-shadow: 0 5px 39px rgba(115, 136, 151, 0.18);
-    border-radius: 5px;
-    padding: 45px 25px;
-    background-color: @color-1;
-    @media(max-width:991px) {
-      margin-top: 40px;
+      //box-shadow: 0 5px 14px 2px rgba(32,94,171,.15);
+      box-shadow: 0 5px 39px rgba(115, 136, 151, 0.18);
+      border-radius: 5px;
+      padding: 45px 25px;
+      background-color: @color-1;
+      &:before {
+        content: "";
+        background-image: url(https://smartcloudconnect.io/wp-content/uploads/quote-cabin-grey.png.png);
+        background-repeat: no-repeat;
+        background-position: 2% 0;
+        background-size: 81px 65px;
+        width: 81px;
+        height: 65px;
+        position: absolute;
+        left: -31px;
+        top: -32px;
+      }
+      @media(max-width:991px) {
+        margin-top: 40px;
+      }
     }
   }
 
 
+
   .main-block {
-    background-image: url(https://smartcloudconnect.io/wp-content/uploads/seo-blog-bg.png);
+    background-image: url(https://smartcloudconnect.io/wp-content/uploads/picture_sky.png);
     padding-top: 80px;
-    padding-bottom: 150px;
+    padding-bottom: 140px;
     background-size: cover;
     background-position: 50% 100%;
-    margin-bottom: 40px;
+    margin-bottom: 0;
     @media(max-width:991px) {
       padding-bottom: 80px;
     }
     .title {
       color: #fff!important;
-      font-size: 70px!important;
+      font-size: 50px!important;
       font-weight: 700!important;
       margin-top: 0!important;
-      line-height: 80px!important;
+      line-height: 70px!important;
+      margin-bottom: 30px!important;
+      letter-spacing: -0.25px;
       @media(max-width:991px) {
         font-size: 50px!important;
         line-height: 70px!important;
@@ -140,7 +158,6 @@ h1 {
         display: block;
         font-size: 50px!important;
       }
-      margin-bottom: 70px!important;
     }
     .text {
       color: #fff!important;
@@ -151,10 +168,11 @@ h1 {
     font-size: 17px!important;
     font-weight: 400!important;
     line-height: 31px!important;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     position: relative;
     padding-left: 30px;
     padding-right: 15px;
+    margin-left: 30px;
     &:before {
       //content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
       //content: url(https://smartcloudconnect.io/wp-content/uploads/ok-green-icon.svg);
@@ -166,11 +184,79 @@ h1 {
       top: 3px;
     }
     &.dot {
-
+      margin-left: 0;
+      &:before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 15px;
+        background-color: #37a148;
+        top: 11px;
+      }
     }
   }
 
   .content-block {
+    .line-info-wrap {
+      margin-left: 30px;
+      .line-info-block {
+        position: relative;
+        border-left: 1px solid #ebebeb;
+        padding-left: 38px;
+        &:after {
+          content: '';
+          position: absolute;
+          height: 8px;
+          width: 8px;
+          background-color: #ebebeb;
+          border-radius: 16px;
+          left: 16px;
+          top: 11.5px;
+          //border: 2px solid #ebebeb;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 16px;
+          background-color: #ebebeb;
+          border-radius: 16px;
+          left: 0;
+          top: 15px;
+        }
+        .text {
+          margin-bottom: 0;
+          padding-bottom: 35px;
+        }
+        &:first-child .text{
+          &:before {
+            content: '';
+            position: absolute;
+            height: 14px;
+            width: 2px;
+            background-color: #fff;
+            border-radius: 16px;
+            left: -1px;
+            top: 0;
+          }
+        }
+        &:last-child {
+          border-left: transparent;
+          .text {
+            &:before {
+              content: '';
+              position: absolute;
+              height: 15px;
+              width: 1px;
+              background-color: #ebebeb;
+              border-radius: 16px;
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
     .inline-img-wrap {
       img {
         margin-top: 0;

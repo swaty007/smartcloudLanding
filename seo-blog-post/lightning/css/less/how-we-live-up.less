@@ -12,95 +12,66 @@
   }
   .how-live-wrap {
     text-align: center;
-    .number {
-      color: rgba(146, 192, 127, 0.15);
-      font-size: 95px;
-      font-weight: 700;
-      line-height: 58px;
-      margin-bottom: 15px;
-      margin-top: 50px;
-    }
-    .how-live-img {
-      display: none;
-    }
     .how-live-line {
-      display: none;
+      //display: none;
     }
     @media(min-width:992px) {
       position: relative;
       display: inline-block;
       margin: 250px 0;
+      width: 140%;
+      max-width: 140%;
+      margin-left: -20%;
       .how-live-line {
-        width: 140%;
-        max-width: 140%;
-        margin-left: -20%;
         display: inline;
       }
       .how-live {
         display: inline-block;
-        width: 25%;
         position: absolute;
-        display: none;
+        text-align: left;
+        //display: none;
+        .text {
+          line-height: 24px!important;
+        }
         &.one {
-          top: -54%;
-          left: 0;
-          .text {
-          margin-top: 30px;
-          }
+          top: 76%;
+          left: 15%;
         }
         &.two {
-          top: -67%;
-          left: 25%;
+          top: 1%;
+          left: 21%;
         }
         &.three {
-          top: 25%;
-          left: 55%;
-          .text {
-          margin-top: 30px;
-          }
+          top: 3%;
+          left: 32%;
         }
         &.four {
-          top: -161%;
-          left: 81%;
+          top: 91%;
+          left: 36%;
         }
-        .number {
-          display: none;
+        &.five {
+          top: 91%;
+          left: 50%;
         }
-        .how-live-img {
-          height: 120px;
-          display: inline;
+        &.six {
+          top: 28%;
+          left: 50%;
         }
-        @media(min-width:1200px) {
-          &.one {
-            top: -53%;
-          }
-          &.two {
-            top: -48%;
-          }
-          &.three {
-            top: 28%;
-          }
-          &.four {
-            top: -134%;
-            left: 78%;
-          }
-          .how-live-img {
-            height: 140px;
-          }
+        &.seven {
+          top: 14%;
+          left: 61%;
         }
-        @media(min-width:1400px) {
-          &.one {
-            top: -43%;
-          }
-          &.two {
-            top: -29%;
-          }
-          &.three {
-            top: 36%;
-          }
-          &.four {
-            top: -95%;
-          }
+        &.eight {
+          top: -9%;
+          left: 73%;
+        }
+        &.nine {
+          top: 38%;
+          left: 77.4%;
+        }
+        &.ten {
+          top: 102%;
+          left: 83%;
         }
       }
     }
