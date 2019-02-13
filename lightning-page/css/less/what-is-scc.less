@@ -1,51 +1,208 @@
-.what-is-scc {
-  background-color: #f5f8fb;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  .sub-title {
-    margin-bottom: 40px;
+.attach-file-anim {
+  display: inline-block;
+  position: relative;
+  @media(max-width:991px) {
+    margin-top: 60px;
   }
-  .what_is_scc_anim {
-    //display: inline-block;
+  .stage {
+    position: absolute;
+    right: 4.2%;
+    top: 49.1%;
+    max-width: 37%;
+    transition: 0.5s all;
+    &.one {
+
+    }
+    &.two {
+      top: 48.9%;
+      opacity: 0;
+    }
+  }
+  .attach-img {
+    position: absolute;
+    left: 11%;
+    top: 42.5%;
+    max-width: 32%;
+    opacity: 0;
+  }
+  .click {
+    &.one {
+      bottom: 42%;
+      right: 4%;
+    }
+    &.two {
+      bottom: 22%;
+      right: 11%;
+    }
+    &.three {
+      bottom: 2%;
+      right: 27%;
+    }
+  }
+}
+
+.customize-anim-wrap {
+  @media(max-width:991px) {
+    margin-top: 60px;
+  }
+  .anim-1 {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
     position: relative;
-    text-align: center;
-
-    .enterprise_scheduling:not(.mobile),.window_to_salesforce:not(.mobile),.data_sync:not(.mobile) {
-      display: none!important;
-      &.show {
-        @media(max-width:991px) {
-          display: none!important;
-        }
-        display: inline-block!important;
-      }
+    .ok-icon {
+      position: absolute;
+      right: 90%;
+      bottom: 25.5%;
+      opacity: 0;
     }
-
-    .enterprise_scheduling.mobile,.window_to_salesforce.mobile,.data_sync.mobile {
-      display: none!important;
-      @media(max-width:991px) {
-        display: inline-block!important;
-      }
-      &.show {
-        display: none!important;
-        @media(max-width:991px) {
-          display: inline-block!important;
-        }
-      }
+    .click {
+      bottom: 19%;
+      right: 82%;
     }
   }
+  .anim-2 {
+    margin-left: 1%;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    .img-task {
+      position: absolute;
+      bottom: 3%;
+      right: 2.5%;
+      max-width: 92%;
+      opacity: 0;
+    }
+    .click {
+      bottom: 45%;
+      right: 2%;
+    }
+    .img-click {
+      position: absolute;
+      bottom: 23%;
+      right: 8%;
+      max-width: 84%;
+      opacity: 0;
+    }
+  }
+  .img-screen {
+    box-shadow: 0 10px 43px rgba(32, 94, 171, 0.1);
+  }
+}
 
+.lightning-anim {
+  display: inline-block;
+  position: relative;
+  @media(max-width:991px) {
+    margin-top: 60px;
+  }
+  .stage {
+    position: absolute;
+    transition: 0.5s all;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    opacity: 0;
+    &.do {
+      opacity: 1;
+    }
+  }
+  .click {
+    &.one {
+      bottom: 55%;
+      left: 4%;
+    }
+  }
+}
 
+.scc_main_design_anim {
+  display: inline-block;
+  position: relative;
+  @media(max-width:991px) {
+    margin-top: 60px;
+  }
+  .stage {
+    position: absolute;
+    transition: 0.5s all;
+    right: 1.1%;
+    top: 19.5%;
+    width: 36%;
+    opacity: 0;
 
+    &.first {
+      left: 0;
+      top: 0;
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      &.do {
+        opacity: 1;
+        z-index: 419;
+      }
+    }
+    &.one {
+      //opacity: 1;
+      z-index: 420;
+      max-height: 76%;
+      overflow-y: scroll;
+      img {
+        width: 100%;
+      }
+      &::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 8px;
+      }
 
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: unset;
+      }
 
+      &::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        background-color: #cbd9e5;
+        outline: 1px solid slategrey;
+      }
+    }
 
+  }
+  .loader-modal {
+    position: absolute;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.66);
+    right: 1.1%;
+    top: 19.5%;
+    width: 36%;
+    bottom: 5%;
+    opacity: 0;
+    text-align: center;
+    img {
+      margin-top: 47%;
+      transition: all .3s;
+      width: 12%;
+      transition-timing-function: ease-in;
+      animation: ld-spin 1s infinite;
+    }
+    &.do {
+      opacity: 1;
+      z-index: 421;
+    }
+  }
+  .click {
+    &.one {
+      bottom: 79%;
+      right: 10%;
+    }
+  }
+}
   .data_sync {
     display: inline-block;
     position: relative;
     width: 442px;
     max-width: 100%;
-    @media(min-width:992px) {
-      margin-top: 80px;
+    text-align: center;
+    @media(max-width:991px) {
+      margin-top: 60px;
     }
     .header-block {
       position: relative;
@@ -199,8 +356,8 @@
   .window_to_salesforce {
     display: inline-block;
     position: relative;
-    @media(min-width:992px) {
-      margin-top: 30px;
+    @media(max-width:991px) {
+      margin-top: 60px;
     }
     .stage {
       position: absolute;
@@ -228,8 +385,8 @@
   .enterprise_scheduling {
     position: relative;
     display: inline-block;
-    @media(min-width:992px) {
-      margin-top: 40px;
+    @media(max-width:991px) {
+      margin-top: 60px;
     }
     .stage {
       position: absolute;
@@ -270,4 +427,3 @@
 
 
 
-}

@@ -30,6 +30,13 @@ img {
   max-width: 100%;
 }
 //@import "stars-anim";
+.row.flex-center {
+  @media(min-width:992px) {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
 #wrapper #main {
   .sub-title {
     color: #023358;
@@ -42,8 +49,57 @@ img {
       font-size: 25px;
       line-height: 42px;
     }
+    &.small-mobile {
+      @media(max-width:991px) {
+        font-size: 25px;
+        line-height: 42px;
+      }
+    }
     @media(max-width:991px) {
       text-align: center;
+    }
+  }
+  .row {
+    &.one-one {
+      margin-top: 80px;
+      margin-bottom: 70px;
+      @media(max-width:991px) {
+        margin-top: 40px;
+        margin-bottom: 0px;
+      }
+    }
+    &.one {
+
+    }
+    &.two {
+      margin-top: 200px;
+      margin-bottom: 200px;
+      @media(max-width:991px) {
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+    }
+    &.three {
+
+    }
+    &.four {
+      margin-top: 150px;
+      margin-bottom: 150px;
+      @media(max-width:991px) {
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+    }
+    &.five {
+
+    }
+    &.six {
+      margin-top: 150px;
+      margin-bottom: 30px;
+      @media(max-width:991px) {
+        margin-top: 80px;
+        margin-bottom: 0px;
+      }
     }
   }
   .desc,.text {
@@ -52,6 +108,9 @@ img {
     font-weight: 400;
     line-height: 31px;
     margin-bottom: 30px;
+    &.blue {
+      color: #023358;
+    }
     &.big {
       font-size: 18px;
       line-height: 40px;
@@ -106,7 +165,6 @@ img {
 
   @import "main-block";
   @import "what-is-scc";
-  @import "attachment-file-section";
 }
 .click {
   bottom: 3%;

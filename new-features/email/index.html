@@ -456,27 +456,18 @@
                         $('#customize-anim-wrap .anim-2 .img-task').animate({opacity:1},700,function () {
 
                             setTimeout(function () {
-
-                            $('#customize-anim-wrap .anim-2 .click').addClass('do');
-                            setTimeout(function () {
-                                $('#customize-anim-wrap .anim-2 .img-click').animate({opacity:1},600);
-
-
+                                $('#customize-anim-wrap .anim-2 .click').addClass('do');
                                 setTimeout(function () {
-                                    $("#customize-anim-wrap .img-click,#customize-anim-wrap .img-task,#customize-anim-wrap .ok-icon").removeAttr('style');
-                                    $("#customize-anim-wrap .click").removeClass('do');
+                                    $('#customize-anim-wrap .anim-2 .img-click').animate({opacity:1},600);
+                                    setTimeout(function () {
+                                        $("#customize-anim-wrap .img-click,#customize-anim-wrap .img-task,#customize-anim-wrap .ok-icon").removeAttr('style');
+                                        $("#customize-anim-wrap .click").removeClass('do');
 
-                                    app.customize_anim.done = true;
-                                },document.documentElement.clientWidth > 991 ? 3500 : 30000);//3 end
-
-
-
-                            },800); //click
-
+                                        app.customize_anim.done = true;
+                                    },document.documentElement.clientWidth > 991 ? 3500 : 30000);//3 end
+                                },800); //click
                             },800);
-
                         });
-
 
                     },800); //click
                 },
