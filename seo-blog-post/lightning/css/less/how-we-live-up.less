@@ -2,7 +2,10 @@
   //background-image: url(../../Shape_5.png);
   overflow-x: hidden;
   @media(max-width:991px) {
-    padding-bottom: 80px;
+    padding-bottom: 30px;
+    br {
+      display: none;
+    }
   }
   .sub-text {
     color: #055492;
@@ -10,26 +13,147 @@
     font-weight: 400;
     line-height: 36px;
   }
+  .container-fluid {
+    max-width: 1400px;
+  }
   .how-live-wrap {
     text-align: center;
     .how-live-line {
-      //display: none;
+      display: none;
+    }
+    .number {
+      color: #37a148;
+      font-size: 25px;
+      font-weight: 700;
+      margin: 2px 0;
+    }
+    @media(max-width:991px) {
+      .how-live {
+        color: #023358!important;
+        font-size: 17px!important;
+        font-weight: 400!important;
+        line-height: 31px!important;
+        margin-bottom: 20px;
+        position: relative;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        &:nth-child(odd) {
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+        }
+        .text {
+          margin: 0!important;
+        }
+        .number {
+          margin-right: 10px;
+        }
+      }
     }
     @media(min-width:992px) {
       position: relative;
       display: inline-block;
-      margin: 100px 0;
-      width: 140%;
-      max-width: 140%;
-      margin-left: -20%;
+      margin: 150px 0;
+      width: 100%;
+
       .how-live-line {
-        display: inline;
+        width: 100%;
+        height: 2px;
+        background-color: #37a148;
+        display: block;
       }
       .how-live {
+        position: absolute;
+        text-align: left;
+        &:after {
+          content: '';
+          position: absolute;
+          height: 10px;
+          width: 10px;
+          background-color: #37a148;
+          border-radius: 16px;
+          left: calc(~"50% - 4px");
+          bottom: 33px;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          height: 33px;
+          width: 2px;
+          background-color: #37a148;
+          left: 50%;
+          bottom: 0;
+        }
+        &:nth-child(odd) {
+          top: 0;
+          &:after {
+            bottom: unset;
+            top: 33px;
+          }
+          &:before {
+            bottom: unset;
+            top: 0;
+          }
+          .text {
+            margin-top: 50px;
+            margin-bottom: 0;
+          }
+        }
+        &:nth-child(even) {
+          bottom: 0;
+          .text {
+            margin-bottom: 50px;
+          }
+          &:after {
+            bottom: 33px;
+          }
+        }
+
+
+        .text {
+          line-height: 24px!important;
+        }
+        &.one {
+          left: 3%;
+        }
+        &.two {
+          left: 13%;
+        }
+        &.three {
+          left: 17%;
+        }
+        &.four {
+          left: 33%;
+        }
+        &.five {
+          left: 44%;
+        }
+        &.six {
+          left: 54%;
+        }
+        &.seven {
+          left: 62%;
+        }
+        &.eight {
+          left: 73%;
+        }
+        &.nine {
+          left: 79.4%;
+        }
+        &.ten {
+          left: 90%;
+        }
+      }
+
+      .how-live-line-old {
+        display: inline;
+      }
+      .how-live-old {
         display: inline-block;
         position: absolute;
         text-align: left;
-        //display: none;
+        display: none;
         .text {
           line-height: 24px!important;
         }

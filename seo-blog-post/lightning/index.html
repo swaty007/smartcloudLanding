@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lightning</title>
+    <title>Lightning post</title>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,14 +29,14 @@
 
 
 <div class="main-block">
-    <div class="container">
+    <div class="container origin">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="title text-center">
                     Migration to Salesforce Lightning
                 </h2>
                 <p class="text">
-                    Are you Lightning-ready? We’ll navigate you through pitfalls of Lightning migration!
+                    Are you Lightning-ready? Let us navigate through pitfalls of Lightning migration!
                 </p>
             </div>
         </div>
@@ -94,17 +94,17 @@
             </div>
             <div class="col-md-6">
                 <div class="inline-img-wrap">
-                    <img src="https://smartcloudconnect.io/wp-content/uploads/energy-smile-icon.svg" alt="">
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/energy-sad-smile-icon.svg" alt="">
                     <h2 class="sub-title small">
                         Lightning UI Cons:
                     </h2>
-                    <p class="description dot">
+                    <p class="description dot red">
                         The necessity to spend more time on migration. It’s an arduous process and can take up to several months or even a year getting up to speed, all in all.
                     </p>
-                    <p class="description dot">
+                    <p class="description dot red">
                         Slowdown in users’ adoption as a result of their long coexistence with Classic.
                     </p>
-                    <p class="description dot">
+                    <p class="description dot red">
                         Some applications from the AppExchange might not be supported in the new edition. It’s recommended you check everything minutely before the migration.
                     </p>
                 </div>
@@ -119,7 +119,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 col-lg-10 col-lg-offset-1">
-                <div class="white-block-wrap">
+                <div class="white-block-wrap hidden">
                     <div class="white-block">
                         <p class="text">
                             We can consider one case study as a sample of highly successful migration.
@@ -213,54 +213,85 @@
                     The migration is inevitable now. The main challenge is to assure smooth transition period for your company.
                     Below we offer a set of tips from our inhouse specialists on how to migrate to Salesforce Lightning with minimum losses.
                 </p>
-                <h2 class="sub-title small">
+                <h2 class="sub-title text-center">
                     Salesforce Classic to Lightning migration steps:
                 </h2>
             </div>
         </div>
     </div>
     <section id="how-we-live-up" class="how-we-live-up">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="how-live-wrap">
-                        <img class="how-live-line" src="https://smartcloudconnect.io/wp-content/uploads/lightning-line.png" alt="" data-pagespeed-no-transform>
+                        <!--<img class="how-live-line" src="https://smartcloudconnect.io/wp-content/uploads/lightning-line.png" alt="" data-pagespeed-no-transform>-->
+                        <div class="how-live-line"></div>
                         <div class="how-live one">
+                            <h4 class="number">
+                                01
+                            </h4>
                             <p class="text">Outline your<br> Transition Goals </p>
                         </div>
                         <div class="how-live two">
                             <p class="text">Map Out<br> Workflows </p>
+                            <h4 class="number">
+                                02
+                            </h4>
                         </div>
                         <div class="how-live three">
+                            <h4 class="number">
+                                03
+                            </h4>
                             <p class="text">Discuss and Prioritize Functionality<br> and Potential Integrations </p>
                         </div>
                         <div class="how-live four">
                             <p class="text">Run a Lightning<br> Readiness Check</p>
+                            <h4 class="number">
+                                04
+                            </h4>
                         </div>
                         <div class="how-live five">
+                            <h4 class="number">
+                                05
+                            </h4>
                             <p class="text">Work in a<br> Sandbox </p>
                         </div>
                         <div class="how-live six">
                             <p class="text">Test Your<br> Goals </p>
+                            <h4 class="number">
+                                06
+                            </h4>
                         </div>
                         <div class="how-live seven">
+                            <h4 class="number">
+                                07
+                            </h4>
                             <p class="text">Roll Out Lightning<br> to Power Users </p>
                         </div>
                         <div class="how-live eight">
                             <p class="text">Write Detailed<br> Documentation </p>
+                            <h4 class="number">
+                                08
+                            </h4>
                         </div>
                         <div class="how-live nine">
+                            <h4 class="number">
+                                09
+                            </h4>
                             <p class="text">Introduce Lightning<br> and Training </p>
                         </div>
                         <div class="how-live ten">
                             <p class="text">Launch </p>
+                            <h4 class="number">
+                                10
+                            </h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="container">
+    <div class="container origin">
         <div class="row">
             <div class="col-md-10">
                 <p class="text">
@@ -300,7 +331,7 @@
                 <p class="text">
                     If your team uses Outlook / Gmail, you can access Lightning from popular email clients and keep all emails, leads, contacts etc. smoothly synchronized. SmartCloud Connect is the app capable of making your Lightning migration as pleasant as possible. You will definitely have no problems with Inbox contents.
                 </p>
-                <a href="" class="green-btn">
+                <a href="https://smartcloudconnect.io/sales-automation-software/" target="_blank" class="green-btn">
                     Download PDF
                 </a>
             </div>
@@ -345,20 +376,63 @@
         jQuery.noConflict();
         (function ($) {
             jQuery.noConflict();
-            (function ($) {
+
 
                 $('h1').remove();
                 $('.main-block h2.title').replaceWith($('<h1 class="title">' +  $('.main-block h2.title').html() + '</h1>'));
 
-            })(jQuery);
-            if(document.documentElement.clientWidth > 1024)
-            {
-                $(window).fadeThis({
-                    speed: 300,
-                    reverse: false,
-                    offset:-400
+
+
+
+
+
+                $(window).scroll(function () {
+                    app.start();
                 });
-            }
+                setInterval(function () {
+                    app.start();
+                },7000);
+                var app = {
+                    start: function () {
+                        var scrollTop = $(window).scrollTop();
+                        var WindowHeigth = $(window).height() / 2;
+                        var how_we_live_up = $('#how-we-live-up');
+
+                        if (scrollTop > (how_we_live_up.offset().top - WindowHeigth) && scrollTop < (how_we_live_up.offset().top + WindowHeigth)) {
+                            app.how_we_live_up(how_we_live_up);
+                        }
+                    },
+
+                    how_we_live_up:function (elem) {
+                        if (app.how_we_live_up.done === false) return;
+                        if (document.documentElement.clientWidth < 991) return;
+                        app.how_we_live_up.done = false;
+                        elem.find('.how-live.one').fadeIn(300,function () {
+                            elem.find('.how-live.two').fadeIn(300,function () {
+                                elem.find('.how-live.three').fadeIn(300,function () {
+                                    elem.find('.how-live.four').fadeIn(300,function () {
+                                        elem.find('.how-live.five').fadeIn(300,function () {
+                                            elem.find('.how-live.six').fadeIn(300,function () {
+                                                elem.find('.how-live.seven').fadeIn(300,function () {
+                                                    elem.find('.how-live.eight').fadeIn(300,function () {
+                                                        elem.find('.how-live.nine').fadeIn(300,function () {
+                                                            elem.find('.how-live.ten').fadeIn(300,function () {
+
+                                                            });
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+
+                    }
+                };
+
+
 
         })(jQuery);
 

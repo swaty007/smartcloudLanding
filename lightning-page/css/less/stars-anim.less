@@ -1,0 +1,29 @@
+.stars-anim {
+  display: inline-block;
+  position: relative;
+  .empty {
+    width: 96px;
+    img {
+      width: 16px;
+    }
+  }
+  .wrap-anim {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 0%;
+    transition: 0.5s all;
+    .full {
+      width: 96px;
+      img {
+        width: 16px;
+      }
+    }
+  }
+  &.do {
+    .wrap-anim {
+      width: 100%;
+    }
+  }
+}
