@@ -37,7 +37,17 @@ img {
     display: flex;
   }
 }
+@media(min-width:1600px) {
+  .container:not(.origin) {
+    width: 1470px!important;
+  }
+}
 #wrapper #main {
+  @media(max-width:991px) {
+    br {
+      display: none;
+    }
+  }
   .sub-title {
     color: #023358;
     font-size: 32px;
@@ -114,6 +124,7 @@ img {
       padding-right: 15px;
       margin-left: 0px;
       text-align: left;
+      line-height: 24px;
       &:before {
         content: "";
         position: absolute;
@@ -215,7 +226,7 @@ img {
   background-color: #fff;
   background-image: url(https://smartcloudconnect.io/wp-content/uploads/vector-smart-background-1.png);
   background-size: 110%;
-  background-position: -120px 60%;
+  background-position: -120px 0%;
   background-repeat: no-repeat;
   padding-top: 310px;
   margin-top: -230px;
@@ -227,5 +238,6 @@ img {
   }
   h2.title {
     color: #023358;
+    margin-bottom: 20px;
   }
 }
