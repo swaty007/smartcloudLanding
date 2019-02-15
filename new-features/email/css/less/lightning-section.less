@@ -1,0 +1,45 @@
+.lightning-section {
+  margin-top: 80px;
+  margin-bottom: 130px;
+  @media(max-width:991px) {
+    margin-bottom: 80px;
+  }
+  @media(min-width:992px) {
+    .flex-center {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+  .lightning-anim {
+    display: inline-block;
+    position: relative;
+    @media(max-width:991px) {
+      margin-top: 20px;
+    }
+    .stage {
+      position: absolute;
+
+      left: 0;
+      top: 0;
+      max-width: 100%;
+      //opacity: 0;
+      height: 0%;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      &.do {
+        //opacity: 1;
+        height: 100%;
+        transition: 0.66s all;
+      }
+    }
+    .click {
+      &.one {
+        bottom: 55%;
+        left: 4%;
+      }
+    }
+  }
+}

@@ -134,7 +134,7 @@ img {
         height: 9px;
         border-radius: 15px;
         background-color: #37a148;
-        top: 11px;
+        top: 9px;
       }
       &.red {
         &:before {
@@ -221,6 +221,47 @@ img {
   0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
   50% {opacity: 1.0;}
   100% {-webkit-transform: scale(1.3, 1.3); opacity: 0.0;}
+}
+.footer-white-block-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @media(max-width:991px) {
+    flex-wrap: wrap;
+
+  }
+  .footer-white-block { box-shadow: -4px 6px 10px rgba(24, 24, 24, 0.09);
+    background-color: #ffffff;
+    @media(max-width:991px) {
+      flex-basis: 100%;
+    }
+    padding: 25px 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-basis: 33%;
+    margin-bottom: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    position: relative;
+    .img-block {
+      background-image: url(https://smartcloudconnect.io/wp-content/uploads/ligntning-image-bg.svg);
+      background-size: contain;
+      padding: 20px 10px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      img {
+        max-width: 80%;
+      }
+    }
+  }
 }
 #wrapper #main section.contact-section {
   background-color: #fff;

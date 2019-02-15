@@ -1,0 +1,83 @@
+.manually-save-emails {
+  margin-top: 80px;
+  margin-bottom: 150px;
+  @media(max-width:991px) {
+    margin-bottom: 110px;
+  }
+  @media(min-width:992px) {
+    .flex-center {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+  .manually-save-emails-anim {
+    position: relative;
+    display: inline-block;
+    @media(max-width:991px) {
+      margin-top: 20px;
+    }
+    .stage {
+      position: absolute;
+      top: 36%;
+      right: 4%;
+      max-width: 37%;
+      transition: 0.4s all;
+      opacity: 0;
+      &.one {
+        opacity: 1;
+      }
+      &.two {
+        max-width: 29.1%;
+        top: 40.9%;
+        right: 11.9%;
+      }
+      &.three {
+
+      }
+      &.do {
+        opacity: 1;
+      }
+    }
+
+    .img-modal {
+      position: absolute;
+      opacity: 0;
+      right: 3.5%;
+      top: 40%;
+      max-width: 38.5%;
+      transition: 0.3s;
+      padding: 10px;
+      img {
+        transition: 1s;
+        transform: scale(0) translateY(0)
+      }
+      &.do {
+        opacity: 1;
+        img {
+          transform: scale(1) translateY(0);
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left:0;right:0;top:0;bottom:0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    .click {
+      &.one {
+        bottom: 47%;
+        right: 9%;
+      }
+      &.two {
+        bottom: 29%;
+        right: 30%;
+      }
+      &.three {
+        bottom: -32%;
+        right: 4%;
+      }
+    }
+  }
+}

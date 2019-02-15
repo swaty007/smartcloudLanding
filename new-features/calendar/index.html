@@ -30,17 +30,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <h1 class="title text-center">
+                <p class="title text-center">
                     Calendars sync built for the way
                     your team and business work
-                </h1>
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <p class="desc text-center">
-                    SmartCloud Connect combines your team's workflow and calendars in one unified view accessible from Outlook / Gmail, and Salesforce.
-                </p>
+                <h1 class="desc text-center" style="margin-top:0">
+                    Salesforce Calendar Sync from Outlook calendars will help you stay more organized and eliminate unnecessary data entry
+                </h1>
             </div>
         </div>
     </div>
@@ -80,11 +80,11 @@
                         </a>
                     </li>
                     <!--<li class="">-->
-                        <!--<a href="#personal-bussiness-section" class="scroll-nav">-->
-                            <!--<img style="width: 55px;height: 26px;" src="https://smartcloudconnect.io/wp-content/uploads/Personalandbusinesscalendars-2-icon.svg" alt="">-->
-                            <!--Personal and business<br>-->
-                            <!--calendars integration-->
-                        <!--</a>-->
+                    <!--<a href="#personal-bussiness-section" class="scroll-nav">-->
+                    <!--<img style="width: 55px;height: 26px;" src="https://smartcloudconnect.io/wp-content/uploads/Personalandbusinesscalendars-2-icon.svg" alt="">-->
+                    <!--Personal and business<br>-->
+                    <!--calendars integration-->
+                    <!--</a>-->
                     <!--</li>-->
                     <li class="">
                         <a href="#sync-calendar-section" class="scroll-nav">
@@ -118,7 +118,7 @@
                         </p>
                     </div>
                 </div>
-                
+
                 <div id="complex-anim-wrap" class="complex-anim-wrap">
 
                     <div class="row">
@@ -171,7 +171,7 @@
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <p class="desc text-center">
-                            With our ultimate Calendars sync, you can be sure that all your business-related events are automatically synced between Salesforce, Outlook / Gmail. Change one and all the others will match. And the sync engine is that smart that you don’t need to worry about your private events, they won’t be auto-synced with Salesforce.
+                            With our ultimate Calendars sync, you can be sure that all your business-related events are automatically synced between Salesforce, Outlook. Change one and all the others will match. And the sync engine is that smart that you don’t need to worry about your private events, they won’t be auto-synced with Salesforce.
                         </p>
                     </div>
                 </div>
@@ -208,12 +208,12 @@
                     <img class="img-svg-link" style="width: 35px;height: 26px;" src="https://smartcloudconnect.io/wp-content/uploads/Delegated-calendar-sync-2-icon.svg" alt="">
                 </div>
                 <h2 class="sub-title text-center">
-                    Enjoy a single, unified view of your delegated Calendars
+                    Break down delegation access barriers and strengthen your Calendar collaboration
                 </h2>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <p class="desc text-center">
-                            Break down delegation access barriers and strengthen your Calendar collaboration through the ultimate Delegated Calendars sync between your Outlook / Gmail and Salesforce. SmartCloud Connect makes it simple for your delegates to manage your meetings and appointments in accordance with their permission levels, eliminating the need to jump from your CRM and email client. Plus, the smart sync engine helps you get a clear picture of every step of the collaboration process and save time.
+                            With an ultimate Delegated Calendars synchronization between your Outlook and Salesforce, SmartCloud Connect makes it simple for your delegates to manage your meetings and appointments in accordance with their permission levels, eliminating the need to jump from your CRM and email client. Plus, the smart sync engine helps you get a clear picture of every step of the collaboration process and save time.
                         </p>
                     </div>
                 </div>
@@ -275,13 +275,12 @@
                     <img class="img-svg-link" style="width: 37px;height: 26px;" src="https://smartcloudconnect.io/wp-content/uploads/Recurring-event-sync-2-icon.svg" alt="">
                 </div>
                 <h2 class="sub-title text-center">
-                    Put your Salesforce & Outlook / Gmail Recurring
-                    Events on a sync autobahn
+                    Synchronize your Salesforce & Outlook Recurring Events at a single glance
                 </h2>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <p class="desc text-center">
-                            Escape endless tapping between Salesforce and Outlook / Gmail Calendars when it comes to your daily, weekly, monthly, and other recurring meetings. SmartCloud Connect helps to align your data with a seamless desktop-to-mobile native experience, so you never miss a beat.
+                            Escape endless tapping between Salesforce and Outlook Calendars when it comes to your daily, weekly, monthly, and other recurring meetings. SmartCloud Connect helps to align your data with a seamless desktop-to-mobile native experience, so you never miss a beat.
                         </p>
                     </div>
                 </div>
@@ -306,7 +305,7 @@
                 <h2 class="sub-title">
                     Connect your Personal
                     and Business Calendars
-                    all across Outlook / Gmail,
+                    all across Outlook,
                     and Salesforce
                 </h2>
                 <p class="desc">
@@ -334,7 +333,7 @@
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <p class="desc text-center">
-                            Draw focus directly where you need it by aligning your Calendar groups from Outlook / Gmail with Salesforce. SmartCloud Connect allows getting a complete view of all involved group members and be in better line while scheduling meeting across your team.
+                            Draw focus directly where you need it by aligning your Calendar groups from Outlook with Salesforce. SmartCloud Connect allows getting a complete view of all involved group members and be in better line while scheduling meeting across your team.
                         </p>
                     </div>
                 </div>
@@ -668,7 +667,7 @@
                     var hash = $(this).attr("href");
                     var target = $(hash);
 
-                    if (target.position().top <= scroll_top + 400  && target.position().top + target.outerHeight() > scroll_top + 400) {
+                    if (target.offset().top <= scroll_top + 400  && target.offset().top + target.outerHeight() > scroll_top + 400) {
 
                         $("#container-sticky .nav-highlighter li.active").removeClass("active");
                         $(this).closest('li').addClass("active");
@@ -719,7 +718,9 @@
             });
             TabHighlighter.refresh();
             //tab highlighter end
-
+            $(window).load(function(){
+                TabHighlighter.refresh();
+            });
         })(jQuery);
 
     });

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SmartCloud Price</title>
+    <title>SmartCloud SYNC</title>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,13 +30,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h1 class="title text-center">
-                    Enterprise Sync Engine
+                <h2 class="title text-center">
+                    Enterprise Data Sync Engine
+                </h2>
+                <h1 class="desc text-center">
+                    Data Sync engine for Emails and Calendar events to Salesforce from Outlook, Office365 and Exchange
                 </h1>
-                <p class="desc text-center">
-                    Unleash the power of unrivaled synchronization. Sync everything from emails and events to any custom
-                    objects across your Office365, Outlook / Gmail, and Salesforce.
-                </p>
             </div>
             <div class="col-md-12">
                 <div class="row">
@@ -84,6 +83,13 @@
                         <a href="#pulsate-section" class="scroll-nav">
                             <img style="width: 45px;height: 32px;transform: translateX(7px);" src="https://smartcloudconnect.io/wp-content/uploads/email-icon.svg" alt="" >
                             Email
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#scc-support-section" class="scroll-nav">
+                            <img style="width: 32px;height: 32px;" src="https://smartcloudconnect.io/wp-content/uploads/scc-support-icon.svg" alt="">
+                            Salesforce views
+                            support
                         </a>
                     </li>
                     <li class="">
@@ -189,14 +195,14 @@
 
                                     clone.animate({left:adaptive_left_param,top:'140%'},350,'linear',function () {
 
-                                            $(this).animate({top:'200%',height:25,zIndex:0,opacity:0.6},150,'linear',function () {
+                                        $(this).animate({top:'200%',height:25,zIndex:0,opacity:0.6},150,'linear',function () {
 
-                                                $(this).remove();
-                                                coub_anim.EllipseAnimate();
-
-                                            });
+                                            $(this).remove();
+                                            coub_anim.EllipseAnimate();
 
                                         });
+
+                                    });
 
 //                                    });
 
@@ -305,7 +311,31 @@
     </div>
 </section>
 
-
+<section id="scc-support-section" class="scc-support-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <img class="img-svg-link" style="width: 32px;height: 32px;" src="https://smartcloudconnect.io/wp-content/uploads/scc-support-icon.svg" alt="">
+                <h2 class="sub-title">
+                    Salesforce views support
+                </h2>
+                <p class="desc">
+                    SmartCloud Connect Sync Engine supports Salesforce views so you will not end up having unnecessary data in your CRM.
+                </p>
+            </div>
+            <div class="col-md-7 text-center">
+               <div class="row">
+                   <div class="col-sm-6 col-xs-12">
+                       <img src="https://smartcloudconnect.io/wp-content/uploads/Salesforce-scc-support.png" alt="">
+                   </div>
+                   <div class="col-sm-6 col-xs-12">
+                       <img src="https://smartcloudconnect.io/wp-content/uploads/SCC-scc-support.png" alt="">
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section id="calendar-section" class="calendar-section">
     <div class="container">
@@ -370,7 +400,7 @@
 <section id="salesforce-attachments-section" class="salesforce-attachments-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-md-push-5">
+            <div class="col-md-5 col-md-push-7">
                 <img class="img-svg-link" style="width: 26px;height: 32px;" src="https://smartcloudconnect.io/wp-content/uploads/attachment-icon.svg" alt="">
                 <h2 class="sub-title">
                     Send your attachments to
@@ -381,7 +411,7 @@
                     Often in the course of a busy working day, sales reps forget or simply do not have the time to upload vital business attachments from their Inbox to Salesforce. The Sync-Engine of SmartCloud Connect ensures that these attachments are not lost and are visible to the team in Salesforce.
                 </p>
             </div>
-            <div class="col-md-7 col-md-pull-7">
+            <div class="col-md-7 col-md-pull-5">
                 <div id="attachment-anim" class="attachment-anim">
                     <img class="email" src="https://smartcloudconnect.io/wp-content/uploads/attachment-email.png" alt="">
                     <img class="main-block" src="https://smartcloudconnect.io/wp-content/uploads/attachmets-logos.png" alt="">
@@ -405,7 +435,7 @@
                     and Salesforce
                 </h2>
                 <p class="desc">
-                    Keep your to-do list up-to-date within Office 365, Inbox, and Salesforce. The task sync engine of SmartCloud Connect enables you to alwa ys stay on top of your activities and reminders.
+                    Keep your to-do list up-to-date within Office 365, Inbox, and Salesforce. The task sync engine of SmartCloud Connect enables you to always stay on top of your activities and reminders.
                 </p>
             </div>
             <div class="col-md-7">
@@ -602,8 +632,8 @@
             });
 
             //color logo
-            var color_logo = '//smartcloudconnect.io/wp-content/uploads/Logo-Color.png';
-            var white_logo = '//smartcloudconnect.io/wp-content/uploads/SCC_logo_for-salesforce_white-small.png';
+            var color_logo = '/wp-content/uploads/Logo-Color.png';
+            var white_logo = '/wp-content/uploads/SCC_logo_for-salesforce_white-small.png';
 
             function colorLogo() {
                 if (window.innerWidth >= 1080) {
@@ -644,7 +674,7 @@
                     var hash = $(this).attr("href");
                     var target = $(hash);
 
-                    if (target.position().top <= scroll_top + 400  && target.position().top + target.outerHeight() > scroll_top + 400) {
+                    if (target.offset().top <= scroll_top + 400  && target.offset().top + target.outerHeight() > scroll_top + 400) {
 
                         $("#container-sticky .nav-highlighter li.active").removeClass("active");
                         $(this).closest('li').addClass("active");
@@ -693,6 +723,10 @@
                 }
                 TabHighlighter.refresh();
             });
+            $(window).load(function(){
+                TabHighlighter.refresh();
+            });
+            TabHighlighter.refresh();
             //tab highlighter end
 
         })(jQuery);

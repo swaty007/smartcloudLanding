@@ -2,7 +2,7 @@
   display: inline-block;
   position: relative;
   @media(max-width:991px) {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .stage {
     position: absolute;
@@ -95,17 +95,24 @@
   display: inline-block;
   position: relative;
   @media(max-width:991px) {
-    margin-top: 60px;
+    //margin-top: 60px;
   }
   .stage {
     position: absolute;
-    transition: 0.5s all;
+
     left: 0;
     top: 0;
     max-width: 100%;
-    opacity: 0;
+    //opacity: 0;
+    height: 0%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
     &.do {
-      opacity: 1;
+      //opacity: 1;
+      height: 100%;
+      transition: 0.66s all;
     }
   }
   .click {
@@ -202,7 +209,7 @@
     max-width: 100%;
     text-align: center;
     @media(max-width:991px) {
-      margin-top: 60px;
+      margin-top: 30px;
     }
     .header-block {
       position: relative;
@@ -386,7 +393,7 @@
     position: relative;
     display: inline-block;
     @media(max-width:991px) {
-      margin-top: 60px;
+      margin-top: 30px;
     }
     .stage {
       position: absolute;
