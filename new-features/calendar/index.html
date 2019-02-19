@@ -93,6 +93,12 @@
                             Calendars sync
                         </a>
                     </li>
+                    <li class="">
+                        <a href="#manually-calendar-event" class="scroll-nav">
+                            <img style="width: 33px;height: 33px;" src="https://smartcloudconnect.io/wp-content/uploads/save-calendar-event-icon.svg" alt="">
+                            Calendar sidebar
+                        </a>
+                    </li>
                 </ul>
                 <div class="tab-highlighter" style=""></div>
             </div>
@@ -353,10 +359,37 @@
     <div class="container">
         <div class="row flex-center">
             <div class="col-md-5">
-
+                <img class="img-svg-link" style="width: 33px;height: 33px;" src="https://smartcloudconnect.io/wp-content/uploads/save-calendar-event-icon.svg" alt="">
+                <h2 class="sub-title">
+                    Manually saving
+                    calendar event
+                </h2>
+                <p class="desc">
+                    Similarly to Emails, you can manually save desired calendar
+                    events to selected Salesforce records.
+                </p>
             </div>
-            <div class="col-md-7">
-
+            <div class="col-md-7 text-center">
+                <div id="manually-calendar-anim" class="manually-calendar-anim">
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/manually-calendar-event-outlook.png" alt="">
+                    <img class="stage one" src="https://smartcloudconnect.io/wp-content/uploads/manually-calendar-event-screens1.png" alt="">
+                    <img class="stage two" src="https://smartcloudconnect.io/wp-content/uploads/manually-calendar-event-screens2.png" alt="">
+                    <img class="ok-icon one" src="https://smartcloudconnect.io/wp-content/uploads/customize_ok_icon.png" alt="">
+                    <img class="ok-icon two" src="https://smartcloudconnect.io/wp-content/uploads/customize_ok_icon.png" alt="">
+                    <img class="stage three" src="https://smartcloudconnect.io/wp-content/uploads/manually-calendar-event-screens3.png" alt="">
+                    <div class="click one">
+                        <div class="click-child"></div>
+                    </div>
+                    <div class="click two">
+                        <div class="click-child"></div>
+                    </div>
+                    <div class="click three">
+                        <div class="click-child"></div>
+                    </div>
+                    <div class="click four">
+                        <div class="click-child"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -462,9 +495,13 @@
 
                     var complex_anim = $("#complex-anim-wrap").offset().top;
                     var enjoy_anim = $("#enjoy-anim-wrap").offset().top;
+                    var manually_calendar = $("#manually-calendar-anim");
 
                     if (scrollTop > (calendar_anim - WindowHeigth) && scrollTop < (calendar_anim + WindowHeigth)) {
                         app.calendar_anim();
+                    }
+                    if (scrollTop > (manually_calendar.offset().top - WindowHeigth) && scrollTop < (manually_calendar.offset().top + WindowHeigth)) {
+                        app.manually_calendar(manually_calendar);
                     }
                     if (scrollTop > (complex_anim - WindowHeigth) && scrollTop < (complex_anim + WindowHeigth)) {
                         app.complex_anim();
@@ -476,6 +513,49 @@
                 initialize: function () {
                     $('.anim-calendar .outlook-msg').animate({'top': '-=40px', opacity: 0}, 200); //msg
                     $('.anim-calendar .anim-2').animate({opacity: 0}, 200); //msg move to 2nd block
+                },
+                manually_calendar: function (elem) {
+                    if (app.manually_calendar.done === false) return;
+                    app.manually_calendar.done = false;
+
+                    elem.find('.click.one').addClass('do');
+                    setTimeout(function () {
+                        elem.find('.stage.two').addClass('do');
+                        setTimeout(function () {
+                            elem.find('.click.two').addClass('do');
+
+                            setTimeout(function () {
+                                elem.find('.ok-icon.one').addClass('do');
+                                elem.find('.click.three').addClass('do');
+                                setTimeout(function () {
+                                    elem.find('.ok-icon.two').addClass('do');
+                                    setTimeout(function () {
+                                        elem.find('.click.four').addClass('do');
+
+
+                                        setTimeout(function () {
+                                            elem.find('.stage.two').removeClass('do');
+                                            elem.find('.stage.three').addClass('do');
+                                            elem.find('.stage.one').animate({opacity:0},200);
+                                            elem.find('.ok-icon').removeClass('do');
+
+                                                    setTimeout(function () {
+                                                        elem.find('img,div').removeAttr('style');
+                                                        elem.find('div,img').removeClass('do');
+                                                        app.manually_calendar.done = true;
+                                                    },document.documentElement.clientWidth > 991 ? 4500 : 6000);//3 end
+
+                                        },800);//click
+
+
+                                    },800);//click
+                                },800);//click
+                            },800);//click
+
+
+
+                        },800);
+                    },800);//click
                 },
                 enjoy_anim: function () {
 
