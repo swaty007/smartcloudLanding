@@ -39,7 +39,20 @@
         opacity: 1;
       }
     }
-
+    .ok-icon {
+      position: absolute;
+      right: 38%;
+      bottom: 46%;
+      opacity: 0;
+      max-width: 2%;
+      transition: 0.4s all;
+      &.two {
+        bottom: 30.5%;
+      }
+      &.do {
+        opacity: 1;
+      }
+    }
     .img-modal {
       position: absolute;
       opacity: 0;
@@ -68,13 +81,21 @@
     .click {
       &.one {
         bottom: 47%;
-        right: 9%;
+        right: 32%;
       }
       &.two {
-        bottom: 29%;
-        right: 30%;
+        bottom: 38%;
+        right: 32%;
+      }
+      &.two-2 {
+        bottom: 23%;
+        right: 32%;
       }
       &.three {
+        bottom: 47%;
+        right: 9%;
+      }
+      &.four {
         bottom: -32%;
         right: 4%;
       }
