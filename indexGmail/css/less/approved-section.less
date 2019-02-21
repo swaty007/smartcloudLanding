@@ -1,0 +1,128 @@
+.approved-section {
+  background-color: #f5f8fb;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .sub-title {
+    margin-bottom: 15px;
+  }
+  @media(max-width:991px) {
+    text-align: center;
+  }
+  .rating-text {
+    color: #023358;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 0;
+    background-image: linear-gradient(66deg,#fec00f 0%,#fe9c0f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media(min-width:992px) {
+      width: 98px;
+      text-align: center;
+    }
+  }
+  .under-star {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #4294e5;
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+    display: block;
+    span {
+      color: #547697;
+    }
+    @media(min-width:992px) {
+      white-space: nowrap;
+    }
+  }
+  .logos-under-star {
+    margin-top: 25px;
+    img {
+      height: 92px;
+      display: block;
+      width: 124px;
+      object-fit: contain;
+      margin-bottom: 30px;
+      @media(max-width:991px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .user-review-block {
+    box-shadow: 0 5px 39px rgba(115, 136, 151, 0.18);
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    padding: 30px 10px 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+
+    .stars-anim {
+      .empty {
+        width: 96px;
+        img {
+          width: 13px;
+        }
+      }
+      .wrap-anim {
+        .full {
+          width: 96px;
+          img {
+            width: 13px;
+          }
+        }
+      }
+    }
+
+    &.row-second {
+      @media(min-width:992px) {
+        margin-top: 58px;
+      }
+    }
+    &:before {
+      content: "";
+      background-image: url(../../quote-grey.png);
+      width: 49px;
+      height: 39px;
+      background-size: 49px 39px;
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: -23px;
+    }
+    .user-photo {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+    .user-name {
+      color: #055492;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .user-text {
+      color: #023358;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
