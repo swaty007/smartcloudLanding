@@ -36,6 +36,8 @@ img {
   font-size: 50px;
   font-weight: 300;
   line-height: 53px;
+  margin-bottom: 120px;
+  margin-top: 0;
 }
   .sub-title {
     color: #275475;
@@ -79,11 +81,15 @@ img {
     padding-left: 30px;
     padding-right: 15px;
     &:before {
-      content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+      content: "";
       position: absolute;
       vertical-align: top;
       left: 0;
       width: 17px;
+      height: 17px;
+      background-color: fade(#88c6f5, 50%);
+      border-radius: 30px;
+      border: 5px solid #88c6f5;
       top: 3px;
     }
     &.ask {
@@ -93,3 +99,58 @@ img {
     }
   }
 
+  .blue-bullet {
+    color: #299aec;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 31px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .main-block {
+    background-image: url(../../invisible-seminar-bg.png);
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 25px;
+  }
+  .content-block {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+  .logos-wrap {
+    img {
+      width: 130px;
+      &.plus-icon {
+        width: 13px;
+      }
+    }
+  }
+.speaker-block {
+  position: relative;
+  padding-left: 72px;
+  height: 58px;
+  margin-bottom: 24px;
+  .img-block {
+    position: absolute;
+    left: 0;
+    img {
+      width: 58px;
+    }
+  }
+  .name {
+    color: #275475;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .role {
+    color: #568aaf;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
