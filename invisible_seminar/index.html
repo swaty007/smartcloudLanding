@@ -25,14 +25,11 @@
 </head>
 <body id="main">
 <script>
-    var async_css=document.createElement("link");
-    async_css.rel="stylesheet";
-    async_css.href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
-    document.body.insertBefore(async_css,document.body.childNodes[document.body.childNodes.length-1].nextSibling);
+    var async_css = document.createElement("link");
+    async_css.rel = "stylesheet";
+    async_css.href = "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
+    document.body.insertBefore(async_css, document.body.childNodes[document.body.childNodes.length - 1].nextSibling);
 </script>
-
-
-
 
 
 <section id="main-block" class="main-block">
@@ -40,16 +37,16 @@
         <div class="row">
             <div class="col-md-7">
                 <p class="blue-bullet">
-                    Семинар  &bull;  22 марта 2019 10:00
+                    Семинар &bull; 22 марта 2019 10:00
                 </p>
                 <h1 class="title">
                     Автоматизации процессов
                     бизнес продаж
                 </h1>
                 <div class="logos-wrap">
-                    <img src="microsoft-logo-white.png" />
-                    <img class="plus-icon" src="plus-icon.svg" />
-                    <img src="invisible-logo-white-text.png" />
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/microsoft-logo-white.png"/>&nbsp;&nbsp;
+                    <img class="plus-icon" src="https://smartcloudconnect.io/wp-content/uploads/plus-icon.svg"/>&nbsp;&nbsp;
+                    <img src="https://smartcloudconnect.io/wp-content/uploads/invisible-logo-white-text.png"/>
                 </div>
             </div>
         </div>
@@ -64,7 +61,8 @@
                     О семинаре
                 </h2>
                 <p class="text">
-                    Во время семинара спикеры расскажут как путем внедрения современных SaaS решений можно повысить эффективность работы отдела продаж позволяя компании продавать больше товаров и услуг.
+                    Во время семинара спикеры расскажут как путем внедрения современных SaaS решений можно повысить
+                    эффективность работы отдела продаж позволяя компании продавать больше товаров и услуг.
                 </p>
                 <h3 class="sub-title small">
                     Agenda:
@@ -92,7 +90,7 @@
                 </div>
                 <div class="speaker-block">
                     <div class="img-block">
-                        <img src="Desni_pasechnick.png" alt="">
+                        <img src="https://smartcloudconnect.io/wp-content/uploads/Desni_pasechnick.png" alt="">
                     </div>
                     <h4 class="name">Денис Пасечник</h4>
                     <p class="role">Channel partner Manager </p>
@@ -108,13 +106,42 @@
                 </p>
             </div>
             <div class="col-md-5">
+                <div class="white-block popUpWrapper">
+                    <div class="content">
+                        <p class="title">Форма регистрация</p>
+                        <form>
+                            <p class="input">
+                                <label>
+                                    <input type="text" class="textInput required" name="Name" id="Name">
+                                    <span class="label"><span class="red">*</span>ФИО</span>
+                                </label></p>
+                            <p class="input"><label>
+                                <input type="text" class="textInput required email" name="Email" id="Email">
+                                <span class="label"><span class="red">*</span>Корпоративная почта</span></label></p>
+                            <p class="input">
+                                <label>
+                                    <input type="text" class="textInput required" name="Company" id="Company">
+                                <span class="label"><span class="red">*</span>Компания</span>
+                                </label>
+                            </p>
+                            <p class="input">
+                                <label>
+                                    <input type="text" class="textInput" name="Position" id="Position">
+                                    <span class="label">Позиция</span>
+                                </label>
+                            </p>
 
+                            <p class="button text-center"><a href="#"><span>Зарегистрироваться</span></a></p>
+                            <p style="color: #055492;font-size: 13px;font-weight: 400;line-height: 17px;margin: 0!important;">
+                                By submitting your information to our website you agree to the terms outlined in our <a
+                                    href="/privacy-policy/" target="_blank">privacy policy</a> and our <a
+                                    href="/terms-conditions/" target="_blank">terms and conditions</a>.</p></form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
-
 
 
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -124,15 +151,91 @@
 <script src="https://smartcloudconnect.io/wp-content/uploads/jquery.viewportchecker.min_.js"></script>
 
 <script type="text/javascript">
-    jQuery.noConflict();
-    (function ($) {
+    document.addEventListener("DOMContentLoaded", function () {
+        jQuery.noConflict();
+        (function ($) {
 
+            $('.white-block .content input').focus(function() {
+                $(this).addClass('hasText');
+            });
 
+            $('.white-block .content input').blur(function() {
+                if ($(this).val() == '') {
+                    $(this).removeClass('hasText');
+                }
+            });
 
+            $(".white-block .button a").click(function(){
 
+                var contactForm = $(this).parent().parent();
 
-    })(jQuery);
+                if(!contactForm.hasClass("busy")){
+
+                    $(".successful").remove();
+
+                    var readyToSend = true;
+
+                    contactForm.find(".required").each(function(){
+                        if($(this).val().trim() == ""){
+                            readyToSend = false;
+                            $(this).addClass("red");
+                        } else {
+                            $(this).removeClass("red");
+                        }
+                    });
+
+                    contactForm.find(".email").each(function(){
+                        if(!isValidEmailAddress($(this).val().trim())){
+                            readyToSend = false;
+                            $(this).addClass("red");
+                        } else {
+                            $(this).removeClass("red");
+                        }
+                    });
+
+                    if(readyToSend == true){
+
+                        var formData = contactForm.serializeArray();
+
+                        contactForm.addClass("busy");
+
+                        /**
+                         * Ajax send
+                         */
+                        $.ajax({
+                            type: "POST",
+                            url: "/wp-admin/admin-ajax.php",
+                            dataType: "json",
+                            cache: false,
+                            data: {
+                                "action": "contact_form_submit_webinar",
+                                "formData": formData,
+                                "currentPage": document.URL
+                            },
+                            success : function (out) {
+                                if(out.status == "ok"){
+                                    contactForm.removeClass("busy");
+                                    contactForm.trigger("reset");
+                                    contactForm.parent().append(out.successful);
+
+                                    contactForm.click(function(){
+                                        $(".successful").remove();
+                                    });
+                                }
+                            }
+                        });
+
+                    }
+
+                }
+
+                return false;
+            });
+
+        })(jQuery);
+    });
 </script>
+
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
