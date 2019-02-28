@@ -143,16 +143,19 @@ function contact_form_submit_webinar_action() {
             }
         }
 
+
         $message .= "<p><b>Sent from:</b> ".$currentPage."</p>";
 
         $message .= "</body></html>";
 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n";
-        $headers .= "From: $noReplyMail\r\n";
-
+        $headers .= "From: $noReplyMail\r\n"
+        .'Reply-To: depa@microsoft.com'. "\r\n";
         if(is_array($mail_recipient)){
+            mail('depa@microsoft.com, insidemarketing@invisible.io', $subject, $message, $headers);
             foreach($mail_recipient as $emailToSend){
-                mail($emailToSend['email'], $subject, $message, $headers);
+//                mail($emailToSend['email'], $subject, $message, $headers);
+//                mail('depa@microsoft.com, insidemarketing@invisible.io', $subject, $message, $headers);
             }
         }
 
