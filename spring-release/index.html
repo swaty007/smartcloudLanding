@@ -62,7 +62,7 @@
         </div>
     </div>
     <div class="img-bg">
-        <img src="spring-man-photo.png" />
+        <img src="Layer_671.png" />
     </div>
 </section>
 
@@ -284,7 +284,7 @@
                     264
                 </h2>
                 <p class="text">
-                    product improvement were implemented
+                    product improvement were implemented<br>
                     during this release
                 </p>
             </div>
@@ -384,14 +384,11 @@
                 var data_sync = $('#data_sync');
                 var enterprise_scheduling = $('#enterprise_scheduling');
                 var lightning = $('#lightning-anim');
-                var customize_anim = $("#customize-anim-wrap").offset().top;
 
                 if (scrollTop > (attach_file_anim.offset().top - WindowHeigth) && scrollTop < (attach_file_anim.offset().top + WindowHeigth)) {
                     app.attach_file_anim(attach_file_anim);
                 }
-                if (scrollTop > (customize_anim - WindowHeigth) && scrollTop < (customize_anim + WindowHeigth)) {
-                    app.customize_anim();
-                }
+
                 if (scrollTop > (data_sync.offset().top - WindowHeigth) && scrollTop < (data_sync.offset().top + WindowHeigth)) {
                     app.data_sync();
                 }
@@ -537,36 +534,6 @@
 
                     },1200);//after show stage 1
                 },800);//click
-            },
-            customize_anim:function () {
-                if (app.customize_anim.done === false) return;
-                app.customize_anim.done = false;
-                $('#customize-anim-wrap .anim-1 .click').addClass('do');
-                setTimeout(function () {
-
-                    $('#customize-anim-wrap .anim-1 .ok-icon').animate({opacity:1},700);
-                    $('#customize-anim-wrap .anim-2 .img-task').animate({opacity:1},700,function () {
-
-                        setTimeout(function () {
-
-                            $('#customize-anim-wrap .anim-2 .click').addClass('do');
-                            setTimeout(function () {
-                                $('#customize-anim-wrap .anim-2 .img-click').animate({opacity:1},600);
-
-
-                                setTimeout(function () {
-                                    $("#customize-anim-wrap .img-click,#customize-anim-wrap .img-task,#customize-anim-wrap .ok-icon").removeAttr('style');
-                                    $("#customize-anim-wrap .click").removeClass('do');
-
-                                    app.customize_anim.done = true;
-                                },document.documentElement.clientWidth > 991 ? 3500 : 30000);//3 end
-
-                            },800); //click
-
-                        },800);
-                    });
-
-                },800); //click
             },
             scc_main_design_anim:function (elem) {
                 if (app.scc_main_design_anim.done === false) return;

@@ -1,11 +1,12 @@
-.main-block {
+#main-block {
   background-color: #f5f8fb;
-  background-repeat: no-repeat;
-  background-image: url(https://smartcloudconnect.io/wp-content/uploads/bg-selling-video-section.png);
-  background-size: 125% auto;
-  background-position: -59px 100%;
+  //background-repeat: no-repeat;
+  //background-image: url(https://smartcloudconnect.io/wp-content/uploads/bg-selling-video-section.png);
+  //background-size: 125% auto;
+  //background-position: -59px 100%;
   position: relative;
   padding-top: 80px;
+  overflow: hidden;
   @media(max-width:991px) {
     text-align: center;
     padding-top: 40px;
@@ -15,12 +16,10 @@
     font-size: 35px;
     line-height: 47px;
     font-weight: 700;
-    margin-top: 30px;
-    padding-top: 28px;
+    margin-top: 0;
+    padding-top: 0;
     margin-bottom: 10px;
     @media(max-width:991px) {
-      margin-top: 0;
-      padding-top: 0;
       font-size: 32px;
     }
     span {
@@ -31,9 +30,6 @@
   .text {
     margin-bottom: 20px;
   }
-  .stars-anim {
-    margin-top: -8px;
-  }
   .hidden-title {
     line-height: 15px;
     margin: 0px;
@@ -43,7 +39,7 @@
     color: #9cc1d4;
   }
   .green-btn {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   .footer-fix-bg {
@@ -55,45 +51,34 @@
     z-index: 425;
     object-fit: cover;
   }
-  .rating-block {
-    margin-bottom: 100px;
-    text-align: left;
-    @media(max-width:991px) {
-      margin-bottom: 40px;
-      display: block;
-      width: 200px;
-      margin-left: auto;
-      margin-right: auto;
+
+  .gmail-bg {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.1;
+    &.right {
+      right: 0;
+      width: 39%;
+    }
+    &.left {
+      width: 42%;
+      left: -28%;
+      transform: rotate(135deg);
     }
   }
-  .under-star {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 8px;
-    text-transform: uppercase;
-    color: #4294e5;
-    text-decoration: none;
-    outline: none;
-    vertical-align: middle;
-    display: block;
-  }
-  .rating-text {
-    color: #023358;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 36px;
-    margin-bottom: 0;
-    float: left;
-    background-image: linear-gradient(66deg,#fec00f 0%,#fe9c0f 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-right: 5px;
-  }
-
   .scc_main_design_anim {
     display: inline-block;
     position: relative;
+    z-index: 400;
+    @media(min-width:1200px) {
+      margin-bottom: -60px;
+    }
+    .main-img {
+      box-shadow: 0 3px 51px rgba(4, 42, 71, 0.25);
+      border-radius: 4px;
+    }
     .stage {
       position: absolute;
       transition: 0.5s all;
@@ -118,6 +103,13 @@
         z-index: 420;
         max-height: 76%;
         overflow-y: scroll;
+        background-color: #fff;
+        right: 10.6%;
+        top: 21.5%;
+        width: 36%;
+        opacity: 0;
+        padding: 8px;
+        box-shadow: 0 3px 51px rgba(4, 42, 71, 0.25);
         img {
           width: 100%;
         }
@@ -142,10 +134,9 @@
       position: absolute;
       transition: 0.5s;
       background-color: rgba(255, 255, 255, 0.66);
-      right: 1.1%;
-      top: 19.5%;
+      right: 10.6%;
+      top: 21.5%;
       width: 36%;
-      bottom: 5%;
       opacity: 0;
       text-align: center;
       img {
@@ -162,8 +153,8 @@
     }
     .click {
       &.one {
-        bottom: 79%;
-        right: 10%;
+        bottom: 68%;
+        right: -1.3%;
       }
     }
   }

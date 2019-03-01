@@ -1,0 +1,42 @@
+.email-tracking {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .img-svg-link {
+    margin-top: 80px;
+  }
+  .email-tracking-anim-wrap {
+    position: relative;
+    .email-tracking-modal {
+      position: absolute;
+      right: 1.6%;
+      bottom: 0;
+      opacity: 0;
+      top: 24%;
+      max-width: 36.5%;
+      transition: 0.3s;
+      padding: 15px 10px;
+      img {
+        transition: 1s;
+        transform: scale(0) translateY(0)
+      }
+      &.do {
+        opacity: 1;
+        img {
+          transform: scale(1) translateY(0);
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left:0;right:0;top:0;bottom:0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    .email-tracking-screen {
+      //box-shadow: 0 10px 43px rgba(32, 94, 171, 0.1);
+    }
+    .click {
+      right: 28%;
+    }
+  }
+}

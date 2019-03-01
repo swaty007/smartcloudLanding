@@ -179,7 +179,7 @@
         </div>
         <div class="col-md-7 col-md-pull-5 text-center">
             <div id="scc_main_design_anim" class="scc_main_design_anim">
-                <img src="https://smartcloudconnect.io/wp-content/uploads/scc-main-design-no-border.png">
+                <img class="main-img" src="https://smartcloudconnect.io/wp-content/uploads/scc-main-design-no-border.png">
                 <div class="loader-modal">
                     <img src="https://smartcloudconnect.io/wp-content/uploads/loader_anim.png" alt="">
                 </div>
@@ -584,6 +584,7 @@
                     elem.find('.stage.first').addClass('do');
                     setTimeout(function () {
                         elem.find('.stage.one').animate({opacity:1},400);
+                        elem.find('.main-img').animate({opacity:0},400);
                         setTimeout(function () {
                             elem.find('.loader-modal').removeClass('do');
 

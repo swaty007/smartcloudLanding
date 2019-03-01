@@ -1,0 +1,84 @@
+.pulsate-section {
+  margin-top: 110px;
+  padding-bottom: 80px;
+  @media(max-width:767px) {
+    margin-top: 0;
+  }
+  .sub-title {
+    margin-bottom: 30px;
+  }
+
+  .desc-inline-wrap {
+    margin-bottom: 50px;
+    .desc {
+      @media(min-width:768px) {
+        display: inline-block;
+      }
+    }
+  }
+
+
+  .coub-icons-wrap {
+    z-index: 421;
+    max-height: 49px;
+    position: relative;
+    //display: inline-block;
+    margin-left: 3.5%;
+    margin-bottom: 45px;
+    .coub-icons-block {
+      //width: 49px;
+      //height: 49px;
+      max-width: 10%;
+
+      overflow: hidden;
+      display: inline-block;
+      margin: 0 2px;
+      &.clone {
+        position: absolute;
+        z-index: 3;
+      }
+      &.used {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .coub-icons-anim {
+        width: 100%;
+      }
+    }
+  }
+
+  .coub-anim-wrap {
+    z-index: 420;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+    .ellipse {
+      position: absolute;
+      z-index: -1;
+      &.right {
+        top: 44%;
+        left: 54%;
+      }
+      &.left {
+        top: 44%;
+        left: 48%;
+      }
+      &.middle {
+        &.middle-1 {
+          top: 82%;
+          left: 30%;
+        }
+        &.middle-2 {
+          left: 70%;
+          top: 90%;
+        }
+      }
+    }
+    .coub-main {
+      width: 100%;
+      max-width: 593px;
+    }
+  }
+
+
+}
