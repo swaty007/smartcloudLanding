@@ -1,6 +1,9 @@
 .we-succeed {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 80px;
+  @media(max-width:991px) {
+    padding-bottom: 140px;
+  }
   .sub-title {
     margin-bottom: 60px;
     @media(max-width:991px) {
@@ -125,6 +128,8 @@
       margin-top: 50px;
       transition: 0.3s all;
       display:inline-block;
+      visibility: hidden;
+      opacity: 0;
       @media(max-width:991px) {
         margin-bottom: 40px;
         margin-top: 30px;

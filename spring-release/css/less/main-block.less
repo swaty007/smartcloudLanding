@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   //background-image: url(https://smartcloudconnect.io/wp-content/uploads/bg-selling-video-section.png);
   background-image: linear-gradient(to right, #d9bca4 0%, #c0a28a 99%, #c0a28a 100%);
+  background-image: linear-gradient(to right, #f8c9a5 0%, #e4b895 99%, #e2b392 100%);
   background-size: 125% auto;
   background-position: -59px 100%;
   position: relative;
@@ -11,25 +12,41 @@
   @media(max-width:991px) {
     text-align: center;
     padding-top: 40px;
+    padding-bottom: 0;
   }
   .img-bg {
     position: absolute;
-    left: 42%;
+    left: 50%;
     bottom:0;
     top:0;
-    max-width: 58%;
+    max-width: 50%;
     max-height: 100%;
     text-align: center;
     img {
       max-height: 100%;
       height: 100%;
       object-fit: cover;
+      filter: brightness(96%);
+    }
+    @media(max-width:991px) {
+      max-width: 100%;
+      position: static;
+      img {
+        height: auto;
+        width: 480px;
+        filter: unset;
+      }
+    }
+  }
+  @media(max-width:1400px) {
+    br {
+      display: none;
     }
   }
   .title {
     color: #023358;
-    font-size: 35px;
-    line-height: 47px;
+    font-size: 52px;
+    line-height: 52px;
     font-weight: 700;
     margin-top: 30px;
     padding-top: 28px;
@@ -38,6 +55,7 @@
       margin-top: 0;
       padding-top: 0;
       font-size: 32px;
+      line-height: 47px;
     }
     span {
       font-size: 28px;

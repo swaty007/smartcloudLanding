@@ -50,19 +50,21 @@
 </script>
 
 <section id="main-block" class="main-block">
-    <div class="container">
-        <div class="col-md-5  col-lg-4 ">
-            <h2 class="title">
-                Welcome to Spring’ 19
-                release
-            </h2>
-            <p class="text">
-                Spring ‘19 is jam-packed with features and improvements to help you and your entire team sell more
-            </p>
+    <div class="container origin">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="title">
+                    Welcome to Spring’ 19
+                    release
+                </h2>
+                <p class="text">
+                    Spring ‘19 is jam-packed with features and improvements to help you and your entire team sell more
+                </p>
+            </div>
         </div>
     </div>
     <div class="img-bg">
-        <img src="Layer_671.png" />
+        <img src="https://smartcloudconnect.io/wp-content/uploads/spring-man-photo.png" />
     </div>
 </section>
 
@@ -97,10 +99,10 @@
                     </p>
                 </div>
 
-                <a class="green-link" href="https://smartcloudconnect.io/wizard/">Learn More <i class="fa fa-long-arrow-right"></i></a>
+                <a class="green-link" href="https://smartcloudconnect.io/salesforce-gmail-integration/">Learn More <i class="fa fa-long-arrow-right"></i></a>
             </div>
             <div class="col-md-7">
-                <img src="https://smartcloudconnect.io/wp-content/uploads/pic_gmail.png" alt="">
+                <img class="img-block" src="https://smartcloudconnect.io/wp-content/uploads/pic_gmail.png" alt="">
             </div>
         </div>
     </div>
@@ -109,7 +111,7 @@
 <section id="sync-calendar-section" class="sync-section calendar">
     <div class="container">
         <div class="row flex-center">
-            <div class="col-md-5 col-md-push-7">
+            <div class="col-md-5 col-md-push-7 clearfix">
                 <h2 class="sub-title">
                     The single most-wanted
                     Sales Data Synchronization
@@ -196,8 +198,8 @@
                 </div>
 
             </div>
-            <div class="col-md-7">
-                <img src="https://smartcloudconnect.io/wp-content/uploads/timeslotes-img.png" alt="">
+            <div class="col-md-7 text-center">
+                <img class="img-block" src="https://smartcloudconnect.io/wp-content/uploads/timeslotes-img.png" alt="">
             </div>
         </div>
     </div>
@@ -235,8 +237,8 @@
                 </div>
 
             </div>
-            <div class="col-md-7 col-md-pull-5">
-                <img src="https://smartcloudconnect.io/wp-content/uploads/ROI_pic.png" alt="">
+            <div class="col-md-7 col-md-pull-5 text-center">
+                <img class="img-block" src="https://smartcloudconnect.io/wp-content/uploads/ROI_pic.png" alt="">
             </div>
         </div>
     </div>
@@ -267,8 +269,8 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-7">
-                <img src="https://smartcloudconnect.io/wp-content/uploads/health_dasboard.png" alt="">
+            <div class="col-md-7 text-center">
+                <img class="img-block" src="https://smartcloudconnect.io/wp-content/uploads/health_dasboard.png" alt="">
             </div>
         </div>
     </div>
@@ -280,11 +282,11 @@
         <div class="row ">
             <div class="col-md-6 col-md-offset-3 text-center">
                 <img src="https://smartcloudconnect.io/wp-content/uploads/spring-release-img.svg" alt="" >
-                <h2 class="sub-title">
+                <h2 id="fun-level-title" class="sub-title">
                     264
                 </h2>
                 <p class="text">
-                    product improvement were implemented<br>
+                    product improvements were implemented<br>
                     during this release
                 </p>
             </div>
@@ -298,10 +300,10 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1 text-center">
                 <h2 class="title">
-                    Get the most out of your Salesforce and  Inbox-driven
-                    processes with our jam-packed Spring '19 update
+                    Track emails, schedule meetings, set<br>
+                    follow-ups and more, right from your Gmail
                 </h2>
-                <a target="_self" data-toggle="modal" data-target=".request_a_smartcloud" href="#" class="green-btn">Free Trial</a>
+                <a target="_blank" href="/wizard/" class="green-btn">Free Trial</a>
             </div>
         </div>
     </div>
@@ -368,231 +370,21 @@
         //Slider show 2 image in one end
 
 
-        $(window).scroll(function () {
-            app.start();
+
+
+
+        $('#image-section4').viewportChecker({
+            callbackFunction: function (elem, action) {
+                $('#fun-level-title').animateNumber(
+                    {
+                        number: 264,
+                        easing: 'easeInQuad',
+                    },
+                    2500
+                );
+            }
         });
-        setInterval(function () {
-            app.start();
-        },7000);
-        var app = {
-            start: function () {
-                var scrollTop = $(window).scrollTop();
-                var WindowHeigth = $(window).height() / 2;
 
-                var scc_main_design_anim = $('#scc_main_design_anim');
-                var attach_file_anim = $('#attach-file-anim');
-                var data_sync = $('#data_sync');
-                var enterprise_scheduling = $('#enterprise_scheduling');
-                var lightning = $('#lightning-anim');
-
-                if (scrollTop > (attach_file_anim.offset().top - WindowHeigth) && scrollTop < (attach_file_anim.offset().top + WindowHeigth)) {
-                    app.attach_file_anim(attach_file_anim);
-                }
-
-                if (scrollTop > (data_sync.offset().top - WindowHeigth) && scrollTop < (data_sync.offset().top + WindowHeigth)) {
-                    app.data_sync();
-                }
-
-                if (scrollTop > (enterprise_scheduling.offset().top - WindowHeigth) && scrollTop < (enterprise_scheduling.offset().top + WindowHeigth)) {
-                    app.enterprise_scheduling();
-                }
-
-                if (scrollTop > (scc_main_design_anim.offset().top - WindowHeigth) && scrollTop < (scc_main_design_anim.offset().top + WindowHeigth)) {
-                    app.scc_main_design_anim(scc_main_design_anim);
-                }
-                if (scrollTop > (lightning.offset().top - WindowHeigth) && scrollTop < (lightning.offset().top + WindowHeigth)) {
-                    app.lightning(lightning);
-                }
-            },
-            attach_file_anim:function (elem) {
-                if (app.attach_file_anim.done === false) return;
-                app.attach_file_anim.done = false;
-                elem.find('.click.one').addClass('do');
-                setTimeout(function () {
-
-                    elem.find('.stage.one').animate({opacity:0},400);
-                    elem.find('.stage.two').animate({opacity:1},700,function () {
-
-                        setTimeout(function () {
-
-                            elem.find('.click.two').addClass('do');
-                            setTimeout(function () {
-                                elem.find('.click.three').addClass('do');
-                                setTimeout(function () {
-                                    elem.find('.attach-img').animate({opacity:1},700);
-
-
-
-                                    setTimeout(function () {
-                                        elem.find('img').removeAttr('style');
-                                        elem.find('div').removeClass('do');
-                                        setTimeout(function () {
-                                            app.attach_file_anim.done = true;
-                                        },2000);
-                                    },document.documentElement.clientWidth > 991 ? 3500 : 10000);//3 end
-
-
-
-                                },800); //click
-                            },800); //click
-
-                        },800);
-
-                    });
-
-                },800); //click
-            },
-            what_is_scc_anim:function (elem) {
-                if (app.what_is_scc_anim.done === false) return;
-                app.what_is_scc_anim.done = false;
-
-                app.do_anim_line();
-
-                setTimeout(function () {
-//                    elem.find('img,div').removeAttr('style');
-//                    elem.find('div,img').removeClass('do');
-                    setTimeout(function () {
-//                        app.what_is_scc_anim.done = true;
-                    },2000);
-                }, document.documentElement.clientWidth > 991 ? 3500 : 10000);//3 end
-            },
-            refresher : {},
-            refresher1 : {},
-            refresher2 : {},
-            refresher3 : {},
-            init: function () {
-                app.enterprise_scheduling.refresh = function () {
-                    var elem = $('#enterprise_scheduling');
-                    clearTimeout(app.refresher.n1);
-                    clearTimeout(app.refresher.n2);
-                    clearTimeout(app.refresher.n3);
-                    clearTimeout(app.refresher.n4);
-                    app.enterprise_scheduling.done = true;
-                    elem.find('img,div').stop(true, false);
-                    elem.find('img,div').removeAttr('style');
-                    elem.find('div,img').removeClass('do');
-                };
-                app.data_sync.refresh = function () {
-                    var elem = $('#data_sync');
-                    clearTimeout(app.refresher1.n1);
-                    clearTimeout(app.refresher1.n2);
-                    clearTimeout(app.refresher1.n3);
-                    clearTimeout(app.refresher1.n4);
-                    app.data_sync.done = true;
-                    elem.find('img,div').stop(true, false);
-                    elem.find('img,div').removeAttr('style');
-                    elem.find('div,img').removeClass('do');
-                };
-            },
-            data_sync: function () {
-                var elem = $('#data_sync');
-                if (app.data_sync.done === false) return;
-                app.data_sync.done = false;
-
-                function data_loop () {
-                    elem.find('.circle-img.one,.circle-img.two').animate({opacity:1},500);
-                    app.refresher1.n1 = setTimeout(function () {
-                        elem.find('.circle-img.one,.circle-img.two').addClass('do');
-                        elem.find('.circle-img.three,.circle-img.four').removeClass('do');
-                        app.refresher1.n2 = setTimeout(function () {
-                            elem.find('.circle-img.one,.circle-img.two').css({opacity:0});
-                            elem.find('.circle-img.three,.circle-img.four').animate({opacity:1},500);
-                            app.refresher1.n3 =  setTimeout(function () {
-                                elem.find('.circle-img.three,.circle-img.four').addClass('do');
-                                app.refresher1.n4 =  setTimeout(function () {
-                                    elem.find('.circle-img.three,.circle-img.four').css({opacity:0});
-                                    elem.find('.circle-img.one,.circle-img.two').removeClass('do');
-                                    data_loop();
-                                },1300);
-
-                            },600);//thecond move top
-                        },1300);//after move //1s move
-                    },600);//first move bottom
-                }
-                data_loop();
-            },
-            enterprise_scheduling: function () {
-                var elem = $('#enterprise_scheduling');
-                if (app.enterprise_scheduling.done === false) return;
-                app.enterprise_scheduling.done = false;
-
-                elem.find('.click.one').addClass('do');
-                app.refresher.n1 = setTimeout(function () {
-                    elem.find('.stage.one').animate({opacity:1},600);
-                    app.refresher.n2 = setTimeout(function () {
-                        elem.find('.img-message.second').slideDown(500);
-                        elem.find('.img-message.first').slideDown(500,function () {
-                            elem.find('.click.two').addClass('do');
-                            app.refresher.n3 = setTimeout(function () {
-                                elem.find('.stage.two').animate({opacity:1},600);
-                                app.refresher.n4 = setTimeout(function () {
-                                    app.enterprise_scheduling.refresh();
-                                },document.documentElement.clientWidth > 991 ? 4000 : 6000);//3 end
-
-                            },800);//click
-                        });
-
-                    },1200);//after show stage 1
-                },800);//click
-            },
-            scc_main_design_anim:function (elem) {
-                if (app.scc_main_design_anim.done === false) return;
-                app.scc_main_design_anim.done = false;
-                elem.find('.click.one').addClass('do');
-
-                setTimeout(function () {
-                    elem.find('.loader-modal').addClass('do');
-                    elem.find('.stage.first').addClass('do');
-                    setTimeout(function () {
-                        elem.find('.stage.one').animate({opacity:1},400);
-                        setTimeout(function () {
-                            elem.find('.loader-modal').removeClass('do');
-
-                            var block = elem.find('.stage.one'),
-                                block_img = elem.find('.stage.one img');
-                            block.animate({'scrollTop': (block_img.innerHeight() - block.innerHeight()) + 'px'}, 600);
-
-                            setTimeout(function () {
-                                block.animate({'scrollTop':'0px'},600);
-
-                                block.on('scroll', function () {
-                                    clearTimeout( app.scc_main_design_anim.scroll );
-                                    app.scc_main_design_anim.scroll = setTimeout(function() {
-                                        elem.find('img,div').removeAttr('style');
-                                        elem.find('div,img').removeClass('do');
-                                        block.off('scroll');
-                                        app.scc_main_design_anim.done = true;
-                                    }, 7000);
-                                })
-
-//                                setTimeout(function () {
-//                                },document.documentElement.clientWidth > 991 ? 7000 : 7000);//3 end
-
-                            },2800)//scroll bottom
-
-                        },700);//modal out
-
-                    },600); //modal in
-
-                },800);
-            },
-            lightning: function (elem) {
-                if (app.lightning.done === false) return;
-                app.lightning.done = false;
-
-                elem.find('.click.one').addClass('do');
-                setTimeout(function () {
-                    elem.find('.stage.one').addClass('do');
-                    setTimeout(function () {
-                        elem.find('img,div').removeAttr('style');
-                        elem.find('div,img').removeClass('do');
-                        app.lightning.done = true;
-                    },document.documentElement.clientWidth > 991 ? 4500 : 6000);//3 end
-                },800);//click
-            },
-        };
-        app.init();
-        app.start();
 
     })(jQuery);
 </script>

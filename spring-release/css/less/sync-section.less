@@ -1,7 +1,10 @@
 .sync-section {
   padding-top: 80px;
   padding-bottom: 80px;
-
+  @media(max-width:991px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   &.event {
     .event-anim {
       touch-action: none;
@@ -22,6 +25,9 @@
  }
 
   .slider-two-image {
+    @media(max-width:991px) {
+      margin-top: 40px;
+    }
     &:before {
       content: "";
       display: block;
