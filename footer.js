@@ -173,6 +173,9 @@ var _dcq_msg = function() {
                 case "textarea-183":
                     params["MessageText"] = item.value;
                     break;
+                case "Message-Text":
+                    params["MessageText"] = item.value;
+                    break;
                 case "menu-332":
                     // params["ContactReason"] = item.value;
                     break;
@@ -188,6 +191,7 @@ var _dcq_msg = function() {
                 case "url_referrer":
                     params["Refferer"] = item.value;
                     break;
+                case "lang":break;
                 default:
                     params[item.name.replace('-','_')] = item.value;
                     break;
@@ -211,7 +215,7 @@ var _dcq_msg = function() {
 
         // check which page came from
         if(getAllUrlParams.url.cf != undefined) {
-            params["Wizard_coming_from"] = getAllUrlParams.url.cf;
+            // params["Wizard_coming_from"] = getAllUrlParams.url.cf;
         }
 
         console.log(params,'params');
@@ -249,9 +253,11 @@ jQuery.noConflict();
     });
 
     // check which page came from
-    $('a.green-btn,.menu-item a').each(function() {
-        $(this).attr('href', $(this).attr('href').replace('/wizard/','/wizard/?cf='+page_url_a) );
-    });
+
+    // $('a.green-btn').each(function() {//,.menu-item a
+    //     $(this).attr('href', $(this).attr('href').replace('/wizard/','/wizard/?cf='+page_url_a) );
+    // });
+
 // check which page came from end
 
 
@@ -328,6 +334,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 
     jQuery.noConflict();
     (function($) {
+        $('body').append('<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=689601&conversionId=775042&fmt=gif" />')
         $('.modal').modal('hide') // closes all active pop ups.
         $('.modal-backdrop').remove() // removes the grey overlay.
     })(jQuery);
@@ -578,7 +585,18 @@ HelpCrunch('init', 'smartcloudconnect', {
 
 HelpCrunch('showChatWidget');
 
-
+HelpCrunch('onPreChatFormSubmit', function (event) {
+    _dcq.push(
+        [
+            "track", "Chat started",
+        ]
+    );
+    // event.detail.userData.company
+    // event.detail.userData.email
+    // event.detail.userData.name
+    // event.detail.userData.phone
+    ga('send', 'event', 'Contact Form', 'submit', 'Chat');
+});
 
 (function (c, p, d, u, id, i) {
     id = CliendIdGoogle; // Optional Custom ID for user in your system
@@ -628,7 +646,7 @@ html_pop_guide.innerHTML = `
       </a>
   </div>`;
 
-if (cookie_guide === undefined && page_url_a !== "/top-sales-automation-tools/" && page_url_a !== "/sales-automation-software/" && page_url_a !== "/wizard/") {
+if (false && cookie_guide === undefined && page_url_a !== "/top-sales-automation-tools/" && page_url_a !== "/sales-automation-software/" && page_url_a !== "/wizard/") {
     setTimeout(function () {
         document.body.appendChild(html_pop_guide);
         setTimeout(function () {
@@ -675,7 +693,7 @@ _linkedin_data_partner_id = "116028";
     opacity: 0;
     transition: 0.6s all;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .popup-fixed {
         max-width: 100%;
         width: 100%;
@@ -689,7 +707,7 @@ _linkedin_data_partner_id = "116028";
     padding: 190px 35px 35px 35px;
     position: relative;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .popup-fixed .pop-wrap {
         padding: 35px 35px 160px 145px;
         height: 260px;
@@ -711,7 +729,7 @@ _linkedin_data_partner_id = "116028";
     margin-top: 0;
     margin-bottom: 15px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .popup-fixed .pop-wrap .pop-title {
         margin-bottom: 0;
     }
@@ -738,7 +756,7 @@ _linkedin_data_partner_id = "116028";
     text-align: center !important;
     max-width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .popup-fixed .pop-wrap .green-btn {
         position: absolute;
         left: 20px;
@@ -770,5 +788,62 @@ _linkedin_data_partner_id = "116028";
 }
 .popup-fixed .pop-wrap .close:hover {
     opacity: .6;
+}
+</style>
+
+<script async type="text/javascript">
+    //        stars anim
+    jQuery.noConflict();
+(function ($) {
+    function starsAnim () {
+        var scrollTop = $(window).scrollTop();
+        var WindowHeigth = $(window).height() / 1.4;
+        $('.stars-anim').each(function () {
+            if (scrollTop > ($(this).offset().top - WindowHeigth) && scrollTop < ($(this).offset().top + WindowHeigth)) {
+                $(this).addClass('do');
+            }
+        })
+    }
+    $(window).scroll(function () {
+        starsAnim();
+    });
+    starsAnim();
+})(jQuery);
+//stars anim end
+</script>
+<style>
+.stars-anim {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.stars-anim .empty {
+    width: 96px;
+}
+.stars-anim .empty img {
+    width: 16px;
+}
+.stars-anim .wrap-anim {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 0%;
+    transition: 0.8s all;
+}
+.stars-anim .wrap-anim .full {
+    width: 96px;
+}
+.stars-anim .wrap-anim .full img {
+    width: 16px;
+}
+.stars-anim.do .wrap-anim {
+    width: 100%;
+}
+@media(max-width:991px) {
+.stars-anim .wrap-anim {
+        width: 100%!important;
+    }
 }
 </style>
