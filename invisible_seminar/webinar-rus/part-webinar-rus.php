@@ -852,7 +852,7 @@
 <style type="text/css" id="less:invisible_seminar-css-less-main">img {
         max-width: 100%;
     }
-    p {margin: 1em 0 0 0;}
+
     h1.title {
         color: #ffffff;
         font-size: 50px;
@@ -1024,10 +1024,10 @@
         <div class="row">
             <div class="col-md-7">
                 <p class="blue-bullet">
-                    Семинар &bull; 22 марта 2019 10:00
+                    Seminar &bull; 12 March 2019 14:00 - 18:00 PM &bull; Baku
                 </p>
                 <h1 class="title">
-                    Автоматизация процессов продаж
+                    Seminar: Sales Automation
                 </h1>
                 <div class="logos-wrap">
                     <img src="https://smartcloudconnect.io/wp-content/uploads/microsoft-logo-white.png"/>&nbsp;&nbsp;
@@ -1044,60 +1044,60 @@
         <div class="row">
             <div class="col-md-7">
                 <h2 class="sub-title">
-                    О семинаре
+                    Agenda
                 </h2>
                 <p class="text">
-                    Продажи - основной процесс в любой компании, и любая продажа это в первую очередь - общение с клиентом. В современных реалиях существуют множество SaaS решений, которые оптимизируют эти процессы и тем самым позволяют департаменту продаж увеличивать прибыльность бизнеса.
-                    Во время семинара спикеры расскажут именно это можно сделать, и так же покроют следующие темы:
+                    Sales process is the lifeblood of any business, but the sale itself often grind to a halt when communication with clients fails. In today's rich on SaaS solutions reality, you can optimize these processes and thereby allow the sales department to increase the profitability of the company.  During the seminar, the speakers will navigate you exactly how this can be done.
                 </p>
                 <h3 class="sub-title small"></h3>
                 <p class="description">
-                    Увеличение прибыльность находя скрытые возможности в сделках
+                    How to use Microsoft Office tools to reduce sales operating expenses and enable sales professionals to focus on the main thing - selling.
                 </p>
                 <p class="description">
-                    Рост производительности менеджеров за счет автоматизации операционной работы
+                    How to increase sales figures by changing the internal processes, both qualitatively and quantitatively, without changing people; and what automation tools can help accomplish this?
                 </p>
                 <p class="description">
-                    Уменьшение издержек и себестоимость продаж
+                    Automated sales team analysis: who is the best seller in your company and why?
                 </p>
                 <p class="description">
-                    Сокращение операционных затрат с помощью автоматизации рутинных процессов
+                    “Mechanical Sales” vs “Sales Engagement”: what is the difference and how to automate them?
                 </p>
                 <p class="description">
-                    Оптимизация цикла продаж для увеличения прибыли
+                    If CRM is already implemented, how to synchronize its data with the "real life" to maximize the value for the sales processes?
                 </p>
                 <h3 class="sub-title small">
-                    спикеры:
+                    speakers:
                 </h3>
                 <div class="speaker-block">
                     <div class="img-block">
                         <img src="https://smartcloudconnect.io/wp-content/uploads/vlad-1.png" alt="">
                     </div>
-                    <h4 class="name">Влад Воскресенский</h4>
+                    <h4 class="name">Vlad Voskresensky</h4>
                     <p class="role">СЕО Invisible.io</p>
                 </div>
                 <div class="speaker-block">
                     <div class="img-block">
                         <img src="https://smartcloudconnect.io/wp-content/uploads/sviatoslav-lobash.png" alt="">
                     </div>
-                    <h4 class="name">Святослав Лобач</h4>
+                    <h4 class="name">Sviat Lobach</h4>
                     <p class="role">Product Owner Invisible.io</p>
                 </div>
                 <div class="speaker-block">
                     <div class="img-block">
                         <img src="https://smartcloudconnect.io/wp-content/uploads/Desni_pasechnick.png" alt="">
                     </div>
-                    <h4 class="name">Денис Пасечник</h4>
-                    <p class="role">Channel partner Manager </p>
+                    <h4 class="name">Denys Pasechnyk</h4>
+                    <p class="role">Microsoft PDM</p>
                 </div>
                 <h3 class="sub-title small">
-                    Детали:
+                    Details:
                 </h3>
                 <p class="text">
-                    22 Марта 10:00 - 16:00
-                </p>
-                <p class="text">
-                    г. Баку, ул. Семинарная, 45 БЦ “Деловые”
+                    Baku, Hyatt Regency<br>
+                    Address: 6 Izmir St, Baku 1065, Azerbaijan<br>
+                    Telephone: +994 12 490 12 34<br>
+                    Date: March 12<br>
+                    Time: 2-6 PM<br>
                 </p>
             </div>
             <div class="col-md-5">
@@ -1105,30 +1105,36 @@
                     <div class="content">
                         <p style="margin-bottom: 25px;
     font-size: 25px;
-    font-weight: 300;text-align:center;" class="title">Форма регистрация</p>
+    font-weight: 300;text-align:center;" class="title">Registration Form</p>
                         <form>
                             <p class="input">
                                 <label>
                                     <input type="text" class="textInput required" name="Name" id="Name">
-                                    <span class="label"><span class="red">*</span>ФИО</span>
+                                    <span class="label"><span class="red">*</span>Full Name</span>
                                 </label></p>
                             <p class="input"><label>
                                     <input type="text" class="textInput required email" name="Email" id="Email">
-                                    <span class="label"><span class="red">*</span>Корпоративная почта</span></label></p>
+                                    <span class="label"><span class="red">*</span>Email</span></label></p>
                             <p class="input">
                                 <label>
                                     <input type="text" class="textInput required" name="Company" id="Company">
-                                    <span class="label"><span class="red">*</span>Компания</span>
+                                    <span class="label"><span class="red">*</span>Company</span>
                                 </label>
                             </p>
                             <p class="input">
                                 <label>
                                     <input type="text" class="textInput" name="Position" id="Position">
-                                    <span class="label">Позиция</span>
+                                    <span class="label">Business role</span>
+                                </label>
+                            </p>
+                            <p class="input">
+                                <label>
+                                    <input type="text" class="textInput" name="CRM" id="CRM">
+                                    <span class="label">Which CRM system do you use?</span>
                                 </label>
                             </p>
 
-                            <p class="button text-center"><a href="#"><span>Регистрация</span></a></p>
+                            <p class="button text-center"><a href="#"><span>Register</span></a></p>
                             <p style="color: #055492;font-size: 13px;font-weight: 400;line-height: 17px;margin: 0 0 15px 0!important;">
                                 By submitting your information to our website you agree to the terms outlined in our <a
                                         href="/privacy-policy/" target="_blank">privacy policy</a> and our <a

@@ -122,9 +122,18 @@ function contact_form_submit_webinar_action() {
         $contact_us_mail_subject = "[Invisible.io] Contact Us Webinar";
         $mail_recipient = get_field("mail_recipient", options);
         $success_message = get_field("success_message", options);
+        if (strpos($currentPage,'avtomatizatsiya-protsessov-prodazh') !== false) {
+            $contact_us_mail_subject = $contact_us_mail_subject.'Алматы';
+            $success_message = "Спасибо за регистрацию!";
+        } else if (strpos($currentPage,'seminar-sales-automation')){
+            $contact_us_mail_subject = $contact_us_mail_subject.'Baku';
+            $success_message = "Thanks for registering!";
+        }
         $subject = "=?utf-8?B?" . base64_encode( $contact_us_mail_subject ) . "?=";
         $noReplyMail = "do-not-reply@".str_ireplace('www.','',str_ireplace('https://','',str_ireplace('http://','',str_ireplace('/en','',str_ireplace('/ru','',str_ireplace('/ua','',get_bloginfo('url')))))));
         $message  = "<!DOCTYPE html><html><head><meta charset='utf-8' /></head><body><h1>".$contact_us_mail_subject."</h1>";
+
+
 
         if(is_array($formData)){
             foreach ($formData as $line) {
@@ -135,9 +144,11 @@ function contact_form_submit_webinar_action() {
                         }
                     }
                     if ($line['name'] == "Position") {
-                        $message .= "<p><b>Position:</b> ".str_replace(PHP_EOL,"<br>",$line['value'])."</p>";
+                        $message .= "<p><b>Business role:</b> ".str_replace(PHP_EOL,"<br>",$line['value'])."</p>";
                     } else if ($line['name'] == "Company") {
                         $message .= "<p><b>Company:</b> ".str_replace(PHP_EOL,"<br>",$line['value'])."</p>";
+                    } else if ($line['name'] == "CRM") {
+                        $message .= "<p><b>CRM:</b> ".str_replace(PHP_EOL,"<br>",$line['value'])."</p>";
                     }
                 }
             }
@@ -150,18 +161,25 @@ function contact_form_submit_webinar_action() {
 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n";
         $headers .= "From: $noReplyMail\r\n"
-        .'Reply-To: depa@microsoft.com'. "\r\n";
+            .'Reply-To: depa@microsoft.com'. "\r\n";
         if(is_array($mail_recipient)){
-            mail('depa@microsoft.com, insidemarketing@invisible.io', $subject, $message, $headers);
+            mail('depa@microsoft.com,insidemarketing@invisible.io', $subject, $message, $headers);
             foreach($mail_recipient as $emailToSend){
 //                mail($emailToSend['email'], $subject, $message, $headers);
 //                mail('depa@microsoft.com, insidemarketing@invisible.io', $subject, $message, $headers);
             }
         }
 
-        $successful  = '<div class="successful">';
-        $successful .= '<p>'.$success_message.'</p>';
-        $successful .= '</div>';
+//        $successful  = '<div class="successful">';
+        $successful = '<div id="tnx_overlay" class="popUpOverlay show" onclick="removeTnx();"></div><div id="tnx_popUp" class="popUpWrapper js-middle show" style="text-align: center;top: 50%; min-height: 200px; margin-top: -100px;"><span class="close" onclick="removeTnx();"></span><div class="content" style="word-break: break-word;"><p class="title">';
+        $successful .= $success_message;
+        $successful .= '</p></div></div>';
+        $successful .= "<script id='tnx_script'>function removeTnx() {if(typeof document.getElementById('tnx_overlay').remove=='function'){document.getElementById('tnx_overlay').remove();document.getElementById('tnx_popUp').remove();document.getElementById('tnx_script').remove()}else{document.getElementById('tnx_overlay').outerHTML='';document.getElementById('tnx_popUp').outerHTML='';document.getElementById('tnx_script').outerHTML='';}}</script>";
+//        $successful .= '</div>';
+
+
+//        $successful .= '<p>'.$success_message.'</p>';
+
 
         $toJson['successful'] = $successful;
 
