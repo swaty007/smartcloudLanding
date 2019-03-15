@@ -2,7 +2,8 @@ server {
     pagespeed standby;
     server_name stripe.smartcloudconnect.io www.stripe.smartcloudconnect.io;
     root /var/www/sf4.stripe.scc.io/public;
-
+  listen 80;
+  listen 443;
     location / {
         # try to serve file directly, fallback to index.php
         try_files $uri /index.php$is_args$args;

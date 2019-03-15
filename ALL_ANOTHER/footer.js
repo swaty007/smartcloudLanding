@@ -394,11 +394,32 @@ function gaCreateUserCookie() {
 var cookie_id = getCookie("user_id_cookie");
 var html_modal = document.createElement('div');
 html_modal.id = "user_id_cookie_modal";
-var text = 'We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we\'ll assume that you are happy to receive all cookies from our website. However, if you would like to, you can change your cookie settings at any time. Feel free to read through our <a href="/cookie-policy/">cookie policy.</a>'
-html_modal.innerHTML = '<div style="all: initial!important;left: 0!important;right: 0!important;top: 0!important;bottom: 0!important;margin: auto!important;height: 100vh!important;width: 100vw!important;border: none!important;position: fixed!important;z-index: 2147483647!important;background: none!important;padding: 0!important;"><div style="color: black;background-color: rgba(0, 0, 0, 0.54);z-index: 2147483647;overflow: hidden;position: fixed;width: 100%;height: 100%;top: 0px;left: 0px;right: 0px;bottom: 0px;margin: auto;display: flex;flex: 1 1 0%;"><div style="background: white;width: 100%;bottom: 0px;position: absolute;max-height: 75%;overflow: auto;padding-bottom: 0px;"><div style="color: rgba(0, 0, 0, 0.54);margin-top: 25px;margin-left: 40px;margin-right: 58px;font-size: 16px;font-weight: 300;line-height: 1.5;height: fit-content;font-family: \'Aktiv Grotesk\',\'Cabin\',\'Open Sans\', sans-serif ;white-space: pre-wrap;">'+text+'</div><div style="width: 100%; height: 75px; bottom: 0px;"><div style="padding-top: 20px;padding-right: 17px;float: right;"><button onclick="gaCreateUserCookie()" style="min-width: 105px;padding:0; margin-left: 10px; margin-right: 25px; height: 36px; border-radius: 3px; border: none; background-color: #37a148; color: #ffffff;"><span style="font-family: \'Cabin\',\'Aktiv Grotesk\',\'Open Sans\', sans-serif;  font-size: 14px; font-weight: 600; font-style: normal; font-stretch: normal; letter-spacing: 0.5px; text-align: center; margin-left: 10px; margin-right: 10px;">ACCEPT</span></button></div></div></div></div></div>';
+html_modal.innerHTML = `<div style="background: white;text-align:center;width: 100%;top: 0px;overflow: auto;padding-bottom: 0px;box-shadow: 0 5px 39px rgba(115,136,151,.15);z-index: 2147483647;"><div style="color: rgba(0, 0, 0, 0.54);font-size: 16px;font-weight: 300;line-height: 1.5;height: fit-content;white-space: pre-wrap;position: relative;width: 100%;padding:10px 30px;">We use cookies to ensure we give you the best experience. If you continue browsing, we'll assume that you are happy to receive all cookies from our website.<div style="padding-top: 0;padding-right: 0;/* position: absolute; */right: 0px;top: 0px;display: inline;"><button onclick="gaCreateUserCookie()" style="padding:0;margin-left: 0;margin-right: 0;/* height: 36px; */border-radius: 3px;border: none;background-color: transparent;color: #37a148;text-decoration: underline;"><span style="font-family: 'Cabin','Aktiv Grotesk','Open Sans', sans-serif;font-size: 14px;font-weight: 600;font-style: normal;font-stretch: normal;letter-spacing: 0.5px;text-align: center;margin-left: 10px;margin-right: 10px;">ACCEPT</span></button></div></div>
+<style>
+@media(min-width:992px) {
+.navbar-scc .collapse-scc {
+position: relative;
+}
+}
+@media(max-width:991px) {
+#user_id_cookie_modal {
+    position: fixed;
+    top: 77px;
+    left: 0;
+    right: 0;
+    z-index: 99996;
+}
+.navbar-scc .navbar-container {
+position: relative;
+    z-index: 99997;
+}
+}
+</style></div>
+`;
 
 if (cookie_id === undefined) {
-    document.body.appendChild(html_modal);
+    // document.body.appendChild(html_modal);
+    document.getElementById('navbar_scc').insertBefore(html_modal, document.getElementById('navbar_scc').firstChild);
 } else {
     var clientId = CliendIdGoogle;
     if (clientId === cookie_id) {

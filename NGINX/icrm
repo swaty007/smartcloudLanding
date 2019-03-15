@@ -71,7 +71,7 @@ server {
 }
 
 server {
-    pagespeed standby;
+   pagespeed standby;
     listen 80;
     server_name amocrm-bot.invisible.io;
     root /var/www/amocrm-bot.invisible.io/web;

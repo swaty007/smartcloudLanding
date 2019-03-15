@@ -31,9 +31,9 @@ ssl_session_ticket_key prevprev.key;
   ssl_stapling_verify on; # Requires nginx >= 1.3.7
   ssl_trusted_certificate /etc/ssl/certs/comodo.pem;
 
-pagespeed SslCertDirectory "/etc/ssl/certs/";
+###pagespeed SslCertDirectory "/etc/ssl/certs/";
 #pagespeed SslCertFile /etc/ssl/certs/ssl-cert-snakeoil.pem;
-pagespeed SslCertFile /etc/ssl/certs/comodo.pem;
+##pagespeed SslCertFile /etc/ssl/certs/comodo.pem;
 #resolver 1.1.1.1; #cloudflare
 #resolver 8.8.8.8;
 
@@ -74,7 +74,7 @@ proxy_set_header Connection "";
                 access_log off;
         }
 
-aio threads=default;
+#aio threads=default;
 
 
 
