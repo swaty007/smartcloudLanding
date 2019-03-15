@@ -1,8 +1,22 @@
 .what-we-can-do {
+  //background-image: url(https://smartcloudconnect.io/wp-content/uploads/shape_20.png);
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/shape_21.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-color: #e0ebf6;
+  overflow: hidden;
+  position: relative;
   .blocks-item {
-    text-align: center;
-    min-height: 220px;
+    position: relative;
+    padding-left: 60px;
+    &.desc-plus {
+      padding-left: calc(~'60px - 30px');;
+    }
     .img-block {
+      position: absolute;
+      left:0;
+      top:0;
       img {
 
       }
@@ -13,6 +27,7 @@
       font-weight: 700;
       line-height: 31px;
       margin-bottom: 20px;
+      margin-top: 0;
     }
     .text {
       font-size: 16px;

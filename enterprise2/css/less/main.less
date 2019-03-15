@@ -36,11 +36,19 @@ body {
     font-size: 37px;
     font-weight: 700;
     line-height: 58px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 0;
+    @media(max-width:991px) {
+      text-align: center;
+    }
     &.small {
       font-size: 32px;
       line-height: 48px;
+      margin-bottom: 35px;
+    }
+    &.smalled {
+      font-size: 24px;
+      line-height: 43px;
       margin-bottom: 35px;
     }
   }
@@ -50,6 +58,19 @@ body {
     margin-bottom: 30px;
     font-size: 17px;
     line-height: 31px;
+  }
+  .green-title {
+    color: #37a148;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 44px;
+    span {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  hr {
+    border-color: transparent;
   }
  .description {
     color: #055492;
@@ -70,6 +91,14 @@ body {
      top: 3px;
    }
   }
+  @media(min-width:992px) {
+    .flex-center {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+
   .green-link {
     outline: none;
     text-decoration: none;
@@ -78,18 +107,29 @@ body {
     font-weight: 700;
     line-height: 35px;
     text-transform: uppercase;
+    transition: 0.3s all;
+    .fa {
+      transition: 0.3s transform;
+    }
     &:hover {
       color: #297335;
+      .fa {
+        transform: translateX(5px);
+      }
     }
   }
 
+
+
   @import "main-block";
   @import "what-we-can-do";
-  @import "our-benefits";
   @import "financial-perks";
   @import "how-we-live-up";
   @import "partners-about";
-  @import "g2crown";
+  @import "proof-of-roi";
+  @import "proof-section";
+  @import "morgan-sesction";
+  @import "stars-anim";
 }
 
 //#main section.contact-section {

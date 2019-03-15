@@ -1,13 +1,16 @@
 .main-block {
   padding-top: 90px;
 
-  background-image: url(https://smartcloudconnect.io/wp-content/uploads/shape_20.png);
-  background-image: url(https://smartcloudconnect.io/wp-content/uploads/Shape_19.png);
+  //background-image: url(https://smartcloudconnect.io/wp-content/uploads/shape_20.png);
+  //background-image: url(../../enterprise-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  padding-bottom: 140px;
+  padding-bottom: 60px;
   margin-bottom: 20px;
+  background-color: #f7f9fb;
+  overflow: hidden;
+  position: relative;
   @media(max-width:991px) {
     padding-top: 50px;
     padding-bottom: 80px;
@@ -20,7 +23,19 @@
     margin-bottom: 50px;
     margin-top: 0;
   }
-
+  .enterprise-bg {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    &.left {
+      left: -30%;
+      transform: rotate(170deg);
+    }
+    &.right {
+      right: -30%;
+    }
+  }
   .footer-fix-bg {
     width: 100%;
     position: absolute;
@@ -30,6 +45,7 @@
     z-index: 425;
     object-fit: cover;
   }
+
 
 
 .main-img {
@@ -48,7 +64,7 @@
   width: 19%;
   margin-bottom: 80px;
   text-align: center;
-  padding: 0 25px;
+  padding: 0 5px;
   transition: 0.3s all;
   img {
     max-width: 100%;
@@ -67,4 +83,10 @@
     width: 49%;
   }
 }
+  .g2crowd,.appechange {
+    vertical-align: middle;
+    .rating {
+      margin-bottom: 0;
+    }
+  }
 }
