@@ -1,23 +1,24 @@
 .main-block {
-  background-color: #f5f8fb;
+  //background-color: #fff;
   background-repeat: no-repeat;
-  background-image: url(https://smartcloudconnect.io/wp-content/uploads/bg-selling-video-section.png);
-  background-size: 125% auto;
-  background-position: -59px 100%;
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/bg_sync.png);
+  background-size: 100% auto;
+  background-position: 50% 0;
   position: relative;
   padding-top: 80px;
   @media(max-width:991px) {
     text-align: center;
     padding-top: 40px;
+    background-size: auto 44%;
   }
   .title {
-    color: #023358;
+    color: #000;
     font-size: 35px;
     line-height: 47px;
     font-weight: 700;
     margin-top: 30px;
     padding-top: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     @media(max-width:991px) {
       margin-top: 0;
       padding-top: 0;
@@ -31,139 +32,122 @@
   .text {
     margin-bottom: 20px;
   }
-  .stars-anim {
-    margin-top: -8px;
-  }
-  .hidden-title {
-    line-height: 15px;
-    margin: 0px;
-    padding: 0px;
-    font-weight: 400;
-    font-size: 12px;
-    color: #9cc1d4;
-  }
-  .green-btn {
-    margin-bottom: 40px;
-  }
 
-  .footer-fix-bg {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 425;
-    object-fit: cover;
-  }
-  .rating-block {
-    margin-bottom: 100px;
-    text-align: left;
-    @media(max-width:991px) {
-      margin-bottom: 40px;
-      display: block;
-      width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  .under-star {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 8px;
-    text-transform: uppercase;
-    color: #4294e5;
-    text-decoration: none;
-    outline: none;
-    vertical-align: middle;
-    display: block;
-  }
-  .rating-text {
-    color: #023358;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 36px;
-    margin-bottom: 0;
-    float: left;
-    background-image: linear-gradient(66deg,#fec00f 0%,#fe9c0f 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-right: 5px;
-  }
 
-  .scc_main_design_anim {
-    display: inline-block;
+  .three-blocks-wrap {
     position: relative;
-    .stage {
-      position: absolute;
-      transition: 0.5s all;
-      right: 1.1%;
-      top: 19.5%;
-      width: 36%;
-      opacity: 0;
+    @media(min-width:992px) {
+      margin-bottom: 33%;
+      display: inline-block;
+    }
+    .three-blocks {
+      box-shadow: 0 5px 95px rgba(115, 136, 151, 0.18);
+      border-radius: 5px;
+      background-color: #ffffff;
+      text-align: center;
+      padding: 18% 20%;
+      @media(max-width:991px) {
+        margin-bottom: 40px;
+        padding: 50px 25px;
+      }
+      .img-block {
+        margin-bottom: 9px;
+      }
+      .three-block-title {
+        color: #000000;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 42px;
+        margin-top: 0;
+        margin-bottom: 13px;
+      }
+      .three-block-text {
+        color: #484848;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 23px;
+        margin-bottom: 0;
+        white-space: nowrap;
+      }
+      &.one {
+        position: relative;
+        z-index: 421;
+      }
+      @media(min-width:992px) {
+        &.two {
+          position: absolute;
+          left: 50%;
+          top: 88%;
+          z-index: 420;
 
-      &.first {
-        left: 0;
-        top: 0;
-        position: absolute;
-        opacity: 0;
-        width: 100%;
-        &.do {
-          opacity: 1;
+        }
+        &.three {
+          position: absolute;
+          left: 110%;
+          top: 8%;
           z-index: 419;
         }
       }
-      &.one {
-        //opacity: 1;
-        z-index: 420;
-        max-height: 76%;
-        overflow-y: scroll;
-        img {
-          width: 100%;
-        }
-        &::-webkit-scrollbar {
-          width: 5px;
-          border-radius: 8px;
-        }
-
-        &::-webkit-scrollbar-track {
-          -webkit-box-shadow: unset;
-        }
-
-        &::-webkit-scrollbar-thumb {
-          border-radius: 15px;
-          background-color: #cbd9e5;
-          outline: 1px solid slategrey;
-        }
-      }
+    }
+  }
+  .sync-main-anim {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    @media(max-width:991px) {
+      margin: 50px 0;
+    }
+    .main-img {
 
     }
-    .loader-modal {
+    .arrow-img {
       position: absolute;
-      transition: 0.5s;
-      background-color: rgba(255, 255, 255, 0.66);
-      right: 1.1%;
-      top: 19.5%;
-      width: 36%;
-      bottom: 5%;
-      opacity: 0;
-      text-align: center;
-      img {
-        margin-top: 47%;
-        transition: all .3s;
-        width: 12%;
-        transition-timing-function: ease-in;
-        animation: ld-spin 1s infinite;
-      }
-      &.do {
-        opacity: 1;
-        z-index: 421;
-      }
+      left: 41%;
+      top: 45%;
+      max-width: 20%;
     }
-    .click {
-      &.one {
-        bottom: 79%;
-        right: 10%;
+    .anim-btn-wrap {
+      position: absolute;
+      left: 0%;
+      bottom: 14%;
+      width: 300%;
+      transition: 0.5s all;
+      &.do {
+        left: -100%;
+      }
+      &.do2 {
+        left: -200%;
+      }
+      .anim-btn {
+        line-height: 44px;
+        border-radius: 22px;
+        box-shadow: 0 5px 27px rgba(96, 151, 173, 0.18);
+        background-color: #d4dcdf;
+        padding: 0 20px;
+        display: inline-block;
+        width: 31%;
+        margin: 0 1%;
+        filter: grayscale(100%);
+        transition: 0.42s all;
+        &.do {
+          filter: grayscale(0);
+          background-color: #fff;
+        }
+        img {
+          height: 18px;
+          vertical-align: middle;
+        }
+        span {
+          color: #000000;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 44px;
+          margin: 0 8px;
+          vertical-align: middle;
+        }
+        i {
+          vertical-align: middle;
+        }
       }
     }
   }

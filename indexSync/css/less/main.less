@@ -69,28 +69,34 @@ img {
       font-size: 15px;
     }
   }
+
+  .description-wrap-inline {
+    text-align: left;
+    .description {
+      @media(min-width:992px) {
+        display: inline-block;
+        white-space: nowrap;
+      }
+    }
+  }
   .description {
     color: #484848;
     font-size: 17px;
     font-weight: 400;
-    line-height: 31px;
-    margin-bottom: 25px;
+    line-height: 26px;
+    margin-bottom: 18px;
     position: relative;
     padding-left: 30px;
     padding-right: 15px;
     &:before {
       //content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
-      content: url(https://smartcloudconnect.io/wp-content/uploads/ok-green-fill-icon.svg);
+      //content: url(https://smartcloudconnect.io/wp-content/uploads/ok-green-fill-icon.svg);
+      content: url(https://smartcloudconnect.io/wp-content/uploads/ok-blue-fill-icon.svg);
       position: absolute;
       vertical-align: top;
       left: 0;
       width: 17px;
       top: 3px;
-    }
-    &.ask {
-      &:before {
-        content: url(https://smartcloudconnect.io/wp-content/uploads/question-mark-green-icon.svg);
-      }
     }
   }
 
@@ -120,29 +126,9 @@ img {
   @import "what-is-scc";
   @import "approved-section";
   @import "stars-anim";
+  @import "vapotherm-section";
 }
-.click {
-  bottom: 3%;
-  right: 20%;
-  &.do {
-    animation: pulsate 0.6s linear;
-    animation-iteration-count: 1;
-  }
-  position: absolute;
-  opacity: 0.0;
-  border: 17px solid fade(#37a148,80);
-  border-radius: 50px;
-  display: inline-block;
-  text-align: center;
-  width: 20%;
-  max-width: 80px;
-  .click-child {
-    width: 100%;
-    padding-top: 100%;
-    background-color: fade(#37a148,90);
-    border-radius: 50px;
-  }
-}
+
 @keyframes ld-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -159,7 +145,17 @@ img {
     transform: rotate(360deg);
   }
 }
-
+@keyframes anim-5 {
+  0% {
+    top: 22%;
+  }
+  50% {
+    top: 74%;
+  }
+  100% {
+    top: 22%;
+  }
+}
 @-webkit-keyframes pulsate {
   0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
   50% {opacity: 1.0;}
@@ -167,7 +163,7 @@ img {
 }
 #wrapper #main section.contact-section {
   background-color: #fff;
-  background-image: url(https://smartcloudconnect.io/wp-content/uploads/vector-smart-background-1.png);
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/sync-footer-contact-bg.png);
   background-size: 110%;
   background-position: -120px 60%;
   background-repeat: no-repeat;
@@ -178,6 +174,6 @@ img {
     background-position: -120px 10%;
   }
   h2.title {
-    color: #023358;
+    color: #000;
   }
 }
