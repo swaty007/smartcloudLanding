@@ -5,6 +5,15 @@
   .sub-title {
     margin-bottom: 40px;
   }
+
+  @media(max-width:991px) {
+    &#what-is-scc {
+      padding-bottom: 0;
+    }
+    &#what-is-scc2 {
+      padding-top: 0;
+    }
+  }
   .anim-status-block {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -32,7 +41,7 @@
       //padding: 5px 25px 5px 25px;
       padding: 10px 25px 10px 25px;
       margin-bottom: 10px;
-      margin-top: 10px;
+      margin-top: 30px;
     }
     .line {
       background-color: #e5f0f5;
@@ -148,9 +157,6 @@
       display: inline-block;
       position: relative;
       max-width: 100%;
-      @media(min-width:992px) {
-        margin-top: 80px;
-      }
       .main-img {
 
       }
@@ -167,18 +173,12 @@
     .sync_2 {
       display: inline-block;
       position: relative;
-      @media(min-width:992px) {
-        margin-top: 30px;
-      }
     }
 
 
     .sync_3 {
       position: relative;
       display: inline-block;
-      @media(min-width:992px) {
-        margin-top: 40px;
-      }
       .main-img {
         position: relative;
         z-index: 420;
@@ -206,6 +206,9 @@
           top: 81%;
           opacity: 1;
           transition: 1.1s bottom, 1.1s top,0.5s opacity, 3s background-color;
+          &.finish {
+            opacity: 0;
+          }
         }
         &.moved {
           opacity: 0;
@@ -236,9 +239,6 @@
     .sync_4 {
       position: relative;
       display: inline-block;
-      @media(min-width:992px) {
-        margin-top: 40px;
-      }
       .main-img {
         position: relative;
         z-index: 420;
@@ -252,31 +252,28 @@
           opacity: 1!important;
         }
         &.one {
-          top: 15%;
+          top: 19%;
           left: 19%;
           opacity: 0;
         }
         &.two {
-          top: 15%;
+          top: 19%;
           right: 19%;
           opacity: 0;
         }
         &.three {
-          left: 19%;
-          bottom: 18%;
+          left: 20%;
+          bottom: 22%;
         }
         &.four {
-          right: 19%;
-          bottom: 18%;
+          right: 20%;
+          bottom: 22%;
         }
       }
     }
     .sync_5 {
       position: relative;
       display: inline-block;
-      @media(min-width:992px) {
-        margin-top: 40px;
-      }
       .main-img {
         position: relative;
         z-index: 420;
@@ -315,9 +312,6 @@
     .sync_6 {
       position: relative;
       display: inline-block;
-      @media(min-width:992px) {
-        margin-top: 40px;
-      }
       .main-img {
         position: relative;
         z-index: 420;

@@ -9,7 +9,21 @@
   @media(max-width:991px) {
     text-align: center;
     padding-top: 40px;
-    background-size: auto 44%;
+    background-size: auto 46%;
+  }
+  @media(min-width:992px) and (max-width:1270px) {
+    background-size: 135% auto;
+  }
+  .green-btn {
+    margin-top: 30px;
+    @media(min-width:992px) {
+      margin-bottom: 50px;
+    }
+  }
+  @media(min-width:992px) {
+    .container:first-child {
+      margin-bottom: 10%;
+    }
   }
   .title {
     color: #000;
@@ -23,6 +37,9 @@
       margin-top: 0;
       padding-top: 0;
       font-size: 32px;
+      br {
+        display: none;
+      }
     }
     span {
       font-size: 28px;
@@ -60,6 +77,7 @@
         line-height: 42px;
         margin-top: 0;
         margin-bottom: 13px;
+        width: 100%;
       }
       .three-block-text {
         color: #484848;
@@ -68,6 +86,7 @@
         line-height: 23px;
         margin-bottom: 0;
         white-space: nowrap;
+        width: 100%;
       }
       &.one {
         position: relative;
@@ -105,17 +124,21 @@
       left: 41%;
       top: 45%;
       max-width: 20%;
+      animation: ld-spin 2s infinite linear;
     }
     .anim-btn-wrap {
       position: absolute;
-      left: 0%;
+      left: 100%;
       bottom: 14%;
       width: 300%;
-      transition: 0.5s all;
       &.do {
-        left: -100%;
+        left: 0%;
+        transition: 0.5s all;
       }
       &.do2 {
+        left: -100%;
+      }
+      &.do3 {
         left: -200%;
       }
       .anim-btn {
@@ -129,9 +152,21 @@
         margin: 0 1%;
         filter: grayscale(100%);
         transition: 0.42s all;
+        &:before {
+          content: url(https://smartcloudconnect.io/wp-content/uploads/ok-green-fill-icon.svg);
+          position: absolute;
+          vertical-align: top;
+          right: 16px;
+          width: 17px;
+          top: 4px;
+          opacity: 0;
+        }
         &.do {
           filter: grayscale(0);
           background-color: #fff;
+          &:before {
+            opacity: 1;
+           }
         }
         img {
           height: 18px;

@@ -805,6 +805,9 @@ if ( 'modern' == Avada()->settings->get( 'mobile_menu_design' ) ) {
                                 <a class="menu-link" href="<?=home_url();?>/pricing/">Pricing</a>
                             </li>
                             <li class="menu-item">
+                                <a class="menu-link" href="<?=home_url();?>/vapotherm/">Case Study</a>
+                            </li>
+                            <li class="menu-item">
                                 <a class="menu-link" href="<?=home_url();?>/contact-us/">Contact us</a>
                             </li>
                             <li class="menu-item no-border fusion-menu-item-button">
