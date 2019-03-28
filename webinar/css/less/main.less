@@ -1,0 +1,111 @@
+@color-1: #ffffff;
+@color-2: #000000;
+@color-3: #023358;
+@color-4: #055492;
+@color-5: #37a148;
+
+@font-1: 'Cabin','Open Sans', sans-serif;
+@font-2: 'Cabin','Open Sans', sans-serif;
+
+//@media only screen and (min-width: 1080px) {
+//  .fusion-header-wrapper {
+//    position: absolute;
+//    left: 0;
+//    right: 0;
+//    z-index: 10000;
+//  }
+//}
+//.fusion-header-wrapper .fusion-header {
+//  background:transparent;
+//}
+//.container {
+//  overflow: visible;
+//}
+body {
+  overflow-x: hidden;
+  font-family: @font-2;
+}
+
+@media(min-width:1400px) {
+  .container:not(.origin) {
+    //width: 1370px!important;
+  }
+}
+body {
+  //background-image: url(../../trends-line.png);
+}
+
+#wrapper #main {
+  .post-content {
+    background-image: url(https://smartcloudconnect.io/wp-content/uploads/trends-line.png);
+    background-position: 50% 0;
+    background-size: 880px auto;
+    background-repeat-x: no-repeat;
+  }
+
+  br {
+    @media(max-width:1200px) {
+      display: none;
+    }
+  }
+  .sub-title {
+    color: #023358;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 29px;
+    margin-top: 0;
+  }
+  .desc,.text {
+    color: #055492;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 30px;
+  }
+ .description {
+    color: #055492;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 15px;
+   &:before {
+     content: url(https://smartcloudconnect.io/wp-content/uploads/ellipse-copy-5.svg);
+     position: absolute;
+     vertical-align: top;
+     left: 0;
+     width: 17px;
+     top: 3px;
+   }
+  }
+  .green-link {
+    outline: none;
+    text-decoration: none;
+    color: #37a148;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    &:hover {
+      color: #297335;
+    }
+  }
+
+  @import "main-block";
+  @import "trends-section";
+  @import "form-sales2";
+}
+
+//#main section.contact-section {
+//  background: none;
+//  h2.title {
+//    color: #023358;
+//  }
+//}
+
+img {
+  max-width: 100%;
+}

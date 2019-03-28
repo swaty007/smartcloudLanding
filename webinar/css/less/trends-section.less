@@ -1,0 +1,224 @@
+.trends-section {
+  background-image: url(https://smartcloudconnect.io/wp-content/uploads/trends-bg.png);
+  background-size: 100% auto;
+  overflow: hidden;
+
+  //padding-top: 10%;
+  //margin-top: -10%; // дожен быть не больше пединга у верхнего блока
+  padding-bottom: 130px;
+  //background-attachment: fixed;
+  @media(max-width:991px) {
+    padding-bottom: 80px;
+    background-size: 1200px auto;
+  }
+
+  background-position: 50% 0%;
+  .trends-wrap-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .trends-wrap {
+      display: flex;
+      flex-basis: 50%;
+      margin-bottom: 50px;
+      margin-top: 58px;
+      width: 50%;
+      padding: 0 40px;
+      position: relative;
+      @media(max-width:991px) {
+        flex-basis: 90% !important;
+        width: 90% !important;
+        padding: 0 40px 0 40px!important;
+      }
+      @media(max-width:767px) {
+        padding: 0 !important;
+      }
+      &.white {
+        &:before {
+          color: #ffffff;
+        }
+      }
+      &.left {
+        padding: 0 40px 0 15px;
+        &:before {
+          right: calc(~"100% - 150px");
+        }
+      }
+      &.right {
+        padding: 0 15px 0 40px;
+        &:before {
+          left: calc(~"100% - 150px");
+        }
+      }
+      &.w-100 {
+        flex-basis: 100%;
+        width: 100%;
+        padding: 0 40px 0 40px;
+      }
+      &.w-80 {
+        flex-basis: 90%;
+        width: 90%;
+        padding: 0 40px 0 40px;
+      }
+      &:before {
+        //content: attr(data-number);
+        color: #e3f2fe;
+        font-size: 150px;
+        font-weight: 400;
+        letter-spacing: -0.75px;
+        position: absolute;
+        line-height: 107px;
+        top: -58px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.1), 0px 0px 2px rgba(0,0,0,0.1);
+      }
+    }
+  }
+  .trends-block {
+    box-shadow: -2px 2px 18px rgba(5, 5, 5, 0.05);
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 40px 40px 20px;
+    position: relative;
+    overflow: hidden;
+    @media(max-width:767px) {
+      padding: 40px 20px 20px;
+    }
+    .trends-header {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      @media(max-width:767px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .face-img {
+        width: 90px;
+        float: left;
+        margin-right: 15px;
+        @media(max-width:767px) {
+          margin-right: 0;
+        }
+      }
+      .text-block {
+        margin-right: 40px;
+        @media(max-width:767px) {
+          margin-right: 0;
+        }
+        .trends-title {
+          color: #023358;
+          font-size: 30px;
+          font-weight: 700;
+          letter-spacing: -0.15px;
+          margin-top: 0;
+          margin-bottom: 10px;
+          line-height: 32px;
+          @media(max-width:767px) {
+           margin-top: 10px;
+          }
+        }
+        .trends-list {
+          list-style: none;
+          padding-left: 0;
+          li {
+            color: #055492;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+            display: inline-block;
+            position: relative;
+            padding-left: 20px;
+            &:before {
+              content: '•';
+              margin-right: 5px;
+              vertical-align: middle;
+              font-size: 20px;
+              position: absolute;
+              left: 7px;
+            }
+          }
+        }
+      }
+      .trends-social {
+        width: 88px;
+        white-space: nowrap;
+        @media(min-width:992px) {
+          position: absolute;
+          right: 0;
+        }
+        .social-a {
+          font-size: 23px;
+          &:first-child {
+            margin-right: 25px;
+          }
+          .fa-linkedin-square {
+            color: #3275b0;
+          }
+          .fa-twitter {
+            color: #4aa5f1;
+          }
+        }
+      }
+    }
+    .trends-body {
+      position: relative;
+      &:before {
+        //content: "“";
+        content: "";
+        //font-size: 150px;
+        //font-weight: 700;
+        //color: #d4dde5;
+        background-image: url(https://smartcloudconnect.io/wp-content/uploads/quote-cabin-grey.png.png);
+        background-repeat: no-repeat;
+        background-position: 2% 0;
+        background-size: 49px 39px;
+        width: 49px;
+        height: 39px;
+        position: absolute;
+        left: -15px;
+        top: -18px;
+        @media(max-width:991px) {
+          left: -10px;
+        }
+      }
+    }
+    .trends-text {
+      color: #055492;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 31px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .line {
+      background-color: #cbd9e5;
+      width: 4px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        height: 0%;
+        transition: 0.5s all;
+        background-color: #37a148;
+      }
+      &.do {
+        span {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+}
